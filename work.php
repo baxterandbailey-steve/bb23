@@ -34,7 +34,7 @@ $terms = get_terms(array(
 		</ul>
 	</div>
 
-	<ul class="grid grid-work contain">
+	<ul class="grid-work contain">
 		<?php if (have_posts()) :
 			while ($args->have_posts()) : $args->the_post(); ?>
 				<li class="grid-item <?php the_field('size'); ?>">

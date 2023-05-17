@@ -89,14 +89,6 @@
       "oAP" : "\/_partials\/navbar.php",
       "oF" : 0
     },
-    "\/_templates\/bio.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_templates\/bio.php",
-      "oF" : 0
-    },
     "\/_templates\/loop.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -127,64 +119,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/archive.php",
-      "oF" : 0
-    },
-    "\/assets\/bb-logo-stacked-black.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/bb-logo-stacked-black.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/downloads\/BB_Logo_monogram_black.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/downloads\/BB_Logo_monogram_black.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/downloads\/BB_Logo_monogram_white.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/downloads\/BB_Logo_monogram_white.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/downloads\/bb_logo_stacked_black.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/downloads\/bb_logo_stacked_black.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/assets\/downloads\/BB_Logo_stacked_white.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/assets\/downloads\/BB_Logo_stacked_white.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/BB23\/.gitattributes" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/BB23\/.gitattributes",
       "oF" : 0
     },
     "\/category.php" : {
@@ -570,6 +504,16 @@
       "oAP" : "\/home.php",
       "oF" : 0
     },
+    "\/images\/logos\/bb-logo-stacked-black.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/images\/logos\/bb-logo-stacked-black.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/index.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -577,28 +521,6 @@
       "oA" : 0,
       "oAP" : "\/index.php",
       "oF" : 0
-    },
-    "\/js\/aos-min.js" : {
-      "bF" : 4,
-      "ft" : 64,
-      "ma" : 1,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/dist\/js\/aos-min.min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/js\/aos.js" : {
-      "bF" : 4,
-      "ft" : 64,
-      "ma" : 1,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/dist\/js\/aos.min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/page.php" : {
       "cB" : 0,
@@ -658,21 +580,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/sass\/blocks\/blocks.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dist\/css\/blocks.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/src\/sass\/details.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -683,36 +590,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/details.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/sass\/layout\/grids\/flx-v1.0.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/flx-v1.0.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/sass\/layout\/grids\/grid.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dist\/css\/grid.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -743,21 +620,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/work-v1.0.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/sass\/layout\/grids\/work-v1.1.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dist\/css\/work-v1.1.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
