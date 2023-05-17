@@ -1,7 +1,11 @@
-# ignore
+# Ignore the following
 
+# Dependency directories
 node_modules/
+
+# Compilation caching
 sass-cache
 
+# Misc
 .DS_Store
 Thumbs.db
