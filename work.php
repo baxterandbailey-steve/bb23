@@ -1,4 +1,12 @@
-<?php	/* Template Name: Work */ get_header();
+<?php
+
+/**
+ * Template Name: Work
+ *
+ * @package BBWP
+ */
+
+get_header();
 $args = new WP_Query(array(
 	'post_type' => 'bb_casestudy_cpt',
 	'order' => 'DSC'

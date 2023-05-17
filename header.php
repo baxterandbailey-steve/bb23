@@ -1,8 +1,18 @@
+<?php
+
+/**
+ * Site header
+ *
+ * @package BBWP
+ */
+
+?>
+
 <!DOCTYPE html>
-<html lang="en-gb">
+<html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<title><?php bloginfo('name'); ?><?php wp_title('|'); ?></title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">

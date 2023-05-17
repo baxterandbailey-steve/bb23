@@ -1,5 +1,13 @@
-<?php get_header(); ?>
-<?php get_template_part('_partials/headers/header', 'front-page'); ?>
+<?php
+
+/**
+ * Home page 
+ *
+ * @package BBWP
+ */
+
+get_header();
+get_template_part('_partials/headers/header', 'front-page'); ?>
 
 <main class="contain">
     <div class="grid grid-home">

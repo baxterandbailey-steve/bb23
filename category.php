@@ -1,5 +1,13 @@
-<?php get_header(); ?>
-<?php get_template_part('_partials/headers/header', 'default'); ?>
+<?php
+
+/**
+ * Category listings page
+ *
+ * @package BBWP
+ */
+
+get_header();
+get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="contain">
 	<code>this is category.php</code>

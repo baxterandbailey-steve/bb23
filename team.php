@@ -1,4 +1,12 @@
-<?php get_header(); /* Template Name: Team */
+<?php
+
+/**
+ * Template Name: Team
+ *
+ * @package BBWP
+ */
+
+get_header();
 $content = get_field('content');
 ?>
 
@@ -112,9 +120,6 @@ $content = get_field('content');
                             endwhile;
                         endif; ?>
                     </div><!-- close column three-->
-
-
-
 
                 <?php endwhile; ?>
             <?php endif; ?>

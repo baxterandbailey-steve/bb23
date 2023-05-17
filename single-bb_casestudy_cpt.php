@@ -4,7 +4,6 @@ $terms = get_terms(array(
     'hide_empty' => false,
 ));
 
-// acf images
 $primary_image = get_field('primary_image');
 ?>
 
@@ -12,29 +11,18 @@ $primary_image = get_field('primary_image');
 
 <main class="contain">
     <code>this is single-casestudy.php</code>
+
     <h2><?php the_title(); ?></h2>
     <img src="<?php echo $primary_image; ?>">
 
-
-    <!-- 
-        <h2>terms..?</h2>
-
+    <ul>
         <?php
-        foreach ($terms as $term) { ?>
-        <a><?php echo $term->name; ?>
-        <?php }; ?> 
-    -->
-
-    <?php
-    echo '<ul>';
-    foreach ($terms as $term) {
-        $term_link = get_term_link($term);
-        echo '<li><a href="' . esc_url($term_link) . '" class="taxo-link">' . $term->name . '</a></li>';
-    }
-    echo '</ul>';
-    ?>
-
-
+        foreach ($terms as $term) {
+            $term_link = get_term_link($term);
+            echo '<li><a href="' . esc_url($term_link) . '" class="taxo-link">' . $term->name . '</a></li>';
+        }
+        ?>
+    </ul>
 </main>
 
 <?php get_footer(); ?>

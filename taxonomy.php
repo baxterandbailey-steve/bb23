@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * Taxonomy lisings page
+ *
+ * @package BBWP
+ */
+
+get_header(); ?>
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="contain">

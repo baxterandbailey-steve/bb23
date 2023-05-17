@@ -1,9 +1,15 @@
-<?php get_header(); ?>
-<?php get_template_part('_partials/headers/header', 'default'); ?>
+<?php
+
+/**
+ * Blog listings page
+ *
+ * @package BBWP
+ */
+
+get_header();
+get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="contain">
-	<code>this is home.php</code><br>
-
 	<h2>posts</h2>
 	<ul clas="grid">
 		<?php if (have_posts()) :

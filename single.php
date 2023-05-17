@@ -1,8 +1,15 @@
-<?php get_header(); ?>
+<?php
+
+/**
+ * Default single post page
+ *
+ * @package BBWP
+ */
+
+get_header(); ?>
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="contain">
-
 	<code>this is single.php</code>
 	<?php if (have_posts()) :
 		while (have_posts()) : the_post(); ?>

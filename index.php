@@ -1,5 +1,13 @@
-<?php get_header(); ?>
-<?php get_template_part('_partials/headers/header', 'default'); ?>
+<?php
+
+/**
+ * WP Index fallback 
+ *
+ * @package BBWP
+ */
+
+get_header();
+get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="contain">
 	<div class="flexible-content">
