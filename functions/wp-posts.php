@@ -1,7 +1,12 @@
 <?php
 
-/* set-up case study post type
------------------------------------------------------------------------------ */
+/**
+ * Functions: WP posts
+ *
+ * @package BBWP
+ */
+
+// Set-up work custom post type
 function create_bb_casestudy_cpt()
 {
     $labels = array(
@@ -33,8 +38,7 @@ function create_bb_casestudy_cpt()
 }
 add_action('init', 'create_bb_casestudy_cpt');
 
-/* set-up case taxonomy and assign to post type
------------------------------------------------------------------------------ */
+// Set-up work custom post type taxonomy
 function create_casestudy_taxonomy()
 {
     $labels = array(

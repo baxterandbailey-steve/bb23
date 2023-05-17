@@ -1,7 +1,12 @@
 <?php
 
-/* setup menus
------------------------------------------------------------------------------ */
+/**
+ * Functions: WP setup
+ *
+ * @package BBWP
+ */
+
+// Setup menus
 function register_theme_menus()
 {
     register_nav_menus( // register multiple custom menus
@@ -13,6 +18,5 @@ function register_theme_menus()
 }
 add_action('init', 'register_theme_menus');
 
-/* enable featured images
------------------------------------------------------------------------------ */
+// Enable featured images
 add_theme_support('post-thumbnails');
