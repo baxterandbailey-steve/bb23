@@ -1,0 +1,15 @@
+/* work
+----------------------------------------------------------------------------- */
+.new-work {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-root);
+    text-transform: uppercase;
+    background-color: var(--white);
+    z-index: 10;
+}

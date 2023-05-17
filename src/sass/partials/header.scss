@@ -1,0 +1,112 @@
+/* header
+----------------------------------------------------------------------------- */
+header {
+    background-color: var(--off-white);
+    position: fixed;
+    height: 96px; // should be 76px?
+    width: 100%;
+    z-index: 100;
+
+    .header-top {
+        padding: 21px 1.5rem;
+        width: 100%;
+        max-width: 1298px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 1440px) {
+            max-width: 2600px;
+            padding: 21px 72px;
+            align-items: flex-end;
+        }
+    }
+
+    .bb-logo {
+        width: 112px;
+
+        svg {
+            max-width: 100%;
+        }
+    }
+
+    .burger {
+        position: relative;
+        width: 24px;
+        height: 2px;
+        background-color: var(--black);
+
+        @media (min-width: 880px) {
+            display: none;
+        }
+
+        &:before,
+        &:after {
+            position: absolute;
+            display: block;
+            width: inherit;
+            height: inherit;
+            content: '';
+            background-color: inherit;
+        }
+
+        &:before {
+            top: -6px;
+        }
+
+        &:after {
+            top: 6px;
+        }
+    }
+}
+
+.banner {
+    //position: fixed;
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    background-color: var(--off-white);
+
+    @media (min-width: 960px) {
+        padding-top: 15.9375rem;
+        padding-bottom: 21.8125rem;
+    }
+
+    .statement {
+        width: 100%;
+        max-width: 1296px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        width: 100%;
+        //max-width: 1120px;
+        font-family: var(--titling);
+        font-size: 1.375rem;
+        font-weight: 500;
+        line-height: 1.375; // check this
+
+        @media (min-width: 320px) {
+            --a: 28; // starting font size
+            --b: 80; // finishing font size:
+            --x: 320; // starting viewport widt
+            --y: 1120; // finishing viewport width
+
+            --sum1: calc((var(--b) - var(--a)) / (var(--y) - var(--x)));
+            --sum2: calc(var(--sum1) * var(--x));
+            --sum3: calc(var(--a) - var(--sum2)) / 16 * 1rem;
+
+            font-size: calc(var(--sum1) * 100vw + (var(--sum3)));
+        }
+
+        @media (min-width: 1120px) {
+            font-size: 5rem;
+        }
+    }
+}
+
+//
+.swap-logo {
+    // styles to go here
+}

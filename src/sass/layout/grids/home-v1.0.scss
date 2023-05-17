@@ -1,0 +1,274 @@
+/* grid home-v1.0: this file is for the bespoke grid elements on the homepage using 'new' titling layout
+----------------------------------------------------------------------------------------------------- */
+.grid-home {
+    padding-top: var(--site-space-lg);
+    padding-bottom: var(--site-space-lg);
+
+    @media (min-width: 800px) {
+        padding-top: var(--site-space-bg);
+    }
+
+    > .row {
+        margin-bottom: 0;
+
+        // @media (min-width: 880px) {
+        @media (min-width: 480px) {
+            margin-bottom: var(--drop-medium);
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: 16px;
+        }
+
+        @media (min-width: 800px) {
+            grid-column-gap: 24px;
+        }
+
+        @media (min-width: 960px) {
+            margin-bottom: var(--drop-big);
+            grid-column-gap: 48px;
+        }
+    }
+
+    // basics, ie styles to be inherited by all elements
+    .thumb {
+        //aspect-ratio: 4 / 3;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .quote {
+        margin-bottom: var(--drop-medium);
+        font-family: var(--titling);
+        font-size: 1.375rem;
+        line-height: var(--lh-small);
+        color: var(--aqua);
+
+        @media (min-width: 960px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .client {
+        margin-right: 77px;
+        margin-bottom: 0.5rem;
+        font-family: var(--titling);
+        font-size: 1.5rem;
+        line-height: 1.232;
+        color: var(--white);
+    }
+
+    .category {
+        font-family: var(--copy);
+        font-size: var(--font-root);
+        text-transform: uppercase;
+        line-height: 1.35;
+        color: var(--work-meta);
+    }
+
+    .description {
+        //padding-top: 0.5rem;
+        margin-bottom: var(--drop-medium);
+        font-family: var(--copy);
+        font-size: var(--font-root-plus);
+        line-height: 1.35;
+        color: var(--work-meta);
+    }
+
+    // specific row stylings
+
+    /* new row ------------------------------------------------------------ */
+    .row-one {
+        grid-template-rows: 1fr;
+        margin-bottom: var(--drop-large);
+
+        .col-1 {
+            grid-column: 1 / 9;
+            grid-row: 1 / -1;
+
+            @media (min-width: 960px) {
+                grid-column: 1 / 6;
+            }
+
+            .details {
+                flex-direction: column;
+            }
+
+            .description {
+                max-width: 70%;
+                margin-bottom: 16px;
+
+                @media (min-width: 960px) {
+                    max-width: 60%;
+                }
+            }
+
+            img {
+                padding-top: var(--offset-medium);
+            }
+        }
+
+        .col-2 {
+            padding-top: var(--offset-medium);
+            grid-column: 7 / 13;
+            grid-row: 1 / -1;
+
+            @media (min-width: 960px) {
+                grid-column: 5 / 10;
+            }
+        }
+
+        .col-3 {
+            padding-top: var(--offset-large);
+            grid-column: 9 / -1;
+            grid-row: 1 / -1;
+            display: none;
+
+            @media (min-width: 960px) {
+                display: block;
+            }
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-two {
+        .lh-col {
+            grid-column: 1 / 7;
+
+            .client {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+        }
+        .rh-col {
+            grid-column: 7 / -1;
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-three {
+        .lh-col {
+            grid-column: 1 / 9;
+
+            @media (min-width: 960px) {
+                // styles
+            }
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-four {
+        .lh-col {
+            grid-column: 1 / 7;
+        }
+
+        .rh-col {
+            padding-top: var(--offset-large);
+            grid-column: 7 / -1;
+
+            @media (min-width: 960px) {
+                grid-column: 9 / -1;
+            }
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-five {
+        .lh-col {
+            //padding-top: var(--offset-large);
+            grid-column: 1 / 7;
+
+            @media (min-width: 960px) {
+                grid-column: 1 / 5;
+            }
+        }
+
+        .rh-col {
+            padding-top: var(--offset-medium);
+            grid-column: 7 / -1;
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-six {
+        .rh-col {
+            grid-column: 5 / -1;
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-seven {
+        .lh-col {
+            padding-top: var(--offset-medium);
+            grid-column: 1 / 7;
+
+            @media (min-width: 960px) {
+                grid-column: 1 / 5;
+            }
+        }
+
+        .rh-col {
+            grid-column: 7 / -1;
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-eight {
+        .lh-col {
+            grid-column: 1 / 7;
+        }
+
+        .rh-col {
+            grid-column: 7 / -1;
+            padding-top: var(--offset-small);
+
+            @media (min-width: 960px) {
+                grid-column: 8 / -1;
+            }
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-nine {
+        .lh-col {
+            grid-column: 1 / 7;
+            //padding-top: var(--offset-small);
+        }
+
+        .rh-col {
+            grid-column: 7 / -1;
+
+            .client {
+                margin-right: 0;
+                margin-bottom: 0.5rem;
+            }
+
+            @media (min-width: 960px) {
+                grid-column: 9 / -1;
+            }
+        }
+    }
+
+    /* new row ------------------------------------------------------------ */
+    .row-ten {
+        .lh-col {
+            grid-column: 1 / 7;
+
+            @media (min-width: 960px) {
+                grid-column: 1 / 5;
+            }
+        }
+
+        .rh-col {
+            grid-column: 7 / -1;
+            padding-top: var(--offset-medium);
+        }
+    }
+} // close

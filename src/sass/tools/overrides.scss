@@ -1,0 +1,17 @@
+/* overrides, fixes, temporary helpers. prayers..
+----------------------------------------------------------------------------- */
+.home {
+    h2,
+    h3,
+    link {
+        color: var(--white);
+    }
+}
+
+code {
+    background-color: red;
+}
+
+.cover {
+    object-fit: cover;
+}

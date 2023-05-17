@@ -1,0 +1,95 @@
+/* Variables
+------------------------------------------------------------------------------------------------------------------ */
+:root {
+    /* Colours
+    -------------------------------------------------------------------------------------------------------------- */
+
+    // generic
+    --black: rgba(17, 17, 17, 1);
+    --white: #fff;
+
+    // brand specific
+    --off-white: #f2f2ee;
+    --aqua: #98f9ea;
+    --meta: #959595;
+    --mid-grey: #d9d9d9;
+    --dark-grey: #666666;
+    --work-meta: #c7c7c7;
+
+    // tints
+    --black-light: rgba(0, 0, 0, 4);
+
+    /* Fonts
+    ------------------------------------------------------------------------------------------------------------ */
+
+    // typefaces
+    --titling: 'qt-optimum';
+    --copy: 'satoshi-regular', sans-serif;
+
+    // font sizes
+    --font-small: 0.875rem;
+    --font-root: 1rem;
+    --font-root-plus: 1.125rem;
+    --font-title: 1.375rem;
+    --font-caption: 1.25rem;
+    --font-section: 1.875rem;
+
+    // font weights
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-bold: 700;
+    --weight-black: 900;
+
+    // font line-heights
+    --lh-base: 1;
+    --lh-small: 1.2;
+    --lh-medium: 1.5;
+    //    --lh-large: ;
+
+    /* Layout
+    ---------------------------------------------------------------------------------------------------------------- */
+
+    // basics, eg site-width to be applied to site-container
+    --site-width: 1440px;
+
+    // generic spacing elements
+    --site-space-sm: 1rem;
+    --site-space-md: 3rem;
+    --site-space-lg: 5rem;
+    --site-space-bg: 10rem;
+
+    // margin-bottom between elements or components
+    --drop-small: 1rem;
+    --drop-medium: 3rem;
+    --drop-large: 6rem;
+    --drop-big: 10rem;
+
+    // padding pushing elements down within components
+
+    --offset-small: 0;
+    --offset-medium: 0;
+    --offset-large: 0;
+
+    @media (min-width: 880px) {
+        --offset-small: 3rem;
+        --offset-medium: 6rem;
+        --offset-large: 12rem;
+    }
+
+    /* Breakpoints
+    --------------------------------------------------------------------------------------------------------------- */
+
+    --break-vs: 320px; // old phone
+    --break-small: 480px; // modern phone
+    --break-small-medium: 600px; // modern larger phone
+    --break-medium: 880px; // tablet
+    --break-large: 1120px; // laptop
+    --break-big: 1240px; // desktop
+    --break-vb: 1440px; // big screens!
+
+    /* Effects
+    --------------------------------------------------------------------------------------------------------------- */
+
+    // transitions
+    --transition-basic: 300ms;
+}

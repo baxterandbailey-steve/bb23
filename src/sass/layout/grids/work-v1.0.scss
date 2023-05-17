@@ -1,0 +1,62 @@
+/* grid work-v1.0 : this uses auto-flow: dense to layout loop generated content dynamically
+---------------------------------------------------------------------------------------------------------------------- */
+.grid-work {
+    @media (min-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        gap: 48px;
+        grid-auto-flow: dense;
+    }
+
+    .grid-item {
+        position: relative;
+        margin-bottom: 2rem;
+        grid-column: span 12;
+
+        &.link {
+            color: var(--meta);
+        }
+
+        @media (min-width: 768px) {
+            grid-column: auto / span 6;
+        }
+
+        @media (min-width: 960px) {
+            grid-column: auto / span 4;
+            margin-bottom: 8px;
+        }
+
+        &.wide {
+            grid-column: span 12;
+
+            @media (min-width: 960px) {
+                grid-column: span 8;
+                grid-row: span 2;
+            }
+        }
+
+        &.tall {
+            grid-column: span 12;
+
+            @media (min-width: 768px) {
+                grid-column: span 6;
+                grid-row: span 2;
+            }
+
+            @media (min-width: 960px) {
+                grid-column: span 4;
+            }
+        }
+
+        &.full {
+            grid-column: span 12;
+            grid-row: span 2;
+        }
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

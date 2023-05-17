@@ -1,0 +1,28 @@
+/* fonts
+----------------------------------------------------------------------------- */
+@font-face {
+    font-family: 'qt-optimum';
+    src: url('../../fonts/qt-optimum/QTOptimum.woff2') format('woff2'),
+        url('../../fonts/qt-optimum/QTOptimum.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'qt-quantum';
+    src: url('../../fonts/qt-quantum/QTOptimum-Bold.woff2') format('woff2'),
+        url('../../fonts/qt-quantum/QTOptimum-Bold.woff') format('woff');
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'satoshi-regular';
+    src: url('../../fonts/satoshi/Satoshi-Regular.woff2') format('woff2'),
+        url('../../fonts/satoshi/Satoshi-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}

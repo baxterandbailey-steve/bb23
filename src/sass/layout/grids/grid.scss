@@ -1,0 +1,11 @@
+/* grid basic: the basic grid controlling page layout, probs far too ambitious an idea...
+----------------------------------------------------------------------------------------------- */
+.grid {
+    @media (min-width: 600px) {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        grid-column-gap: 48px;
+        grid-auto-flow: dense;
+    }
+}
