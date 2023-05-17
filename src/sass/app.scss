@@ -1,35 +1,28 @@
-
 //// base
 @use 'details';
 @use 'variables';
 @use 'mixins';
 @use 'tools/reset';
 
-
 //// typography
 @use 'type/fonts';
 @use 'type/typography';
-
 
 //// partials
 @use 'partials/header';
 @use 'partials/footer';
 @use 'partials/navigation';
 
-
 //// layout
 @use 'layout/layout';
-@use 'layout/grids/flx-v1.0';
 @use 'layout/grids/home-v1.0';
 @use 'layout/grids/work-v1.0';
-
 
 //// pages
 @use 'pages/archives';
 @use 'pages/archive';
 @use 'pages/work';
 @use 'pages/team';
-
 
 //// tools
 @use 'tools/accessibility';
