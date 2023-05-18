@@ -6,12 +6,13 @@ export function scroll() {
     const statementOptions = {
         //rootMargin: "-400px 0px 0px 0px"
     };
-    const statementObserver = new IntersectionObserver(function (entries, statementObserver) {
+    const statementObserver = new IntersectionObserver(function (entries) {
+        // note:  statementObserver removed from const [above]
         entries.forEach((entry) => {
             if (!entry.isIntersecting) {
-                header.classList.add('swap-logo');
+                header.classList.add('scrolled');
             } else {
-                header.classList.remove('swap-logo');
+                header.classList.remove('scrolled');
             }
         });
     }, statementOptions);
