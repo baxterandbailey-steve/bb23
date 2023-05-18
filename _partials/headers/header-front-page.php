@@ -1,8 +1,6 @@
-<header class="header-fp">
-    <div class="header-top">
-        <?php get_template_part('_partials/logo'); ?>
-        <?php get_template_part('_partials/navbar'); ?>
-    </div>
+<header>
+    <?php get_template_part('_partials/logo'); ?>
+    <?php get_template_part('_partials/navbar'); ?>
 </header>
 
 <div class="banner full-width">

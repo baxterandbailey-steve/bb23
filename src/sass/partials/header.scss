@@ -1,26 +1,19 @@
 /* header
 ----------------------------------------------------------------------------- */
 header {
-    background-color: var(--off-white);
     position: fixed;
-    height: 96px; // should be 76px?
+    top: 0;
     width: 100%;
+    height: 96px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--off-white);
     z-index: 100;
 
-    .header-top {
-        padding: 21px 1.5rem;
-        width: 100%;
-        max-width: 1298px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @media (min-width: 1440px) {
-            max-width: 2600px;
-            padding: 21px 72px;
-            align-items: flex-end;
-        }
+    @media (min-width: 880px) {
+        align-items: flex-end;
     }
 
     .bb-logo {
@@ -62,14 +55,13 @@ header {
 }
 
 .banner {
-    //position: fixed;
     width: 100%;
-    padding-top: 10rem;
+    padding-top: 4rem;
     padding-bottom: 5rem;
     background-color: var(--off-white);
 
     @media (min-width: 960px) {
-        padding-top: 15.9375rem;
+        padding-top: 12.25rem;
         padding-bottom: 21.8125rem;
     }
 
@@ -80,19 +72,16 @@ header {
     }
 
     h1 {
-        width: 100%;
-        //max-width: 1120px;
         font-family: var(--titling);
         font-size: 1.375rem;
         font-weight: 500;
-        line-height: 1.375; // check this
+        line-height: 1.375;
 
         @media (min-width: 320px) {
-            --a: 28; // starting font size
-            --b: 80; // finishing font size:
-            --x: 320; // starting viewport widt
-            --y: 1120; // finishing viewport width
-
+            --a: 28;
+            --b: 80;
+            --x: 320;
+            --y: 1120;
             --sum1: calc((var(--b) - var(--a)) / (var(--y) - var(--x)));
             --sum2: calc(var(--sum1) * var(--x));
             --sum3: calc(var(--a) - var(--sum2)) / 16 * 1rem;
@@ -106,7 +95,6 @@ header {
     }
 }
 
-//
 .swap-logo {
     // styles to go here
 }
