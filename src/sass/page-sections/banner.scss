@@ -3,9 +3,11 @@
     width: 100%;
     padding-top: 4rem;
     padding-bottom: 5rem;
+    padding-left: var(--site-pad);
+    padding-right: var(--site-pad);
     background-color: var(--off-white);
 
-    @media (min-width: 960px) {
+    @media (min-width: 880px) {
         padding-top: 12.25rem;
         padding-bottom: 21.8125rem;
     }
