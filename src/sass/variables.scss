@@ -58,14 +58,14 @@
     --site-space-lg: 5rem;
     --site-space-bg: 10rem;
 
-    // margin-bottom between elements or components
-    --drop-small: 1rem;
-    --drop-medium: 3rem;
-    --drop-large: 6rem;
-    --drop-big: 10rem;
+    // horizontal padding [replaces .wrap]
+    --site-pad: 1.5rem;
+
+    @media (min-width: 1280px) {
+        --site-pad: 4.5rem;
+    }
 
     // padding pushing elements down within components
-
     --offset-small: 0;
     --offset-medium: 0;
     --offset-large: 0;
@@ -75,6 +75,12 @@
         --offset-medium: 6rem;
         --offset-large: 12rem;
     }
+
+    // margin-bottoms between elements or components
+    --drop-small: 1rem;
+    --drop-medium: 3rem;
+    --drop-large: 6rem;
+    --drop-big: 10rem;
 
     /* Breakpoints
     --------------------------------------------------------------------------------------------------------------- */
