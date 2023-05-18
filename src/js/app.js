@@ -1,3 +1,6 @@
+//// AOS ////
+import { aos } from './components/_aos.js';
+
 //// basic details ////
 import { base } from './components/_base.js';
 
@@ -11,6 +14,9 @@ import { scroll } from './components/_scroll.js';
 import { team } from './components/_team.js';
 
 document.addEventListener('DOMContentLoaded', function () {
+    // AOS
+    aos();
+
     // base
     base();
 

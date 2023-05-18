@@ -9,8 +9,8 @@
 get_header();
 get_template_part('_partials/headers/header', 'front-page'); ?>
 
-<main class="contain">
-    <div class="grid grid-home">
+<main>
+    <div class="grid grid-home contain">
         <!-- row one -->
         <div class="row row-one">
             <figure class="col-1" data-aos="fade-in">
