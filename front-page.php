@@ -19,13 +19,13 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                     <span class="category">Category</span>
                     <p class="description">Applying the rule of three to help a new category player launch, grow and win</p>
                 </div>
-                <img src="/wp-content/uploads/2023/04/home-propellernet-1.png" class="details thumb" data-aos="fade-in">
+                <img src="/wp-content/uploads/2023/05/home-propellernet-1.png" class="details thumb" data-aos="fade-in">
             </figure>
             <figure class="col-2" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-propellernet-2.png" class="details thumb">
+                <img src="/wp-content/uploads/2023/05/home-propellernet-2.png" class="details thumb">
             </figure>
             <figure class="col-3" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-propellernet-3.png">
+                <img src="/wp-content/uploads/2023/05/home-propellernet-3.png">
             </figure>
         </div>
 
@@ -37,7 +37,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 <p>Breaking down boundaries with bold branding and clear communications</p>
             </div>
             <figure class="rh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-threefold.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-threefold.png" class="thumb">
                 <div class="details">
                     <h2 class="client">Threefold</h2>
                     <span class="category">Category</span>
@@ -49,7 +49,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <!-- row three -->
         <div class="row row-three">
             <figure class="lh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-brighton-and-hove-museums.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-brighton-and-hove-museums.png" class="thumb">
                 <div class="details">
                     <h2 class="client">Brighton & Hove Museums</h2>
                     <span class="category">Category</span>
@@ -61,7 +61,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <!-- row four -->
         <div class="row row-four">
             <figure class="lh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-new-scientist.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-new-scientist.png" class="thumb">
                 <div class="details">
                     <h2 class="client">New Scientist</h2>
                     <span class="category">Category</span>
@@ -69,7 +69,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 </div>
             </figure>
             <figure class="rh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-saltus.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-saltus.png" class="thumb">
                 <div class="details">
                     <h2 class="client">Saltus</h2>
                     <span class="category">Category</span>
@@ -82,7 +82,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <div class="row row-five">
             <figure class="lh-col" data-aos="fade-in">
                 <!-- <img src="/wp-content/uploads/2023/04/home-goldsmiths.png" class="thumb"> -->
-                <img src="/wp-content/uploads/2023/04/home-propellernet-3.png">
+                <img src="/wp-content/uploads/2023/05/home-propellernet-3.png">
                 <div class="details">
                     <h2 class="client">Client</h2>
                     <span class="category">Category</span>
@@ -90,7 +90,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 </div>
             </figure>
             <figure class="rh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-nspcc.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-nspcc.png" class="thumb">
                 <div class="details">
                     <h2 class="client">NSPCC</h2>
                     <span class="category">Category</span>
@@ -102,7 +102,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <!-- row six -->
         <div class="row row-six">
             <figure class="rh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-royal-mail-christmas-stamps.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-royal-mail-christmas-stamps.png" class="thumb">
                 <div class="details">
                     <h2 class="client">Royal Mail Christmas Stamps</h2>
                     <span class="category">Category</span>
@@ -114,7 +114,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <!-- row seven -->
         <div class="row row-seven">
             <figure class="lh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-saltus.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-saltus.png" class="thumb">
                 <div class="details">
                     <h2 class="client">Brickworks</h2>
                     <span class="category">Category</span>
@@ -122,7 +122,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 </div>
             </figure>
             <figure class="rh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-new-scientist-academy.png" class="thumb cover">
+                <img src="/wp-content/uploads/2023/05/home-new-scientist-academy.png" class="thumb cover">
                 <div class="details">
                     <h2 class="client">New Scientist Academy</h2>
                     <span class="category">Category</span>
@@ -134,7 +134,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <!-- row eight -->
         <div class="row row-eight">
             <figure class="lh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-oxford-university-press.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-oxford-university-press.png" class="thumb">
                 <div class="details">
                     <h2 class="client">Oxford University Press</h2>
                     <span class="category">Category</span>
@@ -142,7 +142,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 </div>
             </figure>
             <figure class="rh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-lewes-fc.png">
+                <img src="/wp-content/uploads/2023/05/home-lewes-fc.png">
                 <div class="details">
                     <h2 class="client">Lewes FC</h2>
                     <span class="category">Category</span>
@@ -154,7 +154,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <!-- row nine -->
         <div class="row row-nine">
             <figure class="lh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-royal-mail-stones.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-royal-mail-stones.png" class="thumb">
                 <div class="details">
                     <h2 class="client">Royal Mail</h2>
                     <span class="category">Category</span>
@@ -171,7 +171,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <!-- row ten -->
         <div class="row row-ten">
             <figure class="lh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-brickworks-1.png">
+                <img src="/wp-content/uploads/2023/05/home-brickworks-1.png">
                 <div class="details">
                     <h2 class="client">Brickworks</h2>
                     <span class="category">Category</span>
@@ -179,7 +179,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 </div>
             </figure>
             <figure class="rh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/04/home-bb-showreel.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-bb-showreel.png" class="thumb">
                 <div class="details">
                     <h2 class="client">BB Show Reel 2021</h2>
                     <span class="category">Category</span>
