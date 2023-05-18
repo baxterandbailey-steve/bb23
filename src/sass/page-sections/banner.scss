@@ -42,6 +42,10 @@
     }
 }
 
+.statement {
+    transition: 500ms;
+}
+
 .h1-scrolled {
-    color: red;
+    opacity: 0;
 }
