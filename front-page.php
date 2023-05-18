@@ -10,6 +10,7 @@ get_header();
 get_template_part('_partials/headers/header', 'front-page'); ?>
 
 <main>
+
     <div class="grid grid-home contain">
         <!-- row one -->
         <div class="row row-one">

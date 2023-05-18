@@ -1106,7 +1106,7 @@
   "projectAttributes" : {
     "creationDate" : 702989378.66777694,
     "displayValue" : "bb23",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-peach",
     "iconImageWasSetByUser" : 0
   },
