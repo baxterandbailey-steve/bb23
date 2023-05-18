@@ -699,6 +699,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/sass\/page-sections\/banner.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/banner.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/sass\/pages\/404.scss" : {
       "aP" : 1,
       "bl" : 0,

@@ -24,6 +24,9 @@
 @use 'pages/work';
 @use 'pages/team';
 
+//// page-sections
+@use 'page-sections/banner';
+
 //// tools
 @use 'tools/accessibility';
 @use 'tools/utilities';
