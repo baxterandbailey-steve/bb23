@@ -87,14 +87,14 @@
 
     // transitions
     --transition-basic: 300ms;
-}
 
-/* Breakpoints
+    /* Breakpoints
  --------------------------------------------------------------------------------------------------------------- */
-$break-vs: 320px; // old phone
-$break-small: 480px; // modern phone
-$break-small-medium: 600px; // modern larger phone
-$break-medium: 880px; // tablet
-$break-large: 1120px; // laptop
-$break-big: 1240px; // desktop
-$break-vb: 1440px; // big screens!
+    $break-vs: 320px; // old phone
+    $break-small: 480px; // modern phone
+    $break-small-medium: 600px; // modern larger phone
+    $break-medium: 880px; // tablet
+    $break-large: 1120px; // laptop
+    $break-big: 1240px; // desktop
+    $break-vb: 1440px; // big screens!
+}

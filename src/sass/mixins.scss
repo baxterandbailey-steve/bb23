@@ -1,7 +1,6 @@
 /* mixins
 ----------------------------------------------------------------------------- */
-/*
-media queries @mixin mq($query) {
+@mixin mq($query) {
     @media (min-width: $query) {
         @content;
     }
@@ -41,4 +40,3 @@ media queries @mixin mq($query) {
 @mixin shadow {
     box-shadow: $shadow-basic;
 }
-*/
