@@ -1,5 +1,7 @@
+/* banner
+----------------------------------------------------------------------------- */
 .banner {
-    position: fixed;
+    // position: fixed;
     width: 100%;
     padding-top: 4rem;
     padding-bottom: 5rem;
@@ -42,10 +44,11 @@
     }
 }
 
-.statement {
-    transition: 500ms;
-}
+// test intersect observer styles
+// .statement {
+//     transition: 500ms;
+// }
 
-.h1-scrolled {
-    opacity: 0;
-}
+// .h1-scrolled {
+//     opacity: 0;
+// }
