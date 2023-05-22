@@ -1,0 +1,109 @@
+.page-template-type {
+    padding-top: calc(96px + 5rem);
+    color: var(--white);
+    background-color: var(--black);
+    transition: 300ms;
+
+    .toggle-bg {
+        color: var(--white);
+    }
+
+    &.bg-toggled {
+        background: var(--off-white);
+
+        main {
+            background: var(--off-white);
+            color: var(--black);
+            transition: 300ms;
+        }
+
+        .toggle-bg {
+            color: var(--black);
+        }
+    }
+
+    .controls {
+        margin-bottom: var(--drop-big);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: var(--copy);
+
+        .h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        button {
+            font-size: 0.75rem;
+            text-decoration: underline;
+        }
+    }
+
+    .headings {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 48px;
+
+        h1:first-of-type {
+            margin-bottom: 3rem !important;
+            color: var(--meta);
+        }
+
+        h1 {
+            margin-bottom: var(--drop-small);
+            font-size: 3.052rem; // 48.83px
+        }
+
+        h2 {
+            margin-bottom: var(--drop-small);
+            font-size: 2.441rem; //39.06px
+        }
+
+        h3 {
+            margin-bottom: var(--drop-small);
+            font-size: 1.953rem; //31.25px
+        }
+
+        h4 {
+            margin-bottom: var(--drop-small);
+            font-size: 1.563rem; //25.00px
+        }
+
+        h5 {
+            margin-bottom: var(--drop-small);
+            font-size: 1.25rem; // 20.00px
+        }
+
+        h6 {
+            margin-bottom: var(--drop-small);
+            font-size: 1rem; //16.00px
+        }
+
+        .qt-optimum {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
+                font-family: var(--titling);
+            }
+        }
+
+        .cabinet {
+            padding-top: 0.175rem;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
+                font-family: var(--cabinet);
+            }
+        }
+    }
+}

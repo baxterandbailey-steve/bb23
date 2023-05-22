@@ -137,6 +137,18 @@
       "oAP" : "\/contact.php",
       "oF" : 0
     },
+    "\/dist\/css\/404.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/404.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/dist\/css\/app.min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -161,6 +173,42 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/dist\/css\/blog.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/blog.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/dist\/css\/single.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/single.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/dist\/css\/type.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/type.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/dist\/js\/app.min.js" : {
       "bF" : 4,
       "ft" : 64,
@@ -178,6 +226,150 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/js\/app.min.js.map",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Black.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Black.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Black.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Black.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Bold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Bold.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Bold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Bold.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Extrabold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Extrabold.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Extrabold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Extrabold.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Extralight.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Extralight.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Extralight.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Extralight.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Light.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Light.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Light.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Light.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Medium.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Medium.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Medium.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Medium.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Regular.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Regular.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Thin.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Thin.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Thin.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Thin.woff2",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Variable.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Variable.woff",
+      "oF" : 0
+    },
+    "\/fonts\/cabinet\/CabinetGrotesk-Variable.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/cabinet\/CabinetGrotesk-Variable.woff2",
       "oF" : 0
     },
     "\/fonts\/qt-optimum\/QTOptimum-Bold.woff" : {
@@ -632,6 +824,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/src\/js\/components\/_type-demo.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 1,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dist\/js\/_type-demo.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/src\/sass\/app.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -872,6 +1075,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/sass\/pages\/type.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/type.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/sass\/pages\/work.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1086,6 +1304,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/team.php",
+      "oF" : 0
+    },
+    "\/type.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/type.php",
       "oF" : 0
     },
     "\/work.php" : {

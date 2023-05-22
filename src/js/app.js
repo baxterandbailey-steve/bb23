@@ -13,6 +13,9 @@ import { scroll } from './components/_scroll.js';
 //// tabbable controls [for a11y] to hide-show team profiles ////
 import { team } from './components/_team.js';
 
+//// tabbable controls [for a11y] to hide-show team profiles ////
+import { typeDemo } from './components/_type-demo.js';
+
 document.addEventListener('DOMContentLoaded', function () {
     // AOS
     aos();
@@ -28,4 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // team
     team();
+
+    // team
+    typeDemo();
 });
