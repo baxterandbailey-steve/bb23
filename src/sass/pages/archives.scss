@@ -23,8 +23,13 @@
 
 .list-taxonomies {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+
+    @media (min-width: 960px) {
+        flex-direction: row;
+    }
 
     .taxo-link {
         margin-left: 3rem;

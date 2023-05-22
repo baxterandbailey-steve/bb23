@@ -40,26 +40,30 @@ $terms = get_terms(array(
 				<li class="grid-item <?php the_field('size'); ?>">
 
 					<?php
-					$check = get_field('new_work');
-					if ($check == true) {
+					$new_work = get_field('new_work');
+					if ($new_work == true) {
 						echo '<span class="new-work">New Project</span>';
 					} ?>
+
 					<article>
 						<figure data-aos="fade-in">
-							<?php $attachment_id = get_field('primary_image');
+							<?php $attachment_id = get_the_post_thumbnail();
 							$image = wp_get_attachment_image($attachment_id, 'full'); ?>
 
 							<?php echo $image; ?>
+							<?php the_post_thumbnail(); ?>
 
 							<h3><a href=" <?php the_permalink(); ?>" class="link"><?php the_title(); ?></a></h3>
 							<span class="meta"><?php the_field('meta'); ?></span>
 						</figure>
 					</article>
 				</li>
+
 		<?php endwhile;
 			wp_reset_postdata();
 		endif; ?>
 	</ul>
+
 </main>
 
 <?php get_footer(); ?>
