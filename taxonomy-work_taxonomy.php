@@ -1,7 +1,7 @@
 <?php get_header();
 
 $terms = get_terms(array(
-    'taxonomy'   => 'casestudy_taxonomy',
+    'taxonomy'   => 'work_taxonomy',
     'hide_empty' => false,
 ));
 

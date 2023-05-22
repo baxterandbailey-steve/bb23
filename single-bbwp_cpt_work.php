@@ -1,6 +1,6 @@
 <?php get_header();
 $terms = get_terms(array(
-    'taxonomy'   => 'casestudy_taxonomy',
+    'taxonomy'   => 'work_taxonomy',
     'hide_empty' => false,
 ));
 
@@ -10,7 +10,7 @@ $primary_image = get_field('primary_image');
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="contain">
-    <code>this is single-casestudy.php</code>
+    <code>this is single-work.php</code>
 
     <h2><?php the_title(); ?></h2>
     <img src="<?php echo $primary_image; ?>">

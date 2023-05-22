@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Template Name: Work
+ * Template Name: Our Work
  *
  * @package BBWP
  */
 
 get_header();
 $args = new WP_Query(array(
-	'post_type' => 'bb_casestudy_cpt',
+	'post_type' => 'bbwp_cpt_work',
 	'order' => 'DSC'
 ));
 
 $terms = get_terms(array(
-	'taxonomy'   => 'casestudy_taxonomy',
+	'taxonomy'   => 'work_taxonomy',
 	'hide_empty' => false,
 ));
 ?>

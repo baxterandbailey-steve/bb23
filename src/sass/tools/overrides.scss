@@ -15,3 +15,12 @@ code {
 .cover {
     object-fit: cover;
 }
+
+.archive,
+.categoty,
+.taxonomy,
+.bbwp_cpt_work-template-default {
+    a {
+        color: white !important;
+    }
+}

@@ -726,6 +726,14 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
+    "\/our-work.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/our-work.php",
+      "oF" : 0
+    },
     "\/page.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -742,12 +750,12 @@
       "oAP" : "\/search.php",
       "oF" : 0
     },
-    "\/single-bb_casestudy_cpt.php" : {
+    "\/single-bbwp_cpt_work.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/single-bb_casestudy_cpt.php",
+      "oAP" : "\/single-bbwp_cpt_work.php",
       "oF" : 0
     },
     "\/single.php" : {
@@ -1282,12 +1290,12 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/taxonomy-casestudy_taxonomy.php" : {
+    "\/taxonomy-work_taxonomy.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/taxonomy-casestudy_taxonomy.php",
+      "oAP" : "\/taxonomy-work_taxonomy.php",
       "oF" : 0
     },
     "\/taxonomy.php" : {
@@ -1312,14 +1320,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/type.php",
-      "oF" : 0
-    },
-    "\/work.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/work.php",
       "oF" : 0
     }
   },
