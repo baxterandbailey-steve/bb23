@@ -21,7 +21,7 @@ $terms = get_terms(array(
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="full-width off-white">
-
+	<!-- page titling and taxonomy listing -->
 	<div class="page-top">
 		<h2 class="page-title"><?php the_title(); ?></h2>
 		<ul class="list-taxonomies">
@@ -34,7 +34,78 @@ $terms = get_terms(array(
 		</ul>
 	</div>
 
-	<ul class="grid-work contain">
+	<!-- featured work -->
+	<div class="our-work__featured contain">
+		<div class="row-4-4-empty">
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+		</div>
+
+		<div class="row-8-4">
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+		</div>
+
+		<div class="row-empty-8">
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+		</div>
+
+		<div class="row-4-tall-empty">
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+		</div>
+
+		<div class="row-empty-4-4">
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+		</div>
+
+		<div class="row-4-4-empty">
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+		</div>
+
+		<div class="row-empty-tall-4">
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+		</div>
+
+		<div class="row-8-empty">
+			<article>
+				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+			</article>
+
+		</div>
+	</div>
+
+	<!-- 'archive list' -->
+	<ul class="grid-work our-work__archive contain">
 		<?php if (have_posts()) :
 			while ($args->have_posts()) : $args->the_post(); ?>
 				<li class="grid-item <?php the_field('size'); ?>">
