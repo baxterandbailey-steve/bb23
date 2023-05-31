@@ -38,69 +38,98 @@ $terms = get_terms(array(
 	<div class="our-work__featured contain">
 		<div class="row-4-4-empty">
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/home-new-scientist.png"></figure>
+				<h3>New Scientist</h3>
+				<span class="meta"></span>
 			</article>
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/rm-xmas.png"></figure>
+				<h3>Royal Mail</h3>
+				<span class="meta"></span>
 			</article>
 		</div>
 
 		<div class="row-8-4">
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/brighton-hove-museums.jpg"></figure>
+				<h3>Brighton & Hove Museum</h3>
+				<span class="meta"></span>
 			</article>
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/bh-screen.png"></figure>
+				<h3>Brighton & Hove Museum</h3>
+				<span class="meta"></span>
 			</article>
 		</div>
 
 		<div class="row-empty-8">
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/ns-academy-60.png"></figure>
+				<h3>New Scientist Academy</h3>
+				<span class="meta"></span>
 			</article>
 		</div>
 
 		<div class="row-4-tall-empty">
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/propellernet.png"></figure>
+				<h3>Propellernet</h3>
+				<span class="meta"></span>
 			</article>
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/propellernet-website-build.png"></figure>
+				<h3>Proplellernet</h3>
+				<span class="meta"></span>
 			</article>
 		</div>
 
 		<div class="row-empty-4-4">
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/home-royal-mail-stones.png"></figure>
+				<h3>Royal Mail- The Rolling Stones</h3>
+				<span class="meta"></span>
 			</article>
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/illuminated-river.png"></figure>
+				<h3>The llluminated River</h3>
+				<span class="meta"></span>
 			</article>
 		</div>
 
-		<div class="row-4-4-empty">
+		<div class="row-4-8">
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/home-nspcc.png"></figure>
+				<h3>NSPCC Helpline</h3>
+				<span class="meta"></span>
 			</article>
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/goldsmiths.jpg"></figure>
+				<h3>Goldsmiths University of London</h3>
+				<span class="meta"></span>
 			</article>
 		</div>
 
 		<div class="row-empty-tall-4">
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/oxford-university-press.jpg"></figure>
+				<h3>Oxford University Press</h3>
+				<span class="meta"></span>
 			</article>
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in">
+					<img src="/wp-content/uploads/2023/05/pau-mcartney.png">
+				</figure>
+				<h3>Royal Mail - Paul McCartney</h3>
+				<span class="meta"></span>
 			</article>
 		</div>
 
 		<div class="row-8-empty">
 			<article>
-				<h3><a href="#">Lorem Ipsum Dolar</a></h3>
+				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/robert-ames-60.png"></figure>
+				<h3>Robert Ames</h3>
+				<span class="meta"></span>
 			</article>
-
 		</div>
 	</div>
 
@@ -124,7 +153,7 @@ $terms = get_terms(array(
 							<?php echo $image; ?>
 							<?php the_post_thumbnail(); ?>
 
-							<h3><a href=" <?php the_permalink(); ?>" class="link"><?php the_title(); ?></a></h3>
+							<h3 class="link"><?php the_title(); ?></h3>
 							<span class="meta"><?php the_field('meta'); ?></span>
 						</figure>
 					</article>
