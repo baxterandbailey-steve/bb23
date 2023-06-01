@@ -87,7 +87,7 @@
     /* new row ------------------------------------------------------------ */
     .row-one {
         grid-template-rows: 1fr;
-        margin-bottom: var(--drop-large);
+        margin-bottom: var(--drop-big);
 
         .col-1 {
             grid-column: 1 / 9;
@@ -140,7 +140,7 @@
     /* new row ------------------------------------------------------------ */
     .row-two {
         .lh-col {
-            grid-column: 1 / 7;
+            grid-column: 1 / 5;
 
             .client {
                 margin-right: 0;

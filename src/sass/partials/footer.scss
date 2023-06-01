@@ -1,7 +1,9 @@
 /* footer
 ----------------------------------------------------------------------------- */
 footer {
+    padding-bottom: 3rem;
     background-color: var(--black);
+
     .footer-main {
         padding-top: 3rem;
         @media (min-width: 1180px) {

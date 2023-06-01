@@ -31,14 +31,14 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
 
         <!-- row two -->
         <div class="row row-two">
-            <div class="quote lh-col" data-aos="fade-in">
+            <div class="quote lh-col" data-aos="fade-up">
                 <h2 class="client">Client Name</h2>
                 <span class="category">Category</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
             </div>
-            <figure class="rh-col" data-aos="fade-in">
+            <figure class="rh-col" data-aos="fade-left">
                 <img src="/wp-content/uploads/2023/05/home-nspcc.png" class="thumb">
-                <div class="details">
+                <div class="details" data-aos="fade-left">
                     <h2 class="client">Threefold</h2>
                     <span class="category">Category</span>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
@@ -48,9 +48,9 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
 
         <!-- row three -->
         <div class="row row-three">
-            <figure class="lh-col" data-aos="fade-in">
+            <figure class="lh-col" data-aos="fade-up">
                 <img src="/wp-content/uploads/2023/05/home-brighton-and-hove-museums.png" class="thumb">
-                <div class="details">
+                <div class="details" data-aos="fade-right">
                     <h2 class="client">Brighton & Hove Museums</h2>
                     <span class="category">Category</span>
                     <p class="description">Lorem ipsum dolor sit amet. </p>
@@ -60,17 +60,17 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
 
         <!-- row four -->
         <div class="row row-eight">
-            <figure class="lh-col" data-aos="fade-in">
+            <figure class="lh-col" data-aos="fade-right">
                 <img src="/wp-content/uploads/2023/05/home-oxford-university-press.png" class="thumb">
-                <div class="details">
+                <div class="details" data-aos="fade-right">
                     <h2 class="client">Oxford University Press</h2>
                     <span class="category">Category</span>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </figure>
-            <figure class="rh-col" data-aos="fade-in">
+            <figure class="rh-col" data-aos="fade-left">
                 <img src="/wp-content/uploads/2023/05/home-lewes-fc.png">
-                <div class="details">
+                <div class="details" data-aos="fade-left">
                     <h2 class="client">Lewes FC</h2>
                     <span class="category">Category</span>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
@@ -80,18 +80,18 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
 
         <!-- row five -->
         <div class="row row-nine">
-            <figure class="lh-col" data-aos="fade-in">
+            <figure class="lh-col" data-aos="fade-right">
                 <img src="/wp-content/uploads/2023/05/home-royal-mail-stones.png" class="thumb">
-                <div class="details">
-                    <h2 class="client">Royal Mail</h2>
+                <div class="details" data-aos="fade-up>
+                    <h2 class=" client">Royal Mail</h2>
                     <span class="category">Category</span>
                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing. </p>
                 </div>
             </figure>
-            <div class="quote rh-col" data-aos="fade-in">
+            <div class="quote rh-col" data-aos="fade-left">
                 <h2 class="client">Client</h2>
                 <span class="category">Category</span>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
             </div>
         </div>
 
