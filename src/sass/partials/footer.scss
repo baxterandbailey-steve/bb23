@@ -1,5 +1,56 @@
 /* footer
 ----------------------------------------------------------------------------- */
 footer {
-    // add styles
+    .footer-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 48px;
+
+        .lh-col {
+            span,
+            h2 {
+                font-family: var(--titling);
+                font-size: var(--font-medium);
+            }
+
+            p {
+                // font-family: var(--copy);
+                width: 32ch;
+                font-size: var(--font-root-plus);
+                color: var(--work-meta);
+            }
+        }
+
+        .rh-col {
+            padding-top: 80px;
+            display: flex;
+
+            .contact {
+                h3 {
+                    font-size: var(--font-root-plus);
+                    text-transform: uppercase;
+                    color: var(--work-meta);
+                }
+
+                span {
+                    margin-bottom: 1.5rem;
+                    display: block;
+                }
+            }
+
+            .social {
+                h3 {
+                    font-size: var(--font-root-plus);
+                    text-transform: uppercase;
+                    color: var(--work-meta);
+                }
+
+                li {
+                    margin-bottom: 0.5rem;
+                    font-size: var(--font-plus);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
