@@ -12,9 +12,12 @@
     .news-item {
         padding-top: 1.5rem;
         border-bottom: 1px solid var(--work-meta);
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 48px;
+
+        @media (min-width: 880px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 48px;
+        }
 
         .category {
             font-size: var(--font-root-plus);

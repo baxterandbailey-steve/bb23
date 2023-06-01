@@ -4,9 +4,11 @@ footer {
     background-color: var(--black);
     .footer-main {
         padding-top: 3rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 48px;
+        @media (min-width: 1180px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 48px;
+        }
 
         .lh-col {
             span,
@@ -26,8 +28,11 @@ footer {
 
         .rh-col {
             padding-top: 80px;
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
+
+            @media (min-width: 660px) {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+            }
 
             .contact {
                 grid-column: 1 / 5;
