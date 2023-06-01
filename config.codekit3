@@ -89,6 +89,14 @@
       "oAP" : "\/_partials\/navbar.php",
       "oF" : 0
     },
+    "\/_partials\/newsroom.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/newsroom.php",
+      "oF" : 0
+    },
     "\/_templates\/loop.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1153,6 +1161,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/navigation.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/sass\/partials\/newsroom.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/newsroom.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
