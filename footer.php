@@ -26,44 +26,46 @@
 
 		?>
 
-		<footer role="contentinfo" class="contain" style="color: white;">
-			<div class="footer-main">
-				<div class="lh-col">
-					<span>Interested?</span>
-					<h2>We would love to hear from you</h2>
-					<p><?php echo $statement ?></p>
-				</div>
-				<div class="rh-col">
-					<div class="contact">
-						<h3>New Business</h3>
-						<span><?php echo $new_business ?></span>
-						<h3>Press and Events</h3>
-						<span><?php echo $press ?></span>
-						<h3>General Enquiries</h3>
-						<span><?php echo $telephone_number ?></span><br>
-						<span><?php echo $general_enquiries ?></span>
-						<h3>Open Positions</h3>
-						<span><?php echo $jobs ?></span><br>
-						<address>
-							<?php echo $address ?>
-						</address>
+		<footer role="contentinfo" style="color: white;">
+			<div class="contain">
+				<div class="footer-main">
+					<div class="lh-col">
+						<span>Interested?</span>
+						<h2>We would love to hear from you</h2>
+						<p><?php echo $statement ?></p>
 					</div>
-					<div class="social">
-						<h3>Follow Us</h3>
-						<ul>
-							<li>Instagram</li>
-							<li>Twitter</li>
-							<li>Pinterest</li>
-							<li>Linkedin</li>
-							<li>Behance</li>
-							<li>The Dots</li>
-							<li>Creative Pool</li>
-						</ul>
+					<div class="rh-col">
+						<div class="contact">
+							<h3>New Business</h3>
+							<span><?php echo $new_business ?></span>
+							<h3>Press and Events</h3>
+							<span><?php echo $press ?></span>
+							<h3>General Enquiries</h3>
+							<span><?php echo $telephone_number ?></span><br>
+							<span><?php echo $general_enquiries ?></span>
+							<h3>Open Positions</h3>
+							<span><?php echo $jobs ?></span><br>
+							<address>
+								<?php echo $address ?>
+							</address>
+						</div>
+						<div class="social">
+							<h3>Follow Us</h3>
+							<ul>
+								<li>Instagram</li>
+								<li>Twitter</li>
+								<li>Pinterest</li>
+								<li>Linkedin</li>
+								<li>Behance</li>
+								<li>The Dots</li>
+								<li>Creative Pool</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="footer-supplementary">
-				<small>&#169; Baxter & Bailey <?php echo date("Y") ?></small>
+				<div class="footer-supplementary">
+					<small>&#169; Baxter & Bailey <?php echo date("Y") ?></small>
+				</div>
 			</div>
 		</footer>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

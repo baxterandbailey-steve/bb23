@@ -1,6 +1,7 @@
 /* footer
 ----------------------------------------------------------------------------- */
 footer {
+    background-color: var(--black);
     .footer-main {
         padding-top: 3rem;
         display: grid;
@@ -25,7 +26,12 @@ footer {
 
         .rh-col {
             padding-top: 80px;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+            .contact {
+                grid-column: 1 / 5;
+            }
 
             .contact {
                 h3 {
@@ -54,5 +60,9 @@ footer {
                 }
             }
         }
+    }
+
+    address {
+        width: 160px;
     }
 }
