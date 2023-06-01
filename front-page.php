@@ -10,7 +10,6 @@ get_header();
 get_template_part('_partials/headers/header', 'front-page'); ?>
 
 <main>
-
     <div class="grid grid-home contain">
         <!-- row one -->
         <div class="row row-one">
@@ -35,14 +34,14 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
             <div class="quote lh-col" data-aos="fade-in">
                 <h2 class="client">Client Name</h2>
                 <span class="category">Category</span>
-                <p>Breaking down boundaries with bold branding and clear communications</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
             <figure class="rh-col" data-aos="fade-in">
-                <img src="/wp-content/uploads/2023/05/home-threefold.png" class="thumb">
+                <img src="/wp-content/uploads/2023/05/home-nspcc.png" class="thumb">
                 <div class="details">
                     <h2 class="client">Threefold</h2>
                     <span class="category">Category</span>
-                    <p class="description">Applying the rule of three to help a new category player launch, grow and win</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                 </div>
             </figure>
         </div>
@@ -54,7 +53,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 <div class="details">
                     <h2 class="client">Brighton & Hove Museums</h2>
                     <span class="category">Category</span>
-                    <p class="description">Brand creation for a constellation of cultural destinations</p>
+                    <p class="description">Lorem ipsum dolor sit amet. </p>
                 </div>
             </figure>
         </div>
@@ -66,7 +65,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 <div class="details">
                     <h2 class="client">Oxford University Press</h2>
                     <span class="category">Category</span>
-                    <p class="description">Revealing teh heart (and soul) of much-loved world-spanning brand</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </figure>
             <figure class="rh-col" data-aos="fade-in">
@@ -74,7 +73,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 <div class="details">
                     <h2 class="client">Lewes FC</h2>
                     <span class="category">Category</span>
-                    <p class="description">Helping a tiny grassroots club to make a huge ethical impact</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                 </div>
             </figure>
         </div>
@@ -86,13 +85,13 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
                 <div class="details">
                     <h2 class="client">Royal Mail</h2>
                     <span class="category">Category</span>
-                    <p class="description">It's only rock n' roll but we like it</p>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing. </p>
                 </div>
             </figure>
             <div class="quote rh-col" data-aos="fade-in">
                 <h2 class="client">Client</h2>
                 <span class="category">Category</span>
-                <p>A kinetic brand identity solution designed to move everybody</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"</p>
             </div>
         </div>
 
