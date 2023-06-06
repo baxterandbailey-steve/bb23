@@ -1,5 +1,5 @@
 //// AOS ////
-import { aos } from './components/_aos.js';
+import { AOS } from './components/_aos.js';
 
 //// basic details ////
 import { base } from './components/_base.js';
@@ -18,7 +18,10 @@ import { typeDemo } from './components/_type-demo.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     // AOS
-    aos();
+    AOS.init({
+        duration: 800,
+        offset: 40
+    });
 
     // base
     base();
