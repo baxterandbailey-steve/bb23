@@ -32,7 +32,7 @@ $terms = get_terms(array(
                             <?php echo $image; ?>
                         </figure>
                         <?php the_post_thumbnail(); ?>
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     </article>
                 </li>
         <?php endwhile;

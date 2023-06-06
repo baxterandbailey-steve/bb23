@@ -2,14 +2,15 @@
 ----------------------------------------------------------------------------- */
 .page-template-work,
 .archive {
-    .title {
-        font-size: var(--font-title);
+    h3.title {
+        font-family: var(--copy);
+        font-size: 1.25rem;
         font-weight: var(--weight-regular);
         line-height: var(--lh-base);
     }
 
     .link {
-        color: var(--black);
+        //color: var(--black);
     }
 
     .meta {
