@@ -31,6 +31,7 @@ $terms = get_terms(array(
                             $image = wp_get_attachment_image($attachment_id, 'full'); ?>
                             <?php echo $image; ?>
                         </figure>
+                        <?php the_post_thumbnail(); ?>
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     </article>
                 </li>
