@@ -24,12 +24,12 @@ $content = get_field('content');
             ?>
 
                 <div class="team-member">
-                    <figure data-aos="fade-in">
-                        <img src="<?php echo $image; ?>" class="image">
+                    <figure>
+                        <img src="<?php echo $image; ?>" class="image" data-aos="fade-in">
                     </figure>
 
-                    <h3 class="name"><?php echo $name; ?></h3>
-                    <span class="role"><?php echo $role; ?></span>
+                    <h3 class="name" data-aos="fade-in"><?php echo $name; ?></h3>
+                    <span class="role" data-aos="fade-in"><?php echo $role; ?></span>
                 </div>
         <?php endwhile;
         endif; ?>

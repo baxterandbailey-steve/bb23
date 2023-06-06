@@ -34,7 +34,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
             <div class="quote lh-col" data-aos="fade-up">
                 <h2 class="client">Client Name</h2>
                 <span class="category">Category</span>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</p>
+                <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."</blockquote>
             </div>
             <figure class="rh-col" data-aos="fade-left">
                 <img src="/wp-content/uploads/2023/05/home-nspcc.png" class="thumb">
@@ -91,7 +91,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
             <div class="quote rh-col" data-aos="fade-left">
                 <h2 class="client">Client</h2>
                 <span class="category">Category</span>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</blockquote>
             </div>
         </div>
 
