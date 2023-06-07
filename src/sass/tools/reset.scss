@@ -24,19 +24,14 @@ summary {
 body {
     padding-top: 96px;
     font-family: var(--copy);
+    color: var(--black);
     background: var(--off-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    // &.home {
-    //     background: var(--black);
-    // }
 }
 
 main {
     position: relative;
-    // background: var(--black);
-    z-index: 100;
 }
 
 img {

@@ -193,6 +193,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/dist\/css\/our-work.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/our-work.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/dist\/css\/single.min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -817,6 +829,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/sass\/layout\/grids\/grid.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/grid.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/sass\/layout\/grids\/home-v1.0.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -967,6 +994,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/sass\/pages\/our-work.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/our-work.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/sass\/pages\/page.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1042,21 +1084,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/sass\/pages\/work.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/work.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/src\/sass\/partials\/footer.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1112,6 +1139,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/newsroom.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/sass\/post-types\/work.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/work.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

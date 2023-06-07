@@ -20,7 +20,7 @@ $terms = get_terms(array(
 
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
-<main class="full-width off-white">
+<main class="full-width off-white our-work">
 	<!-- page titling and taxonomy listing -->
 	<div class="page-top">
 		<h2 class="page-title"><?php the_title(); ?></h2>
@@ -153,7 +153,7 @@ $terms = get_terms(array(
 							<?php echo $image; ?>
 							<?php the_post_thumbnail(); ?>
 
-							<h3 class="link"><?php the_title(); ?></h3>
+							<h3 class="link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							<span class="meta"><?php the_field('meta'); ?></span>
 						</figure>
 					</article>

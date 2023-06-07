@@ -16,18 +16,22 @@
 
 //// layout
 @use 'layout/layout';
+@use 'layout/grids/grid';
 @use 'layout/grids/home-v1.0';
 @use 'layout/grids/work-v1.0';
 
 //// pages
 @use 'pages/archives';
 @use 'pages/archive';
-@use 'pages/work';
+@use 'pages/our-work';
 @use 'pages/team';
 @use 'pages/type';
 
 //// page-sections
 @use 'page-sections/banner';
+
+//// post types
+@use 'post-types/work';
 
 //// tools
 @use 'tools/accessibility';
