@@ -10,7 +10,7 @@ get_header();
 get_template_part('_partials/headers/header', 'front-page'); ?>
 
 <main>
-    <div class="grid grid-home contain">
+    <div class="grid-home contain">
         <h2 data-aos="fade-up">Selected Work</h2>
         <!-- row one -->
         <div class="row row-one">
