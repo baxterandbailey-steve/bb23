@@ -29,12 +29,12 @@
 		<footer role="contentinfo" style="color: white;">
 			<div class="contain">
 				<div class="footer-main">
-					<div class="lh-col" data-aos="fade-up">
+					<div class="lh-col">
 						<span>Interested?</span>
 						<h2>We would love to hear from you</h2>
 						<p><?php echo $statement ?></p>
 					</div>
-					<div class="rh-col" data-aos="fade-up">
+					<div class="rh-col">
 						<div class="contact">
 							<h3>New Business</h3>
 							<span><?php echo $new_business ?></span>
@@ -49,7 +49,7 @@
 								<?php echo $address ?>
 							</address>
 						</div>
-						<div class="social" data-aos="fade-up">
+						<div class="social">
 							<h3>Follow Us</h3>
 							<ul>
 								<li>Instagram</li>

@@ -15,13 +15,14 @@
     }
 
     .title {
-        font-size: var(--font-base-plus);
         grid-column: 8 / -1;
+        font-size: var(--font-base-plus);
     }
 
     .excerpt {
-        font-size: var(--font-base);
         grid-column: 8 / -1;
+        font-size: var(--font-base);
+        color: var(--mid-black);
     }
 
     .primary-image {
@@ -44,7 +45,7 @@
 
         .details {
             grid-column: 1 / 7;
-
+            // sub [nested] grid details
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: auto;
