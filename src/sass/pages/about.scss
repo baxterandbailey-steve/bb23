@@ -5,7 +5,6 @@
 
     /* team-members
     ------------------------------------------------------------------------- */
-
     .team-members {
         margin-bottom: 110px;
         columns: 3;
@@ -41,11 +40,10 @@
         padding-top: 320px;
     }
 
-    /* client
+    /* clients
     ------------------------------------------------------------------------- */
     .clients {
         padding-top: 96px;
-        margin-bottom: 20rem;
         background: var(--black);
 
         h2,
@@ -59,14 +57,88 @@
         }
 
         p {
+            grid-column: 8 / 12;
+        }
+
+        .logos {
+            padding: 60px 0 74px 0;
+
+            img {
+                grid-column: span 3;
+            }
+        }
+    }
+
+    /* text-image
+    ------------------------------------------------------------------------- */
+    .our-work {
+        // border-top: 1px solid var(--black);
+        padding-bottom: 192px;
+        margin-top: 100px;
+        background-color: var(--off-white);
+
+        .lh-col {
+            grid-column: 1 / 7;
+        }
+
+        .title,
+        .text {
+            color: var(--black);
+        }
+
+        .title {
+            margin: 2rem 0 4.125rem 0;
+            font-size: 2.75rem;
+        }
+
+        .text {
+            margin-bottom: 4rem;
+            font-family: var(--titling);
+            font-size: 4.065rem;
+            line-height: 1.07;
+        }
+
+        .link {
+            font-family: 'cabinet-medium';
+            text-transform: uppercase;
+            color: var(--black);
+        }
+
+        .rh-col {
+            margin-top: 2rem;
+            grid-column: 8 / -1;
+        }
+
+        .image {
+            width: 100%;
+        }
+    }
+
+    /* partners
+    ------------------------------------------------------------------------- */
+    .partners {
+        padding-top: 96px;
+        background: var(--white);
+
+        h2,
+        p {
+            color: var(--black);
+        }
+
+        h2 {
+            grid-column: 1 / 4;
+            font-size: 44px;
+        }
+
+        p {
             grid-column: 8 / -1;
         }
 
         .logos {
             padding: 60px 0 74px 0;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 48px;
+
+            display: flex;
+            justify-content: space-between;
         }
     }
 }

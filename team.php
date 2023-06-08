@@ -7,7 +7,7 @@
  */
 
 get_header();
-$content = get_field('content');
+
 ?>
 
 <?php get_template_part('_partials/headers/header', 'default'); ?>
@@ -34,39 +34,72 @@ $content = get_field('content');
         endif; ?>
     </div>
 
-    <section class="clients">
-        <div class="contain">
-            <?php if (have_rows('flexible_content')) : ?>
-                <?php while (have_rows('flexible_content')) : the_row(); ?>
 
-                    <!-- clients intro -->
-                    <div class="intro grid">
-                        <?php if (have_rows('introduction')) :
-                            while (have_rows('introduction')) : the_row(); ?>
+    <?php if (have_rows('flexible_content')) : ?>
+        <?php while (have_rows('flexible_content')) : the_row(); ?>
 
-                                <h2><?php the_sub_field('title'); ?></h2>
-                                <p><?php the_sub_field('text'); ?></p>
-                        <?php
-                            endwhile;
-                        endif; ?>
+            <?php if (get_row_layout() == 'clients') : ?>
+                <section class="clients">
+                    <div class="contain">
+                        <div class="grid">
+                            <?php if (have_rows('introduction')) :
+                                while (have_rows('introduction')) : the_row(); ?>
+                                    <h2><?php the_sub_field('title'); ?></h2>
+                                    <p><?php the_sub_field('text'); ?></p>
+                            <?php endwhile;
+                            endif; ?>
+                        </div>
+
+                        <div class="logos grid">
+                            <?php if (have_rows('logos')) :
+                                while (have_rows('logos')) : the_row(); ?>
+                                    <img src="<?php the_sub_field('logo'); ?>">
+                            <?php endwhile;
+                            endif; ?>
+                        </div>
                     </div>
+                </section>
 
+            <?php elseif (get_row_layout() == 'text_image') : ?>
 
-                    <!-- client logos -->
-                    <div class="logos">
-                        <?php if (have_rows('logos')) :
-                            while (have_rows('logos')) : the_row();
-                                $sub_value = get_sub_field('logo'); ?>
-                                <img src="<?php the_sub_field('logo') ?>">
-                        <?php
-                            endwhile;
-                        endif; ?>
+                <section class="our-work grid contain">
+                    <div class="lh-col">
+                        <h2 class="title"><?php the_sub_field('title') ?></h2>
+                        <p class="text"><?php the_sub_field('text') ?></p>
+                        <a href="#" class="link"><?php the_sub_field('link_label'); ?></a>
                     </div>
+                    <div class="rh-col">
+                        <img src="<?php the_sub_field('image') ?>" class="image"></p>
+                    </div>
+                </section>
 
-            <?php endwhile;
-            endif; ?>
-        </div>
-    </section>
+
+            <?php elseif (get_row_layout() == 'partners') : ?>
+                <section class="partners">
+                    <div class="contain">
+                        <div class="introduction grid">
+                            <?php if (have_rows('introduction')) :
+                                while (have_rows('introduction')) : the_row(); ?>
+                                    <h2><?php the_sub_field('title'); ?></h2>
+                                    <p><?php the_sub_field('text'); ?></p>
+                            <?php endwhile;
+                            endif; ?>
+                        </div>
+
+                        <div class="logos">
+                            <?php if (have_rows('logos')) :
+                                while (have_rows('logos')) : the_row(); ?>
+                                    <img src="<?php the_sub_field('logo'); ?>">
+                            <?php endwhile;
+                            endif; ?>
+                        </div>
+                    </div>
+                </section>
+
+
+            <?php endif; ?>
+    <?php endwhile;
+    endif; ?>
 </main>
 
 <?php get_footer(); ?>
