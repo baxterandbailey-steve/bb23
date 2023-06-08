@@ -13,6 +13,8 @@ get_header();
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="about">
+
+    <!-- team -->
     <div class="team-members contain">
         <?php if (have_rows('team')) : ?>
             <?php while (have_rows('team')) : the_row();
@@ -34,9 +36,10 @@ get_header();
         endif; ?>
     </div>
 
-
+    <!-- start flexible content -->
     <?php if (have_rows('flexible_content')) : ?>
         <?php while (have_rows('flexible_content')) : the_row(); ?>
+
 
             <?php if (get_row_layout() == 'clients') : ?>
                 <section class="clients">
@@ -93,6 +96,19 @@ get_header();
                             <?php endwhile;
                             endif; ?>
                         </div>
+                    </div>
+                </section>
+
+            <?php elseif (get_row_layout() == 'image_cta') : ?>
+
+                <section class="image-cta contain">
+                    <div class="lh-col">
+                        <img src="<?php the_sub_field('image') ?>" class="image">
+                    </div>
+                    <div class="rh-col">
+                        <h2 class="title"><?php the_sub_field('title') ?></h2>
+                        <p class="text"><strong><?php the_sub_field('text') ?></strong></p>
+                        <a class="link"><?php the_sub_field('link_label') ?></a>
                     </div>
                 </section>
 

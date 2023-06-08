@@ -136,9 +136,36 @@
 
         .logos {
             padding: 60px 0 74px 0;
-
             display: flex;
             justify-content: space-between;
+        }
+    }
+
+    /* image-cta
+    ------------------------------------------------------------------------- */
+    .image-cta {
+        padding: 62px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .lh-col {
+            margin-right: 46px;
+        }
+
+        .rh-col {
+            width: 280px;
+            margin-left: 46px;
+        }
+
+        .title {
+            margin-bottom: 0.25rem;
+        }
+
+        .text {
+            margin-bottom: 3.875em;
+            font-size: var(--font-root-plus);
+            line-height: 1.35;
         }
     }
 }
