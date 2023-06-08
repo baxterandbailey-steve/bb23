@@ -44,6 +44,8 @@
     /* client
     ------------------------------------------------------------------------- */
     .clients {
+        padding-top: 96px;
+        margin-bottom: 20rem;
         background: var(--black);
 
         h2,
@@ -51,8 +53,17 @@
             color: var(--white);
         }
 
+        h2 {
+            grid-column: 1 / 4;
+            font-size: 44px;
+        }
+
+        p {
+            grid-column: 8 / -1;
+        }
+
         .logos {
-            padding: 60px 48px 74px 48px;
+            padding: 60px 0 74px 0;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 48px;

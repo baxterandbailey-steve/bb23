@@ -12,8 +12,8 @@ $content = get_field('content');
 
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
-<main class="about contain">
-    <div class="team-members">
+<main class="about">
+    <div class="team-members contain">
         <?php if (have_rows('team')) : ?>
             <?php while (have_rows('team')) : the_row();
                 $name = get_sub_field('name');
@@ -35,35 +35,37 @@ $content = get_field('content');
     </div>
 
     <section class="clients">
-        <?php if (have_rows('flexible_content')) : ?>
-            <?php while (have_rows('flexible_content')) : the_row(); ?>
+        <div class="contain">
+            <?php if (have_rows('flexible_content')) : ?>
+                <?php while (have_rows('flexible_content')) : the_row(); ?>
 
-                <!-- clients intro -->
-                <div class="intro">
-                    <?php if (have_rows('introduction')) :
-                        while (have_rows('introduction')) : the_row(); ?>
+                    <!-- clients intro -->
+                    <div class="intro grid">
+                        <?php if (have_rows('introduction')) :
+                            while (have_rows('introduction')) : the_row(); ?>
 
-                            <h2><?php the_sub_field('title'); ?></h2>
-                            <p><?php the_sub_field('text'); ?></p>
-                    <?php
-                        endwhile;
-                    endif; ?>
-                </div>
+                                <h2><?php the_sub_field('title'); ?></h2>
+                                <p><?php the_sub_field('text'); ?></p>
+                        <?php
+                            endwhile;
+                        endif; ?>
+                    </div>
 
 
-                <!-- client logos -->
-                <div class="logos">
-                    <?php if (have_rows('logos')) :
-                        while (have_rows('logos')) : the_row();
-                            $sub_value = get_sub_field('logo'); ?>
-                            <img src="<?php the_sub_field('logo') ?>">
-                    <?php
-                        endwhile;
-                    endif; ?>
-                </div>
+                    <!-- client logos -->
+                    <div class="logos">
+                        <?php if (have_rows('logos')) :
+                            while (have_rows('logos')) : the_row();
+                                $sub_value = get_sub_field('logo'); ?>
+                                <img src="<?php the_sub_field('logo') ?>">
+                        <?php
+                            endwhile;
+                        endif; ?>
+                    </div>
 
-        <?php endwhile;
-        endif; ?>
+            <?php endwhile;
+            endif; ?>
+        </div>
     </section>
 </main>
 
