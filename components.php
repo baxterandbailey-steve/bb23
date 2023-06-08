@@ -11,7 +11,7 @@ $title = get_field('title');
 get_header();
 get_template_part('_partials/headers/header', 'default'); ?>
 
-<main class="contain">
+<main class="components contain">
     <h2><?php echo $title; ?></h2>
 
     <!-- LH Col -->

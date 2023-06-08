@@ -57,6 +57,14 @@
       "oAP" : "\/_partials\/flx\/blocks.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/clients.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/clients.php",
+      "oF" : 0
+    },
     "\/_partials\/headers\/header-default.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -954,6 +962,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/sass\/pages\/about.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/about.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/sass\/pages\/archive.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1069,21 +1092,6 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/css\/single.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/sass\/pages\/team.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/team.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

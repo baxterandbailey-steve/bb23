@@ -1,27 +1,13 @@
-/* team
+/* about
 ----------------------------------------------------------------------------- */
-.team {
+.about {
     background: var(--off-white);
 
-    .page-top {
-        margin-bottom: 9.25rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .text {
-            width: 100%;
-            max-width: 750px;
-            padding-top: 9.3125rem;
-            margin: 0 auto 2.5rem;
-            font-family: var(--titling);
-            font-size: 2.5rem;
-            line-height: 48px;
-            text-align: center;
-        }
-    }
+    /* team-members
+    ------------------------------------------------------------------------- */
 
     .team-members {
+        margin-bottom: 110px;
         columns: 3;
         column-gap: 48px;
     }
@@ -53,5 +39,23 @@
 
     .team-member:nth-of-type(5) {
         padding-top: 320px;
+    }
+
+    /* client
+    ------------------------------------------------------------------------- */
+    .clients {
+        background: var(--black);
+
+        h2,
+        p {
+            color: var(--white);
+        }
+
+        .logos {
+            padding: 60px 48px 74px 48px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 48px;
+        }
     }
 }
