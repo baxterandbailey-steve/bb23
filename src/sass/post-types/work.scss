@@ -2,6 +2,7 @@
 ----------------------------------------------------------------------------- */
 .case-study {
     padding-top: 6.75rem;
+    background: var(--white);
 
     .page-top {
         margin-bottom: var(--drop-medium);
@@ -96,6 +97,94 @@
 
         .secondary-image {
             width: 100%;
+        }
+    }
+
+    // flexible content styles
+    // -----------------------------------------------------------------------------
+    .flexible-content {
+        padding-top: 3rem;
+        background-color: var(--off-white);
+    }
+
+    .half,
+    .double,
+    .full-width,
+    .bleed,
+    .text-row,
+    .image-text,
+    .testimonial {
+        margin-bottom: var(--drop-medium);
+    }
+
+    // images
+    .double {
+        .lh-image {
+            grid-column: 1 / 7;
+        }
+        .rh-image {
+            grid-column: 8 / -1;
+        }
+    }
+
+    .full {
+        padding: 100px 0 6rem 0;
+    }
+
+    // text
+    .text-row {
+        padding: 1.5rem 0 0 0;
+        margin-bottom: 1.5rem;
+
+        .lh-col {
+            grid-column: 1 / 7;
+        }
+
+        .rh-col {
+            grid-column: 9 / -1;
+        }
+    }
+
+    // image-text
+    .image-text {
+        .image {
+            grid-column: 1 / 7;
+        }
+
+        .text {
+            grid-column: 9 / -1;
+        }
+    }
+
+    // testimonial
+    .testimonial {
+        padding: 76px 0;
+        background-color: var(--white);
+
+        .author-meta {
+            padding-top: 1rem;
+            border-top: 1.5px solid var(--mid-black);
+            grid-column: 2 / 4;
+
+            span {
+                //margin-bottom: 0.5rem;
+                display: block;
+            }
+
+            .author {
+                font-family: 'cabinet-medium';
+            }
+
+            .role,
+            .organisation {
+                color: var(--mid-black);
+            }
+        }
+
+        .text {
+            grid-column: 5 / 12;
+            font-family: var(--titling);
+            font-size: 2.75rem;
         }
     }
 }

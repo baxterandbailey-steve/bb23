@@ -16,16 +16,16 @@ $secondary_image = get_field('secondary_image');
 
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
-<main class="case-study contain">
-    <section class="page-top grid">
+<main class="case-study">
+    <section class="page-top grid contain">
         <span class="meta">Brand Identity</span>
         <h2 class="title"><?php the_title(); ?></h2>
         <p class="excerpt"><?php echo $excerpt; ?></p>
     </section>
 
-    <img src="<?php echo $primary_image; ?>" class="primary-image">
+    <img src="<?php echo $primary_image; ?>" class="primary-image contain">
 
-    <section class="primary-content grid">
+    <section class="primary-content grid contain">
         <div class="lh-col">
             <p class="statement"><?php echo $statement; ?></p>
 
@@ -94,6 +94,79 @@ $secondary_image = get_field('secondary_image');
             <img src="<?php echo $secondary_image; ?>">
         </div>
     </section>
+
+    <!-- Flexible content -->
+    <div class="flexible-content">
+        <div class="contain">
+
+            <?php if (have_rows('flexible_content')) : ?>
+                <?php while (have_rows('flexible_content')) : the_row(); ?>
+
+                    <?php if (get_row_layout() == 'images') : ?>
+                        <?php if (get_sub_field('layout') == 'half') : { ?>
+                                <img src="<?php the_sub_field('single'); ?>" class="<?php the_sub_field('layout'); ?>">
+                            <?php } ?>
+
+                        <? elseif (get_sub_field('layout') == 'double') : ?>
+                            <?php if (have_rows('double')) : ?>
+                                <?php while (have_rows('double')) : the_row(); ?>
+
+                                    <div class="double grid">
+                                        <img src="<?php the_sub_field('lh_image'); ?>" class="lh-image">
+                                        <img src="<?php the_sub_field('rh_image'); ?>" class="rh-image">
+                                    </div>
+
+                            <?php endwhile;
+                            endif; ?>
+
+                            <? elseif (get_sub_field('layout') == 'full-width') : { ?>
+                                <img src="<?php the_sub_field('full_width'); ?>" class="<?php the_sub_field('layout'); ?>">
+                            <?php } ?>
+
+                        <? else : ?>
+                            <img src="<?php the_sub_field('full_bleed'); ?>" class="<?php the_sub_field('layout'); ?>">
+                            <?php ?>
+                        <?php endif ?>
+
+                    <?php elseif (get_row_layout() == 'text') : ?>
+                        <section class="text-row grid">
+                            <div class="lh-col">
+                                <h2><?php the_sub_field('title') ?></h2>
+                            </div>
+                            <div class="rh-col">
+                                <p class="text"><?php the_sub_field('text') ?></p>
+                            </div>
+                        </section>
+
+                    <?php elseif (get_row_layout() == 'image_text') : ?>
+
+                        <section class="image-text grid">
+                            <img src="<?php the_sub_field('image') ?>" class="image">
+                            <div class="text">
+                                <?php the_sub_field('text') ?>
+                            </div>
+                        </section>
+
+                    <?php elseif (get_row_layout() == 'testimonial') : ?>
+
+                        <div class="testimonial grid">
+                            <div class="author-meta">
+                                <span class="author"><?php the_sub_field('author') ?></span>
+                                <span class="role"><?php the_sub_field('role') ?></span>
+                                <span class="organisation"><?php the_sub_field('organisation') ?></span>
+                            </div>
+
+                            <p class="text"><?php the_sub_field('testimonial') ?></p>
+                        </div>
+
+
+                    <?php endif; ?>
+            <?php endwhile; // close flex while
+            endif;  // close flex if 
+            ?>
+        </div><!--close contain -->
+    </div><!--close flexible-content -->
+
 
 </main>
 <?php get_footer(); ?>
