@@ -9,15 +9,15 @@
 get_header();
 get_template_part('_partials/headers/header', 'default'); ?>
 
-<main class="what-we-do contain">
+<main class="what-we-do">
+
     <?php if (have_rows('flexible_content')) : ?>
         <?php while (have_rows('flexible_content')) : the_row(); ?>
 
             <?php if (get_row_layout() == 'service_block') : ?>
-
                 <?php if (have_rows('service')) :
                     while (have_rows('service')) : the_row(); ?>
-                        <section class="service">
+                        <section class="service contain">
                             <span class="meta">Brand Identity</span>
                             <h2 class="title"><?php the_sub_field('title'); ?></h2>
 
@@ -43,15 +43,54 @@ get_template_part('_partials/headers/header', 'default'); ?>
                                     ?>
                                 </div>
                         </section>
-
                 <?php endwhile; // close repeater while
                 endif;  // close repeater if 
                 ?>
 
-            <?php endif; ?>
-    <?php endwhile; // close flex while
+            <?php elseif (get_row_layout() == 'process_block') : ?>
+                <div class="full-width">
+                    <?php if (have_rows('process')) :
+                        while (have_rows('process')) : the_row(); ?>
+                            <!-- <div class="full-width"> -->
+                            <section class="process grid contain">
+                                <style>
+                                    .rich-text:before {
+                                        background-image: url('<?php the_sub_field('image'); ?>');
+                                    }
+                                </style>
+                                <div class="rich-text">
+                                    <span class="meta"><?php the_sub_field('process_type'); ?></span>
+                                    <h3 class="title"><?php the_sub_field('title'); ?></h3>
+                                    <p class="description"><?php the_sub_field('description'); ?></p>
+                                </div>
+                            </section>
+                            <!-- </div> -->
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+
+            <?php elseif (get_row_layout() == 'testimonial') : ?>
+                <div class="testimonial grid contain">
+                    <div class="lh-col">
+                        <span class="author"><?php the_sub_field('author'); ?></span>
+                        <span class="role"><?php the_sub_field('role'); ?></span>
+                        <span class="organisation"><?php the_sub_field('organisation'); ?></span>
+                    </div>
+                    <p class="quote"><?php the_sub_field('quote'); ?></p>
+                </div>
+
+            <?php elseif (get_row_layout() == 'call_to_action') : ?>
+                <div class="call-to-action grid contain">
+                    <img src="<?php the_sub_field('image') ?>" class="image">
+                    <div class="rich-text">
+                        <h3 class="title"><?php the_sub_field('title') ?>"</h3>
+                        <p class="text"><?php the_sub_field('text') ?>"</p>
+                    </div>
+                <?php endif; ?>
+        <?php endwhile; // close flex while
     endif;  // close flex if 
-    ?>
+        ?>
+
 </main>
 
 <?php get_footer(); ?>

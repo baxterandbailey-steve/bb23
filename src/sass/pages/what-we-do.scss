@@ -1,60 +1,158 @@
 /* what we do
 ----------------------------------------------------------------------------- */
 .what-we-do {
-    .service {
+    .service,
+    .process {
         padding-bottom: 86px;
+
+        .title {
+            width: 12ch;
+            margin-bottom: 2rem;
+            font-size: 4.065rem;
+            line-height: 1.08;
+        }
+
+        .meta {
+            margin-bottom: var(--drop-small);
+            display: block;
+            font-size: var(--font-base-plus);
+            text-transform: uppercase;
+        }
+
+        .description {
+            margin-bottom: 67px;
+        }
     }
 
-    .meta {
-        margin-bottom: var(--drop-small);
-        display: block;
-        font-size: var(--font-base-plus);
-        text-transform: uppercase;
-        color: var(--mid-black);
+    .service {
+        .meta {
+            color: var(--mid-black);
+        }
+
+        .image {
+            grid-column: 1 / 9;
+            grid-row: 1 / 1;
+        }
+
+        .rich-text {
+            grid-column: 8 / -1;
+            grid-row: 1 / 1;
+        }
+
+        h3 {
+            margin-bottom: 19px;
+            font-size: var(--font-root-plus);
+            text-transform: uppercase;
+            color: var(--mid-black);
+        }
+
+        ul {
+            margin-bottom: 58px;
+        }
+
+        li {
+            font-family: 'cabinet-medium';
+            font-size: var(--font-weight-plus);
+            color: var(--mid-black);
+        }
+
+        .link {
+            font-family: 'cabinet-medium';
+            font-size: var(--font-small);
+            text-transform: uppercase;
+            color: var(--black);
+        }
     }
 
-    .title {
-        width: 12ch;
-        margin-bottom: 2rem;
-        font-size: 4.065rem;
-        line-height: 1.08;
+    .full-width {
+        background-color: var(--black);
     }
 
-    .image {
-        grid-column: 1 / 9;
-        grid-row: 1 / 1;
+    .process {
+        padding: 5rem 0;
+        background-color: var(--black);
+        color: white;
+
+        .rich-text:nth-of-type(odd) {
+            position: relative;
+            padding-top: 28px;
+            border-top: 1.5px solid var(--white);
+            grid-column: 8 / -1;
+        }
+
+        .rich-text:nth-of-type(odd) {
+            &:before {
+                position: absolute;
+                top: 0;
+                left: -80%;
+                width: 100%;
+                height: 100%;
+                display: block;
+                content: '';
+                background-repeat: no-repeat;
+            }
+        }
     }
 
-    .rich-text {
-        grid-column: 8 / -1;
-        grid-row: 1 / 1;
+    .process:nth-of-type(even) {
+        .rich-text {
+            grid-column: 1 / 7;
+        }
     }
 
-    .description {
-        margin-bottom: 67px;
+    .testimonial {
+        padding: 5rem 0;
+
+        .lh-col {
+            padding-top: 1rem;
+            border-top: 1.5px solid var(--mid-black);
+            grid-column: 2 / 4;
+
+            span {
+                display: block;
+            }
+
+            .author {
+                font-family: 'cabinet-medium';
+                font-size: var(--font-base-plus);
+            }
+
+            .role,
+            .organisation {
+                color: var(--mid-black);
+                font-size: var(--font-base-plus);
+            }
+        }
+
+        .quote {
+            grid-column: 6 / -1;
+            font-size: 2.75rem;
+        }
     }
 
-    h3 {
-        margin-bottom: 19px;
-        font-size: var(--font-root-plus);
-        text-transform: uppercase;
-        color: var(--mid-black);
-    }
+    .call-to-action {
+        padding-top: 1rem;
+        padding-bottom: 7rem;
 
-    ul {
-        margin-bottom: 58px;
-    }
+        .image {
+            width: 100%;
+            grid-column: 2 / 7;
+        }
 
-    li {
-        font-family: 'cabinet-medium';
-        font-size: var(--font-weight-plus);
-        color: var(--mid-black);
-    }
+        .rich-text {
+            grid-column: 8 / 11;
 
-    .link {
-        font-family: 'cabinet-medium';
-        font-size: var(--font-small);
-        text-transform: uppercase;
-        color: var(--black);
+            .title {
+                margin-bottom: var(--drop-small);
+                font-size: var(--font-base-plus);
+                color: var(--mid-black);
+            }
+
+            .text {
+                width: 28ch;
+                font-family: 'cabinet-medium';
+                font-size: var(--font-base-plus);
+            }
+        }
     }
 }
