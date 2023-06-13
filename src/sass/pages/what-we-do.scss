@@ -1,6 +1,8 @@
 /* what we do
 ----------------------------------------------------------------------------- */
 .what-we-do {
+    // shared styles --------------------------------------------------------
+
     .service,
     .process {
         padding-bottom: 86px;
@@ -8,7 +10,7 @@
         .title {
             width: 12ch;
             margin-bottom: 2rem;
-            font-size: 4.065rem;
+            font-size: var(--font-big);
             line-height: 1.08;
         }
 
@@ -20,10 +22,11 @@
         }
 
         .description {
-            margin-bottom: 67px;
+            margin-bottom: 68px;
         }
     }
 
+    // services and service styles -----------------------------------------
     .service {
         .meta {
             color: var(--mid-black);
@@ -40,14 +43,14 @@
         }
 
         h3 {
-            margin-bottom: 19px;
+            margin-bottom: 20px;
             font-size: var(--font-root-plus);
             text-transform: uppercase;
             color: var(--mid-black);
         }
 
         ul {
-            margin-bottom: 58px;
+            margin-bottom: 60px;
         }
 
         li {
@@ -64,27 +67,27 @@
         }
     }
 
-    .full-width {
-        background-color: var(--black);
-    }
-
+    // processes and process styles ---------------------------------------------
     .process {
         padding: 5rem 0;
-        background-color: var(--black);
         color: white;
+        background-color: var(--black);
 
-        .rich-text:nth-of-type(odd) {
+        .rich-text {
             position: relative;
             padding-top: 28px;
             border-top: 1.5px solid var(--white);
-            grid-column: 8 / -1;
         }
+    }
 
-        .rich-text:nth-of-type(odd) {
-            &:before {
+    .process:nth-of-type(odd) {
+        .rich-text {
+            grid-column: 7 / 12;
+
+            &:after {
                 position: absolute;
                 top: 0;
-                left: -80%;
+                left: -360px;
                 width: 100%;
                 height: 100%;
                 display: block;
@@ -96,63 +99,74 @@
 
     .process:nth-of-type(even) {
         .rich-text {
-            grid-column: 1 / 7;
-        }
-    }
-
-    .testimonial {
-        padding: 5rem 0;
-
-        .lh-col {
-            padding-top: 1rem;
-            border-top: 1.5px solid var(--mid-black);
-            grid-column: 2 / 4;
-
-            span {
-                display: block;
-            }
-
-            .author {
-                font-family: 'cabinet-medium';
-                font-size: var(--font-base-plus);
-            }
-
-            .role,
-            .organisation {
-                color: var(--mid-black);
-                font-size: var(--font-base-plus);
-            }
-        }
-
-        .quote {
-            grid-column: 6 / -1;
-            font-size: 2.75rem;
-        }
-    }
-
-    .call-to-action {
-        padding-top: 1rem;
-        padding-bottom: 7rem;
-
-        .image {
-            width: 100%;
-            grid-column: 2 / 7;
-        }
-
-        .rich-text {
-            grid-column: 8 / 11;
-
-            .title {
-                margin-bottom: var(--drop-small);
-                font-size: var(--font-base-plus);
-                color: var(--mid-black);
-            }
-
-            .text {
-                width: 28ch;
-                font-family: 'cabinet-medium';
-                font-size: var(--font-base-plus);
+            &:after {
+                position: absolute;
+                top: 0;
+                right: -580px;
+                width: 100%;
+                height: 100%;
+                content: '';
+                background-repeat: no-repeat;
             }
         }
     }
 }
+
+// testimonial styles --------------------------------------------------
+.testimonial {
+    padding: 5rem 0;
+
+    .lh-col {
+        padding-top: 1rem;
+        border-top: 1.5px solid var(--mid-black);
+        grid-column: 2 / 4;
+
+        span {
+            display: block;
+        }
+
+        .author {
+            font-family: 'cabinet-medium';
+            font-size: var(--font-base-plus);
+        }
+
+        .role,
+        .organisation {
+            color: var(--mid-black);
+            font-size: var(--font-base-plus);
+        }
+    }
+
+    .quote {
+        grid-column: 6 / -1;
+        font-size: 2.75rem;
+    }
+}
+
+// call to action styles -----------------------------------------------
+.call-to-action {
+    padding-top: 1rem;
+    padding-bottom: 7rem;
+
+    .image {
+        width: 100%;
+        grid-column: 2 / 7;
+    }
+
+    .rich-text {
+        grid-column: 8 / 11;
+
+        .title {
+            margin-bottom: var(--drop-small);
+            font-size: var(--font-base-plus);
+            color: var(--mid-black);
+        }
+
+        .text {
+            width: 28ch;
+            font-family: 'cabinet-medium';
+            font-size: var(--font-base-plus);
+        }
+    }
+}
+// close .what-we-do

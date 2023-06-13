@@ -1366,12 +1366,12 @@
       "oAP" : "\/type.php",
       "oF" : 0
     },
-    "\/who-we-are.php" : {
+    "\/what-we-do.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/who-we-are.php",
+      "oAP" : "\/what-we-do.php",
       "oF" : 0
     }
   },
