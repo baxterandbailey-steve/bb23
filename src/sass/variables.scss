@@ -29,11 +29,12 @@
     --copy: 'satoshi-regular', sans-serif;
 
     // font sizes
-    --font-small: 1rem;
-    --font-base: 1.125rem;
-    --font-base-plus: 1.25rem;
-    --font-medium: 1.5rem;
-    --font-big: 2.5rem;
+    --font-small: 1rem; // 16px - small body text, text & cta link
+    --font-base: 1.125rem; // 18px - body text
+    --font-base-plus: 1.25rem; // 20px - large body text
+    --font-medium: 2.75rem; // 44px - medium titling
+    --font-big: 4rem; // 64px big titling
+    --font-large: 4.5rem; // 72px large / header titling
 
     // font weights
     --weight-light: 300;
