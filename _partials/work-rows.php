@@ -1,7 +1,9 @@
 <!-- start flexible-content -->
 <?php if (have_rows('work_rows')) : ?>
     <?php while (have_rows('work_rows')) : the_row(); ?>
-        <div style="display: flex; justify-content: space-between; margin-bottom: 5rem;">
+        <!-- <div style="display: flex; justify-content: space-between; margin-bottom: 5rem;"> -->
+
+        <div class="row">
 
             <!--======= LH Col ================================================================================-->
             <?php if (have_rows('lh_col')) : ?>
@@ -10,11 +12,10 @@
                     <!-- +++++++++++++++++++++ text ++++++++++++++++++++++++ -->
                     <?php if (get_sub_field('choice') == 'text') : { ?>
 
-
                             <?php if (have_rows('lh_text')) : ?>
                                 <?php while (have_rows('lh_text')) : the_row(); ?>
 
-                                    <div class="quote lh-col" data-aos="fade-up">
+                                    <div class="quote lh-col" style=" grid-column: <?php the_sub_field('width') ?>" data-aos="fade-up">
                                         <h3 class="client"><?php the_sub_field('client'); ?></h3>
                                         <span class="category"><?php the_sub_field('category'); ?></span>
                                         <blockquopte><?php the_sub_field('quote'); ?></blockquopte>
@@ -32,7 +33,7 @@
                         <?php if (have_rows('lh_image')) : ?>
                             <?php while (have_rows('lh_image')) : the_row(); ?>
 
-                                <figure class="lh-col" data-aos="fade-up">
+                                <figure class="lh-col" style=" grid-column: <?php the_sub_field('width') ?>" data-aos="fade-up">
                                     <img src="<?php the_sub_field('image'); ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
                                     <div class="details" data-aos="fade-up">
                                         <h3 class="client"><?php the_sub_field('client'); ?></h3>
@@ -47,6 +48,7 @@
 
                     <?php endif ?>
 
+
                     <!-- close LH group loop-->
             <?php endwhile;
             endif; ?>
@@ -55,13 +57,14 @@
             <?php if (have_rows('rh_col')) : ?>
                 <?php while (have_rows('rh_col')) : the_row(); ?>
 
+
                     <!-- +++++++++++++++++++++ text ++++++++++++++++++++++++ -->
                     <?php if (get_sub_field('choice') == 'text') : { ?>
 
                             <?php if (have_rows('rh_text')) : ?>
                                 <?php while (have_rows('rh_text')) : the_row(); ?>
 
-                                    <div class="quote rh-col" data-aos="fade-up">
+                                    <div class="quote rh-col" style=" grid-column: <?php the_sub_field('width') ?>" data-aos="fade-up">
                                         <h3 class="client"><?php the_sub_field('client'); ?></h3>
                                         <span class="category"><?php the_sub_field('category'); ?></span>
                                         <blockquopte><?php the_sub_field('quote'); ?></blockquopte>
@@ -75,28 +78,32 @@
                     <? else : ?>
 
                         <!-- +++++++++++++++++++++ image ++++++++++++++++++++++++ -->
-                        <div class="row">
-                            <?php if (have_rows('rh_image')) : ?>
-                                <?php while (have_rows('rh_image')) : the_row(); ?>
 
-                                    <figure class="rh-col" data-aos="fade-up">
-                                        <img src="<?php the_sub_field('image'); ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
-                                        <div class="details" data-aos="fade-up">
-                                            <h3 class="client"><?php the_sub_field('client'); ?></h3>
-                                            <span class="category"><?php the_sub_field('category'); ?></span>
-                                            <p class="description"><?php the_sub_field('description'); ?></p>
-                                        </div>
-                                    </figure>
+                        <?php if (have_rows('rh_image')) : ?>
+                            <?php while (have_rows('rh_image')) : the_row(); ?>
 
-                            <?php endwhile;
-                            endif; ?>
-                        </div>
+                                <figure class="rh-col" style=" grid-column: <?php the_sub_field('width') ?>" data-aos="fade-up">
+                                    <img src="<?php the_sub_field('image'); ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
+                                    <div class="details" data-aos="fade-up">
+                                        <h3 class="client"><?php the_sub_field('client'); ?></h3>
+                                        <span class="category"><?php the_sub_field('category'); ?></span>
+                                        <p class="description"><?php the_sub_field('description'); ?></p>
+                                    </div>
+                                </figure>
+
+                        <?php endwhile;
+                        endif; ?>
+
                     <?php endif ?>
+
 
                     <!-- close RH group loop -->
             <?php endwhile;
             endif; ?>
+
         </div>
+
+        <!-- </div> -->
 
         <!-- close flexible-content -->
     <?php endwhile; ?>
