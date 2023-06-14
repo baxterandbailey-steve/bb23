@@ -129,12 +129,20 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
-    "\/*front-page.php" : {
+    "\/**front-page.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/*front-page.php",
+      "oAP" : "\/**front-page.php",
+      "oF" : 0
+    },
+    "\/**team.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/**team.php",
       "oF" : 0
     },
     "\/404.php" : {
