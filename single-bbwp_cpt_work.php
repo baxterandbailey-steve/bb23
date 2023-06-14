@@ -25,7 +25,7 @@ $secondary_image = get_field('secondary_image');
 
     <img src="<?php echo $primary_image; ?>" class="primary-image contain">
 
-    <section class="primary-content grid contain">
+    <div class="primary-content grid contain">
         <div class="lh-col">
             <p class="statement"><?php echo $statement; ?></p>
 
@@ -93,7 +93,7 @@ $secondary_image = get_field('secondary_image');
         <div class="rh-col">
             <img src="<?php echo $secondary_image; ?>">
         </div>
-    </section>
+    </div>
 
     <!-- Flexible content -->
     <div class="flexible-content">
@@ -140,12 +140,12 @@ $secondary_image = get_field('secondary_image');
 
                     <?php elseif (get_row_layout() == 'image_text') : ?>
 
-                        <section class="image-text grid">
+                        <div class="image-text grid">
                             <img src="<?php the_sub_field('image') ?>" class="image">
                             <div class="text">
                                 <?php the_sub_field('text') ?>
                             </div>
-                        </section>
+                        </div>
 
                     <?php elseif (get_row_layout() == 'testimonial') : ?>
 

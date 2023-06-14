@@ -4,6 +4,13 @@
 /* global padding, margins, centring etc
 ----------------------------------------------------------------------------- */
 
+// basic 12 column grid, used as a utility class on components
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 48px;
+}
+
 // center content with a max-width pf 1440px
 .contain {
     width: 100%;

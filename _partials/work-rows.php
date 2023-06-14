@@ -1,7 +1,7 @@
 <!-- start flexible-content -->
 <?php if (have_rows('work_rows')) : ?>
     <?php while (have_rows('work_rows')) : the_row(); ?>
-        <!-- <div style="display: flex; justify-content: space-between; margin-bottom: 5rem;"> -->
+
 
         <div class="row">
 
@@ -45,9 +45,7 @@
                         <?php endwhile;
                         endif; ?>
 
-
                     <?php endif ?>
-
 
                     <!-- close LH group loop-->
             <?php endwhile;

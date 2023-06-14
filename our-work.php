@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Our Work
+ * Template Name: Work
  *
  * @package BBWP
  */

@@ -18,10 +18,10 @@ $args = new WP_Query(array(
 <main class="about">
 
     <!-- team -->
-    <div class="team-members contain">
+    <ul class="team-members contain">
         <?php if (have_posts()) :
             while ($args->have_posts()) : $args->the_post(); ?>
-                <div class="team-member">
+                <li class="team-member">
                     <figure class="image" data-aos="fade-in">
                         <?php the_post_thumbnail(); ?>
                     </figure>
@@ -29,11 +29,11 @@ $args = new WP_Query(array(
                         <?php the_title(); ?>
                     </h3>
                     <span class="role" data-aos="fade-in">Lorem ipusm dolar</span>
-                </div>
+                </li>
         <?php endwhile;
             wp_reset_postdata();
         endif; ?>
-    </div>
+    </ul>
 
     <!-- start flexible content -->
     <?php if (have_rows('flexible_content')) : ?>

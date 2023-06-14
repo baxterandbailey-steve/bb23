@@ -1,7 +1,0 @@
-/* grid: this is the basic 12 column grid, to be used as a utility class on components
------------------------------------------------------------------------------------------------------ */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 48px;
-}
