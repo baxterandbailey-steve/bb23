@@ -7,10 +7,7 @@
  */
 
 get_header();
-$args = new WP_Query(array(
-    'post_type' => 'bbwp_cpt_team',
-    'order' => 'DSC'
-));
+
 ?>
 
 <?php get_template_part('_partials/headers/header', 'default'); ?>
@@ -19,19 +16,23 @@ $args = new WP_Query(array(
 
     <!-- team -->
     <div class="team-members contain">
-        <?php if (have_posts()) :
-            while ($args->have_posts()) : $args->the_post(); ?>
+        <?php if (have_rows('team')) : ?>
+            <?php while (have_rows('team')) : the_row();
+                $name = get_sub_field('name');
+                $role = get_sub_field('role');
+                $image = get_sub_field('image');
+                $bio = get_sub_field('bio');
+            ?>
+
                 <div class="team-member">
-                    <figure class="image" data-aos="fade-in">
-                        <?php the_post_thumbnail(); ?>
+                    <figure>
+                        <img src="<?php echo $image; ?>" class="image" data-aos="fade-in">
                     </figure>
-                    <h3 class="name" data-aos="fade-in">
-                        <?php the_title(); ?>
-                    </h3>
-                    <span class="role" data-aos="fade-in">Lorem ipusm dolar</span>
+
+                    <h3 class="name" data-aos="fade-in"><?php echo $name; ?></h3>
+                    <span class="role" data-aos="fade-in"><?php echo $role; ?></span>
                 </div>
         <?php endwhile;
-            wp_reset_postdata();
         endif; ?>
     </div>
 

@@ -7,6 +7,38 @@
  */
 
 // Set-up work custom post type
+function bbwp_cpt_team()
+{
+    $labels = array(
+        'name' => 'Team',
+        'singular_name' => 'Team Member',
+        'add_new' => 'Add New',
+        'add_new_item' => 'Add New Team Member',
+        'edit_item' => 'Edit Team Member',
+        'new_item' => 'New Team Member',
+        'all_items' => 'All Team Members',
+        'view_item' => 'View Team Member',
+        'menu_name' => 'Team'
+    );
+
+    register_post_type(
+        'bbwp_cpt_team',
+        array(
+            'labels' => $labels,
+            'capability_type' => 'post',
+            'public' => true,
+            'rewrite'  => array('slug' => 'team'),
+            'has_archive' => true,
+            'exclude_from_search' => false,
+            'supports' => array('title', 'editor', 'excerpt', 'slug', 'thumbnail', 'category'),
+            'taxonomies' => array('post_tag', 'category'),
+            //'menu_position' => 21
+        )
+    );
+}
+add_action('init', 'bbwp_cpt_team');
+
+// Set-up work custom post type
 function bbwp_cpt_work() // work to be lowercase
 {
     $labels = array(
