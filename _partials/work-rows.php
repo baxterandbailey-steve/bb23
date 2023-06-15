@@ -11,7 +11,6 @@
 
                         <!-- +++++++++++++++++++++ text ++++++++++++++++++++++++ -->
                         <?php if (get_sub_field('choice') == 'text') : { ?>
-
                                 <?php if (have_rows('lh_text')) : ?>
                                     <?php while (have_rows('lh_text')) : the_row(); ?>
 
@@ -31,10 +30,11 @@
                             <!-- +++++++++++++++++++++ image ++++++++++++++++++++++++ -->
 
                             <?php if (have_rows('lh_image')) : ?>
-                                <?php while (have_rows('lh_image')) : the_row(); ?>
+                                <?php while (have_rows('lh_image')) : the_row();
+                                    $image = get_sub_field('image'); ?>
 
                                     <figure class="lh-col" style=" grid-column: <?php the_sub_field('width') ?>" data-aos="fade-up">
-                                        <img src="<?php the_sub_field('image'); ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
+                                        <img src="<?php echo $image; ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
                                         <div class="details" data-aos="fade-up">
                                             <h3 class="client"><?php the_sub_field('client'); ?></h3>
                                             <span class="category"><?php the_sub_field('category'); ?></span>
@@ -78,10 +78,11 @@
                             <!-- +++++++++++++++++++++ image ++++++++++++++++++++++++ -->
 
                             <?php if (have_rows('rh_image')) : ?>
-                                <?php while (have_rows('rh_image')) : the_row(); ?>
+                                <?php while (have_rows('rh_image')) : the_row();
+                                    $image = get_sub_field('image'); ?>
 
                                     <figure class="rh-col" style=" grid-column: <?php the_sub_field('width') ?>" data-aos="fade-up">
-                                        <img src="<?php the_sub_field('image'); ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
+                                        <img src="<?php echo $image; ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
                                         <div class="details" data-aos="fade-up">
                                             <h3 class="client"><?php the_sub_field('client'); ?></h3>
                                             <span class="category"><?php the_sub_field('category'); ?></span>
@@ -101,10 +102,11 @@
 
             </div>
 
-        <?php elseif (get_row_layout() == 'single_col') : ?>
+        <?php elseif (get_row_layout() == 'single_col') :
+            $single_col_image = get_sub_field('image'); ?>
             <div class="row">
                 <figure style=" grid-column: <?php the_sub_field('width') ?>" data-aos="fade-up">
-                    <img src="<?php the_sub_field('image'); ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
+                    <img src="<?php echo $single_col_image; ?>" style="margin-top:<?php the_sub_field('offset'); ?>">
                     <div class="details" data-aos="fade-up">
                         <h3 class="client"><?php the_sub_field('client'); ?></h3>
                         <span class="category"><?php the_sub_field('category'); ?></span>
@@ -113,7 +115,11 @@
                 </figure>
             </div>
 
-        <?php elseif (get_row_layout() == 'three_cols') : ?>
+        <?php elseif (get_row_layout() == 'three_cols') :
+            $col_1_image = get_sub_field('col_1_image');
+            $col_2_image = get_sub_field('col_2_image');
+            $col_3_image = get_sub_field('col_3_image');
+        ?>
 
             <div class="row row-one">
                 <figure class="col-1" data-aos="fade-up">
@@ -122,13 +128,13 @@
                         <span class="category"><?php the_sub_field('col_1_category'); ?></span>
                         <p class="description"><?php the_sub_field('col_1_description'); ?></p>
                     </div>
-                    <img src="<?php the_sub_field('col_1_image'); ?>" class="details thumb" data-aos="fade-up">
+                    <img src="<?php echo $col_1_image; ?>" class="details thumb" data-aos="fade-up">
                 </figure>
                 <figure class="col-2" data-aos="fade-up">
-                    <img src="<?php the_sub_field('col_2_image'); ?>" class="details thumb">
+                    <img src="<?php echo $col_2_image; ?>" class="details thumb">
                 </figure>
                 <figure class="col-3" data-aos="fade-up">
-                    <img src="<?php the_sub_field('col_3_image'); ?>">
+                    <img src="<?php echo $col_3_image; ?>">
                 </figure>
             </div>
 
