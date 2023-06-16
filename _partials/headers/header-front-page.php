@@ -1,6 +1,6 @@
 <header>
-    <?php get_template_part('_partials/logo'); ?>
-    <?php get_template_part('_partials/navbar'); ?>
+    <?php get_template_part('_partials/elements/logo'); ?>
+    <?php get_template_part('_partials/site-furniture/navbar'); ?>
 </header>
 
 <div class="banner">

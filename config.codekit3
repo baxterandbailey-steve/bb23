@@ -9,6 +9,22 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/_partials\/components\/newsroom.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/components\/newsroom.php",
+      "oF" : 0
+    },
+    "\/_partials\/elements\/logo.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/elements\/logo.php",
+      "oF" : 0
+    },
     "\/_partials\/flx\/block\/fullwidth.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -57,12 +73,28 @@
       "oAP" : "\/_partials\/flx\/blocks.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/work-rows.php" : {
+    "\/_partials\/flx\/homepage\/rows.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/work-rows.php",
+      "oAP" : "\/_partials\/flx\/homepage\/rows.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/what-we-do\/blocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/what-we-do\/blocks.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/who-we-are\/blocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/who-we-are\/blocks.php",
       "oF" : 0
     },
     "\/_partials\/headers\/header-default.php" : {
@@ -81,28 +113,20 @@
       "oAP" : "\/_partials\/headers\/header-front-page.php",
       "oF" : 0
     },
-    "\/_partials\/logo.php" : {
+    "\/_partials\/site-furniture\/navbar.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/logo.php",
+      "oAP" : "\/_partials\/site-furniture\/navbar.php",
       "oF" : 0
     },
-    "\/_partials\/navbar.php" : {
+    "\/_templates\/loop-team.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/navbar.php",
-      "oF" : 0
-    },
-    "\/_partials\/newsroom.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/newsroom.php",
+      "oAP" : "\/_templates\/loop-team.php",
       "oF" : 0
     },
     "\/_templates\/loop.php" : {
@@ -624,14 +648,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page.php",
-      "oF" : 0
-    },
-    "\/search.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/search.php",
       "oF" : 0
     },
     "\/single-bbwp_cpt_work.php" : {
