@@ -14,35 +14,60 @@ get_template_part('_partials/headers/header', 'default'); ?>
     <?php if (have_rows('flexible_content')) : ?>
         <?php while (have_rows('flexible_content')) : the_row(); ?>
 
-
-            <?php if (get_row_layout() == 'service') : ?>
+            <?php if (get_row_layout() == 'services') :
+                $service_section_title = get_sub_field('section_title');
+            ?>
                 <section class="service contain">
-                    <span class="meta">Brand Identity</span>
-                    <h2 class="title"><?php the_sub_field('title'); ?></h2>
+                    <h2 class="title"><?php echo $service_section_title; ?></h2>
 
-                    <div class="grid">
-                        <img src="<?php the_sub_field('image'); ?>" class="image">
-                        <div class="rich-text">
-                            <p class="description"><?php the_sub_field('description'); ?></p>
 
-                            <h3>Subtitle</h3>
-                            <ul>
-                                <li>Workshops</li>
-                                <li>Audits</li>
-                                <li>Interviews</li>
-                                <li>Brand blueprint and documentation</li>
-                                <li>Naming</li>
-                            </ul>
+                    <?php if (have_rows('service')) :
+                        while (have_rows('service')) : the_row();
+                            $service_type = get_sub_field('type');
+                            $service_title = get_sub_field('title');
+                            $service_image = get_sub_field('image');
+                            $service_description = get_sub_field('description');
+                            $service_link_url = get_sub_field('link_url');
+                            $service_link_label = get_sub_field('link_label');
+                    ?>
+                            <span><?php echo $service_type; ?></span>
+                            <h2 class="title"><?php echo $service_title; ?></h2>
+                            <div class="grid">
 
-                            <?php if (have_rows('link')) :
-                                while (have_rows('link')) : the_row(); ?>
-                                    <a href="<?php the_sub_field('link_url'); ?>" class="link"><?php the_sub_field('link_label'); ?></a>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
+                                <img src="<?php echo $service_image; ?>" class="image">
 
-                        </div>
-                    </div>
+                                <div class="rich-text">
+                                    <p class="description"><?php echo $service_description; ?></p>
+                                    <h4>Subtitle</h4>
+                                    <ul>
+                                        <?php if (have_rows('elements')) :
+                                            while (have_rows('elements')) : the_row();
+                                                $element = get_sub_field('element');
+                                        ?>
+                                                <li><?php echo $element; ?></li>
+                                        <?php
+                                            endwhile;
+                                        endif; ?>
+                                    </ul>
+                                    <a href="<?php echo $service_link_url; ?>" class="link"><?php echo $service_link_label; ?></a>
+                                </div>
+                            </div>
+                    <?php
+                        endwhile;
+                    endif; ?>
+
                 </section>
+
+
+
+
+
+
+
+
+
+
+
 
             <?php elseif (get_row_layout() == 'process') : ?>
                 <section class="process"><!-- style="background-image: url('<?php the_sub_field('image'); ?>');"> -->
