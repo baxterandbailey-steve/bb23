@@ -3,7 +3,7 @@
 
         <?php if (get_row_layout() == 'services') :
             get_template_part('_partials/flx/what-we-do/block/services');
-        elseif (get_row_layout() == 'process') :
+        elseif (get_row_layout() == 'processes') :
             get_template_part('_partials/flx/what-we-do/block/process');
         elseif (get_row_layout() == 'testimonial') :
             get_template_part('_partials/flx/what-we-do/block/testimonial');
