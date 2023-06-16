@@ -13,7 +13,7 @@
 
             <div class="row single-col">
                 <figure style=" grid-column: <?php echo $single_col_width ?>" data-aos="fade-up">
-                    <img src="<?php echo $single_col_image; ?>">
+                    <img src="<?php echo wp_get_attachment_image($single_col_image, 'full'); ?>">
                     <div class="details" data-aos="fade-up">
                         <h3 class="client"><?php echo $single_col_client; ?></h3>
                         <span class="category"><?php echo $single_col_category; ?></span>
@@ -64,7 +64,7 @@
 
 
                                     <figure class="lh-col" style="grid-column: <?php echo $lh_image_width; ?>" data-aos="fade-up">
-                                        <img src="<?php echo $lh_image; ?>" style="margin-top:<?php echo $lh_image_offset; ?>">
+                                        <img src="<?php echo wp_get_attachment_image($lh_image, 'full'); ?>" style="margin-top:<?php echo $lh_image_offset; ?>">
                                         <div class="details" data-aos="fade-up">
                                             <h3 class="client"><?php echo $lh_image_client; ?></h3>
                                             <span class="category"><?php echo $lh_image_category; ?></span>
@@ -119,12 +119,14 @@
 
 
                                     <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>" data-aos="fade-up">
-                                        <img src="<?php echo $rh_image; ?>" style="margin-top:<?php echo $rh_image_offset; ?>">
+                                        <img src="<?php echo wp_get_attachment_image($rh_image, 'full'); ?>" style="margin-top:<?php echo $rh_image_offset; ?>">
                                         <div class="details" data-aos="fade-up">
                                             <h3 class="client"><?php echo $rh_image_client; ?></h3>
                                             <span class="category"><?php echo $rh_image_category; ?></span>
                                             <p class="description"><?php echo $rh_image_description; ?></p>
                                         </div>
+
+
                                     </figure>
 
                             <?php endwhile;
@@ -152,13 +154,13 @@
                         <span class="category"><?php echo $col_1_category; ?></span>
                         <p class="description"><?php echo $col_1_description; ?></p>
                     </div>
-                    <img src="<?php echo $col_1_image; ?>" class="details thumb" data-aos="fade-up">
+                    <img src="<?php echo wp_get_attachment_image($col_1_image, 'full'); ?>" class="details thumb" data-aos="fade-up">
                 </figure>
                 <figure class="col-2" data-aos="fade-up">
-                    <img src="<?php echo $col_2_image; ?>" class="details thumb">
+                    <img src="<?php echo wp_get_attachment_image($col_2_image, 'full'); ?>" class="details thumb">
                 </figure>
                 <figure class="col-3" data-aos="fade-up">
-                    <img src="<?php echo $col_3_image; ?>">
+                    <img src="<?php echo wp_get_attachment_image($col_3_image, 'full'); ?>">
                 </figure>
             </div>
 
