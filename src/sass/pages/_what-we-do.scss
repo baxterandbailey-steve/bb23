@@ -143,32 +143,50 @@
 
     // testimonial styles --------------------------------------------------
     .testimonial {
-        padding: 5rem 0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
 
         .lh-col {
-            padding-top: 1rem;
+            padding-top: 0.25rem;
             border-top: 1.5px solid var(--mid-black);
             grid-column: 2 / 4;
 
-            span {
+            .author,
+            .role,
+            .organisation {
                 display: block;
             }
 
             .author {
+                margin-bottom: 0.25rem;
                 font-family: 'cabinet-medium';
                 font-size: var(--font-base-plus);
+                line-height: var(--lh-medium);
             }
 
             .role,
             .organisation {
                 color: var(--mid-black);
                 font-size: var(--font-base-plus);
+                line-height: var(--lh-medium);
+            }
+
+            .role {
+                margin-bottom: var(--drop-small);
+                color: var(--black);
+            }
+
+            .organisation {
+                color: var(--mid-black);
             }
         }
 
         .quote {
-            grid-column: 6 / -1;
+            grid-column: 6 / 13;
             font-size: 2.75rem;
+            line-height: 1.24;
+            color: var(--black);
+            transform: translateY(-0.75rem);
         }
     }
 
