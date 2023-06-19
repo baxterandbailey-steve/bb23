@@ -10,8 +10,8 @@
         elseif (get_row_layout() == 'testimonial') :
             get_template_part('_partials/flx/what-we-do/block/testimonial');
 
-        elseif (get_row_layout() == 'call_to_action') :
-            get_template_part('_partials/flx/what-we-do/block/call_to_action');
+        elseif (get_row_layout() == 'text_image') :
+            get_template_part('_partials/flx/what-we-do/block/text-image');
 
         endif; ?>
         

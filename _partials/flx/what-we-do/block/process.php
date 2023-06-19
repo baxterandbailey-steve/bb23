@@ -3,7 +3,7 @@ $process_section_title = get_sub_field('section_title');
 ?>
 
 <section class="processes">
-    <div class="contain">
+    <div class="inner contain">
         <h2 class="title"><?php echo $process_section_title; ?></h2>
 
         <?php if (have_rows('process')) :

@@ -81,14 +81,6 @@
       "oAP" : "\/_partials\/flx\/homepage\/rows.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/what-we-do\/block\/call_to_action.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/what-we-do\/block\/call_to_action.php",
-      "oF" : 0
-    },
     "\/_partials\/flx\/what-we-do\/block\/process.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -111,6 +103,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/_partials\/flx\/what-we-do\/block\/testimonial.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/what-we-do\/block\/text-image.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/what-we-do\/block\/text-image.php",
       "oF" : 0
     },
     "\/_partials\/flx\/what-we-do\/blocks.php" : {

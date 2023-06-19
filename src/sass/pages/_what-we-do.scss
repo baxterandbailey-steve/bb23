@@ -191,29 +191,47 @@
     }
 
     // call to action styles -----------------------------------------------
-    .call-to-action {
-        padding-top: 1rem;
-        padding-bottom: 7rem;
+    .text-image {
+        //padding-top: 1rem;
+        margin-bottom: 6rem;
 
-        .image {
-            width: 100%;
-            grid-column: 2 / 7;
-        }
-
-        .rich-text {
-            grid-column: 8 / 11;
+        .text {
+            grid-column: 3 / 7;
 
             .title {
                 margin-bottom: var(--drop-small);
                 font-size: var(--font-base-plus);
+                text-transform: uppercase;
+                line-height: var(--lh-medium);
                 color: var(--mid-black);
             }
 
-            .text {
-                width: 28ch;
-                font-family: 'cabinet-medium';
+            p {
+                margin-bottom: 0.5rem;
                 font-size: var(--font-base-plus);
+                color: #9a9a9a;
             }
+
+            p:first-of-type {
+                font-family: 'cabinet-medium';
+                color: var(--black);
+            }
+
+            p:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            .link {
+                text-transform: uppercase;
+                color: var(--black);
+            }
+        }
+
+        .image {
+            width: 340px;
+            grid-column: 8 / 12;
+            align-items: center;
+            transform: translateX(-38px);
         }
     }
     // close .what-we-do
