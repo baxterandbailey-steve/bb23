@@ -1047,7 +1047,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/sass\/pages\/what-we-do.scss" : {
+    "\/src\/sass\/pages\/_what-we-do.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -1056,7 +1056,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/css\/what-we-do.min.css",
+      "oAP" : "\/dist\/css\/_what-we-do.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

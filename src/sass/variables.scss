@@ -46,7 +46,7 @@
     // font line-heights
     --lh-base: 1;
     --lh-small: 1.2;
-    --lh-medium: 1.5;
+    --lh-medium: 1.35;
     //    --lh-large: ;
 
     /* Layout
@@ -81,6 +81,7 @@
 
     // margin-bottoms between elements or components
     --drop-small: 1rem;
+    --drop-base: 1.125rem;
     --drop-medium: 3rem;
     --drop-large: 6rem;
     --drop-big: 10rem;

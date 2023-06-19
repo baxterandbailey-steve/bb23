@@ -3,49 +3,61 @@
 .what-we-do {
     // shared styles --------------------------------------------------------
 
-    .service,
-    .process {
+    .services,
+    .processes {
         padding-bottom: 86px;
 
         .title {
             width: 12ch;
             margin-bottom: 2rem;
-            font-size: var(--font-big);
+            font-size: var(--font-medium);
             line-height: 1.08;
-        }
-
-        .meta {
-            margin-bottom: var(--drop-small);
-            display: block;
-            font-size: var(--font-base-plus);
-            text-transform: uppercase;
-        }
-
-        .description {
-            margin-bottom: 68px;
         }
     }
 
     // services and service styles -----------------------------------------
     .service {
+        border-top: 1.5px solid var(--mid-black);
+        margin-bottom: 5.375rem;
+        padding-top: 1rem;
+
         .meta {
+            margin-bottom: var(--drop-base);
+            display: block;
+            font-size: var(--font-base-plus);
+            text-transform: uppercase;
             color: var(--mid-black);
         }
 
         .image {
             grid-column: 1 / 9;
-            grid-row: 1 / 1;
+            grid-row: 2 / 3;
         }
 
-        .rich-text {
+        .title {
+            grid-column: 1 / 9;
+            grid-row: 1 / 1;
+            margin-bottom: 2rem;
+            font-size: var(--font-big);
+            line-height: 1.09375;
+            color: var(--black);
+        }
+
+        .text {
             grid-column: 8 / -1;
-            grid-row: 1 / 1;
+            grid-row: 1 / 3;
         }
 
-        h3 {
-            margin-bottom: 20px;
-            font-size: var(--font-root-plus);
+        .subtitle {
+            margin-bottom: var(--drop-base);
+            font-size: var(--font-base-plus);
             text-transform: uppercase;
+            color: var(--mid-black);
+        }
+
+        .description {
+            margin-bottom: 68px;
+            line-height: var(--lh-medium);
             color: var(--mid-black);
         }
 
@@ -55,7 +67,8 @@
 
         li {
             font-family: 'cabinet-medium';
-            font-size: var(--font-weight-plus);
+            font-size: var(--font-base-plus);
+            line-height: var(--lh-medium);
             color: var(--mid-black);
         }
 
