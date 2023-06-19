@@ -1,13 +1,9 @@
 /* what we do
 ----------------------------------------------------------------------------- */
 .what-we-do {
-    // shared styles --------------------------------------------------------
-
-    .services,
-    .processes {
-        padding-bottom: 86px;
-
-        .title {
+    // services and service styles -----------------------------------------
+    .services {
+        h2.title {
             width: 12ch;
             margin-bottom: 2rem;
             font-size: var(--font-medium);
@@ -15,7 +11,6 @@
         }
     }
 
-    // services and service styles -----------------------------------------
     .service {
         border-top: 1.5px solid var(--mid-black);
         margin-bottom: 5.375rem;
@@ -81,105 +76,127 @@
     }
 
     // processes and process styles ---------------------------------------------
-    .process {
-        padding: 5rem 0;
-        color: white;
+    .processes {
+        h2.title {
+            width: 12ch;
+            font-size: var(--font-medium);
+            line-height: 1.08;
+        }
+
+        padding: 5rem 0 10rem 0;
         background-color: var(--black);
-
-        .rich-text {
-            position: relative;
-            padding-top: 28px;
-            border-top: 1.5px solid var(--white);
-        }
+        color: var(--white);
     }
 
-    .process:nth-of-type(odd) {
-        .rich-text {
-            grid-column: 7 / 12;
+    .process {
+        position: relative;
+        margin-bottom: 112px;
 
-            &:after {
-                position: absolute;
-                top: 0;
-                left: -360px;
-                width: 100%;
-                height: 100%;
-                display: block;
-                content: '';
-                background-repeat: no-repeat;
+        &:nth-of-type(odd) {
+            .text {
+                grid-column: 7 / 12;
             }
         }
-    }
 
-    .process:nth-of-type(even) {
-        .rich-text {
-            &:after {
-                position: absolute;
-                top: 0;
-                right: -580px;
-                width: 100%;
-                height: 100%;
-                content: '';
-                background-repeat: no-repeat;
+        &:nth-of-type(even) {
+            .text {
+                grid-column: 1 / 6;
             }
         }
-    }
-}
 
-// testimonial styles --------------------------------------------------
-.testimonial {
-    padding: 5rem 0;
-
-    .lh-col {
-        padding-top: 1rem;
-        border-top: 1.5px solid var(--mid-black);
-        grid-column: 2 / 4;
-
-        span {
+        &:after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            content: ('');
             display: block;
-        }
-
-        .author {
-            font-family: 'cabinet-medium';
-            font-size: var(--font-base-plus);
-        }
-
-        .role,
-        .organisation {
-            color: var(--mid-black);
-            font-size: var(--font-base-plus);
-        }
-    }
-
-    .quote {
-        grid-column: 6 / -1;
-        font-size: 2.75rem;
-    }
-}
-
-// call to action styles -----------------------------------------------
-.call-to-action {
-    padding-top: 1rem;
-    padding-bottom: 7rem;
-
-    .image {
-        width: 100%;
-        grid-column: 2 / 7;
-    }
-
-    .rich-text {
-        grid-column: 8 / 11;
-
-        .title {
-            margin-bottom: var(--drop-small);
-            font-size: var(--font-base-plus);
-            color: var(--mid-black);
+            background-repeat: no-repeat;
         }
 
         .text {
-            width: 28ch;
-            font-family: 'cabinet-medium';
+            padding-top: 1.25rem;
+            border-top: 1.5px solid var(--white);
+        }
+
+        .meta {
+            margin-bottom: var(--drop-small);
+            display: block;
             font-size: var(--font-base-plus);
+            line-height: var(--lh-medium);
+        }
+
+        .title {
+            margin-bottom: 2rem;
+            font-family: var(--titling);
+            font-size: var(--font-big);
+            line-height: 1.09375;
+        }
+
+        .description {
+            padding-right: 9.375%;
+            line-height: var(--lh-medium);
+            color: #c7c7c7;
         }
     }
+
+    // testimonial styles --------------------------------------------------
+    .testimonial {
+        padding: 5rem 0;
+
+        .lh-col {
+            padding-top: 1rem;
+            border-top: 1.5px solid var(--mid-black);
+            grid-column: 2 / 4;
+
+            span {
+                display: block;
+            }
+
+            .author {
+                font-family: 'cabinet-medium';
+                font-size: var(--font-base-plus);
+            }
+
+            .role,
+            .organisation {
+                color: var(--mid-black);
+                font-size: var(--font-base-plus);
+            }
+        }
+
+        .quote {
+            grid-column: 6 / -1;
+            font-size: 2.75rem;
+        }
+    }
+
+    // call to action styles -----------------------------------------------
+    .call-to-action {
+        padding-top: 1rem;
+        padding-bottom: 7rem;
+
+        .image {
+            width: 100%;
+            grid-column: 2 / 7;
+        }
+
+        .rich-text {
+            grid-column: 8 / 11;
+
+            .title {
+                margin-bottom: var(--drop-small);
+                font-size: var(--font-base-plus);
+                color: var(--mid-black);
+            }
+
+            .text {
+                width: 28ch;
+                font-family: 'cabinet-medium';
+                font-size: var(--font-base-plus);
+            }
+        }
+    }
+    // close .what-we-do
 }
-// close .what-we-do
