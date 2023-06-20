@@ -43,3 +43,14 @@
         }
     }
 }
+
+.banner-standard {
+    padding-top: 188px;
+    padding-bottom: 124px;
+
+    .statement {
+        width: 32ch;
+        font-size: var(--font-medium);
+        line-height: 1.24;
+    }
+}
