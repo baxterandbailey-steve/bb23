@@ -13,8 +13,8 @@ $text_image_layout = get_sub_field('layout');
         <?php if (have_rows('link')) : ?>
             <?php while (have_rows('link')) : the_row();
                 $text_image_link_url = get_sub_field('link_url');
-                $text_image_link_label = get_sub_field('link_label');
-            ?>
+                $text_image_link_label = get_sub_field('link_label'); ?>
+
                 <a href="<?php echo $text_image_link_url; ?>" class="link"><?php echo $text_image_link_label; ?></a>
             <?php endwhile; ?>
         <?php endif; ?>

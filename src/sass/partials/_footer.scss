@@ -14,12 +14,12 @@ footer {
 
         .lh-col {
             span,
-            h2 {
+            .title {
                 font-family: var(--titling);
                 font-size: var(--font-medium);
             }
 
-            p {
+            .text {
                 // font-family: var(--copy);
                 margin-top: 1rem;
                 width: 32ch;
@@ -29,7 +29,8 @@ footer {
         }
 
         .rh-col {
-            padding-top: 80px;
+            padding-top: 8.25rem;
+            margin-bottom: 14.25rem;
 
             @media (min-width: 660px) {
                 display: grid;
@@ -67,9 +68,5 @@ footer {
                 }
             }
         }
-    }
-
-    address {
-        width: 160px;
     }
 }

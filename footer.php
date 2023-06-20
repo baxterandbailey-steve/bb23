@@ -31,8 +31,8 @@
 				<div class="footer-main">
 					<div class="lh-col">
 						<span>Interested?</span>
-						<h2>We would love to hear from you</h2>
-						<p><?php echo $statement ?></p>
+						<h2 class="title">We would love to hear from you</h2>
+						<p class="text"><?php echo $statement ?></p>
 					</div>
 					<div class="rh-col">
 						<div class="contact">
@@ -45,13 +45,15 @@
 							<span><?php echo $general_enquiries ?></span>
 							<h3>Open Positions</h3>
 							<span><?php echo $jobs ?></span><br>
-							<address>
-								<?php echo $address ?>
-							</address>
+							<!--
+								<address>
+									<?php echo $address ?>
+								</address>
+							-->
 						</div>
 						<div class="social">
 							<h3>Follow Us</h3>
-							<ul>
+							<ul class="socials">
 								<li>Instagram</li>
 								<li>Twitter</li>
 								<li>Pinterest</li>

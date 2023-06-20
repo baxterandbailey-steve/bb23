@@ -1,6 +1,7 @@
 <?php
 $service_section_title = get_sub_field('section_title');
 ?>
+
 <div class="services contain">
     <h2 class="title"><?php echo $service_section_title; ?></h2>
 
@@ -24,18 +25,15 @@ $service_section_title = get_sub_field('section_title');
                         <ul>
                             <?php if (have_rows('elements')) :
                                 while (have_rows('elements')) : the_row();
-                                    $element = get_sub_field('element');
-                            ?>
+                                    $element = get_sub_field('element'); ?>
                                     <li><?php echo $element; ?></li>
-                            <?php
-                                endwhile;
-                            endif; ?>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
                         </ul>
                         <a href="<?php echo $service_link_url; ?>" class="link"><?php echo $service_link_label; ?></a>
                     </div>
                 </div>
             </section>
-    <?php
-        endwhile;
-    endif; ?>
+        <?php endwhile; ?>
+    <?php endif; ?>
 </div>

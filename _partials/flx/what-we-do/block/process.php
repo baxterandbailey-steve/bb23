@@ -12,17 +12,9 @@ $process_section_title = get_sub_field('section_title');
                 $process_type = get_sub_field('type');
                 $process_title = get_sub_field('title');
                 $process_description = get_sub_field('description');
-                $process_image = get_sub_field('image');
-        ?>
+                $process_image = get_sub_field('image'); ?>
 
                 <div class="process grid">
-                    <!--
-                        <style>
-                            .process:after {
-                                background-image: url('<?php echo $process_image; ?>');
-                            }
-                        </style>
-                    -->
                     <div class="text">
                         <span class="meta"><?php echo $process_type; ?></span>
                         <h3 class="title"><?php echo $process_title; ?></h3>

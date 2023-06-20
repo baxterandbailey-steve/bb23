@@ -6,7 +6,7 @@
     /* team-members
     ------------------------------------------------------------------------- */
     .team-members {
-        margin-bottom: 110px;
+        margin-bottom: 6.875rem;
         columns: 3;
         column-gap: 48px;
     }
@@ -19,10 +19,9 @@
             margin-bottom: 0.625rem; //10px
         }
 
-        h3.name {
+        .name {
             font-family: var(--copy);
             font-size: var(--font-root);
-            //   font-weight: bold;
         }
 
         .role {
@@ -33,11 +32,11 @@
     }
 
     .team-member:nth-of-type(4) {
-        padding-bottom: 320px;
+        padding-bottom: 20rem;
     }
 
     .team-member:nth-of-type(5) {
-        padding-top: 320px;
+        padding-top: 20rem;
     }
 
     /* text-image
@@ -47,12 +46,18 @@
         margin-bottom: 6rem;
 
         .inner {
-            padding-top: 36px;
+            padding-top: 2.25rem;
             border-top: 1.5px solid var(--mid-black);
             display: grid;
             grid-column: 3 / 11;
             grid-template-columns: repeat(8, 1fr);
             grid-gap: 48px;
+        }
+
+        &:last-of-type {
+            .inner {
+                border: none;
+            }
         }
 
         .text {
@@ -86,10 +91,6 @@
                 color: var(--black);
             }
         }
-
-        .image {
-            // width: 100%;
-        }
     }
 
     .left {
@@ -118,12 +119,6 @@
         }
     }
 
-    /* call to action
-    ------------------------------------------------------------------------- */
-    .cta {
-        // styles
-    }
-
     /* image-offset
     ------------------------------------------------------------------------- */
     .image-offset {
@@ -148,7 +143,7 @@
         &.black {
             background-color: var(--black);
 
-            h2,
+            .title,
             p {
                 color: var(--white);
             }
@@ -157,7 +152,7 @@
         &.white {
             background-color: var(--white);
 
-            h2,
+            .title,
             p {
                 color: var(--black);
             }
@@ -167,7 +162,7 @@
             margin-bottom: 3rem;
         }
 
-        h2 {
+        .title {
             grid-column: 1 / 4;
             grid-row: 1 / -1;
             font-size: 44px;
@@ -181,17 +176,17 @@
         .images {
             padding: 60px 0 74px 0;
 
-            img {
+            .image {
                 margin-bottom: 4rem;
                 grid-column: span 3;
                 justify-self: center;
             }
 
-            img:nth-of-type(4n + 1) {
+            .image:nth-of-type(4n + 1) {
                 justify-self: start;
             }
 
-            img:nth-of-type(4n) {
+            .image:nth-of-type(4n) {
                 justify-self: end;
             }
         }
