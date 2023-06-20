@@ -15,7 +15,8 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
         <?php get_template_part('_partials/flx/homepage/rows') ?>
     </div>
 
-    <?php get_template_part('_partials/newsroom') ?>
+    <?php get_template_part('_partials/page-sections/newsroom') ?>
+    <?php get_template_part('_partials/page-sections/get-in-touch') ?>
 
 </main>
 <?php get_footer(); ?>

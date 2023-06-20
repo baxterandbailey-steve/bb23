@@ -9,22 +9,6 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
-    "\/_partials\/components\/get-in-touch.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/components\/get-in-touch.php",
-      "oF" : 0
-    },
-    "\/_partials\/components\/newsroom.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/components\/newsroom.php",
-      "oF" : 0
-    },
     "\/_partials\/elements\/logo.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -183,6 +167,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/_partials\/headers\/header-front-page.php",
+      "oF" : 0
+    },
+    "\/_partials\/page-sections\/get-in-touch.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/page-sections\/get-in-touch.php",
+      "oF" : 0
+    },
+    "\/_partials\/page-sections\/newsroom.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/page-sections\/newsroom.php",
       "oF" : 0
     },
     "\/_partials\/site-furniture\/navbar.php" : {
@@ -1323,20 +1323,20 @@
       "oAP" : "\/taxonomy.php",
       "oF" : 0
     },
-    "\/team.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/team.php",
-      "oF" : 0
-    },
     "\/what-we-do.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/what-we-do.php",
+      "oF" : 0
+    },
+    "\/who-we-are.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/who-we-are.php",
       "oF" : 0
     }
   },
