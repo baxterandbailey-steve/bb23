@@ -40,44 +40,6 @@
         padding-top: 320px;
     }
 
-    /* clients
-    ------------------------------------------------------------------------- */
-    .clients {
-        padding-top: 96px;
-        background: var(--black);
-
-        h2,
-        p {
-            color: var(--white);
-        }
-
-        h2 {
-            grid-column: 1 / 4;
-            font-size: 44px;
-        }
-
-        p {
-            grid-column: 9 / -1;
-        }
-
-        .logos {
-            padding: 60px 0 74px 0;
-
-            img {
-                grid-column: span 3;
-                justify-self: center;
-            }
-
-            img:nth-of-type(4n + 1) {
-                justify-self: start;
-            }
-
-            img:nth-of-type(4n) {
-                justify-self: end;
-            }
-        }
-    }
-
     /* text-image
     ------------------------------------------------------------------------- */
     .text-image {
@@ -156,33 +118,6 @@
         }
     }
 
-    /* partners
-    ------------------------------------------------------------------------- */
-    .partners {
-        padding-top: 96px;
-        background: var(--white);
-
-        h2,
-        p {
-            color: var(--black);
-        }
-
-        h2 {
-            grid-column: 1 / 4;
-            font-size: 44px;
-        }
-
-        p {
-            grid-column: 8 / -1;
-        }
-
-        .logos {
-            padding: 60px 0 74px 0;
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
     /* call to action
     ------------------------------------------------------------------------- */
     .cta {
@@ -202,6 +137,63 @@
         .secondary-image {
             grid-column: 1 / 6;
             grid-row: 6 / -1;
+        }
+    }
+
+    /* image-grid
+    ------------------------------------------------------------------------- */
+    .image-grid {
+        padding-top: 96px;
+
+        &.black {
+            background-color: var(--black);
+
+            h2,
+            p {
+                color: var(--white);
+            }
+        }
+
+        &.white {
+            background-color: var(--white);
+
+            h2,
+            p {
+                color: var(--black);
+            }
+        }
+
+        .introduction {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            grid-column: 1 / 4;
+            grid-row: 1 / -1;
+            font-size: 44px;
+        }
+
+        p {
+            grid-column: 8 / -1;
+            grid-row: 1 / -1;
+        }
+
+        .images {
+            padding: 60px 0 74px 0;
+
+            img {
+                margin-bottom: 4rem;
+                grid-column: span 3;
+                justify-self: center;
+            }
+
+            img:nth-of-type(4n + 1) {
+                justify-self: start;
+            }
+
+            img:nth-of-type(4n) {
+                justify-self: end;
+            }
         }
     }
 }
