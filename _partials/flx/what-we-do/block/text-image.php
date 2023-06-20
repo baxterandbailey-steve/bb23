@@ -17,7 +17,6 @@ $text_image_image = get_sub_field('image');
                 <a href="<?php echo $text_image_link_url; ?>" class="link"><?php echo $text_image_link_label; ?></a>
             <?php endwhile; ?>
         <?php endif; ?>
-
     </div>
     <img src="<?php echo $text_image_image ?>" class="image">
 </div>

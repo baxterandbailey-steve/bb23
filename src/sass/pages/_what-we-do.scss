@@ -182,7 +182,7 @@
         }
 
         .quote {
-            grid-column: 6 / 13;
+            grid-column: 5 / 12;
             font-size: 2.75rem;
             line-height: 1.24;
             color: var(--black);
@@ -192,7 +192,9 @@
 
     // call to action styles -----------------------------------------------
     .text-image {
-        //padding-top: 1rem;
+        //    grid-column: 4 / 12;
+        padding-top: 2.25rem;
+        //    border-top: 1.5px solid var(--mid-black);
         margin-bottom: 6rem;
 
         .text {
