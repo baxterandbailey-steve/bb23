@@ -192,13 +192,11 @@
 
     // call to action styles -----------------------------------------------
     .text-image {
-        //    grid-column: 4 / 12;
         padding-top: 2.25rem;
-        //    border-top: 1.5px solid var(--mid-black);
         margin-bottom: 6rem;
 
         .text {
-            grid-column: 3 / 7;
+            // grid-column: 3 / 7;
 
             .title {
                 margin-bottom: var(--drop-small);
@@ -231,10 +229,33 @@
 
         .image {
             width: 340px;
-            grid-column: 8 / 12;
+            //grid-column: 8 / 12;
             align-items: center;
             transform: translateX(-38px);
         }
     }
-    // close .what-we-do
-}
+
+    .left {
+        .text {
+            grid-column: 3 / 7;
+            grid-row: 1 / 2;
+        }
+
+        .image {
+            grid-column: 8 / 12;
+            grid-row: 1 / 2;
+        }
+    }
+
+    .right {
+        .text {
+            grid-column: 8 / 12;
+            grid-row: 1 / 2;
+        }
+
+        .image {
+            grid-column: 3 / 7;
+            grid-row: 1 / 2;
+        }
+    }
+} // close .what-we-do
