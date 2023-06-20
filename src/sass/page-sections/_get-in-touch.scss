@@ -1,0 +1,60 @@
+/* get in touch
+----------------------------------------------------------------------------- */
+.get-in-touch {
+    padding-top: 3.25rem;
+    background: var(--white);
+
+    .image {
+        grid-column: 3 / 7;
+        align-self: end;
+    }
+
+    .text {
+        grid-column: 7 / 11;
+
+        .title {
+            margin-bottom: var(--drop-small);
+            font-size: var(--font-base-plus);
+            text-transform: uppercase;
+            line-height: var(--lh-medium);
+            color: var(--mid-black);
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+            font-size: var(--font-base-plus);
+            color: #9a9a9a;
+        }
+
+        p:first-of-type {
+            font-family: 'cabinet-medium';
+            color: var(--black);
+        }
+
+        p:last-of-type {
+            margin-bottom: 2rem;
+        }
+
+        .link {
+            text-transform: uppercase;
+            color: var(--black);
+        }
+    }
+
+    form {
+        margin-bottom: 2rem;
+    }
+
+    .input-email {
+        width: 70%;
+        height: 52px;
+        border: 1.5px solid var(--black);
+    }
+
+    .input-subscribe {
+        width: 28%;
+        height: 52px;
+        border: 1.5px solid var(--black);
+        background-color: transparent;
+    }
+}

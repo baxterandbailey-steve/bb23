@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/_partials\/components\/get-in-touch.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/components\/get-in-touch.php",
+      "oF" : 0
+    },
     "\/_partials\/components\/newsroom.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -907,6 +915,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/_banner.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/sass\/page-sections\/_get-in-touch.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/_get-in-touch.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
