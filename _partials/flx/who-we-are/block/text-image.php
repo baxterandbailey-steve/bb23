@@ -9,10 +9,12 @@ $text_image_layout = get_sub_field('layout');
 ?>
 
 <div class="text-image grid contain <?php echo $text_image_layout; ?>">
-    <div class="text">
-        <h2 class="title"><?php echo $text_image_title ?></h2>
-        <?php echo $text_image_text ?>
-        <a href="<?php echo $text_image_link_url; ?>" class="link"><?php echo $text_image_link_label; ?></a>
+    <div class="inner">
+        <div class="text">
+            <h2 class="title"><?php echo $text_image_title ?></h2>
+            <?php echo $text_image_text ?>
+            <a href="<?php echo $text_image_link_url; ?>" class="link"><?php echo $text_image_link_label; ?></a>
+        </div>
+        <img src="<?php echo $text_image_image ?>" class="image">
     </div>
-    <img src="<?php echo $text_image_image ?>" class="image">
 </div>
