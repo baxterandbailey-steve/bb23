@@ -1,5 +1,5 @@
 <section class="image-cta contain">
-    <div class="lh-col">
+    <!-- <div class="lh-col">
         <img src="<?php the_sub_field('image') ?>" class="image" />
     </div>
     <div class="rh-col">
@@ -8,5 +8,5 @@
             <strong><?php the_sub_field('text') ?></strong>
         </p>
         <a class="link"><?php the_sub_field('link_label') ?></a>
-    </div>
+    </div> -->
 </section>

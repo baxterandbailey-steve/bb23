@@ -1,6 +1,6 @@
 /* about
 ----------------------------------------------------------------------------- */
-.about {
+.who-we-are {
     background: var(--off-white);
 
     /* team-members
@@ -80,46 +80,73 @@
 
     /* text-image
     ------------------------------------------------------------------------- */
-    .our-work {
-        // border-top: 1px solid var(--black);
-        padding-bottom: 192px;
-        margin-top: 100px;
-        background-color: var(--off-white);
-
-        .lh-col {
-            grid-column: 1 / 7;
-        }
-
-        .title,
-        .text {
-            color: var(--black);
-        }
-
-        .title {
-            margin: 2rem 0 4.125rem 0;
-            font-size: 2.75rem;
-        }
+    .text-image {
+        padding-top: 2.25rem;
+        margin-bottom: 6rem;
 
         .text {
-            margin-bottom: 4rem;
-            font-family: var(--titling);
-            font-size: 4.065rem;
-            line-height: 1.07;
-        }
+            //grid-column: 3 / 7;
 
-        .link {
-            font-family: 'cabinet-medium';
-            text-transform: uppercase;
-            color: var(--black);
-        }
+            .title {
+                margin-bottom: var(--drop-small);
+                font-size: var(--font-base-plus);
+                text-transform: uppercase;
+                line-height: var(--lh-medium);
+                color: var(--mid-black);
+            }
 
-        .rh-col {
-            margin-top: 2rem;
-            grid-column: 8 / -1;
+            p {
+                margin-bottom: 0.5rem;
+                font-size: var(--font-base-plus);
+                color: #9a9a9a;
+            }
+
+            p:first-of-type {
+                font-family: 'cabinet-medium';
+                color: var(--black);
+            }
+
+            p:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            .link {
+                font-family: 'cabinet-medium';
+                font-size: var(--font-small);
+                text-transform: uppercase;
+                color: var(--black);
+            }
         }
 
         .image {
-            width: 100%;
+            width: 340px;
+            grid-column: 8 / 12;
+            align-items: center;
+            transform: translateX(-38px);
+        }
+    }
+
+    .left {
+        .text {
+            grid-column: 3 / 7;
+            grid-row: 1 / 2;
+        }
+
+        .image {
+            grid-column: 8 / 12;
+            grid-row: 1 / 2;
+        }
+    }
+
+    .right {
+        .text {
+            grid-column: 8 / 12;
+            grid-row: 1 / 2;
+        }
+
+        .image {
+            grid-column: 3 / 7;
+            grid-row: 1 / 2;
         }
     }
 
@@ -150,31 +177,9 @@
         }
     }
 
-    /* image-cta
+    /* call to action
     ------------------------------------------------------------------------- */
-    .image-cta {
-        padding: 62px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .lh-col {
-            margin-right: 46px;
-        }
-
-        .rh-col {
-            width: 280px;
-            margin-left: 46px;
-        }
-
-        .title {
-            margin-bottom: 0.25rem;
-        }
-
-        .text {
-            margin-bottom: 3.875em;
-            font-size: var(--font-root-plus);
-            line-height: 1.35;
-        }
+    .cta {
+        // styles
     }
 }

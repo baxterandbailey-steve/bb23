@@ -121,12 +121,12 @@
       "oAP" : "\/_partials\/flx\/who-we-are\/block\/clients.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/who-we-are\/block\/image_cta.php" : {
+    "\/_partials\/flx\/who-we-are\/block\/cta.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/who-we-are\/block\/image_cta.php",
+      "oAP" : "\/_partials\/flx\/who-we-are\/block\/cta.php",
       "oF" : 0
     },
     "\/_partials\/flx\/who-we-are\/block\/partners.php" : {
@@ -137,12 +137,12 @@
       "oAP" : "\/_partials\/flx\/who-we-are\/block\/partners.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/who-we-are\/block\/text_image.php" : {
+    "\/_partials\/flx\/who-we-are\/block\/text-image.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/who-we-are\/block\/text_image.php",
+      "oAP" : "\/_partials\/flx\/who-we-are\/block\/text-image.php",
       "oF" : 0
     },
     "\/_partials\/flx\/who-we-are\/blocks.php" : {
@@ -950,21 +950,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/sass\/pages\/_about.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/_about.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/src\/sass\/pages\/_archive.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1080,6 +1065,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/_what-we-do.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/sass\/pages\/_who-we-are.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/_who-we-are.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
