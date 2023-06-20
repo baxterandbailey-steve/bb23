@@ -182,4 +182,20 @@
     .cta {
         // styles
     }
+
+    /* image-offset
+    ------------------------------------------------------------------------- */
+    .image-offset {
+        .grid {
+            grid-template-rows: repeat(10, 96px);
+        }
+        .primary-image {
+            grid-column: 3 / -1;
+        }
+
+        .secondary-image {
+            grid-column: 1 / 6;
+            grid-row: 6 / -1;
+        }
+    }
 }
