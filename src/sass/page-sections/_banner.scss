@@ -14,13 +14,10 @@
         padding-bottom: 21.8125rem;
     }
 
-    .statement {
+    h1.statement {
         width: 100%;
         max-width: 1296px;
         margin: 0 auto;
-    }
-
-    h1 {
         font-family: var(--titling);
         font-size: 1.375rem;
         font-weight: 400;
@@ -48,9 +45,26 @@
     padding-top: 188px;
     padding-bottom: 124px;
 
-    .statement {
-        width: 32ch;
-        font-size: var(--font-medium);
-        line-height: 1.24;
+    h1.statement {
+        font-family: var(--titling);
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: var(--lh-medium);
+
+        @media (min-width: 320px) {
+            --a: 24;
+            --b: 44;
+            --x: 320;
+            --y: 1120;
+            --sum1: calc((var(--b) - var(--a)) / (var(--y) - var(--x)));
+            --sum2: calc(var(--sum1) * var(--x));
+            --sum3: calc(var(--a) - var(--sum2)) / 16 * 1rem;
+
+            font-size: calc(var(--sum1) * 100vw + (var(--sum3)));
+        }
+
+        @media (min-width: 1120px) {
+            font-size: var(--font-medium);
+        }
     }
 }

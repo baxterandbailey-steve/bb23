@@ -41,14 +41,16 @@
 							<h3>Press and Events</h3>
 							<span><?php echo $press ?></span>
 							<h3>General Enquiries</h3>
-							<span><?php echo $telephone_number ?></span><br>
+							<span><a href="tel: <?php echo $telephone_number ?>" class="phone"><?php echo $telephone_number ?></a></span><br>
 							<span><?php echo $general_enquiries ?></span>
 							<h3>Open Positions</h3>
 							<span><?php echo $jobs ?></span><br>
 							<!--
-								<address>
-									<?php echo $address ?>
-								</address>
+								<p>
+									<address>
+										<?php echo $address ?>
+									</address>
+								</p>
 							-->
 						</div>
 						<div class="social">
