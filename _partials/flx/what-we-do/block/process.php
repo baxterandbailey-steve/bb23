@@ -2,6 +2,7 @@
 $process_section_title = get_sub_field('section_title');
 ?>
 
+
 <section class="processes">
     <div class="inner contain">
         <h2 class="title"><?php echo $process_section_title; ?></h2>
@@ -14,7 +15,7 @@ $process_section_title = get_sub_field('section_title');
                 $process_description = get_sub_field('description');
                 $process_image = get_sub_field('image'); ?>
 
-                <div class="process grid">
+                <div class="process">
                     <div class="text">
                         <span class="meta"><?php echo $process_type; ?></span>
                         <h3 class="title"><?php echo $process_title; ?></h3>

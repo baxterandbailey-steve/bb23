@@ -16,7 +16,7 @@ $service_section_title = get_sub_field('section_title');
     ?>
             <section class="service">
                 <span class="meta"><?php echo $service_type; ?></span>
-                <div class="grid">
+                <div class="container">
                     <h3 class="title"><?php echo $service_title; ?></h3>
                     <img src="<?php echo $service_image; ?>" class="image">
                     <div class="text">

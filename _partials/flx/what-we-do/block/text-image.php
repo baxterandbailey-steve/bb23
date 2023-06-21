@@ -5,7 +5,8 @@ $text_image_image = get_sub_field('image');
 $text_image_layout = get_sub_field('layout');
 ?>
 
-<div class="text-image grid contain <?php echo $text_image_layout; ?>">
+
+<div class="text-image contain <?php echo $text_image_layout; ?>">
     <div class="text">
         <h2 class="title"><?php echo $text_image_title ?></h2>
         <?php echo $text_image_text ?>

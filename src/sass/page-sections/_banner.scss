@@ -42,8 +42,8 @@
 }
 
 .banner-standard {
-    padding-top: 188px;
-    padding-bottom: 124px;
+    padding-top: 11.75rem; // 188px
+    padding-bottom: 7.75rem; // 124px;
 
     h1.statement {
         font-family: var(--titling);
@@ -64,6 +64,7 @@
         }
 
         @media (min-width: 1120px) {
+            width: 32ch;
             font-size: var(--font-medium);
         }
     }

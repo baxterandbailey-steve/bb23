@@ -5,7 +5,8 @@ $testimonial_organisation = get_sub_field('organisation');
 $testimonial_quote = get_sub_field('quote');
 ?>
 
-<div class="testimonial grid contain">
+
+<div class="testimonial contain">
     <div class="lh-col">
         <span class="author"><?php echo $testimonial_author; ?></span>
         <span class="role"><?php echo $testimonial_role; ?></span>
