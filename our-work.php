@@ -20,7 +20,7 @@ $terms = get_terms(array(
 
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
-<main class="full-width off-white our-work">
+<main class="our-work">
 	<!-- page titling and taxonomy listing -->
 	<div class="page-top">
 		<h2 class="page-title"><?php the_title(); ?></h2>
