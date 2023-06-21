@@ -4,14 +4,40 @@
     padding-top: 3.25rem;
     background: var(--white);
 
-    .image {
-        grid-column: 3 / 7;
-        align-self: end;
+    .container {
+        display: grid;
     }
 
-    .text {
-        grid-column: 7 / 11;
+    // layout media queries --------------------------------------------------
+    @media (min-width: 800px) {
+        .container {
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 48px;
+        }
 
+        .image {
+            grid-column: 1 / 7;
+            align-self: end;
+        }
+
+        .text {
+            grid-column: 7 / -1;
+        }
+    }
+
+    @media (min-width: 1120px) {
+        .image {
+            grid-column: 3 / 7;
+            align-self: end;
+        }
+
+        .text {
+            grid-column: 7 / 11;
+        }
+    }
+
+    // style elements --------------------------------------------------
+    .text {
         .title {
             margin-bottom: var(--drop-small);
             font-size: var(--font-base-plus);
