@@ -17,7 +17,7 @@ $secondary_image = get_field('secondary_image');
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="case-study">
-    <section class="page-top grid contain">
+    <section class="page-top contain">
         <span class="meta">Brand Identity</span>
         <h2 class="title"><?php the_title(); ?></h2>
         <p class="excerpt"><?php echo $excerpt; ?></p>
@@ -25,7 +25,7 @@ $secondary_image = get_field('secondary_image');
 
     <img src="<?php echo $primary_image; ?>" class="primary-image contain">
 
-    <div class="primary-content grid contain">
+    <div class="primary-content contain">
         <div class="lh-col">
             <p class="statement"><?php echo $statement; ?></p>
 
@@ -98,7 +98,7 @@ $secondary_image = get_field('secondary_image');
     <!-- Flexible content -->
     <div class="flexible-content">
         <div class="contain">
-
+            <!--
             <?php if (have_rows('flexible_content')) : ?>
                 <?php while (have_rows('flexible_content')) : the_row(); ?>
 
@@ -164,6 +164,7 @@ $secondary_image = get_field('secondary_image');
             <?php endwhile; // close flex while
             endif;  // close flex if 
             ?>
+            -->
         </div><!--close contain -->
     </div><!--close flexible-content -->
 
