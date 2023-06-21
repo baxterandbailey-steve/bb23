@@ -7,8 +7,16 @@
     ------------------------------------------------------------------------- */
     .team-members {
         margin-bottom: 6.875rem;
-        columns: 3;
+        columns: 1;
         column-gap: 48px;
+
+        @media (min-width: 660px) {
+            columns: 2;
+        }
+
+        @media (min-width: 960px) {
+            columns: 3;
+        }
     }
 
     .team-member {
@@ -31,12 +39,14 @@
         }
     }
 
-    .team-member:nth-of-type(4) {
-        padding-bottom: 20rem;
-    }
+    @media (min-width: 960px) {
+        .team-member:nth-of-type(4) {
+            padding-bottom: 20rem;
+        }
 
-    .team-member:nth-of-type(5) {
-        padding-top: 20rem;
+        .team-member:nth-of-type(5) {
+            padding-top: 20rem;
+        }
     }
 
     /* text-image
@@ -45,13 +55,21 @@
         padding-top: 2.25rem;
         margin-bottom: 6rem;
 
+        @media (min-width: 880px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
         .inner {
             padding-top: 2.25rem;
             border-top: 1.5px solid var(--mid-black);
-            display: grid;
-            grid-column: 3 / 11;
-            grid-template-columns: repeat(8, 1fr);
-            grid-gap: 48px;
+
+            @media (min-width: 880px) {
+                display: grid;
+                grid-column: 3 / 11;
+                grid-template-columns: repeat(8, 1fr);
+                grid-gap: 48px;
+            }
         }
 
         &:last-of-type {
@@ -122,16 +140,25 @@
     /* image-offset
     ------------------------------------------------------------------------- */
     .image-offset {
-        .grid {
-            grid-template-rows: repeat(10, 96px);
-        }
-        .primary-image {
-            grid-column: 3 / -1;
+        .inner {
+            display: grid;
+            grid-template-columns: 1fr;
         }
 
-        .secondary-image {
-            grid-column: 1 / 6;
-            grid-row: 6 / -1;
+        @media (min-width: 880px) {
+            .inner {
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(10, 96px);
+            }
+
+            .primary-image {
+                grid-column: 3 / -1;
+            }
+
+            .secondary-image {
+                grid-column: 1 / 6;
+                grid-row: 6 / -1;
+            }
         }
     }
 
@@ -159,35 +186,70 @@
         }
 
         .introduction {
+            display: grid;
+            grid-template-columns: 1fr;
             margin-bottom: 3rem;
         }
 
         .title {
-            grid-column: 1 / 4;
-            grid-row: 1 / -1;
-            font-size: 44px;
+            font-size: var(--font-medium);
         }
 
-        p {
-            grid-column: 8 / -1;
-            grid-row: 1 / -1;
+        @media (min-width: 880px) {
+            .introduction {
+                grid-template-columns: repeat(12, 1fr);
+                grid-gap: 48px;
+            }
+
+            .title {
+                grid-column: 1 / 4;
+                grid-row: 1 / -1;
+            }
+
+            p {
+                grid-column: 8 / -1;
+                grid-row: 1 / -1;
+            }
         }
 
         .images {
-            padding: 60px 0 74px 0;
+            padding: 3.75rem 0 4.625rem 0;
+            display: grid;
+            grid-template-columns: 1fr;
 
             .image {
                 margin-bottom: 4rem;
-                grid-column: span 3;
                 justify-self: center;
+            }
+        }
+
+        @media (min-width: 520px) {
+            .images {
+                grid-template-columns: repeat(12, 1fr);
+            }
+
+            .image {
+                grid-column: span 6;
+            }
+        }
+
+        @media (min-width: 960px) {
+            .image {
+                grid-column: span 4;
+            }
+        }
+
+        @media (min-width: 1120px) {
+            .image {
+                grid-column: span 3;
             }
 
             .image:nth-of-type(4n + 1) {
-                justify-self: start;
+                //justify-self: start;
             }
 
             .image:nth-of-type(4n) {
-                justify-self: end;
+                //justify-self: end;
             }
         }
     }

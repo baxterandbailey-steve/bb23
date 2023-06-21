@@ -5,7 +5,7 @@ $image_grid_cols = get_sub_field('columns');
 
 <section class="image-grid <?php echo $image_grid_bg; ?>">
     <div class="inner contain">
-        <div class="introduction grid">
+        <div class="introduction">
             <?php if (have_rows('introduction')) :
                 while (have_rows('introduction')) : the_row();
                     $image_grid_title = get_sub_field('title');
@@ -16,7 +16,7 @@ $image_grid_cols = get_sub_field('columns');
             <?php endif; ?>
         </div>
 
-        <div class="images grid <?php echo $image_grid_cols; ?>">
+        <div class="images <?php echo $image_grid_cols; ?>">
             <?php if (have_rows('images')) :
                 while (have_rows('images')) : the_row();
                     $image_grid_image = get_sub_field('image'); ?>
