@@ -30,7 +30,7 @@
 			<div class="contain">
 				<div class="footer-main">
 					<div class="lh-col">
-						<span>Interested?</span>
+						<span class="meta">Interested?</span>
 						<h2 class="title">We would love to hear from you</h2>
 						<p class="text"><?php echo $statement ?></p>
 					</div>

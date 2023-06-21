@@ -6,67 +6,70 @@ footer {
 
     .footer-main {
         padding-top: 3rem;
+
         @media (min-width: 1180px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 48px;
         }
+    }
 
-        .lh-col {
-            span,
-            .title {
-                font-family: var(--titling);
-                font-size: var(--font-medium);
-            }
-
-            .text {
-                // font-family: var(--copy);
-                margin-top: 1rem;
-                width: 32ch;
-                font-size: var(--font-root-plus);
-                color: var(--work-meta);
-            }
+    .lh-col {
+        .meta,
+        .title {
+            font-family: var(--titling);
+            font-size: var(--font-medium);
         }
 
-        .rh-col {
-            padding-top: 8.25rem;
-            margin-bottom: 14.25rem;
+        .text {
+            margin-top: 1rem;
+            font-size: var(--font-root-plus);
+            color: var(--work-meta);
 
-            @media (min-width: 660px) {
-                display: grid;
-                grid-template-columns: repeat(6, 1fr);
+            @media (min-width: 480px) {
+                width: 32ch;
             }
+        }
+    }
 
-            .contact {
-                grid-column: 1 / 5;
-            }
+    .rh-col {
+        padding-top: 8.25rem;
+        margin-bottom: 14.25rem;
 
-            .contact {
-                h3 {
-                    font-size: var(--font-root-plus);
-                    text-transform: uppercase;
-                    color: var(--work-meta);
-                }
+        @media (min-width: 660px) {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
 
-                span {
-                    margin-bottom: 1.5rem;
-                    display: block;
-                }
-            }
+    .contact {
+        grid-column: 1 / 5;
+    }
 
-            .social {
-                h3 {
-                    font-size: var(--font-root-plus);
-                    text-transform: uppercase;
-                    color: var(--work-meta);
-                }
+    .contact {
+        h3 {
+            font-size: var(--font-root-plus);
+            text-transform: uppercase;
+            color: var(--work-meta);
+        }
 
-                li {
-                    margin-bottom: 0.5rem;
-                    font-size: var(--font-plus);
-                    text-decoration: underline;
-                }
-            }
+        span {
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+    }
+
+    .social {
+        h3 {
+            font-size: var(--font-root-plus);
+            text-transform: uppercase;
+            color: var(--work-meta);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: var(--font-plus);
+            text-decoration: underline;
         }
     }
 }
