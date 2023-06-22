@@ -16,20 +16,22 @@
 
 //// layout
 @use 'layout/layout';
-@use 'layout/grids/home-v1.0';
-@use 'layout/grids/work-v1.0';
+//@use 'layout/grids/work-v1.0';
 
 //// pages
 @use 'pages/archives';
 @use 'pages/archive';
 @use 'pages/our-work';
-@use 'pages/who-we-are';
-@use 'pages/what-we-do';
-@use 'pages/type';
 
 //// page-sections
 @use 'page-sections/banner';
 @use 'page-sections/get-in-touch';
+
+//// flexible-content blocks
+@use 'flx/who-we-are';
+@use 'flx/what-we-do';
+@use 'flx/home-v1.0';
+@use 'flx/work-v1.0';
 
 //// post types
 @use 'post-types/work';
