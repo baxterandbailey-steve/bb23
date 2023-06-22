@@ -15,6 +15,11 @@ footer {
     }
 
     .lh-col {
+        span,
+        h2 {
+            color: var(--white);
+        }
+
         .meta,
         .title {
             font-family: var(--titling);
@@ -39,6 +44,11 @@ footer {
         @media (min-width: 660px) {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
+        }
+
+        span,
+        li {
+            color: var(--white);
         }
     }
 

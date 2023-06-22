@@ -26,7 +26,7 @@
 
 		?>
 
-		<footer role="contentinfo" style="color: white;">
+		<footer role="contentinfo">
 			<div class="contain">
 				<div class="footer-main">
 					<div class="lh-col">

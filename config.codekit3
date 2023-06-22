@@ -1122,7 +1122,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/sass\/partials\/newsroom.scss" : {
+    "\/src\/sass\/partials\/_newsroom.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -1131,7 +1131,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/css\/newsroom.min.css",
+      "oAP" : "\/dist\/css\/_newsroom.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
