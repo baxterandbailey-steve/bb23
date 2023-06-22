@@ -147,13 +147,9 @@ $terms = get_terms(array(
 
 					<article>
 						<figure data-aos="fade-in">
-							<?php $attachment_id = get_the_post_thumbnail();
-							$image = wp_get_attachment_image($attachment_id, 'full'); ?>
-
-							<?php echo $image; ?>
 							<?php the_post_thumbnail(); ?>
 
-							<h3 class="link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							<h3 class="title link"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							<span class="meta"><?php the_field('meta'); ?></span>
 						</figure>
 					</article>

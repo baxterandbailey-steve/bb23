@@ -6,7 +6,7 @@
     /* team-members
     ------------------------------------------------------------------------- */
     .team-members {
-        margin-bottom: 6.875rem;
+        margin-bottom: 6.75rem;
         columns: 1;
         column-gap: 48px;
 
@@ -20,7 +20,7 @@
     }
 
     .team-member {
-        margin-bottom: 3.375rem;
+        margin-bottom: 3rem;
 
         .image {
             width: 100%;
@@ -140,6 +140,8 @@
     /* image-offset
     ------------------------------------------------------------------------- */
     .image-offset {
+        margin-bottom: 96px;
+
         .inner {
             display: grid;
             grid-template-columns: 1fr;
@@ -148,7 +150,7 @@
         @media (min-width: 880px) {
             .inner {
                 grid-template-columns: repeat(12, 1fr);
-                grid-template-rows: repeat(10, 96px);
+                grid-template-rows: repeat(9, 108px);
             }
 
             .primary-image {
@@ -156,8 +158,9 @@
             }
 
             .secondary-image {
-                grid-column: 1 / 6;
+                grid-column: 1 / 7;
                 grid-row: 6 / -1;
+                //transform: translateY(-20px);
             }
         }
     }
@@ -245,11 +248,11 @@
             }
 
             .image:nth-of-type(4n + 1) {
-                //justify-self: start;
+                justify-self: start;
             }
 
             .image:nth-of-type(4n) {
-                //justify-self: end;
+                justify-self: end;
             }
         }
     }
