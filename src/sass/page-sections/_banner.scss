@@ -1,6 +1,6 @@
 /* banner
 ----------------------------------------------------------------------------- */
-.banner {
+.banner-home {
     // position: fixed;
     width: 100%;
     padding-top: 4rem;
@@ -10,8 +10,8 @@
     background-color: var(--off-white);
 
     @media (min-width: 880px) {
-        padding-top: 12.25rem;
-        padding-bottom: 21.8125rem;
+        padding-top: 14.25rem; // 228px
+        padding-bottom: 20.75rem; // 332px
     }
 
     h1.statement {
@@ -42,8 +42,8 @@
 }
 
 .banner-standard {
-    padding-top: 11.75rem; // 188px
-    padding-bottom: 7.75rem; // 124px;
+    padding-top: 9.375rem; // 150px
+    padding-bottom: 14.875rem; // 124px;
 
     h1.statement {
         font-family: var(--titling);

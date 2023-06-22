@@ -4,10 +4,6 @@
     padding-top: var(--site-space-lg);
     padding-bottom: var(--site-space-lg);
 
-    @media (min-width: 800px) {
-        padding-top: var(--site-space-bg);
-    }
-
     > .row {
         margin-bottom: 0;
 
@@ -27,6 +23,10 @@
             margin-bottom: var(--drop-big);
             grid-column-gap: 48px;
         }
+    }
+
+    .row:last-of-type {
+        margin-bottom: 0px;
     }
 
     // basics, ie styles to be inherited by all elements
@@ -92,7 +92,7 @@
     /* three col layout ------------------------------------------------------------ */
     .three-cols {
         grid-template-rows: 1fr;
-        margin-bottom: var(--drop-big);
+        margin-bottom: 15.25rem;
 
         .col-1 {
             grid-column: 1 / 9;

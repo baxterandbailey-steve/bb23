@@ -6,4 +6,4 @@
 	)); ?>
 </nav>
 
-<button class="burger"></button>
+<button class="navicon"></button>
