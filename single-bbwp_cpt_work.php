@@ -6,19 +6,20 @@ $terms = get_terms(array(
 
 // text
 $excerpt = get_field('excerpt');
-$statement = get_field('statement');
+$statement = get_field('work_statement');
 $sector = get_field('sector');
+$service = get_field('service');
 
 // images
 $primary_image = get_field('primary_image');
 $secondary_image = get_field('secondary_image');
 ?>
 
-<?php get_template_part('_partials/headers/header', 'default'); ?>
+<!-- <?php get_template_part('_partials/headers/header', 'default'); ?> -->
 
 <main class="case-study">
     <section class="page-top contain">
-        <span class="meta">Brand Identity</span>
+        <span class="meta"><?php echo $service; ?></span>
         <h2 class="title"><?php the_title(); ?></h2>
         <p class="excerpt"><?php echo $excerpt; ?></p>
     </section>
@@ -35,18 +36,7 @@ $secondary_image = get_field('secondary_image');
                     <p class="item"><?php echo $sector; ?></p>
                 </div>
 
-                <!-- awards repeater-->
-                <div class="awards">
-                    <h3 class="title">Awards</h3>
-                    <?php
-                    if (have_rows('awards')) :
-                        while (have_rows('awards')) : the_row(); ?>
-                            <p class="item"><?php the_sub_field('award_item'); ?></p>
-                    <?php
-                        endwhile;
-                    endif;
-                    ?>
-                </div>
+                <h2>What We Did</h2>
 
                 <!-- strategy repeater -->
                 <div class="strategy">
