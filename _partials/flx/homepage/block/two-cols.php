@@ -1,6 +1,5 @@
 <div class="row two-cols">
-    <?php
-    if (have_rows('lh_col')) :
+    <?php if (have_rows('lh_col')) :
         while (have_rows('lh_col')) : the_row();
     ?>
 
@@ -54,8 +53,9 @@
     endif; ?>
 
 
-    <?php if (have_rows('rh_col')) : ?>
-        <?php while (have_rows('rh_col')) : the_row(); ?>
+    <?php if (have_rows('rh_col')) :
+        while (have_rows('rh_col')) : the_row();
+    ?>
 
             <?php if (get_sub_field('choice') == 'text') : ?>
 

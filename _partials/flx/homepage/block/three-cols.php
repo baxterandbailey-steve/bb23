@@ -8,7 +8,6 @@ $col_3_image = get_sub_field('col_3_image');
 ?>
 
 <div class="row three-cols">
-
     <figure class="col-1" data-aos="fade-up">
         <h3 class="client"><?php echo $col_1_client; ?></h3>
         <div class="details">
@@ -25,5 +24,4 @@ $col_3_image = get_sub_field('col_3_image');
     <figure class="col-3" data-aos="fade-up">
         <img src="<?php echo wp_get_attachment_image($col_3_image, 'full'); ?>">
     </figure>
-
 </div>

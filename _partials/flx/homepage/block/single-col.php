@@ -7,7 +7,7 @@ $single_col_description = get_sub_field('description');
 ?>
 
 <div class="row single-col">
-    <figure style=" grid-column: <?php echo $single_col_width ?>" data-aos="fade-up">
+    <figure style=" grid-column:<?php echo $single_col_width ?>" data-aos="fade-up">
         <img src="<?php echo wp_get_attachment_image($single_col_image, 'full'); ?>">
         <div class="details" data-aos="fade-up">
             <h3 class="client"><?php echo $single_col_client; ?></h3>
