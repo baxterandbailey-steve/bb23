@@ -14,6 +14,7 @@
 		$press = get_field('press_events_email', 'options');
 		$general_enquiries = get_field('general_enquiries_email', 'options');
 		$jobs = get_field('jobs_email', 'options');
+		$join_us = get_field('join_us', 'options');
 
 
 		$instagram = get_field('instagram', 'options');
@@ -43,8 +44,10 @@
 							<h3>General Enquiries</h3>
 							<span><a href="tel: <?php echo $telephone_number ?>" class="phone"><?php echo $telephone_number ?></a></span><br>
 							<span><?php echo $general_enquiries ?></span>
-							<h3>Open Positions</h3>
+							<h3>Join Us</h3>
+							<p><?php echo $join_us; ?></p>
 							<span><?php echo $jobs ?></span><br>
+
 							<!--
 								<p>
 									<address>

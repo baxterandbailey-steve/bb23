@@ -98,7 +98,7 @@ $secondary_image = get_field('secondary_image');
     <!-- Flexible content -->
     <div class="flexible-content">
         <div class="contain">
-            <!--
+
             <?php if (have_rows('flexible_content')) : ?>
                 <?php while (have_rows('flexible_content')) : the_row(); ?>
 
@@ -164,7 +164,7 @@ $secondary_image = get_field('secondary_image');
             <?php endwhile; // close flex while
             endif;  // close flex if 
             ?>
-            -->
+
         </div><!--close contain -->
     </div><!--close flexible-content -->
 

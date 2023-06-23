@@ -17,52 +17,52 @@
       "oAP" : "\/_partials\/elements\/logo.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/block\/fullwidth.php" : {
+    "\/_partials\/flx\/global\/block\/fullwidth.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/block\/fullwidth.php",
+      "oAP" : "\/_partials\/flx\/global\/block\/fullwidth.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/block\/lefthigh.php" : {
+    "\/_partials\/flx\/global\/block\/lefthigh.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/block\/lefthigh.php",
+      "oAP" : "\/_partials\/flx\/global\/block\/lefthigh.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/block\/threecols.php" : {
+    "\/_partials\/flx\/global\/block\/threecols.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/block\/threecols.php",
+      "oAP" : "\/_partials\/flx\/global\/block\/threecols.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/block\/wideright.php" : {
+    "\/_partials\/flx\/global\/block\/wideright.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/block\/wideright.php",
+      "oAP" : "\/_partials\/flx\/global\/block\/wideright.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/block\/wysiwyg.php" : {
+    "\/_partials\/flx\/global\/block\/wysiwyg.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/block\/wysiwyg.php",
+      "oAP" : "\/_partials\/flx\/global\/block\/wysiwyg.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/blocks.php" : {
+    "\/_partials\/flx\/global\/global.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/blocks.php",
+      "oAP" : "\/_partials\/flx\/global\/global.php",
       "oF" : 0
     },
     "\/_partials\/flx\/homepage\/rows.php" : {
