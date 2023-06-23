@@ -36,45 +36,45 @@ $secondary_image = get_field('secondary_image');
                     <p class="item"><?php echo $sector; ?></p>
                 </div>
 
-                <h2>What We Did</h2>
+                <div class="what-we-did">
+                    <!-- strategy repeater -->
+                    <div class="strategy">
+                        <h3 class="title">Strategy</h3>
+                        <?php
+                        if (have_rows('strategy')) :
+                            while (have_rows('strategy')) : the_row(); ?>
+                                <p class="item"><?php the_sub_field('strategy_item'); ?></p>
+                        <?php
+                            endwhile;
+                        endif;
+                        ?>
+                    </div>
 
-                <!-- strategy repeater -->
-                <div class="strategy">
-                    <h3 class="title">Strategy</h3>
-                    <?php
-                    if (have_rows('strategy')) :
-                        while (have_rows('strategy')) : the_row(); ?>
-                            <p class="item"><?php the_sub_field('strategy_item'); ?></p>
-                    <?php
-                        endwhile;
-                    endif;
-                    ?>
-                </div>
+                    <!-- design repeater -->
+                    <div class="design">
+                        <h3 class="title">Design</h3>
+                        <?php
+                        if (have_rows('design')) :
+                            while (have_rows('design')) : the_row(); ?>
+                                <p class="item"><?php the_sub_field('design_item'); ?></p>
+                        <?php
+                            endwhile;
+                        endif;
+                        ?>
+                    </div>
 
-                <!-- design repeater -->
-                <div class="design">
-                    <h3 class="title">Design</h3>
-                    <?php
-                    if (have_rows('design')) :
-                        while (have_rows('design')) : the_row(); ?>
-                            <p class="item"><?php the_sub_field('design_item'); ?></p>
-                    <?php
-                        endwhile;
-                    endif;
-                    ?>
-                </div>
-
-                <!-- digital repeater-->
-                <div class="digital">
-                    <h3 class="title">Digital</h3>
-                    <?php
-                    if (have_rows('digital')) :
-                        while (have_rows('digital')) : the_row(); ?>
-                            <p class="item"><?php the_sub_field('digital_item'); ?></p>
-                    <?php
-                        endwhile;
-                    endif;
-                    ?>
+                    <!-- digital repeater-->
+                    <div class="digital">
+                        <h3 class="title">Digital</h3>
+                        <?php
+                        if (have_rows('digital')) :
+                            while (have_rows('digital')) : the_row(); ?>
+                                <p class="item"><?php the_sub_field('digital_item'); ?></p>
+                        <?php
+                            endwhile;
+                        endif;
+                        ?>
+                    </div>
                 </div>
 
             </div>
