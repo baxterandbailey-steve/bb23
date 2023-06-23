@@ -65,6 +65,38 @@
       "oAP" : "\/_partials\/flx\/global\/global.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/homepage\/block\/single-col.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/homepage\/block\/single-col.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/homepage\/block\/three-cols.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/homepage\/block\/three-cols.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/homepage\/block\/two-cols.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/homepage\/block\/two-cols.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/homepage\/blocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/homepage\/blocks.php",
+      "oF" : 0
+    },
     "\/_partials\/flx\/homepage\/rows.php" : {
       "cB" : 0,
       "ft" : 8192,

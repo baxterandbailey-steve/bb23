@@ -46,9 +46,10 @@
                                             <blockquopte><?php echo $lh_text_quote; ?></blockquopte>
                                         </div>
 
-                                <?php endwhile;
-                                endif; ?>
-                            <?php } ?>
+                            <?php endwhile;
+                                endif;
+                            } ?>
+
 
                         <? else : ?>
 
@@ -100,10 +101,11 @@
                                             <blockquopte><?php echo $rh_text_quote; ?></blockquopte>
                                         </div>
 
-                                <?php endwhile;
-                                endif; ?>
+                            <?php endwhile;
+                                endif;
+                            } ?>
 
-                            <?php } ?>
+
 
                         <? else : ?>
 
