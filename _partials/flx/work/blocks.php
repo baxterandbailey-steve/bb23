@@ -14,6 +14,15 @@
 
             <?php elseif (get_row_layout() == 'testimonial') : ?>
                 <?php get_template_part('_partials/flx/work/block/testimonial'); ?>
+
+            <?php elseif (get_row_layout() == 'full_width_two_cols') : ?>
+                <?php get_template_part('_partials/flx/work/block/full-width-two-cols'); ?>
+
+            <?php elseif (get_row_layout() == 'full_width') : ?>
+                <?php get_template_part('_partials/flx/work/block/full-width'); ?>
+
+            <?php elseif (get_row_layout() == 'full_screen') : ?>
+                <?php get_template_part('_partials/flx/work/block/full-screen'); ?>
             <?php endif; ?>
 
         <?php endwhile; ?>

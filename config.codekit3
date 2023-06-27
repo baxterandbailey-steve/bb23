@@ -177,6 +177,30 @@
       "oAP" : "\/_partials\/flx\/who-we-are\/blocks.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/work\/block\/full-screen.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/work\/block\/full-screen.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/work\/block\/full-width-two-cols.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/work\/block\/full-width-two-cols.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/work\/block\/full-width.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/work\/block\/full-width.php",
+      "oF" : 0
+    },
     "\/_partials\/flx\/work\/block\/image-text.php" : {
       "cB" : 0,
       "ft" : 8192,

@@ -158,7 +158,8 @@
     .image-text,
     .testimonial,
     .media__half-width,
-    .media__full-width {
+    .media__full-width,
+    .primary-media {
         width: 100%;
         max-width: var(--site-width);
         padding-left: 1.5rem;
@@ -170,6 +171,11 @@
             padding-left: 4.5rem;
             padding-right: 4.5rem;
         }
+    }
+
+    .primary-video {
+        width: 100%;
+        margin-bottom: var(--drop-small);
     }
 
     .bleed {
@@ -264,6 +270,46 @@
             grid-column: 5 / 12;
             font-family: var(--titling);
             font-size: 2.75rem;
+        }
+    }
+
+    // new image / vide block styles -----------------------------------------------------------------------------
+    .full-width__two-cols,
+    .full-width-video,
+    .full-screen-video {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 4.5rem;
+        margin: 0 auto var(--drop-small);
+    }
+
+    .full-width__two-cols {
+        display: flex;
+
+        video:first-of-type {
+            width: calc(50% - 24px);
+            margin-right: 24px;
+        }
+
+        video:last-of-type {
+            width: calc(50% - 24px);
+            margin-left: 24px;
+        }
+    }
+
+    .full-width-video {
+        video {
+            width: 100%;
+        }
+    }
+
+    .full-screen-video {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto var(--drop-small);
+
+        video {
+            width: 100%;
         }
     }
 }

@@ -13,6 +13,7 @@ $service = get_field('service');
 // images
 $primary_image = get_field('primary_image');
 $secondary_image = get_field('secondary_image');
+
 ?>
 
 <main class="case-study">
@@ -22,7 +23,24 @@ $secondary_image = get_field('secondary_image');
         <p class="excerpt"><?php echo $excerpt; ?></p>
     </section>
 
-    <img src="<?php echo $primary_image; ?>" class="primary-image contain">
+    <div class="primary-media">
+        <?php if (have_rows('primary_media')) : ?>
+            <?php while (have_rows('primary_media')) : the_row();
+                $primary_media = get_sub_field('video');
+            ?>
+                <video preload playsinline autoplay muted loop class="primary-video">
+                    <source src="<?php echo $primary_media ?>" type="video/mp4">
+                </video>
+
+        <?php
+            endwhile;
+        endif;
+        ?>
+    </div>
+
+
+    <!-- <img src="<?php echo $primary_image; ?>" class="primary-image contain"> -->
+
 
     <div class="primary-content contain">
         <div class="lh-col">
@@ -85,7 +103,6 @@ $secondary_image = get_field('secondary_image');
 
     <!-- Flexible content -->
     <?php get_template_part('_partials/flx/work/blocks') ?>
-
 
 
 </main>
