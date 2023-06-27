@@ -2,6 +2,7 @@
 ----------------------------------------------------------------------------- */
 .case-study {
     padding-top: 6.75rem;
+    margin-bottom: 6.75rem;
     background: var(--white);
 
     .page-top {
@@ -135,13 +136,12 @@
 
     // flexible content styles -----------------------------------------------------------------------------
     .flexible-content {
-        padding-top: 3rem;
+        padding-top: 6rem;
         background-color: var(--off-white);
     }
 
     .text-row,
     .image-text,
-    .testimonial,
     .media__half-width,
     .media__full-width {
         margin-bottom: var(--drop-medium);
@@ -149,10 +149,10 @@
 
     .text-row,
     .image-text,
-    .testimonial,
     .media__half-width,
     .media__full-width,
-    .primary-media {
+    .primary-media,
+    .container {
         width: 100%;
         max-width: var(--site-width);
         padding-left: 1.5rem;
@@ -168,7 +168,7 @@
 
     .primary-video {
         width: 100%;
-        margin-bottom: var(--drop-small);
+        margin-bottom: var(--drop-medium);
     }
 
     .bleed {
@@ -209,7 +209,7 @@
             grid-column: 9 / -1;
 
             p {
-                margin-bottom: var(--drop-small);
+                margin-bottom: var(--drop-medium);
             }
         }
     }
@@ -225,7 +225,7 @@
         }
 
         p {
-            margin-bottom: var(--drop-small);
+            margin-bottom: var(--drop-medium);
         }
 
         p:first-of-type {
@@ -238,6 +238,8 @@
     .testimonial {
         padding: 76px 0;
         background-color: var(--white);
+        margin-top: 96px;
+        margin-bottom: 96px;
 
         .author-meta {
             padding-top: 1rem;
@@ -273,7 +275,7 @@
         width: 100%;
         max-width: 1440px;
         padding: 0 4.5rem;
-        margin: 0 auto var(--drop-small);
+        margin: 0 auto var(--drop-medium);
     }
 
     .full-width__two-cols {
@@ -307,4 +309,6 @@
             width: 100%;
         }
     }
+
+    // fixes -----------------------------------------------------------------------------
 }

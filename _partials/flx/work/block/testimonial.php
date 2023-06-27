@@ -1,9 +1,12 @@
-<div class="testimonial grid">
-    <div class="author-meta">
-        <span class="author"><?php the_sub_field('author') ?></span>
-        <span class="role"><?php the_sub_field('role') ?></span>
-        <span class="organisation"><?php the_sub_field('organisation') ?></span>
-    </div>
+<div class="testimonial">
+    <div class="container grid">
 
-    <p class="text"><?php the_sub_field('testimonial') ?></p>
+        <div class="author-meta">
+            <span class="author"><?php the_sub_field('author') ?></span>
+            <span class="role"><?php the_sub_field('role') ?></span>
+            <span class="organisation"><?php the_sub_field('organisation') ?></span>
+        </div>
+
+        <p class="text"><?php the_sub_field('testimonial') ?></p>
+    </div>
 </div>
