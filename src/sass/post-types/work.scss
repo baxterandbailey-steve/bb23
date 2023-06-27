@@ -139,10 +139,6 @@
         background-color: var(--off-white);
     }
 
-    .single,
-    .double,
-    .full-width,
-    .bleed,
     .text-row,
     .image-text,
     .testimonial,
@@ -151,9 +147,6 @@
         margin-bottom: var(--drop-medium);
     }
 
-    .single,
-    .double,
-    .full-width,
     .text-row,
     .image-text,
     .testimonial,
@@ -286,24 +279,26 @@
     .full-width__two-cols {
         display: flex;
 
-        video:first-of-type {
+        .lh-video,
+        .lh-image {
             width: calc(50% - 24px);
             margin-right: 24px;
         }
 
-        video:last-of-type {
+        .rh-video,
+        .rh-image {
             width: calc(50% - 24px);
             margin-left: 24px;
         }
     }
 
-    .full-width-video {
+    .full-width {
         video {
             width: 100%;
         }
     }
 
-    .full-screen-video {
+    .full-screen {
         width: 100%;
         max-width: 1920px;
         margin: 0 auto var(--drop-small);
