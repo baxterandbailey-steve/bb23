@@ -39,7 +39,7 @@ $terms = get_terms(array(
 		<div class="row-4-4-empty">
 			<article>
 				<figure data-aos="fade-in"><img src="/wp-content/uploads/2023/05/home-new-scientist.png"></figure>
-				<h3>New Scientist</h3>
+				<h3><a href="/work/new-scientist/">New Scientist</a></h3>
 				<span class="meta"></span>
 			</article>
 			<article>

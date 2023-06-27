@@ -10,7 +10,6 @@
         grid-template-columns: 1fr;
     }
 
-    // page-top media queries ----------------------------------------------
     @media (min-width: 960px) {
         .page-top {
             grid-template-columns: repeat(12, 1fr);
@@ -44,16 +43,15 @@
         color: var(--mid-black);
     }
 
-    .primary-image {
-        margin-bottom: var(--drop-big);
-    }
-
-    // primary content media queries ----------------------------------------------
-    // mobile single column grid
+    // primary content ----------------------------------------------------------
     .primary-content {
         margin-bottom: var(--drop-big);
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .primary-image {
+        margin-bottom: var(--drop-big);
     }
 
     // grid applied
@@ -148,7 +146,8 @@
     .text-row,
     .image-text,
     .testimonial,
-    .media__half-width {
+    .media__half-width,
+    .media__full-width {
         margin-bottom: var(--drop-medium);
     }
 
@@ -158,7 +157,8 @@
     .text-row,
     .image-text,
     .testimonial,
-    .media__half-width {
+    .media__half-width,
+    .media__full-width {
         width: 100%;
         max-width: var(--site-width);
         padding-left: 1.5rem;

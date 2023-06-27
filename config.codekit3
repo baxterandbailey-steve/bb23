@@ -177,6 +177,46 @@
       "oAP" : "\/_partials\/flx\/who-we-are\/blocks.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/work\/block\/image-text.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/work\/block\/image-text.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/work\/block\/images.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/work\/block\/images.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/work\/block\/testimonial.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/work\/block\/testimonial.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/work\/block\/text.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/work\/block\/text.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/work\/blocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/work\/blocks.php",
+      "oF" : 0
+    },
     "\/_partials\/headers\/header-default.php" : {
       "cB" : 0,
       "ft" : 8192,
