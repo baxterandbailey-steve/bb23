@@ -147,7 +147,6 @@
         margin-bottom: var(--drop-medium);
     }
 
-    .text-row,
     .image-text,
     .media__half-width,
     .media__full-width,
@@ -164,6 +163,13 @@
             padding-left: 4.5rem;
             padding-right: 4.5rem;
         }
+    }
+
+    .text-row {
+        width: 100%;
+        max-width: 1296px;
+        border-top: 1.5px solid var(--mid-black);
+        margin: 0 auto;
     }
 
     .primary-video {
