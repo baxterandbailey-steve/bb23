@@ -1,10 +1,16 @@
-<section class="text-row">
+<?php
+$sector_info_title  = get_sub_field('title');
+$sector_info_text   = get_sub_field('text');
+?>
+
+<section class="sector-info">
     <div class="container">
         <div class="lh-col">
-            <h2><?php the_sub_field('title') ?></h2>
+            <h2><?php echo $sector_info_title; ?></h2>
         </div>
+
         <div class="rh-col">
-            <?php the_sub_field('text') ?>
+            <?php echo $sector_info_text; ?>
         </div>
     </div>
 </section>

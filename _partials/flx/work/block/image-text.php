@@ -1,6 +1,11 @@
+<?php
+$image_text_image = get_sub_field('image');
+$image_text_text = get_sub_field('text');
+?>
+
 <div class="image-text grid">
-    <img src="<?php the_sub_field('image') ?>" class="image">
+    <img src="<?php echo $image_text_image; ?>" class="image">
     <div class="text">
-        <?php the_sub_field('text') ?>
+        <?php echo $image_text_text; ?>
     </div>
 </div>

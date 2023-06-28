@@ -1,4 +1,4 @@
-<div class="full-width__two-cols">
+<div class="two-cols-media">
     <?php if (have_rows('lh_col')) : ?>
 
         <? while (have_rows('lh_col')) : the_row();
@@ -10,6 +10,7 @@
                 <video preload playsinline autoplay muted loop class="lh-video">
                     <source src="<?php echo $lh_video ?>" type="video/mp4">
                 </video>
+
             <?php else : ?>
                 <img src="<?php echo $lh_image; ?>" class="lh-image">
             <?php endif; ?>
@@ -29,6 +30,7 @@
                 <video preload playsinline autoplay muted loop class="rh-video">
                     <source src="<?php echo $rh_video ?>" type="video/mp4">
                 </video>
+
             <?php else : ?>
                 <img src="<?php echo $rh_image; ?>" class="rh-image">
             <?php endif; ?>
