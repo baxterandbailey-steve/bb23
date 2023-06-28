@@ -1,5 +1,5 @@
 <div class="testimonial">
-    <div class="container grid">
+    <div class="container">
 
         <div class="author-meta">
             <span class="author"><?php the_sub_field('author') ?></span>

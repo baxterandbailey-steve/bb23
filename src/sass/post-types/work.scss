@@ -57,27 +57,28 @@
         grid-template-columns: 1fr;
     }
 
-    .primary-image {
+    .primary-image,
+    .primary-video {
+        width: 100%;
         margin-bottom: var(--drop-big);
-    }
 
-    // grid applied
-    @media (min-width: 960px) {
-        .primary-content {
-            grid-template-columns: repeat(12, 1fr);
-            grid-column-gap: 48px;
-        }
+        @media (min-width: 960px) {
+            .primary-content {
+                grid-template-columns: repeat(12, 1fr);
+                grid-column-gap: 48px;
+            }
 
-        .lh-col {
-            grid-column: 1 / 7;
-        }
+            .lh-col {
+                grid-column: 1 / 7;
+            }
 
-        .details {
-            grid-column: 1 / 7;
-        }
+            .details {
+                grid-column: 1 / 7;
+            }
 
-        .rh-col {
-            grid-column: 8 / -1;
+            .rh-col {
+                grid-column: 8 / -1;
+            }
         }
     }
 
@@ -170,18 +171,7 @@
         }
     }
 
-    .testimonial {
-        background: var(--white);
-        display: flex;
-        justify-content: center;
-
-        .container {
-            width: 100%;
-            max-width: 1296px;
-            padding-top: 1.5rem;
-        }
-    }
-
+    // text-row ---------------------------------------------------------------------
     .text-row {
         display: flex;
         justify-content: center;
@@ -190,46 +180,16 @@
             width: 100%;
             max-width: 1296px;
             padding-top: 1.5rem;
+            border-top: 1.5px solid var(--mid-black);
             margin-left: 4.5rem;
             margin-right: 4.5rem;
-            border-top: 1.5px solid var(--mid-black);
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @media (min-width: 800px) {
+                grid-template-columns: repeat(12, 1fr);
+            }
         }
-    }
-
-    .primary-video {
-        width: 100%;
-        margin-bottom: var(--drop-medium);
-    }
-
-    .bleed {
-        width: 100%;
-        max-width: 1920px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    // images
-    .half {
-        grid-column: 1 / 7;
-    }
-
-    .double {
-        .lh-image {
-            grid-column: 1 / 7;
-        }
-        .rh-image {
-            grid-column: 7 / -1;
-        }
-    }
-
-    .full {
-        padding: 100px 0 6rem 0;
-    }
-
-    // text
-    .text-row {
-        padding-top: 1.5rem;
-        margin-bottom: 1.5rem;
 
         .lh-col {
             grid-column: 1 / 7;
@@ -244,7 +204,7 @@
         }
     }
 
-    // image-text
+    // image-text ---------------------------------------------------------------------
     .image-text {
         .image {
             grid-column: 1 / 7;
@@ -264,20 +224,38 @@
         }
     }
 
-    // testimonial
+    // testimonial ---------------------------------------------------------------------
     .testimonial {
         padding: 4.75rem 0;
-        background-color: var(--white);
         margin-top: var(--site-space-lg);
         margin-bottom: var(--site-space-lg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background-color: var(--white);
+
+        .container {
+            width: 100%;
+            max-width: 1296px;
+            padding-top: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @media (min-width: 800px) {
+                grid-template-columns: repeat(12, 1fr);
+            }
+        }
 
         .author-meta {
             padding-top: 1rem;
             border-top: 1.5px solid var(--mid-black);
-            grid-column: 2 / 4;
+
+            @media (min-width: 800px) {
+                grid-column: 2 / 4;
+            }
 
             span {
-                //margin-bottom: 0.5rem;
                 display: block;
             }
 
@@ -295,22 +273,28 @@
             position: relative;
         }
 
-        blockquote:before {
+        blockquote:before,
+        blockquote:after {
             position: absolute;
+        }
+
+        blockquote:before {
             content: open-quote;
             top: -0.25rem;
             left: -1rem;
         }
 
         blockquote:after {
-            position: absolute;
             content: close-quote;
         }
 
         .text {
-            grid-column: 5 / 12;
             font-family: var(--titling);
             font-size: 2.75rem;
+
+            @media (min-width: 800px) {
+                grid-column: 5 / 12;
+            }
         }
     }
 
