@@ -7,6 +7,6 @@
             <span class="organisation"><?php the_sub_field('organisation') ?></span>
         </div>
 
-        <p class="text"><?php the_sub_field('testimonial') ?></p>
+        <blockquote class="text"><?php the_sub_field('testimonial') ?></blockquote>
     </div>
 </div>

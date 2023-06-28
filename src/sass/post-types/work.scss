@@ -269,7 +269,7 @@
         padding: 4.75rem 0;
         background-color: var(--white);
         margin-top: var(--site-space-lg);
-        margin-bottom: 96px;
+        margin-bottom: var(--site-space-lg);
 
         .author-meta {
             padding-top: 1rem;
@@ -289,6 +289,22 @@
             .organisation {
                 color: var(--mid-black);
             }
+        }
+
+        blockquote {
+            position: relative;
+        }
+
+        blockquote:before {
+            position: absolute;
+            content: open-quote;
+            top: -0.25rem;
+            left: -1rem;
+        }
+
+        blockquote:after {
+            position: absolute;
+            content: close-quote;
         }
 
         .text {
