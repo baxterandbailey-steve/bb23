@@ -38,10 +38,8 @@ $secondary_image = get_field('secondary_image');
         </figure>
 
         <div class="primary-content__info">
-            <!-- start lh-col-->
             <div class="lh-col">
                 <p class="statement"><?php echo $statement; ?></p>
-                <!-- start details-->
                 <div class="details">
 
                     <div class="sector">
@@ -49,42 +47,42 @@ $secondary_image = get_field('secondary_image');
                         <p class="type"><?php echo $sector; ?></p>
                     </div>
 
-                    <!-- what we did / awards section -->
                     <div class="what-we-did">
-                        <!-- strategy repeater -->
                         <div class="strategy">
                             <h3 class="title">Strategy</h3>
-                            <?php if (have_rows('strategy')) :
-                                while (have_rows('strategy')) : the_row(); ?>
-                                    <p class="item"><?php the_sub_field('strategy_item'); ?></p>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
+                            <ul>
+                                <?php if (have_rows('strategy')) :
+                                    while (have_rows('strategy')) : the_row(); ?>
+                                        <li class="item"><?php the_sub_field('strategy_item'); ?></li>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                            </ul>
                         </div>
 
-                        <!-- design repeater -->
                         <div class="design">
                             <h3 class="title">Design</h3>
-                            <?php if (have_rows('design')) :
-                                while (have_rows('design')) : the_row(); ?>
-                                    <p class="item"><?php the_sub_field('design_item'); ?></p>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
+                            <ul>
+                                <?php if (have_rows('design')) : ?>
+                                    <?php while (have_rows('design')) : the_row(); ?>
+                                        <li class="item"><?php the_sub_field('design_item'); ?></li>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                            </ul>
                         </div>
 
-                        <!-- digital repeater-->
                         <div class="digital">
                             <h3 class="title">Digital</h3>
-                            <?php if (have_rows('digital')) :
-                                while (have_rows('digital')) : the_row(); ?>
-                                    <p class="item"><?php the_sub_field('digital_item'); ?></p>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
+                            <ul>
+                                <?php if (have_rows('digital')) :
+                                    while (have_rows('digital')) : the_row(); ?>
+                                        <li class="item"><?php the_sub_field('digital_item'); ?></li>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                            </ul>
                         </div>
                     </div>
-
                     <!-- close details -->
                 </div>
-
                 <!-- close lh-col -->
             </div>
 
@@ -98,9 +96,7 @@ $secondary_image = get_field('secondary_image');
         </div>
     </div>
 
-
     <?php get_template_part('_partials/flx/work/blocks') ?>
-
 
 </main>
 <?php get_footer(); ?>
