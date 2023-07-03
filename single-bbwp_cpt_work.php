@@ -1,9 +1,16 @@
-<?php get_header();
+<?php
+
+/**
+ * Work [single case-study] page
+ *
+ * @package BBWP
+ */
+
+get_header();
 $terms = get_terms(array(
     'taxonomy'   => 'work_taxonomy',
     'hide_empty' => false,
 ));
-
 
 $excerpt = get_field('excerpt');
 $statement = get_field('work_statement');
@@ -13,7 +20,6 @@ $service = get_field('service');
 $primary_video = get_field('primary_video');
 $primary_image = get_field('primary_image');
 $secondary_image = get_field('secondary_image');
-
 ?>
 
 <main class="case-study">

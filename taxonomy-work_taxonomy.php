@@ -1,4 +1,12 @@
-<?php get_header();
+<?php
+
+/**
+ * Taxonomy listings page
+ *
+ * @package BBWP
+ */
+
+get_header();
 
 $terms = get_terms(array(
     'taxonomy'   => 'work_taxonomy',

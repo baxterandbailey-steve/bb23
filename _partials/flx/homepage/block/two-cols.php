@@ -42,11 +42,15 @@
                         $lh_image_offset = get_sub_field('offset');
                         $lh_image_client = get_sub_field('client');
                         $lh_image_category = get_sub_field('category');
-                        $lh_image_description = get_sub_field('quote'); ?>
+                        $lh_image_description = get_sub_field('quote');
+                        $lh_image_link = get_sub_field('link');
+                    ?>
 
 
                         <figure class="lh-col" style="grid-column: <?php echo $lh_image_width; ?>" data-aos="fade-up">
-                            <img src="<?php echo wp_get_attachment_image($lh_image, 'full'); ?>" style="margin-top:<?php echo $lh_image_offset; ?>">
+                            <a href="<?php echo $lh_image_link; ?>">
+                                <img src="<?php echo wp_get_attachment_image($lh_image, 'full'); ?>" style="margin-top:<?php echo $lh_image_offset; ?>">
+                            </a>
                             <div class="details" data-aos="fade-up">
                                 <h3 class="client"><?php echo $lh_image_client; ?></h3>
                                 <span class="category"><?php echo $lh_image_category; ?></span>
@@ -97,10 +101,14 @@
                         $rh_image_offset = get_sub_field('offset');
                         $rh_image_client = get_sub_field('client');
                         $rh_image_category = get_sub_field('category');
-                        $rh_image_description = get_sub_field('quote'); ?>
+                        $rh_image_description = get_sub_field('quote');
+                        $rh_image_link = get_sub_field('link');
+                    ?>
 
                         <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>;  margin-top: <?php echo $rh_image_offset; ?>" data-aos="fade-up">
-                            <?php echo wp_get_attachment_image($rh_image, 'full'); ?>
+                            <a href="<?php echo $rh_image_link; ?>">
+                                <?php echo wp_get_attachment_image($rh_image, 'full'); ?>
+                            </a>
                             <div class="details" data-aos="fade-up">
                                 <h3 class="client"><?php echo $rh_image_client; ?></h3>
                                 <span class="category"><?php echo $rh_image_category; ?></span>
