@@ -10,10 +10,10 @@ get_header();
 get_template_part('_partials/headers/header', 'front-page'); ?>
 
 <main>
-    <div class="grid-home contain">
-        <h2 data-aos="fade-up">Selected Work</h2>
+    <section class="flexible-content__home">
+        <h2 class="title" data-aos="fade-up">Selected Work</h2>
         <?php get_template_part('_partials/flx/homepage/blocks') ?>
-    </div>
+    </section>
 
     <?php get_template_part('_partials/page-sections/newsroom') ?>
     <?php get_template_part('_partials/page-sections/get-in-touch') ?>

@@ -97,14 +97,6 @@
       "oAP" : "\/_partials\/flx\/homepage\/blocks.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/homepage\/rows.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/homepage\/rows.php",
-      "oF" : 0
-    },
     "\/_partials\/flx\/what-we-do\/block\/process.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -975,7 +967,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/sass\/flx\/_home-v1.0.scss" : {
+    "\/src\/sass\/flx\/_home.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -984,7 +976,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/css\/_home-v1.0.min.css",
+      "oAP" : "\/dist\/css\/_home.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

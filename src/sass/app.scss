@@ -16,7 +16,6 @@
 
 //// layout
 @use 'layout/layout';
-//@use 'layout/grids/work-v1.0';
 
 //// pages
 @use 'pages/archives';
@@ -31,7 +30,7 @@
 //// flexible-content blocks
 @use 'flx/who-we-are';
 @use 'flx/what-we-do';
-@use 'flx/home-v1.0';
+@use 'flx/home';
 @use 'flx/work-v1.0';
 
 //// post types

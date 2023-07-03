@@ -11,6 +11,6 @@
             get_template_part('_partials/flx/homepage/block/three-cols');
 
         endif; ?>
-        
+
     <?php endwhile; ?>
 <?php endif; ?>

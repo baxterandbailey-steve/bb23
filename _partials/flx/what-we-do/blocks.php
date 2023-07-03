@@ -1,6 +1,6 @@
 <?php if (have_rows('flexible_content')) : ?>
     <?php while (have_rows('flexible_content')) : the_row(); ?>
-
+        
         <?php if (get_row_layout() == 'services') :
             get_template_part('_partials/flx/what-we-do/block/services');
 
@@ -14,6 +14,6 @@
             get_template_part('_partials/flx/what-we-do/block/text-image');
 
         endif; ?>
-        
-        <?php endwhile; ?>
-    <?php endif; ?>
+
+    <?php endwhile; ?>
+<?php endif; ?>

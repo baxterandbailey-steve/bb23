@@ -22,7 +22,7 @@ summary {
 }
 
 body {
-    padding-top: 96px;
+    padding-top: var(--site-space-lg);
     font-family: var(--copy);
     font-size: var(--font-base);
     color: var(--black);

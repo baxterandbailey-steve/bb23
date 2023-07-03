@@ -1,4 +1,4 @@
-<div class="flexible-content">
+<section class="flexible-content__case-study">
 
     <?php if (have_rows('flexible_content')) : ?>
         <?php while (have_rows('flexible_content')) : the_row(); ?>
@@ -28,4 +28,4 @@
         <?php endwhile; ?>
     <?php endif; ?>
 
-</div><!--close flexible-content -->
+</section>

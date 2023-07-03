@@ -8,5 +8,6 @@
         elseif (get_row_layout() == 'image_grid') :
             get_template_part('_partials/flx/who-we-are/block/image-grid');
         endif; ?>
+        
 <?php endwhile;
 endif; ?>

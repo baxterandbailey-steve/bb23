@@ -1,27 +1,37 @@
 /* grid home-v1.0: this file is for the bespoke grid elements on the homepage
 ----------------------------------------------------------------------------------------------------- */
-.grid-home {
+.flexible-content__home {
+    width: 100%;
+    max-width: var(--site-width);
     padding-top: var(--site-space-lg);
     padding-bottom: var(--site-space-lg);
+    padding-left: var(--site-pad-small);
+    padding-right: var(--site-pad-small);
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 880px) {
+        padding-left: var(--site-pad-large);
+        padding-right: var(--site-pad-large);
+    }
 
     > .row {
         margin-bottom: 0;
 
-        // @media (min-width: 880px) {
         @media (min-width: 480px) {
             margin-bottom: var(--drop-medium);
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-column-gap: 16px;
+            grid-column-gap: var(--gutter-small);
         }
 
         @media (min-width: 800px) {
-            grid-column-gap: 24px;
+            grid-column-gap: var(--gutter-medium);
         }
 
         @media (min-width: 960px) {
             margin-bottom: var(--drop-big);
-            grid-column-gap: 48px;
+            grid-column-gap: var(--gutter-large);
         }
     }
 
@@ -47,7 +57,7 @@
         color: var(--aqua);
 
         @media (min-width: 960px) {
-            font-size: 2.5rem;
+            font-size: var(--font-medium);
         }
     }
 
@@ -60,31 +70,30 @@
         margin-right: 77px;
         margin-bottom: 0.5rem;
         font-family: var(--copy);
-        font-size: 1.25rem;
-        line-height: 1.35;
+        font-size: var(--font-base-plus);
+        line-height: var(--lh-medium);
         color: var(--white);
     }
 
     .category {
         font-family: var(--copy);
-        font-size: var(--font-root-plus);
+        font-size: var(--font-base-plus);
         text-transform: uppercase;
-        line-height: 1.18;
+        line-height: var(--lh-small);
         color: var(--work-meta);
     }
 
     .description {
-        //padding-top: 0.5rem;
         margin-bottom: var(--drop-medium);
         font-family: var(--copy);
-        font-size: var(--font-root-plus);
-        line-height: 1.18;
+        font-size: var(--font-base-plus);
+        line-height: var(--lh-small);
         color: var(--work-meta);
     }
 
     h2 {
-        margin-bottom: 6rem;
-        font-size: 2.75rem;
+        margin-bottom: var(--drop-large);
+        font-size: var(--font-medium);
     }
 
     // specific row stylings

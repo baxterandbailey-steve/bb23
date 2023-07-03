@@ -89,9 +89,10 @@
                         $rh_image_category = get_sub_field('category');
                         $rh_image_description = get_sub_field('quote'); ?>
 
+                        <!-- style="margin-top:<?php echo $rh_image_offset; ?>" -->
 
-                        <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>" data-aos="fade-up">
-                            <img src="<?php echo wp_get_attachment_image($rh_image, 'full'); ?>" style="margin-top:<?php echo $rh_image_offset; ?>">
+                        <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>;  margin-top: <?php echo $rh_image_offset; ?>" data-aos="fade-up">
+                            <?php echo wp_get_attachment_image($rh_image, 'full'); ?>
                             <div class="details" data-aos="fade-up">
                                 <h3 class="client"><?php echo $rh_image_client; ?></h3>
                                 <span class="category"><?php echo $rh_image_category; ?></span>

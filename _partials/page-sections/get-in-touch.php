@@ -4,10 +4,14 @@ $newsletter_title = get_field('opt_newsletter_title', 'options');
 $newsletter_text = get_field('opt_newsletter_text', 'options');
 ?>
 
-<div class="get-in-touch">
-    <div class="container contain">
-        <img src=" <?php echo $newsletter_image; ?>" class="image">
-        <div class="text">
+<aside class="get-in-touch">
+    <div class="container">
+
+        <figure class="image">
+            <img src=" <?php echo $newsletter_image; ?>">
+        </figure>
+
+        <div class="rich-text">
             <h2 class="title"><?php echo $newsletter_title;  ?></h2>
             <?php echo $newsletter_text; ?>
 
@@ -18,6 +22,6 @@ $newsletter_text = get_field('opt_newsletter_text', 'options');
                 <input type="submit" id="subscribe_button" name="subscribe_button" value="subscribe" class="input-subscribe">
             </form>
         </div>
-    </div>
 
-</div>
+    </div>
+</aside>

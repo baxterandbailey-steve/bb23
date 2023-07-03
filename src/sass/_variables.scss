@@ -62,11 +62,18 @@
     --site-space-bg: 10rem;
 
     // horizontal padding [replaces .wrap]
-    --site-pad: 1.5rem;
+    --site-pad-small: 1.5rem;
+    --site-pad-medium: 3rem;
+    --site-pad-large: 4.5rem;
 
     @media (min-width: 880px) {
-        --site-pad: 4.5rem;
+        // styles?
     }
+
+    // gutters
+    --gutter-small: 16px;
+    --gutter-medium: 24px;
+    --gutter-large: 48px;
 
     // padding pushing elements down within components
     --offset-small: 0;
