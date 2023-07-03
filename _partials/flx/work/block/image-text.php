@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Work image-text block
+ * Work [case-study]:  image-text block
  *
  * @package BBWP
  */

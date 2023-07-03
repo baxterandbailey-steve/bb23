@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Work testimonial media block
+ * Work [case-study]:  testimonial media block
  *
  * @package BBWP
  */

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Hompepage single-column block
+ * Hompepage: single-column block
  *
  * @package BBWP
  */

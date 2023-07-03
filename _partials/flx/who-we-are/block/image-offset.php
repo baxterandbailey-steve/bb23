@@ -6,8 +6,6 @@
  * @package BBWP
  */
 
-
-
 $image_offset_primary = get_sub_field('primary_image');
 $image_offset_secondary = get_sub_field('secondary_image');
 ?>

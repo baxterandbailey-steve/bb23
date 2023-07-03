@@ -1,7 +1,7 @@
 <?php
 
 /**
- * What we do blocks loop
+ * What we do: blocks loop
  *
  * @package BBWP
  */
