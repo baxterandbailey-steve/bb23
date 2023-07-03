@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * What we do: process block
+ *
+ * @package BBWP
+ */
+
 $process_section_title = get_sub_field('section_title');
 ?>
 

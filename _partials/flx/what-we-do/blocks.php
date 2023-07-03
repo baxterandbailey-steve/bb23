@@ -1,4 +1,13 @@
-<?php if (have_rows('flexible_content')) : ?>
+<?php
+
+/**
+ * What we do blocks loop
+ *
+ * @package BBWP
+ */
+
+
+if (have_rows('flexible_content')) : ?>
     <?php while (have_rows('flexible_content')) : the_row(); ?>
         
         <?php if (get_row_layout() == 'services') :

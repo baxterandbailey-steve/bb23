@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * What we do: text-image block
+ *
+ * @package BBWP
+ */
+
 $text_image_title = get_sub_field('title');
 $text_image_text = get_sub_field('text');
 $text_image_image = get_sub_field('image');

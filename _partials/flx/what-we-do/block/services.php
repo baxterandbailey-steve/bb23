@@ -1,8 +1,15 @@
 <?php
+
+/**
+ * What we do: services block
+ *
+ * @package BBWP
+ */
+
 $service_section_title = get_sub_field('section_title');
 ?>
 
-<div class="services contain">
+<section class="services contain">
     <h2 class="title"><?php echo $service_section_title; ?></h2>
 
     <?php if (have_rows('service')) :
@@ -14,11 +21,13 @@ $service_section_title = get_sub_field('section_title');
             $service_link_url = get_sub_field('link_url');
             $service_link_label = get_sub_field('link_label');
     ?>
-            <section class="service">
+            <div class="service">
                 <span class="meta"><?php echo $service_type; ?></span>
                 <div class="container">
                     <h3 class="title"><?php echo $service_title; ?></h3>
-                    <img src="<?php echo $service_image; ?>" class="image">
+                    <figure class="image">
+                        <?php echo wp_get_attachment_image($service_image, 'full'); ?>
+                    </figure>
                     <div class="text">
                         <p class="description"><?php echo $service_description; ?></p>
                         <h4 class="subtitle">Subtitle</h4>
@@ -33,7 +42,7 @@ $service_section_title = get_sub_field('section_title');
                         <a href="<?php echo $service_link_url; ?>" class="link"><?php echo $service_link_label; ?></a>
                     </div>
                 </div>
-            </section>
+            </div>
         <?php endwhile; ?>
     <?php endif; ?>
-</div>
+</section>

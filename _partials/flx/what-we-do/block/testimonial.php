@@ -1,10 +1,16 @@
 <?php
+
+/**
+ * What we do: testimonial block
+ *
+ * @package BBWP
+ */
+
 $testimonial_author = get_sub_field('author');
 $testimonial_role = get_sub_field('role');
 $testimonial_organisation = get_sub_field('organisation');
 $testimonial_quote = get_sub_field('quote');
 ?>
-
 
 <div class="testimonial contain">
     <div class="lh-col">
