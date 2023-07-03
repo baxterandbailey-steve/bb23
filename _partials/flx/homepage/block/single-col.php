@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * Hompepage single-column block
+ *
+ * @package BBWP
+ */
+
 $single_col_image = get_sub_field('image');
 $single_col_width = get_sub_field('width');
 $single_col_client = get_sub_field('client');

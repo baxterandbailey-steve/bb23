@@ -1,3 +1,13 @@
+<?php
+
+/**
+ * Hompepage two-column block
+ *
+ * @package BBWP
+ */
+
+?>
+
 <div class="row two-cols">
     <?php if (have_rows('lh_col')) :
         while (have_rows('lh_col')) : the_row();
@@ -44,8 +54,8 @@
                             </div>
                         </figure>
 
-                <?php endwhile;
-                endif; ?>
+                    <?php endwhile; ?>
+                <?php endif; ?>
 
             <?php endif ?>
 
@@ -70,7 +80,7 @@
                         <div class="rh-col quote" style="grid-column: <?php echo $rh_text_width; ?>" data-aos="fade-up">
                             <h3 class="client"><?php echo $rh_text_client; ?></h3>
                             <span class="category"><?php echo $rh_text_category; ?></span>
-                            <blockquopte><?php echo $rh_text_quote; ?></blockquopte>
+                            <blockquote><?php echo $rh_text_quote; ?></blockquote>
                         </div>
 
                     <?php endwhile; ?>
@@ -88,8 +98,6 @@
                         $rh_image_client = get_sub_field('client');
                         $rh_image_category = get_sub_field('category');
                         $rh_image_description = get_sub_field('quote'); ?>
-
-                        <!-- style="margin-top:<?php echo $rh_image_offset; ?>" -->
 
                         <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>;  margin-top: <?php echo $rh_image_offset; ?>" data-aos="fade-up">
                             <?php echo wp_get_attachment_image($rh_image, 'full'); ?>

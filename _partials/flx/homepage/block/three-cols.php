@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * Hompepage three-column block
+ *
+ * @package BBWP
+ */
+
 $col_1_image = get_sub_field('col_1_image');
 $col_1_client = get_sub_field('col_1_client');
 $col_1_category = get_sub_field('col_1_category');

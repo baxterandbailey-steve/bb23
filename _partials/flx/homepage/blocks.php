@@ -1,4 +1,12 @@
-<?php if (have_rows('work_rows')) : ?>
+<?php
+
+/**
+ * Flx: text
+ *
+ * @package BBWP
+ */
+
+if (have_rows('work_rows')) : ?>
     <?php while (have_rows('work_rows')) : the_row(); ?>
 
         <?php if (get_row_layout() == 'single_col') :
