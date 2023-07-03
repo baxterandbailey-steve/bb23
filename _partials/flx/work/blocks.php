@@ -1,3 +1,13 @@
+<?php
+
+/**
+ * Work [individual case-study] blocks loop
+ *
+ * @package BBWP
+ */
+
+?>
+
 <section class="flexible-content__case-study">
 
     <?php if (have_rows('flexible_content')) : ?>

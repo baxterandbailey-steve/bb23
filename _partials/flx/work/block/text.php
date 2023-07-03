@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * Work text media block
+ *
+ * @package BBWP
+ */
+
 $sector_info_title  = get_sub_field('title');
 $sector_info_text   = get_sub_field('text');
 ?>

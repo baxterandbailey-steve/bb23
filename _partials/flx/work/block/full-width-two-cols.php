@@ -1,3 +1,13 @@
+<?
+
+/**
+ * Work full-width two cols media block
+ *
+ * @package BBWP
+ */
+
+?>
+
 <div class="two-cols-media">
     <?php if (have_rows('lh_col')) : ?>
 
@@ -12,7 +22,9 @@
                 </video>
 
             <?php else : ?>
-                <img src="<?php echo $lh_image; ?>" class="lh-image">
+                <figure class="lh-image">
+                    <?php echo wp_get_attachment_image($lh_image, 'full'); ?>
+                </figure>
             <?php endif; ?>
 
         <? endwhile; ?>
@@ -26,13 +38,14 @@
         ?>
 
             <?php if (get_sub_field('choice') == 'video') : ?>
-
                 <video preload playsinline autoplay muted loop class="rh-video">
                     <source src="<?php echo $rh_video ?>" type="video/mp4">
                 </video>
 
             <?php else : ?>
-                <img src="<?php echo $rh_image; ?>" class="rh-image">
+                <figure class="rh-image">
+                    <?php echo wp_get_attachment_image($rh_image, 'full'); ?>
+                </figure>
             <?php endif; ?>
 
         <? endwhile; ?>

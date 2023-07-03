@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Flx: text
+ * Hompepage blocks loop
  *
  * @package BBWP
  */
