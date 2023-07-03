@@ -1,11 +1,10 @@
-<?
+<?php
 
 /**
- * Testimonial media block
+ * Work testimonial media block
  *
  * @package BBWP
  */
-
 
 $testimonial_author = get_sub_field('author');
 $testimonial_role = get_sub_field('role');

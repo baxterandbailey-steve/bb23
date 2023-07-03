@@ -1,10 +1,11 @@
 <?php
 
 /**
- * Work image-text media block
+ * Work image-text block
  *
  * @package BBWP
  */
+
 
 $image_text_image = get_sub_field('image');
 $image_text_text = get_sub_field('text');

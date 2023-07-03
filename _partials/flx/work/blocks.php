@@ -33,6 +33,7 @@
 
             <?php elseif (get_row_layout() == 'full_screen') : ?>
                 <?php get_template_part('_partials/flx/work/block/full-screen'); ?>
+
             <?php endif; ?>
 
         <?php endwhile; ?>

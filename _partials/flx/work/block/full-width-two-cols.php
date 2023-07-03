@@ -1,7 +1,7 @@
-<?
+<?php
 
 /**
- * Work full-width two cols media block
+ * Work: full-width two cols media block
  *
  * @package BBWP
  */

@@ -1,3 +1,13 @@
+<?php
+
+/**
+ * Who we are blocks loop
+ *
+ * @package BBWP
+ */
+
+?>
+
 <?php if (have_rows('flexible_content')) : ?>
     <?php while (have_rows('flexible_content')) : the_row(); ?>
 
@@ -9,5 +19,5 @@
             get_template_part('_partials/flx/who-we-are/block/image-grid');
         endif; ?>
         
-<?php endwhile;
-endif; ?>
+    <?php endwhile; ?>
+<?php endif; ?>

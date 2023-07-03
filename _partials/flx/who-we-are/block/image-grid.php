@@ -1,4 +1,11 @@
 <?php
+
+/**
+ * Who we are: image-grid block
+ *
+ * @package BBWP
+ */
+
 $image_grid_bg = get_sub_field('background_colour');
 $image_grid_cols = get_sub_field('columns');
 ?>
@@ -20,7 +27,9 @@ $image_grid_cols = get_sub_field('columns');
             <?php if (have_rows('images')) :
                 while (have_rows('images')) : the_row();
                     $image_grid_image = get_sub_field('image'); ?>
-                    <img src="<?php echo $image_grid_image; ?>" class="image">
+                    <figure class="image">
+                        <?php echo wp_get_attachment_image($image_grid_image, 'full'); ?>
+                    </figure>
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
