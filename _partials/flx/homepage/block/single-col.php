@@ -15,7 +15,7 @@ $single_col_link = get_sub_field('link');
 ?>
 
 <div class="row single-col">
-    <figure style=" grid-column:<?php echo $single_col_width ?>" data-aos="fade-up">
+    <figure style="grid-column:<?php echo $single_col_width ?>" data-aos="fade-up">
         <a href="<?php echo $single_col_link; ?>">
             <img src="<?php echo wp_get_attachment_image($single_col_image, 'full'); ?>">
         </a>

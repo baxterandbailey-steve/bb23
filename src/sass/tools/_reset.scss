@@ -72,4 +72,19 @@ form {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+
+    ::placeholder {
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        font-size: var(--font-base-plus);
+        line-height: var(--lh-base);
+        color: var(--mid-black);
+    }
+
+    input[type='submit'] {
+        font-size: var(--font-small);
+        text-transform: uppercase;
+        color: var(--black);
+    }
 }

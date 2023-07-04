@@ -90,7 +90,6 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
 
-
             <?php else : ?>
 
                 <?php if (have_rows('rh_image')) : ?>
