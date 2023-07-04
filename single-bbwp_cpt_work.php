@@ -104,7 +104,7 @@ $secondary_image = get_field('secondary_image');
         </div>
     </div>
 
-    <?php get_template_part('_partials/flx/work/blocks') ?>
+    <?php get_template_part('_partials/flx/case-studies/blocks') ?>
 
 </main>
 <?php get_footer(); ?>

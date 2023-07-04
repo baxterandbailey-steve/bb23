@@ -46,7 +46,6 @@
                         $lh_image_link = get_sub_field('link');
                     ?>
 
-
                         <figure class="lh-col" style="grid-column: <?php echo $lh_image_width; ?>" data-aos="fade-up">
                             <a href="<?php echo $lh_image_link; ?>">
                                 <img src="<?php echo wp_get_attachment_image($lh_image, 'full'); ?>" style="margin-top:<?php echo $lh_image_offset; ?>">

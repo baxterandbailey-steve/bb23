@@ -7,7 +7,7 @@
  */
 
 get_header();
-get_template_part('_partials/headers/header', 'default'); ?>
+get_template_part('_partials/headers/header', 'work'); ?>
 
 <main class="contain">
 	<code>this is archive.php</code>

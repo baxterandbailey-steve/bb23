@@ -17,6 +17,62 @@
       "oAP" : "\/_partials\/elements\/logo.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/case-studies\/block\/full-screen.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/case-studies\/block\/full-screen.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/case-studies\/block\/full-width-two-cols.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/case-studies\/block\/full-width-two-cols.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/case-studies\/block\/full-width.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/case-studies\/block\/full-width.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/case-studies\/block\/image-text.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/case-studies\/block\/image-text.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/case-studies\/block\/testimonial.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/case-studies\/block\/testimonial.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/case-studies\/block\/text.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/case-studies\/block\/text.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/case-studies\/blocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/case-studies\/blocks.php",
+      "oF" : 0
+    },
     "\/_partials\/flx\/global\/block\/fullwidth.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -97,6 +153,38 @@
       "oAP" : "\/_partials\/flx\/homepage\/blocks.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/test\/block\/full-width.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/test\/block\/full-width.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/test\/block\/three-columns.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/test\/block\/three-columns.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/test\/block\/two-images.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/test\/block\/two-images.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/test\/blocks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/test\/blocks.php",
+      "oF" : 0
+    },
     "\/_partials\/flx\/what-we-do\/block\/process.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -167,62 +255,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/_partials\/flx\/who-we-are\/blocks.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/work\/block\/full-screen.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/work\/block\/full-screen.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/work\/block\/full-width-two-cols.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/work\/block\/full-width-two-cols.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/work\/block\/full-width.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/work\/block\/full-width.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/work\/block\/image-text.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/work\/block\/image-text.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/work\/block\/testimonial.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/work\/block\/testimonial.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/work\/block\/text.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/work\/block\/text.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/work\/blocks.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/work\/blocks.php",
       "oF" : 0
     },
     "\/_partials\/headers\/header-default.php" : {
@@ -303,6 +335,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/404.php",
+      "oF" : 0
+    },
+    "\/archive-work.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/archive-work.php",
       "oF" : 0
     },
     "\/archive.php" : {
@@ -1390,6 +1430,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/taxonomy-work_taxonomy.php",
+      "oF" : 0
+    },
+    "\/test.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/test.php",
       "oF" : 0
     },
     "\/what-we-do.php" : {
