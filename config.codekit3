@@ -241,6 +241,14 @@
       "oAP" : "\/_partials\/headers\/header-front-page.php",
       "oF" : 0
     },
+    "\/_partials\/headers\/header-work.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/headers\/header-work.php",
+      "oF" : 0
+    },
     "\/_partials\/page-sections\/get-in-touch.php" : {
       "cB" : 0,
       "ft" : 8192,

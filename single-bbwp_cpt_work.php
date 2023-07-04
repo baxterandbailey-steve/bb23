@@ -7,6 +7,8 @@
  */
 
 get_header();
+get_template_part('_partials/headers/header', 'work');
+
 $terms = get_terms(array(
     'taxonomy'   => 'work_taxonomy',
     'hide_empty' => false,
