@@ -14,7 +14,7 @@ $full_width_video = get_sub_field('video');
 
     <?php if (get_sub_field('choice') == 'image') : ?>
 
-        <figure class="image">
+        <figure class="image" data-aos="fade-in">
             <?php echo wp_get_attachment_image($full_width_image, 'full'); ?>
         </figure>
 

@@ -35,7 +35,7 @@
                             // test choice value, if image display image
                             if (get_sub_field('choice') == 'image') : ?>
 
-                                <article>
+                                <article data-aos="fade-in">
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_one_image, 'full'); ?>
                                     </figure>
@@ -70,7 +70,7 @@
                             // test choice value, if image display image
                             if (get_sub_field('choice') == 'image') : ?>
 
-                                <article>
+                                <article data-aos="fade-in">
                                     <figure>
                                         <?php echo wp_get_attachment_image($col_two_image, 'full'); ?>
                                     </figure>
@@ -120,7 +120,7 @@
                             // test choice value, if image display image
                             if (get_sub_field('choice') == 'image') : ?>
 
-                                <article>
+                                <article data-aos="fade-in">
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_one_image, 'full'); ?>
                                     </figure>
@@ -145,7 +145,6 @@
                         <?php while (have_rows('col_two')) : the_row(); ?>
 
 
-
                             <?php
                             // get data, set variables 
                             $col_two_image = get_sub_field('image');
@@ -156,7 +155,7 @@
                             // test choice value, if image display image
                             if (get_sub_field('choice') == 'image') : ?>
 
-                                <article>
+                                <article data-aos="fade-in">
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_two_image, 'full'); ?>
                                     </figure>
