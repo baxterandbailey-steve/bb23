@@ -15,7 +15,7 @@
         <?php if (have_rows('two_thirds_left')) : ?>
             <?php while (have_rows('two_thirds_left')) : the_row(); ?>
 
-                <div class="lh-col">
+                <div class="lh-col grid">
 
                     <!-- ================ column one ================= -->
 
@@ -102,7 +102,7 @@
 
                 <!-- ================ column one ================= -->
 
-                <div class="rh-col">
+                <div class="rh-col grid">
 
                     <?php
                     // check for and loop through column one 

@@ -7,9 +7,13 @@
 // basic 12 column grid, used as a utility class on components
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    // grid-template-rows: auto;
-    grid-column-gap: 48px;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 960px) {
+        margin-bottom: var(--drop-big);
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: var(--gutter-large);
+    }
 }
 
 // center content with a max-width of 1440px

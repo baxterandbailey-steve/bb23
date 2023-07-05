@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="three-columns">
+<div class="three-columns grid">
 
     <?php if (have_rows('image_left')) : ?>
         <?php while (have_rows('image_left')) : the_row();
