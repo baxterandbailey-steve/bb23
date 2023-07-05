@@ -169,12 +169,12 @@
       "oAP" : "\/_partials\/flx\/test\/block\/three-columns.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/test\/block\/two-images.php" : {
+    "\/_partials\/flx\/test\/block\/two-columns.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/test\/block\/two-images.php",
+      "oAP" : "\/_partials\/flx\/test\/block\/two-columns.php",
       "oF" : 0
     },
     "\/_partials\/flx\/test\/blocks.php" : {
@@ -1212,6 +1212,21 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/css\/_search.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/src\/sass\/pages\/_test.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/_test.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

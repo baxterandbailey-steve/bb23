@@ -10,10 +10,12 @@ get_header();
 get_template_part('_partials/headers/header', 'default');
 ?>
 
-<main class="contain">
-    <h1><?php the_title(); ?></h1>
+<main class="test">
+    <div class="our-work__featured">
 
-    <?php get_template_part('_partials/flx/test/blocks') ?>
+        <?php get_template_part('_partials/flx/test/blocks') ?>
+
+    </div>
 </main>
 
 <?php get_footer(); ?>

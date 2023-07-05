@@ -10,8 +10,7 @@ $full_width_image = get_sub_field('image');
 $full_width_video = get_sub_field('video');
 ?>
 
-<div class="contain">
-    <h1>full width..</h1>
+<div class="full-width">
 
     <?php if (get_sub_field('choice') == 'image') : ?>
 
