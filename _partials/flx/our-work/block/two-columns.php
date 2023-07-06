@@ -29,6 +29,9 @@
                             // get data, set variables 
                             $col_one_image = get_sub_field('image');
                             $col_one_video = get_sub_field('video');
+                            $col_one_title = get_sub_field('title');
+                            $col_one_meta = get_sub_field('meta');
+                            $col_one_link = get_sub_field('link');
                             ?>
 
                             <?php
@@ -39,6 +42,8 @@
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_one_image, 'full'); ?>
                                     </figure>
+                                    <h3><a href="<?php echo $col_one_link; ?>"><?php echo $col_one_title; ?></a></h3>
+                                    <span class="meta"><?php echo $col_one_meta; ?></span>
                                 </article>
 
                             <?php // if not image, display video 
@@ -49,7 +54,6 @@
                                 </video>
 
                             <?php endif; ?>
-
                         <?php endwhile; ?>
                     <?php endif; ?>
 
@@ -64,6 +68,9 @@
                             // get data, set variables 
                             $col_two_image = get_sub_field('image');
                             $col_two_video = get_sub_field('video');
+                            $col_two_title = get_sub_field('title');
+                            $col_two_meta = get_sub_field('meta');
+                            $col_two_link = get_sub_field('link');
                             ?>
 
                             <?php
@@ -74,6 +81,8 @@
                                     <figure>
                                         <?php echo wp_get_attachment_image($col_two_image, 'full'); ?>
                                     </figure>
+                                    <h3><a href="<?php echo $col_two_link; ?>"><?php echo $col_two_title; ?></a></h3>
+                                    <span class="meta"><?php echo $col_two_meta; ?></span>
                                 </article>
 
                             <?php // if not image, display video 
@@ -84,6 +93,11 @@
                                 </video>
 
                             <?php endif; ?>
+
+                            <!-- <div class="details">
+                                <h3>Lorem Ipsum Dolar</h3>
+                                <span class="meta">Category</span>
+                            </div> -->
 
                         <?php endwhile; ?>
                     <?php endif; ?>
@@ -114,6 +128,9 @@
                             // get data, set variables 
                             $col_one_image = get_sub_field('image');
                             $col_one_video = get_sub_field('video');
+                            $col_one_title = get_sub_field('title');
+                            $col_one_meta = get_sub_field('meta');
+                            $col_one_link = get_sub_field('link');
                             ?>
 
                             <?php
@@ -124,6 +141,8 @@
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_one_image, 'full'); ?>
                                     </figure>
+                                    <h3><a href="<?php echo $col_one_link; ?>"><?php echo $col_one_title; ?></a></h3>
+                                    <span class="meta"><?php echo $col_one_meta; ?></span>
                                 </article>
                             <?php // if not image, display video 
                             else : ?>
@@ -133,6 +152,12 @@
                                 </video>
 
                             <?php endif; ?>
+
+                            <!-- <div class="details">
+                                <h3>Lorem Ipsum Dolar</h3>
+                                <span class="meta">Category</span>
+                            </div> -->
+
 
                         <?php endwhile; ?>
                     <?php endif; ?>
@@ -149,6 +174,9 @@
                             // get data, set variables 
                             $col_two_image = get_sub_field('image');
                             $col_two_video = get_sub_field('video');
+                            $col_two_title = get_sub_field('title');
+                            $col_two_meta = get_sub_field('meta');
+                            $col_two_link = get_sub_field('link');
                             ?>
 
                             <?php
@@ -159,6 +187,8 @@
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_two_image, 'full'); ?>
                                     </figure>
+                                    <h3><a href="<?php echo $col_two_link; ?>"><?php echo $col_two_title; ?></a></h3>
+                                    <span class="meta"><?php echo $col_two_meta; ?></span>
                                 </article>
 
                             <?php // if not image, display video 
@@ -169,6 +199,11 @@
                                 </video>
 
                             <?php endif; ?>
+                            <!-- 
+                            <div class="details">
+                                <h3>Lorem Ipsum Dolar</h3>
+                                <span class="meta">Category</span>
+                            </div> -->
 
                         <?php endwhile; ?>
                     <?php endif; ?>
