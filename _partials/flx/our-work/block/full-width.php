@@ -21,7 +21,7 @@ $full_width_link = get_sub_field('link');
             <figure class="image" data-aos="fade-in">
                 <?php echo wp_get_attachment_image($full_width_image, 'full'); ?>
             </figure>
-            <h3><a href="<?php echo $full_width_link; ?>"><?php echo $full_width_title; ?></a></h3>
+            <h3><a href="<?php echo $full_width_link; ?>" class="link"><?php echo $full_width_title; ?></a></h3>
             <span class="meta"><?php echo $full_width_meta; ?></span>
         </article>
 
@@ -32,8 +32,5 @@ $full_width_link = get_sub_field('link');
         </video>
 
     <?php endif; ?>
-
-    <!-- <h3>Lorem Ipsum Dolar</h3>
-    <span class="meta">Category</span> -->
 
 </div>

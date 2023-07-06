@@ -42,7 +42,7 @@
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_one_image, 'full'); ?>
                                     </figure>
-                                    <h3><a href="<?php echo $col_one_link; ?>"><?php echo $col_one_title; ?></a></h3>
+                                    <h3><a href="<?php echo $col_one_link; ?>" class="link"><?php echo $col_one_title; ?></a></h3>
                                     <span class="meta"><?php echo $col_one_meta; ?></span>
                                 </article>
 
@@ -81,7 +81,7 @@
                                     <figure>
                                         <?php echo wp_get_attachment_image($col_two_image, 'full'); ?>
                                     </figure>
-                                    <h3><a href="<?php echo $col_two_link; ?>"><?php echo $col_two_title; ?></a></h3>
+                                    <h3><a href="<?php echo $col_two_link; ?>" class="link"><?php echo $col_two_title; ?></a></h3>
                                     <span class="meta"><?php echo $col_two_meta; ?></span>
                                 </article>
 
@@ -141,7 +141,7 @@
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_one_image, 'full'); ?>
                                     </figure>
-                                    <h3><a href="<?php echo $col_one_link; ?>"><?php echo $col_one_title; ?></a></h3>
+                                    <h3><a href="<?php echo $col_one_link; ?>" class="link"><?php echo $col_one_title; ?></a></h3>
                                     <span class="meta"><?php echo $col_one_meta; ?></span>
                                 </article>
                             <?php // if not image, display video 
@@ -187,7 +187,7 @@
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_two_image, 'full'); ?>
                                     </figure>
-                                    <h3><a href="<?php echo $col_two_link; ?>"><?php echo $col_two_title; ?></a></h3>
+                                    <h3><a href="<?php echo $col_two_link; ?>" class="link"><?php echo $col_two_title; ?></a></h3>
                                     <span class="meta"><?php echo $col_two_meta; ?></span>
                                 </article>
 

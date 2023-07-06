@@ -50,6 +50,17 @@
         width: 100%;
     }
 
+    .meta {
+        font-size: var(--font-base-plus);
+        color: var(--mid-black);
+    }
+
+    .link {
+        font-family: 'cabinet-medium';
+        font-size: var(--font-base-plus);
+        color: var(--black);
+    }
+
     .full-width {
         margin-bottom: var(--drop-big);
     }
