@@ -46,9 +46,9 @@
                         $lh_image_link = get_sub_field('link');
                     ?>
 
-                        <figure class="lh-col" style="grid-column: <?php echo $lh_image_width; ?>" data-aos="fade-up">
+                        <figure class="lh-col" style="grid-column: <?php echo $lh_image_width; ?>; margin-top:<?php echo $lh_image_offset; ?>;" data-aos="fade-up">
                             <a href="<?php echo $lh_image_link; ?>">
-                                <img src="<?php echo wp_get_attachment_image($lh_image, 'full'); ?>" style="margin-top:<?php echo $lh_image_offset; ?>">
+                                <?php echo wp_get_attachment_image($lh_image, 'full'); ?>
                             </a>
                             <div class="details" data-aos="fade-up">
                                 <h3 class="client"><?php echo $lh_image_client; ?></h3>
@@ -103,7 +103,7 @@
                         $rh_image_link = get_sub_field('link');
                     ?>
 
-                        <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>;  margin-top: <?php echo $rh_image_offset; ?>" data-aos="fade-up">
+                        <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>;  margin-top: <?php echo $rh_image_offset; ?>;" data-aos="fade-up">
                             <a href="<?php echo $rh_image_link; ?>">
                                 <?php echo wp_get_attachment_image($rh_image, 'full'); ?>
                             </a>
