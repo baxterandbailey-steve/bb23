@@ -329,22 +329,6 @@
       "oAP" : "\/.gitignore",
       "oF" : 0
     },
-    "\/**our-work.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/**our-work.php",
-      "oF" : 0
-    },
-    "\/**test.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/**test.php",
-      "oF" : 0
-    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
