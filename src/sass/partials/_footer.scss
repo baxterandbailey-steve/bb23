@@ -14,8 +14,8 @@ footer {
         margin: 0 auto;
 
         @media (min-width: 880px) {
-            padding-left: var(--site-pad-big);
-            padding-right: var(--site-pad-big);
+            padding-left: var(--site-pad-large);
+            padding-right: var(--site-pad-large);
         }
 
         display: grid;
@@ -36,6 +36,7 @@ footer {
 
         .meta,
         h3 {
+            font-family: var(--copy);
             font-size: var(--font-root-plus);
             text-transform: uppercase;
             color: var(--work-meta);
@@ -65,10 +66,13 @@ footer {
     }
 
     .rh-col {
-        grid-column: 7 / -1;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-gap: var(--gutter-large);
+        @media (min-width: 960px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column: 7 / -1;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: var(--gutter-large);
+        }
 
         .contact {
             grid-column: 1 / 4;
@@ -84,7 +88,7 @@ footer {
         }
 
         .socials-and-address {
-            grid-column: 4 / -1;
+            grid-column: 5 / -1;
 
             .socials {
                 margin-bottom: 1.5rem;
@@ -99,6 +103,40 @@ footer {
 
             address {
                 font-style: normal;
+            }
+        }
+    }
+
+    .footer-supplementary {
+        margin-top: 12rem;
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media (min-width: 960px) {
+            margin-bottom: var(--drop-big);
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: var(--gutter-large);
+        }
+
+        .copyright-and-policies {
+            margin-top: 3.5rem;
+            grid-column: 1 / 7;
+
+            small {
+                display: block;
+                color: var(--work-meta);
+            }
+        }
+
+        .member-logos {
+            .logos {
+                display: flex;
+            }
+
+            @media (min-width: 960px) {
+                grid-column: 7 / -1;
             }
         }
     }

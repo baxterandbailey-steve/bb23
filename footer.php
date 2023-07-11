@@ -38,7 +38,6 @@
 
 			<div class="lh-col">
 				<p class="text"><?php echo $statement; ?></p>
-				<small>&#169; Baxter & Bailey <?php echo date("Y") ?></small>
 			</div>
 
 			<div class="rh-col">
@@ -81,6 +80,26 @@
 				</div>
 			</div>
 
+			<div class="footer-supplementary">
+				<div class="copyright-and-policies">
+					<small>&#169; Baxter & Bailey <?php echo date("Y") ?></small>
+					<small>Privacy and Accessibility Policy</small>
+				</div>
+				<div class="member-logos">
+					<h3>Proud Members of</h3>
+					<div class="logos">
+						<?php if (have_rows('opt_footer_member_logos', 'options')) :
+							while (have_rows('opt_footer_member_logos', 'options')) : the_row();
+
+								$member_logo = get_sub_field('opt_member_logo');
+						?>
+
+								<?php echo wp_get_attachment_image($member_logo, 'full'); ?>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
 		</div>
 	</footer>
 
