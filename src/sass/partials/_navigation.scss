@@ -7,10 +7,10 @@
 
 .primary-nav {
     //margin-bottom: 6px;
-    display: flex;
+    display: none;
 
     &.show-nav {
-        //display: block;
+        display: flex;
     }
 
     li {

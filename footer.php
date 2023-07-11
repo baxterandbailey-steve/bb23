@@ -106,7 +106,15 @@
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<script>
+		AOS.init({
+			duration: 800,
+			offset: 40
+		});
+	</script>
+
 
 	<?php wp_footer(); ?>
 

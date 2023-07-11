@@ -1,5 +1,5 @@
 //// AOS ////
-import { AOS } from './components/_aos.js';
+//mport { AOS } from './components/_aos.js';
 
 //// basic details ////
 import { base } from './components/_base.js';
@@ -13,15 +13,8 @@ import { scroll } from './components/_scroll.js';
 //// tabbable controls [for a11y] to hide-show team profiles ////
 import { team } from './components/_team.js';
 
-//// tabbable controls [for a11y] to hide-show team profiles ////
-import { typeDemo } from './components/_type-demo.js';
-
 document.addEventListener('DOMContentLoaded', function () {
     // AOS
-    AOS.init({
-        duration: 800,
-        offset: 40
-    });
 
     // base
     base();
@@ -34,7 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // team
     team();
-
-    // team
-    typeDemo();
 });
