@@ -11,8 +11,9 @@
 //// partials
 @use 'partials/header';
 @use 'partials/footer';
-@use 'partials/navigation';
-@use 'partials/newsroom';
+
+//// site-furniture
+@use 'site-furniture/navigation';
 
 //// layout
 @use 'layout/layout';
@@ -26,6 +27,7 @@
 //// page-sections
 @use 'page-sections/banner';
 @use 'page-sections/get-in-touch';
+@use 'page-sections/newsroom';
 
 //// flexible-content blocks
 @use 'flx/who-we-are';
