@@ -3,7 +3,7 @@
 .what-we-do {
     // services and service styles -----------------------------------------
     .services {
-        h2.title {
+        .section-title {
             width: 12ch;
             margin-bottom: 2rem;
             font-size: var(--font-medium);
@@ -12,9 +12,18 @@
     }
 
     .service {
-        border-top: 1.5px solid var(--mid-black);
+        position: relative;
         margin-bottom: 5.375rem;
-        padding-top: 1rem;
+
+        &:before {
+            position: relative;
+            width: 176px;
+            height: 1.5px;
+            margin-bottom: var(--drop-small);
+            display: block;
+            content: '';
+            background-color: var(--mid-black);
+        }
 
         .meta {
             margin-bottom: var(--drop-base);
@@ -45,9 +54,9 @@
                 grid-row: 1 / 1;
             }
 
-            .text {
+            .rich-text {
                 grid-column: 8 / -1;
-                grid-row: 1 / 3;
+                grid-row: 2 / 3;
             }
         }
 
@@ -59,16 +68,18 @@
             color: var(--black);
         }
 
-        .subtitle {
-            margin-bottom: var(--drop-base);
+        .description {
+            margin-bottom: 68px;
             font-size: var(--font-base-plus);
-            text-transform: uppercase;
+            line-height: var(--lh-medium);
             color: var(--mid-black);
         }
 
-        .description {
-            margin-bottom: 68px;
-            line-height: var(--lh-medium);
+        .subtitle {
+            margin-bottom: var(--drop-base);
+            font-family: var(--copy);
+            font-size: var(--font-base-plus);
+            text-transform: uppercase;
             color: var(--mid-black);
         }
 
@@ -77,14 +88,14 @@
         }
 
         li {
-            font-family: 'cabinet-medium';
+            font-family: var(--copy-med);
             font-size: var(--font-base-plus);
             line-height: var(--lh-medium);
-            color: var(--mid-black);
+            color: var(--black);
         }
 
         .link {
-            font-family: 'cabinet-medium';
+            font-family: var(--copy-med);
             font-size: var(--font-small);
             text-transform: uppercase;
             color: var(--black);
@@ -114,17 +125,31 @@
         // layout media queries --------------------------------------------------
         @media (min-width: 880px) {
             grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto;
             grid-gap: 48px;
 
             &:nth-of-type(odd) {
                 .text {
                     grid-column: 7 / 12;
                 }
+
+                .image {
+                    grid-column: 1 / 7;
+                    align-self: center;
+                    justify-self: end;
+                }
             }
 
             &:nth-of-type(even) {
                 .text {
                     grid-column: 1 / 6;
+                    grid-row: 1 / 2;
+                }
+
+                .image {
+                    grid-column: 6 / 13;
+                    align-self: center;
+                    justify-self: start;
                 }
             }
         }

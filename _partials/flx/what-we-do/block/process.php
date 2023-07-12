@@ -23,6 +23,10 @@ $process_section_title = get_sub_field('section_title');
                 $process_image = get_sub_field('image'); ?>
 
                 <div class="process">
+                    <figure class="image">
+                        <?php echo wp_get_attachment_image($process_image, 'full'); ?>
+                    </figure>
+
                     <div class="text">
                         <span class="meta"><?php echo $process_type; ?></span>
                         <h3 class="title"><?php echo $process_title; ?></h3>

@@ -10,7 +10,7 @@ $service_section_title = get_sub_field('section_title');
 ?>
 
 <section class="services contain">
-    <h2 class="title"><?php echo $service_section_title; ?></h2>
+    <h2 class="section-title"><?php echo $service_section_title; ?></h2>
 
     <?php if (have_rows('service')) :
         while (have_rows('service')) : the_row();
@@ -28,10 +28,10 @@ $service_section_title = get_sub_field('section_title');
                     <figure class="image">
                         <?php echo wp_get_attachment_image($service_image, 'full'); ?>
                     </figure>
-                    <div class="text">
+                    <div class="rich-text">
                         <p class="description"><?php echo $service_description; ?></p>
                         <h4 class="subtitle">Subtitle</h4>
-                        <ul>
+                        <ul class="type-of-service">
                             <?php if (have_rows('elements')) :
                                 while (have_rows('elements')) : the_row();
                                     $element = get_sub_field('element'); ?>

@@ -45,11 +45,20 @@
     padding-top: 9.375rem; // 150px
     padding-bottom: 14.875rem; // 124px;
 
+    .page-title {
+        margin-bottom: var(--drop-small);
+        display: block;
+        font-size: var(--font-base-plus);
+        text-transform: uppercase;
+        line-height: normal;
+        color: var(--mid-black);
+    }
+
     h1.statement {
         font-family: var(--titling);
         font-size: 1.25rem;
         font-weight: 400;
-        line-height: var(--lh-medium);
+        line-height: normal;
 
         @media (min-width: 320px) {
             --a: 24;

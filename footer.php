@@ -43,20 +43,20 @@
 			<div class="rh-col">
 				<ul class="contact">
 					<li>
-						<span class="meta">New Business</span>
+						<h3 class="meta">New Business</h3>
 						<a class="link"><?php echo $new_business; ?></a>
 					</li>
 					<li>
-						<span class="meta">Press and Events</span>
+						<h3 class="meta">Press and Events</h3>
 						<a class="link"><?php echo $press; ?></a>
 					</li>
 					<li>
-						<span class="meta">General Enquiries</span>
+						<h3 class="meta">General Enquiries</h3>
 						<a href="tel: <?php echo $telephone_number; ?>" class="link"><?php echo $telephone_number; ?></a>
 						<a class="link"><?php echo $general_enquiries; ?></a>
 					</li>
 					<li>
-						<span class="meta">Join Us</span>
+						<h3 class="meta">Join Us</h3>
 						<p class="join-us-statement"><?php echo $join_us; ?></p>
 						<a class="link"><?php echo $join_us_link; ?></a>
 					</li>
@@ -106,7 +106,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	<script>
 		AOS.init({

@@ -4,5 +4,6 @@
 </header>
 
 <div class="banner-standard contain">
+    <span class="page-title"><?php the_title(); ?></span>
     <h1 class="statement"><?php the_field('statement'); ?></h1>
 </div>
