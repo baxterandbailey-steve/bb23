@@ -225,12 +225,20 @@
       "oAP" : "\/_partials\/flx\/what-we-do\/blocks.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/who-we-are\/block\/image-grid.php" : {
+    "\/_partials\/flx\/who-we-are\/block\/image-grid-clients.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/who-we-are\/block\/image-grid.php",
+      "oAP" : "\/_partials\/flx\/who-we-are\/block\/image-grid-clients.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/who-we-are\/block\/image-grid-partners.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/who-we-are\/block\/image-grid-partners.php",
       "oF" : 0
     },
     "\/_partials\/flx\/who-we-are\/block\/image-offset.php" : {
