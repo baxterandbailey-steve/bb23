@@ -11,7 +11,7 @@ get_template_part('_partials/headers/header', 'front-page'); ?>
 
 <main>
     <section class="flexible-content__home">
-        <h2 class="title" data-aos="fade-up">Selected Work</h2>
+        <h2 class="section-title" data-aos="fade-up">Selected Work</h2>
         <?php get_template_part('_partials/flx/homepage/blocks') ?>
     </section>
 

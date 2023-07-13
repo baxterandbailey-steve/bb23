@@ -24,9 +24,9 @@
                         $lh_text_quote = get_sub_field('quote'); ?>
 
                         <div class="lh-col quote" style="grid-column: <?php echo $lh_text_width; ?>" data-aos="fade-up">
-                            <h3 class="client"><?php echo $lh_text_client; ?></h3>
-                            <span class="category"><?php echo $lh_text_category; ?></span>
                             <blockquote><?php echo $lh_text_quote; ?></blockquote>
+                            <h3 class="client"><?php echo $lh_text_client; ?></h3>
+                            <!-- <span class="category"><?php echo $lh_text_category; ?></span> -->
                         </div>
 
                     <?php endwhile; ?>
@@ -42,7 +42,7 @@
                         $lh_image_offset = get_sub_field('offset');
                         $lh_image_client = get_sub_field('client');
                         $lh_image_category = get_sub_field('category');
-                        $lh_image_description = get_sub_field('quote');
+                        $lh_image_description = get_sub_field('description');
                         $lh_image_link = get_sub_field('link');
                     ?>
 
@@ -81,9 +81,10 @@
                         $rh_text_quote = get_sub_field('quote'); ?>
 
                         <div class="rh-col quote" style="grid-column: <?php echo $rh_text_width; ?>" data-aos="fade-up">
-                            <h3 class="client"><?php echo $rh_text_client; ?></h3>
-                            <span class="category"><?php echo $rh_text_category; ?></span>
                             <blockquote><?php echo $rh_text_quote; ?></blockquote>
+                            <h3 class="client"><?php echo $rh_text_client; ?></h3>
+                            <!-- <span class="category"><?php echo $rh_text_category; ?></span> -->
+
                         </div>
 
                     <?php endwhile; ?>
@@ -99,7 +100,7 @@
                         $rh_image_offset = get_sub_field('offset');
                         $rh_image_client = get_sub_field('client');
                         $rh_image_category = get_sub_field('category');
-                        $rh_image_description = get_sub_field('quote');
+                        $rh_image_description = get_sub_field('description');
                         $rh_image_link = get_sub_field('link');
                     ?>
 

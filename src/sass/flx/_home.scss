@@ -1,5 +1,8 @@
-/* grid home-v1.0: this file is for the bespoke grid elements on the homepage
------------------------------------------------------------------------------------------------------ */
+/* home 
+
+Styles for the bespoke grid elements on the homepage, styles for other components are in page-sections & footer etc
+Note: A lot of styles eg grid-columns are output as inline styles via ACF and changed in in Field Groups
+--------------------------------------------------------------------------------------------------------- */
 .flexible-content__home {
     width: 100%;
     max-width: var(--site-width);
@@ -13,6 +16,12 @@
     @media (min-width: 880px) {
         padding-left: var(--site-pad-large);
         padding-right: var(--site-pad-large);
+    }
+
+    .section-title {
+        margin-bottom: var(--drop-large);
+        font-size: var(--font-medium);
+        color: var(--white);
     }
 
     > .row {
@@ -41,7 +50,7 @@
 
     // basics, ie styles to be inherited by all elements
     .thumb {
-        //aspect-ratio: 4 / 3;
+        // styles
     }
 
     img {
@@ -53,8 +62,8 @@
         margin-bottom: var(--drop-medium);
         font-family: var(--titling);
         font-size: 1.375rem;
-        line-height: var(--lh-small);
-        color: var(--aqua);
+        line-height: 1.35;
+        color: var(--white);
 
         @media (min-width: 960px) {
             font-size: var(--font-medium);
@@ -91,11 +100,6 @@
         color: var(--work-meta);
     }
 
-    h2 {
-        margin-bottom: var(--drop-large);
-        font-size: var(--font-medium);
-    }
-
     // specific row stylings
 
     /* three col layout ------------------------------------------------------------ */
@@ -117,7 +121,7 @@
 
             .description {
                 max-width: 70%;
-                margin-bottom: 16px;
+                margin-bottom: var(--drop-small);
 
                 @media (min-width: 960px) {
                     max-width: 60%;
@@ -150,4 +154,4 @@
             }
         }
     }
-} // close
+}
