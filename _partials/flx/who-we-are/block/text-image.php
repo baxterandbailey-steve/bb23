@@ -14,12 +14,12 @@ $text_image_link_label = get_sub_field('link_label');
 $text_image_layout = get_sub_field('layout');
 ?>
 
-<div class="text-image contain <?php echo $text_image_layout; ?>">
-    <div class="inner">
-        <div class="text">
+<div class="text-image">
+    <div class="inner <?php echo $text_image_layout; ?>">
+        <div class="rich-text">
             <h2 class="title"><?php echo $text_image_title; ?></h2>
             <?php echo $text_image_text; ?>
-            <a href="<?php echo $text_image_link_url; ?>" class="link"><?php echo $text_image_link_label; ?></a>
+            <a href="<?php echo $text_image_link; ?>" class="link"><?php echo $text_image_link_label; ?></a>
         </div>
         <figure class="image">
             <?php echo wp_get_attachment_image($text_image_image, 'full'); ?>
