@@ -11,7 +11,7 @@ $image_offset_secondary = get_sub_field('secondary_image');
 ?>
 
 <div class="image-offset">
-    <div class="inner contain">
+    <div class="container grid-offset">
 
         <figure class="primary-image">
             <?php echo wp_get_attachment_image($image_offset_primary, 'full'); ?>

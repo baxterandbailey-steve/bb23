@@ -15,7 +15,7 @@ $text_image_layout = get_sub_field('layout');
 ?>
 
 <div class="text-image">
-    <div class="inner <?php echo $text_image_layout; ?>">
+    <div class="contain-inner <?php echo $text_image_layout; ?>">
         <div class="rich-text">
             <h2 class="title"><?php echo $text_image_title; ?></h2>
             <?php echo $text_image_text; ?>
