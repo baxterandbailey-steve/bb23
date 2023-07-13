@@ -225,20 +225,20 @@
       "oAP" : "\/_partials\/flx\/what-we-do\/blocks.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/who-we-are\/block\/image-grid-clients.php" : {
+    "\/_partials\/flx\/who-we-are\/block\/image-grid-five-cols.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/who-we-are\/block\/image-grid-clients.php",
+      "oAP" : "\/_partials\/flx\/who-we-are\/block\/image-grid-five-cols.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/who-we-are\/block\/image-grid-partners.php" : {
+    "\/_partials\/flx\/who-we-are\/block\/image-grid-four-cols.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/_partials\/flx\/who-we-are\/block\/image-grid-partners.php",
+      "oAP" : "\/_partials\/flx\/who-we-are\/block\/image-grid-four-cols.php",
       "oF" : 0
     },
     "\/_partials\/flx\/who-we-are\/block\/image-offset.php" : {
@@ -1059,21 +1059,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/_work-v1.0.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/sass\/flx\/**_work-v1.0.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/dist\/css\/**_work-v1.0.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

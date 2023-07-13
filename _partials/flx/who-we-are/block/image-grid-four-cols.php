@@ -6,12 +6,10 @@
  * @package BBWP
  */
 
-$image_grid_bg = get_sub_field('background_colour');
-$image_grid_cols = get_sub_field('columns');
 ?>
 
-<section class="image-grid <?php echo $image_grid_bg; ?>">
-    <div class="inner contain">
+<div class="image-grid four-cols">
+    <div class="container">
         <div class="introduction">
             <?php if (have_rows('introduction')) :
                 while (have_rows('introduction')) : the_row();
@@ -23,7 +21,7 @@ $image_grid_cols = get_sub_field('columns');
             <?php endif; ?>
         </div>
 
-        <div class="images <?php echo $image_grid_cols; ?>">
+        <div class="images">
             <?php if (have_rows('images')) :
                 while (have_rows('images')) : the_row();
                     $image_grid_image = get_sub_field('image'); ?>
@@ -34,4 +32,4 @@ $image_grid_cols = get_sub_field('columns');
             <?php endif; ?>
         </div>
     </div>
-</section>
+</div>

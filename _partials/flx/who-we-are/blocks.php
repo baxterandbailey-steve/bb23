@@ -16,9 +16,9 @@
         elseif (get_row_layout() == 'image_offset') :
             get_template_part('_partials/flx/who-we-are/block/image-offset');
         elseif (get_row_layout() == 'image_grid_clients') :
-            get_template_part('_partials/flx/who-we-are/block/image-grid-clients');
+            get_template_part('_partials/flx/who-we-are/block/image-grid-four-cols');
         elseif (get_row_layout() == 'image_grid_partners') :
-            get_template_part('_partials/flx/who-we-are/block/image-grid-partners');
+            get_template_part('_partials/flx/who-we-are/block/image-grid-five-cols');
         endif; ?>
         
     <?php endwhile; ?>
