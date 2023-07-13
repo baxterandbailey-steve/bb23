@@ -19,6 +19,8 @@
             get_template_part('_partials/flx/who-we-are/block/image-grid-four-cols');
         elseif (get_row_layout() == 'image_grid_partners') :
             get_template_part('_partials/flx/who-we-are/block/image-grid-five-cols');
+        elseif (get_row_layout() == 'text_image_full_width') :
+            get_template_part('_partials/flx/who-we-are/block/text-image-full-width');
         endif; ?>
         
     <?php endwhile; ?>

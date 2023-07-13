@@ -249,6 +249,14 @@
       "oAP" : "\/_partials\/flx\/who-we-are\/block\/image-offset.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/who-we-are\/block\/text-image-full-width.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/who-we-are\/block\/text-image-full-width.php",
+      "oF" : 0
+    },
     "\/_partials\/flx\/who-we-are\/block\/text-image.php" : {
       "cB" : 0,
       "ft" : 8192,

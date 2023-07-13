@@ -79,36 +79,34 @@
             }
         }
 
-        .text {
-            .title {
-                margin-bottom: var(--drop-small);
-                font-size: var(--font-base-plus);
-                text-transform: uppercase;
-                line-height: var(--lh-medium);
-                color: var(--mid-black);
-            }
+        .title {
+            margin-bottom: var(--drop-small);
+            font-size: var(--font-base-plus);
+            text-transform: uppercase;
+            line-height: var(--lh-medium);
+            color: var(--mid-black);
+        }
 
-            p {
-                margin-bottom: 0.5rem;
-                font-size: var(--font-base-plus);
-                color: #9a9a9a;
-            }
+        p {
+            margin-bottom: 0.5rem;
+            font-size: var(--font-base-plus);
+            color: #9a9a9a;
+        }
 
-            p:first-of-type {
-                font-family: 'cabinet-medium';
-                color: var(--black);
-            }
+        p:first-of-type {
+            font-family: 'cabinet-medium';
+            color: var(--black);
+        }
 
-            p:last-of-type {
-                margin-bottom: 2rem;
-            }
+        p:last-of-type {
+            margin-bottom: 2rem;
+        }
 
-            .link {
-                font-family: 'cabinet-medium';
-                font-size: var(--font-small);
-                text-transform: uppercase;
-                color: var(--black);
-            }
+        .link {
+            font-family: 'cabinet-medium';
+            font-size: var(--font-small);
+            text-transform: uppercase;
+            color: var(--black);
         }
     }
 
@@ -138,10 +136,81 @@
         }
     }
 
+    /* text-image full-width
+    ------------------------------------------------------------------------- */
+    .text-image-full-width {
+        padding-top: 2.25rem;
+        margin-bottom: 6rem;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @media (min-width: 960px) {
+                grid-template-columns: repeat(12, 1fr);
+                grid-column-gap: var(--gutter-large);
+            }
+        }
+
+        .text-left {
+            .rich-text {
+                @media (min-width: 960px) {
+                    grid-column: 1 / 7;
+                }
+            }
+
+            .image {
+                @media (min-width: 960px) {
+                    grid-column: 8 / -1;
+                    justify-self: start;
+                    transform: translateX(32px);
+                }
+            }
+        }
+
+        .text-right {
+            .image {
+                @media (min-width: 960px) {
+                    grid-column: 1 / 6;
+                    grid-row: 1;
+                    justify-self: end;
+                }
+            }
+
+            .rich-text {
+                @media (min-width: 960px) {
+                    grid-column: 7 / -1;
+                    grid-row: 1;
+                }
+            }
+        }
+        .section-title {
+            margin-bottom: var(--drop-small);
+            font-size: var(--font-base-plus);
+            text-transform: uppercase;
+            line-height: var(--lh-medium);
+            color: var(--mid-black);
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+            font-family: var(--titling);
+            font-size: 4rem;
+            color: var(--black);
+        }
+
+        .link {
+            font-family: 'cabinet-medium';
+            font-size: var(--font-small);
+            text-transform: uppercase;
+            color: var(--black);
+        }
+    }
+
     /* image-offset
     ------------------------------------------------------------------------- */
     .image-offset {
-        margin-bottom: 96px;
+        margin-bottom: var(--drop-large);
 
         .inner {
             display: grid;
@@ -152,6 +221,7 @@
             .inner {
                 grid-template-columns: repeat(12, 1fr);
                 grid-template-rows: repeat(9, 108px);
+                column-gap: var(--gutter-large);
             }
 
             .primary-image {
