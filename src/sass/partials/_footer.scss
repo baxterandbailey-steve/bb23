@@ -22,7 +22,6 @@ footer {
         grid-template-columns: 1fr;
 
         @media (min-width: 960px) {
-            margin-bottom: var(--drop-big);
             grid-template-columns: repeat(12, 1fr);
             grid-column-gap: var(--gutter-large);
         }
@@ -115,7 +114,6 @@ footer {
         grid-template-columns: 1fr;
 
         @media (min-width: 960px) {
-            margin-bottom: var(--drop-big);
             grid-template-columns: repeat(12, 1fr);
             grid-column-gap: var(--gutter-large);
         }
