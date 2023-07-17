@@ -98,10 +98,8 @@
                     display: grid;
                     grid-template-columns: repeat(6, 1fr);
                     grid-template-rows: auto;
-                    grid-column-gap: 48px;
-                    .strategy,
-                    .design,
-                    .digital {
+                    grid-column-gap: var(--gutter-larger);
+                    .service-type {
                         grid-column: span 2;
                     }
                 }
@@ -119,7 +117,6 @@
             font-family: 'cabinet-medium';
             font-size: var(--font-base);
             line-height: var(--lh-medium);
-            text-decoration: underline;
         }
 
         .sector,

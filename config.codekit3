@@ -353,14 +353,6 @@
       "oAP" : "\/404.php",
       "oF" : 0
     },
-    "\/archive-work.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/archive-work.php",
-      "oF" : 0
-    },
     "\/archive.php" : {
       "cB" : 0,
       "ft" : 8192,

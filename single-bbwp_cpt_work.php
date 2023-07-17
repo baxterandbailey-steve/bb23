@@ -14,6 +14,7 @@ $terms = get_terms(array(
     'hide_empty' => false,
 ));
 
+$title = get_field('case_study_title');
 $excerpt = get_field('excerpt');
 $statement = get_field('work_statement');
 $sector = get_field('sector');
@@ -27,7 +28,7 @@ $secondary_image = get_field('secondary_image');
 <main class="case-study">
     <section class="page-top contain">
         <span class="meta"><?php echo $service; ?></span>
-        <h2 class="title"><?php the_title(); ?></h2>
+        <h2 class="title"><?php echo $title; ?></h2>
         <p class="excerpt"><?php echo $excerpt; ?></p>
     </section>
 
@@ -55,41 +56,55 @@ $secondary_image = get_field('secondary_image');
                         <p class="type"><?php echo $sector; ?></p>
                     </div>
 
+
                     <div class="what-we-did">
-                        <div class="strategy">
-                            <h3 class="title">Strategy</h3>
-                            <ul>
-                                <?php if (have_rows('strategy')) :
-                                    while (have_rows('strategy')) : the_row(); ?>
-                                        <li class="item"><?php the_sub_field('strategy_item'); ?></li>
-                                    <?php endwhile; ?>
-                                <?php endif; ?>
-                            </ul>
-                        </div>
+                        <?php if (have_rows('what_we_did')) :
+                            while (have_rows('what_we_did')) : the_row(); ?>
 
-                        <div class="design">
-                            <h3 class="title">Design</h3>
-                            <ul>
+                                <?php if (have_rows('strategy')) : ?>
+                                    <div class="service-type">
+                                        <h3>Strategy</h3>
+                                        <?php while (have_rows('strategy')) : the_row();
+                                            $strategy_service = get_sub_field('service_type')
+                                        ?>
+                                            <ul>
+                                                <li><?php echo $strategy_service; ?></li>
+                                            </ul>
+                                        <?php endwhile; ?>
+                                    </div>
+                                <?php endif; ?>
+
                                 <?php if (have_rows('design')) : ?>
-                                    <?php while (have_rows('design')) : the_row(); ?>
-                                        <li class="item"><?php the_sub_field('design_item'); ?></li>
-                                    <?php endwhile; ?>
+                                    <div class="service-type">
+                                        <h3>Design</h3>
+                                        <?php while (have_rows('design')) : the_row();
+                                            $design_service = get_sub_field('service_type')
+                                        ?>
+                                            <ul>
+                                                <li><?php echo $design_service; ?></li>
+                                            </ul>
+                                        <?php endwhile; ?>
+                                    </div>
                                 <?php endif; ?>
-                            </ul>
-                        </div>
 
-                        <div class="digital">
-                            <h3 class="title">Digital</h3>
-                            <ul>
-                                <?php if (have_rows('digital')) :
-                                    while (have_rows('digital')) : the_row(); ?>
-                                        <li class="item"><?php the_sub_field('digital_item'); ?></li>
-                                    <?php endwhile; ?>
+                                <?php if (have_rows('digital')) : ?>
+                                    <div class="service-type">
+                                        <h3>Digital</h3>
+                                        <?php while (have_rows('digital')) : the_row();
+                                            $strategy_service = get_sub_field('service_type')
+                                        ?>
+                                            <ul>
+                                                <li><?php echo $strategy_service; ?></li>
+                                            </ul>
+                                        <?php endwhile; ?>
+                                    </div>
                                 <?php endif; ?>
-                            </ul>
-                        </div>
+
+
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     </div>
-                    <!-- close details -->
+
                 </div>
                 <!-- close lh-col -->
             </div>
