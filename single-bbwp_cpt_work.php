@@ -20,8 +20,8 @@ $statement = get_field('work_statement');
 $sector = get_field('sector');
 $service = get_field('service');
 
-$primary_video = get_field('primary_video');
-$primary_image = get_field('primary_image');
+//$primary_video = get_field('primary_video');
+//$primary_image = get_field('primary_image');
 $secondary_image = get_field('secondary_image');
 ?>
 
@@ -36,12 +36,22 @@ $secondary_image = get_field('secondary_image');
         <figure class="primary-content__hero">
             <?php if (have_rows('primary_media')) : ?>
                 <?php while (have_rows('primary_media')) : the_row();
-                    $primary_media = get_sub_field('video');
+                    $primary_video = get_sub_field('video');
+                    $primary_image = get_sub_field('image');
                 ?>
+                    <?php if (get_sub_field('primary_choice') == 'video') : ?>
 
-                    <video preload playsinline autoplay muted loop class="primary-video">
-                        <source src="<?php echo $primary_media ?>" type="video/mp4">
-                    </video>
+                        <video preload playsinline autoplay muted loop class="primary-video">
+                            <source src="<?php echo $primary_video ?>" type="video/mp4">
+                        </video>
+
+                    <?php else : ?>
+                        <figure class="full-width-image">
+                            <?php echo wp_get_attachment_image($primary_image, 'full'); ?>
+                        </figure>
+
+                    <?php endif; ?>
+
                 <?php endwhile; ?>
             <?php endif; ?>
         </figure>
