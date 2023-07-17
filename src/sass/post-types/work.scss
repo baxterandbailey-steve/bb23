@@ -153,7 +153,7 @@
     .image-text,
     .media__half-width,
     .media__full-width,
-    .full-width-media,
+    // .full-width-media,
     .primary-media {
         width: 100%;
         max-width: var(--site-width);
@@ -214,6 +214,12 @@
             p {
                 margin-bottom: var(--drop-medium);
             }
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gutter: var(--gutter-large);
         }
     }
 
