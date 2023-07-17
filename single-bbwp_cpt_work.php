@@ -56,7 +56,6 @@ $secondary_image = get_field('secondary_image');
                         <p class="type"><?php echo $sector; ?></p>
                     </div>
 
-
                     <div class="what-we-did">
                         <?php if (have_rows('what_we_did')) :
                             while (have_rows('what_we_did')) : the_row(); ?>
@@ -100,13 +99,10 @@ $secondary_image = get_field('secondary_image');
                                     </div>
                                 <?php endif; ?>
 
-
                             <?php endwhile; ?>
                         <?php endif; ?>
                     </div>
-
                 </div>
-                <!-- close lh-col -->
             </div>
 
             <?php if ($secondary_image) :  ?>

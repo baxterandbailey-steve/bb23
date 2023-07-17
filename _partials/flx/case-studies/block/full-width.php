@@ -20,7 +20,7 @@ $image = get_sub_field('image');
         </div>
 
     <?php else : ?>
-        <figure class="image">
+        <figure class="full-width-image">
             <?php echo wp_get_attachment_image($image, 'full'); ?>
         </figure>
     <?php endif; ?>

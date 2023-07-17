@@ -153,6 +153,7 @@
     .image-text,
     .media__half-width,
     .media__full-width,
+    .full-width-media,
     .primary-media {
         width: 100%;
         max-width: var(--site-width);
@@ -300,7 +301,8 @@
     // image / video media blocks -----------------------------------------------------------------------------
     .two-cols-media,
     .full-width-video,
-    .full-screen-video {
+    .full-screen-video,
+    .full-screen-media {
         width: 100%;
         max-width: 1440px;
         padding: 0 4.5rem;
@@ -354,5 +356,16 @@
         figure {
             margin-bottom: var(--drop-medium);
         }
+    }
+
+    // fixes
+    .full-screen-media {
+        img {
+            width: 100%;
+        }
+    }
+
+    .full-width-image {
+        margin-bottom: var(--drop-medium);
     }
 }
