@@ -11,17 +11,18 @@
         grid-template-columns: 1fr;
 
         .meta {
-            font-size: var(--font-base);
+            font-size: var(--font-base-plus);
             text-transform: uppercase;
             color: var(--mid-black);
         }
 
         .title {
+            font-family: var(--titling);
             font-size: var(--font-medium);
         }
 
         .excerpt {
-            font-size: var(--font-base);
+            font-size: var(--font-base-plus);
             color: var(--mid-black);
         }
     }
@@ -110,17 +111,32 @@
             }
         }
 
-        h3 {
+        h3.title {
             margin-bottom: 0.25rem;
-            font-size: var(--font-base);
+            font-family: var(--copy);
+            font-size: var(--font-base-plus);
             text-transform: uppercase;
             color: var(--mid-black);
         }
 
+        .service-type {
+            .title {
+                font-family: var(--copy-med);
+                font-size: var(--font-base-plus);
+                text-transform: none;
+                color: var(--black);
+            }
+
+            li {
+                font-size: var(--font-base-plus);
+                font-weight: 500;
+                color: var(--mid-black);
+            }
+        }
+
         .type {
-            font-family: 'cabinet-medium';
-            font-size: var(--font-base);
-            line-height: var(--lh-medium);
+            font-family: var(--copy-med);
+            font-size: var(--font-base-plus);
         }
 
         .sector,
@@ -210,13 +226,22 @@
         .title {
             grid-column: 1 / 7;
             grid-row: 1;
+
+            font-family: var(--titling);
+            font-size: var(--font-medium);
         }
 
         .text {
-            grid-column: 9 / -1;
+            grid-column: 8 / -1;
 
             p {
                 margin-bottom: var(--drop-medium);
+                font-size: var(--font-base-plus);
+            }
+
+            strong {
+                font-family: var(--copy-med);
+                font-weight: 500;
             }
         }
 
@@ -247,14 +272,17 @@
             .role,
             .organisation {
                 display: block;
+
+                font-size: var(--font-base-plus);
             }
 
             .author {
-                font-family: 'cabinet-medium';
+                font-family: var(--copy-med);
             }
 
             .role,
             .organisation {
+                font-family: var(--copy);
                 color: var(--mid-black);
             }
         }
