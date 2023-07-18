@@ -46,7 +46,7 @@ $secondary_image = get_field('secondary_image');
                         </video>
 
                     <?php else : ?>
-                        <figure class="full-width-image">
+                        <figure class="primary-hero-image">
                             <?php echo wp_get_attachment_image($primary_image, 'full'); ?>
                         </figure>
 

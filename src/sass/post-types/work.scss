@@ -59,6 +59,10 @@
         margin-bottom: var(--drop-medium);
     }
 
+    .primary-content__hero {
+        margin-bottom: var(--drop-medium);
+    }
+
     .primary-content__info {
         display: grid;
         grid-template-columns: 1fr;
@@ -308,7 +312,8 @@
     .two-cols-media,
     .full-width-video,
     .full-screen-video,
-    .full-screen-media {
+    .full-screen-media,
+    .full-width-image {
         width: 100%;
         max-width: 1440px;
         padding: 0 4.5rem;
