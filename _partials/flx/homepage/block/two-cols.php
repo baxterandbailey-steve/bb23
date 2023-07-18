@@ -65,18 +65,22 @@
                 <?php if (have_rows('lh_video')) : ?>
                     <?php while (have_rows('lh_video')) : the_row();
                         $lh_video = get_sub_field('video');
+                        $lh_video_width = get_sub_field('width');
                         $lh_video_client = get_sub_field('client');
                         $lh_video_category = get_sub_field('category');
                         $lh_video_description = get_sub_field('description');
                         $lh_video_link = get_sub_field('link');
                     ?>
-                        <video preload playsinline autoplay muted loop>
-                            <source src="<?php echo $lh_video; ?>">
-                        </video>
-                        <div class="details" data-aos="fade-up">
-                            <h3 class="client"><?php echo $lh_video_client; ?></h3>
-                            <span class="category"><?php echo $lh_video_category; ?></span>
-                            <p class="description"><?php echo $lh_video_description; ?></p>
+
+                        <div class="lh-col video" style="grid-column: <?php echo $lh_video_width; ?>;">
+                            <video preload playsinline autoplay muted loop style="grid-column: <?php echo $lh_video_width; ?>;">
+                                <source src=" <?php echo $lh_video; ?>">
+                            </video>
+                            <div class="details" data-aos="fade-up">
+                                <h3 class="client"><?php echo $lh_video_client; ?></h3>
+                                <span class="category"><?php echo $lh_video_category; ?></span>
+                                <p class="description"><?php echo $lh_video_description; ?></p>
+                            </div>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
@@ -143,18 +147,21 @@
                 <?php if (have_rows('rh_video')) : ?>
                     <?php while (have_rows('rh_video')) : the_row();
                         $rh_video = get_sub_field('video');
+                        $rh_video_width = get_sub_field('width');
                         $rh_video_client = get_sub_field('client');
                         $rh_video_category = get_sub_field('category');
                         $rh_video_description = get_sub_field('description');
                         $rh_video_link = get_sub_field('link');
                     ?>
-                        <video preload playsinline autoplay muted loop>
-                            <source src="<?php echo $rh_video; ?>">
-                        </video>
-                        <div class="details" data-aos="fade-up">
-                            <h3 class="client"><?php echo $rh_video_client; ?></h3>
-                            <span class="category"><?php echo $rh_video_category; ?></span>
-                            <p class="description"><?php echo $rh_video_description; ?></p>
+                        <div class="rh-col video" style="grid-column: <?php echo $rh_video_width; ?>;">
+                            <video preload playsinline autoplay muted loopstyle="grid-column: <?php echo $rh_video_width; ?>;">
+                                <source src=" <?php echo $rh_video; ?>">
+                            </video>
+                            <div class="details" data-aos="fade-up">
+                                <h3 class="client"><?php echo $rh_video_client; ?></h3>
+                                <span class="category"><?php echo $rh_video_category; ?></span>
+                                <p class="description"><?php echo $rh_video_description; ?></p>
+                            </div>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
