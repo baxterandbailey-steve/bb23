@@ -32,7 +32,7 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
 
-            <?php else : ?>
+            <?php elseif (get_sub_field('choice') == 'image') : ?>
 
                 <?php if (have_rows('lh_image')) : ?>
                     <?php while (have_rows('lh_image')) : the_row();
@@ -60,6 +60,27 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
 
+            <?php else : ?>
+
+                <?php if (have_rows('lh_video')) : ?>
+                    <?php while (have_rows('lh_video')) : the_row();
+                        $lh_video = get_sub_field('video');
+                        $lh_video_client = get_sub_field('client');
+                        $lh_video_category = get_sub_field('category');
+                        $lh_video_description = get_sub_field('description');
+                        $lh_video_link = get_sub_field('link');
+                    ?>
+                        <video preload playsinline autoplay muted loop>
+                            <source src="<?php echo $lh_video; ?>">
+                        </video>
+                        <div class="details" data-aos="fade-up">
+                            <h3 class="client"><?php echo $lh_video_client; ?></h3>
+                            <span class="category"><?php echo $lh_video_category; ?></span>
+                            <p class="description"><?php echo $lh_video_description; ?></p>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+
             <?php endif ?>
 
     <?php endwhile;
@@ -83,14 +104,13 @@
                         <div class="rh-col quote" style="grid-column: <?php echo $rh_text_width; ?>" data-aos="fade-up">
                             <blockquote><?php echo $rh_text_quote; ?></blockquote>
                             <h3 class="client"><?php echo $rh_text_client; ?></h3>
-                            <!-- <span class="category"><?php echo $rh_text_category; ?></span> -->
-
+                            <span class="category"><?php echo $rh_text_category; ?></span>
                         </div>
 
                     <?php endwhile; ?>
                 <?php endif; ?>
 
-            <?php else : ?>
+            <?php elseif (get_sub_field('choice') == 'image') : ?>
 
                 <?php if (have_rows('rh_image')) : ?>
                     <?php while (have_rows('rh_image')) : the_row();
@@ -115,6 +135,27 @@
                             </div>
                         </figure>
 
+                    <?php endwhile; ?>
+                <?php endif; ?>
+
+            <?php else : ?>
+
+                <?php if (have_rows('rh_video')) : ?>
+                    <?php while (have_rows('rh_video')) : the_row();
+                        $rh_video = get_sub_field('video');
+                        $rh_video_client = get_sub_field('client');
+                        $rh_video_category = get_sub_field('category');
+                        $rh_video_description = get_sub_field('description');
+                        $rh_video_link = get_sub_field('link');
+                    ?>
+                        <video preload playsinline autoplay muted loop>
+                            <source src="<?php echo $rh_video; ?>">
+                        </video>
+                        <div class="details" data-aos="fade-up">
+                            <h3 class="client"><?php echo $rh_video_client; ?></h3>
+                            <span class="category"><?php echo $rh_video_category; ?></span>
+                            <p class="description"><?php echo $rh_video_description; ?></p>
+                        </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
 
