@@ -28,7 +28,7 @@ $sector_info_text   = get_sub_field('text');
         ?>
                 <li>
                     <span class="stat"><?php echo $stat; ?></span>
-                    <span class="description"><?php echo $description; ?></span>
+                    <p class="description"><?php echo $description; ?></p>
                 </li>
         <?php endwhile;
         endif; ?>
