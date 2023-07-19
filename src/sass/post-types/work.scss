@@ -214,13 +214,11 @@
 
     .rich-text,
     .stats {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: var(--gutter-large);
-    }
-
-    .rich-text {
-        padding-bottom: 4.5rem;
+        @media (min-width: 800px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: 48px;
+        }
     }
 
     .title {
@@ -248,8 +246,13 @@
         li {
             margin-bottom: 34px;
             display: flex;
+            flex-direction: column;
             align-items: flex-start;
             gap: 32px;
+
+            @media (min-width: 800px) {
+                flex-direction: row;
+            }
         }
 
         li:nth-of-type(odd) {
@@ -261,7 +264,7 @@
         }
 
         .stat {
-            min-width: 35%;
+            min-width: 40%;
             align-self: flex-start;
             font-family: var(--titling);
             font-size: 6rem;
