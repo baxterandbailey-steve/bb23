@@ -245,6 +245,7 @@
             margin-bottom: 34px;
             display: flex;
             align-items: flex-start;
+            gap: 32px;
         }
 
         li:nth-of-type(odd) {
@@ -256,7 +257,7 @@
         }
 
         .stat {
-            width: 40%;
+            min-width: 35%;
             align-self: flex-start;
             font-family: var(--titling);
             font-size: 6rem;
@@ -265,7 +266,8 @@
         }
 
         .description {
-            width: 60%;
+            flex-grow: 1;
+            font-size: var(--font-base-plus);
         }
     }
 
