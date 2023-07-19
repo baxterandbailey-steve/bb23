@@ -242,8 +242,9 @@
 
     .stats {
         li {
+            margin-bottom: 34px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
         }
 
         li:nth-of-type(odd) {
@@ -256,11 +257,11 @@
 
         .stat {
             width: 40%;
-            margin-right: 64px;
-            display: block;
+            align-self: flex-start;
             font-family: var(--titling);
             font-size: 6rem;
             text-align: left;
+            transform: translateY(-16px);
         }
 
         .description {
