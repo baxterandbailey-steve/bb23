@@ -204,51 +204,67 @@
 
     // specific flexible content styles ---------------------------------------------------------
     // text ---------------------------------------------------------------------
-    .rich-text {
-        display: flex;
-        justify-content: center;
 
-        .container__centered {
-            max-width: 1296px;
-            padding-top: 1.5rem;
-            border-top: 1.5px solid var(--mid-black);
-            margin-left: var(--site-pad-large);
-            margin-right: var(--site-pad-large);
-            display: grid;
-            grid-template-columns: 1fr;
+    .text-block {
+        max-width: 1296px;
+        padding-top: 1.5rem;
+        border-top: 1.5px solid var(--mid-black);
+        margin: 0 auto 6rem;
+    }
 
-            @media (min-width: 800px) {
-                grid-template-columns: repeat(12, 1fr);
-                grid-column-gap: var(--gutter-large);
-            }
+    .rich-text,
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: var(--gutter-large);
+    }
+
+    .title {
+        grid-column: 1 / 7;
+        grid-row: 1;
+        font-family: var(--titling);
+        font-size: var(--font-medium);
+    }
+
+    .text {
+        grid-column: 8 / -1;
+
+        p {
+            margin-bottom: var(--drop-medium);
+            font-size: var(--font-base-plus);
         }
 
-        .title {
-            grid-column: 1 / 7;
-            grid-row: 1;
+        strong {
+            font-family: var(--copy-med);
+            font-weight: 500;
+        }
+    }
 
+    .stats {
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        li:nth-of-type(odd) {
+            grid-column: 2 / 7;
+        }
+
+        li:nth-of-type(even) {
+            grid-column: 8 / 12;
+        }
+
+        .stat {
+            width: 40%;
+            margin-right: 64px;
+            display: block;
             font-family: var(--titling);
-            font-size: var(--font-medium);
+            font-size: 6rem;
+            text-align: left;
         }
 
-        .text {
-            grid-column: 8 / -1;
-
-            p {
-                margin-bottom: var(--drop-medium);
-                font-size: var(--font-base-plus);
-            }
-
-            strong {
-                font-family: var(--copy-med);
-                font-weight: 500;
-            }
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gutter: var(--gutter-large);
+        .description {
+            width: 60%;
         }
     }
 
