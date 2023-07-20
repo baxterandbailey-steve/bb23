@@ -28,7 +28,8 @@ $secondary_image = get_field('secondary_image');
 <main class="case-study">
     <section class="page-top contain">
         <span class="meta"><?php echo $service; ?></span>
-        <h2 class="title"><?php echo $title; ?></h2>
+        <!-- <h2 class="title"><?php echo $title; ?></h2> -->
+        <h2 class="title"><?php the_title(); ?></h2>
         <p class="excerpt"><?php echo $excerpt; ?></p>
     </section>
 
@@ -61,10 +62,12 @@ $secondary_image = get_field('secondary_image');
                 <p class="statement"><?php echo $statement; ?></p>
                 <div class="details">
 
-                    <div class="sector">
-                        <h3 class="title">Sector</h3>
-                        <p class="type"><?php echo $sector; ?></p>
-                    </div>
+                    <?php if (get_field('sector')) : ?>
+                        <div class="sector">
+                            <h3 class="title">Sector</h3>
+                            <p class="type"><?php echo $sector; ?></p>
+                        </div>
+                    <?php endif; ?>
 
                     <div class="what-we-did">
                         <?php if (have_rows('what_we_did')) :
