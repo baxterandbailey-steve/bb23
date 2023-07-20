@@ -33,13 +33,13 @@
             color: var(--mid-black);
         }
 
-        .container {
+        .container__grid {
             display: grid;
         }
 
         // layout media queries --------------------------------------------------
         @media (min-width: 880px) {
-            .container {
+            .container__grid {
                 grid-template-columns: repeat(12, 1fr);
                 grid-gap: 48px;
             }
