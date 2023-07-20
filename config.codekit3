@@ -129,6 +129,14 @@
       "oAP" : "\/_partials\/flx\/homepage\/block\/single-col.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/homepage\/block\/three-cols-alt.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/homepage\/block\/three-cols-alt.php",
+      "oF" : 0
+    },
     "\/_partials\/flx\/homepage\/block\/three-cols.php" : {
       "cB" : 0,
       "ft" : 8192,

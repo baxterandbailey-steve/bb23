@@ -199,4 +199,62 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
             }
         }
     }
+
+    /* three col layout ------------------------------------------------------------ */
+    .three-cols-alt {
+        grid-template-rows: 1fr;
+        margin-bottom: 15.25rem;
+
+        video {
+            width: 100%;
+        }
+
+        .col-1-alt {
+            grid-column: 1 / 8;
+            grid-row: 1 / -1;
+
+            @media (min-width: 960px) {
+                grid-column: 1 / 7;
+            }
+
+            .details {
+                flex-direction: column;
+            }
+
+            .description {
+                max-width: 70%;
+                margin-bottom: var(--drop-small);
+
+                @media (min-width: 960px) {
+                    max-width: 60%;
+                }
+            }
+
+            img {
+                padding-top: var(--offset-medium);
+            }
+        }
+
+        .col-2-alt {
+            //padding-top: var(--offset-medium);
+            grid-column: 3 / 10;
+            grid-row: 1 / -1;
+
+            @media (min-width: 960px) {
+                margin-top: 544px;
+                grid-column: 3 / 10;
+            }
+        }
+
+        .col-3-alt {
+            padding-top: 98px;
+            grid-column: 9 / 13;
+            grid-row: 1 / -1;
+            display: none;
+
+            @media (min-width: 960px) {
+                display: block;
+            }
+        }
+    }
 }

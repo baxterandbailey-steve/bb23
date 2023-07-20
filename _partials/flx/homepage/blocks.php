@@ -18,6 +18,9 @@ if (have_rows('work_rows')) : ?>
         elseif (get_row_layout() == 'three_cols') :
             get_template_part('_partials/flx/homepage/block/three-cols');
 
+        elseif (get_row_layout() == 'three_cols_alt') :
+            get_template_part('_partials/flx/homepage/block/three-cols-alt');
+
         endif; ?>
 
     <?php endwhile; ?>
