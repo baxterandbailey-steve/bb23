@@ -18,15 +18,18 @@
                 <?php if (have_rows('lh_text')) : ?>
                     <?php while (have_rows('lh_text')) : the_row();
 
-                        $lh_text_width = get_sub_field('width');
+                        $lh_text_quote = get_sub_field('quote');
                         $lh_text_client = get_sub_field('client');
+                        $lh_text_position = get_sub_field('position');
                         $lh_text_category = get_sub_field('category');
-                        $lh_text_quote = get_sub_field('quote'); ?>
+                        $lh_text_width = get_sub_field('width');
+                    ?>
 
                         <div class="lh-col quote" style="grid-column: <?php echo $lh_text_width; ?>" data-aos="fade-up">
                             <blockquote><?php echo $lh_text_quote; ?></blockquote>
                             <h3 class="client"><?php echo $lh_text_client; ?></h3>
-                            <!-- <span class="category"><?php echo $lh_text_category; ?></span> -->
+                            <span class="position"><?php echo $lh_text_position; ?></span>
+                            <span class="category"><?php echo $lh_text_category; ?></span>
                         </div>
 
                     <?php endwhile; ?>
@@ -46,7 +49,7 @@
                         $lh_image_link = get_sub_field('link');
                     ?>
 
-                        <figure class="lh-col" style="grid-column: <?php echo $lh_image_width; ?>; margin-top:<?php echo $lh_image_offset; ?>;" data-aos="fade-up">
+                        <figure class="lh-col" style="grid-column: <?php echo $lh_image_width; ?>;" data-aos="fade-up">
                             <a href="<?php echo $lh_image_link; ?>">
                                 <?php echo wp_get_attachment_image($lh_image, 'full'); ?>
                             </a>
@@ -128,7 +131,7 @@
                         $rh_image_link = get_sub_field('link');
                     ?>
 
-                        <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>;  margin-top: <?php echo $rh_image_offset; ?>;" data-aos="fade-up">
+                        <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>;" data-aos="fade-up">
                             <a href="<?php echo $rh_image_link; ?>">
                                 <?php echo wp_get_attachment_image($rh_image, 'full'); ?>
                             </a>

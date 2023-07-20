@@ -24,11 +24,11 @@ $col_3_image = get_sub_field('col_3_image');
         <img src="<?php echo wp_get_attachment_image($col_1_image, 'full'); ?>" class="details thumb" data-aos="fade-up">
     </figure>
 
-    <figure class="col-2" data-aos="fade-up">
-        <img src="<?php echo wp_get_attachment_image($col_2_image, 'full'); ?>" class="details thumb">
-    </figure>
-
     <figure class="col-3" data-aos="fade-up">
         <img src="<?php echo wp_get_attachment_image($col_3_image, 'full'); ?>">
+    </figure>
+
+    <figure class="col-2" data-aos="fade-up">
+        <?php echo wp_get_attachment_image($col_2_image, 'full'); ?>
     </figure>
 </div>
