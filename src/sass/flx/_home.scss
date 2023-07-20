@@ -148,6 +148,10 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
         grid-template-rows: 1fr;
         margin-bottom: 15.25rem;
 
+        video {
+            width: 100%;
+        }
+
         .col-1 {
             grid-column: 1 / 9;
             grid-row: 1 / -1;
