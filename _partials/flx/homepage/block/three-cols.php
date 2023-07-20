@@ -25,7 +25,7 @@ $col_3_image = get_sub_field('col_3_image');
                 <span class="category"><?php echo $col_1_category; ?></span>
                 <p class="description"><?php echo $col_1_description; ?></p>
             </div>
-            <img src="<?php echo wp_get_attachment_image($col_1_image, 'full'); ?>" class="details thumb" data-aos="fade-up">
+            <?php echo wp_get_attachment_image($col_1_image, 'full'); ?>
         </figure>
 
     <?php else : ?>
@@ -37,7 +37,7 @@ $col_3_image = get_sub_field('col_3_image');
     <?php endif; ?>
 
     <figure class="col-3" data-aos="fade-up">
-        <img src="<?php echo wp_get_attachment_image($col_3_image, 'full'); ?>">
+        <?php echo wp_get_attachment_image($col_3_image, 'full'); ?>
     </figure>
 
     <figure class="col-2" data-aos="fade-up">
