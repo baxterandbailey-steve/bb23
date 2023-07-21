@@ -248,7 +248,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 32px;
+            // gap: 2rem;
 
             @media (min-width: 800px) {
                 flex-direction: row;
@@ -260,14 +260,14 @@
         }
 
         li:nth-of-type(even) {
-            grid-column: 8 / 12;
+            grid-column: 8 / -1;
         }
 
         .stat {
-            min-width: 40%;
+            min-width: 35%;
             align-self: flex-start;
             font-family: var(--titling);
-            font-size: 6rem;
+            font-size: 4rem;
             text-align: left;
             transform: translateY(-16px);
         }
