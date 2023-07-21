@@ -433,4 +433,45 @@
     .full-width-image {
         margin-bottom: var(--drop-medium);
     }
+
+    // text ---------------------------------------------------------------------
+    .more-like-this {
+        padding-top: 4.875rem;
+        padding-bottom: 4rem;
+        background-color: var(--white);
+
+        .container-top {
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .link {
+            font-family: var(--copy-med);
+            font-size: var(--font-small);
+            text-transform: uppercase;
+            color: var(--mid-black);
+        }
+
+        .related {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: var(--gutter-large);
+
+            li {
+                grid-column: span 6;
+            }
+
+            img {
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            .title {
+                font-family: var(--copy-med);
+                font-size: var(--font-base-plus);
+            }
+        }
+    }
 }

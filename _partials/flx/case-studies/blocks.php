@@ -34,6 +34,9 @@
             <?php elseif (get_row_layout() == 'full_screen') : ?>
                 <?php get_template_part('_partials/flx/case-studies/block/full-screen'); ?>
 
+            <?php elseif (get_row_layout() == 'more_like_this') : ?>
+                <?php get_template_part('_partials/flx/case-studies/block/more-like-this'); ?>
+
             <?php endif; ?>
 
         <?php endwhile; ?>
