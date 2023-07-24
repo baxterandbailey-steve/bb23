@@ -9,7 +9,7 @@ $args = new WP_Query(array(
         while ($args->have_posts()) : $args->the_post(); ?>
             <li class="team-member">
                 <figure class="image" data-aos="fade-in">
-                    <?php the_post_thumbnail(); ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                 </figure>
                 <h3 class="name" data-aos="fade-in">
                     <?php the_title(); ?>

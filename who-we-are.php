@@ -7,10 +7,8 @@
  */
 
 get_header();
-
+get_template_part('_partials/headers/header', 'default');
 ?>
-
-<?php get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="who-we-are">
     <?php get_template_part('_templates/loop', 'team') ?>

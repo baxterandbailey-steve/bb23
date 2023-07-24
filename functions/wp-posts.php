@@ -28,9 +28,9 @@ function bbwp_cpt_team()
             'capability_type' => 'post',
             'public' => true,
             'rewrite'  => array('slug' => 'team'),
-            'has_archive' => true,
+            'has_archive' => false,
             'exclude_from_search' => false,
-            'supports' => array('title', 'editor', 'excerpt', 'slug', 'thumbnail', 'category'),
+            'supports' => array('title', 'slug', 'thumbnail', 'category'),
             'taxonomies' => array('post_tag', 'category'),
             //'menu_position' => 21
         )
@@ -60,9 +60,9 @@ function bbwp_cpt_work() // work to be lowercase
             'capability_type' => 'post',
             'public' => true,
             'rewrite'  => array('slug' => 'work'),
-            'has_archive' => true,
+            'has_archive' => false,
             'exclude_from_search' => false,
-            'supports' => array('title', 'editor', 'excerpt', 'slug', 'thumbnail', 'category'),
+            'supports' => array('title', 'excerpt', 'slug', 'thumbnail', 'category'),
             'taxonomies' => array('post_tag', 'category'),
             'menu_position' => 21
         )
