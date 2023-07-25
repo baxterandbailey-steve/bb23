@@ -59,9 +59,12 @@ $secondary_image = get_field('secondary_image');
 
         <div class="primary-content__info">
             <div class="lh-col">
+                <div class="link-back">
+                    <a href="#" class="link">Back</a>
+                </div>
                 <p class="statement"><?php echo $statement; ?></p>
-                <div class="details">
 
+                <div class="details">
                     <?php if (get_field('sector')) : ?>
                         <div class="sector">
                             <h3 class="title">Sector</h3>
@@ -72,7 +75,6 @@ $secondary_image = get_field('secondary_image');
                     <div class="what-we-did">
                         <?php if (have_rows('what_we_did')) :
                             while (have_rows('what_we_did')) : the_row(); ?>
-
                                 <?php if (have_rows('strategy')) : ?>
                                     <div class="service-type">
                                         <h3 class="title">Strategy</h3>
