@@ -117,6 +117,10 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
         color: var(--work-meta);
     }
 
+    .link {
+        color: var(--white);
+    }
+
     // specific row stylings
     .single-col,
     .two-cols {
@@ -176,6 +180,10 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
             img {
                 padding-top: var(--offset-medium);
             }
+
+            .link {
+                color: var(--white);
+            }
         }
 
         .col-2 {
@@ -233,6 +241,10 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
             img {
                 padding-top: var(--offset-medium);
             }
+
+            .link {
+                color: var(--white);
+            }
         }
 
         .col-2-alt {
@@ -254,6 +266,23 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
 
             @media (min-width: 960px) {
                 display: block;
+            }
+
+            .details {
+                flex-direction: column;
+            }
+
+            .description {
+                max-width: 70%;
+                margin-bottom: var(--drop-small);
+
+                @media (min-width: 960px) {
+                    max-width: 60%;
+                }
+            }
+
+            .link {
+                color: var(--white);
             }
         }
     }

@@ -22,12 +22,15 @@
                         $lh_text_client = get_sub_field('client');
                         $lh_text_position = get_sub_field('position');
                         $lh_text_category = get_sub_field('category');
+                        $lh_text_link = get_sub_field('link');
                         $lh_text_width = get_sub_field('width');
                     ?>
 
                         <div class="lh-col quote" style="grid-column: <?php echo $lh_text_width; ?>" data-aos="fade-up">
                             <blockquote><?php echo $lh_text_quote; ?></blockquote>
-                            <h3 class="client"><?php echo $lh_text_client; ?></h3>
+                            <h3 class="client">
+                                <a href="<?php echo $lh_text_link; ?>" class="link"><?php echo $lh_text_client; ?></a>
+                            </h3>
                             <span class="position"><?php echo $lh_text_position; ?></span>
                             <span class="category"><?php echo $lh_text_category; ?></span>
                         </div>
@@ -50,11 +53,13 @@
                     ?>
 
                         <figure class="lh-col" style="grid-column: <?php echo $lh_image_width; ?>;" data-aos="fade-up">
-                            <a href="<?php echo $lh_image_link; ?>">
-                                <?php echo wp_get_attachment_image($lh_image, 'full'); ?>
-                            </a>
+
+                            <?php echo wp_get_attachment_image($lh_image, 'full'); ?>
+
                             <div class="details" data-aos="fade-up">
-                                <h3 class="client"><?php echo $lh_image_client; ?></h3>
+                                <h3 class="client">
+                                    <a href="<?php echo $lh_image_link; ?>" class="link"><?php echo $lh_image_client; ?></a>
+                                </h3>
                                 <span class="category"><?php echo $lh_image_category; ?></span>
                                 <p class="description"><?php echo $lh_image_description; ?></p>
                             </div>
@@ -80,7 +85,9 @@
                                 <source src=" <?php echo $lh_video; ?>">
                             </video>
                             <div class="details" data-aos="fade-up">
-                                <h3 class="client"><?php echo $lh_video_client; ?></h3>
+                                <h3 class="client">
+                                    <a href="<?php echo $lh_video_link; ?>" class="link"><?php echo $lh_video_client; ?></a>
+                                </h3>
                                 <span class="category"><?php echo $lh_video_category; ?></span>
                                 <p class="description"><?php echo $lh_video_description; ?></p>
                             </div>
@@ -102,15 +109,18 @@
 
                 <?php if (have_rows('rh_text')) : ?>
                     <?php while (have_rows('rh_text')) : the_row();
-
-                        $rh_text_width = get_sub_field('width');
                         $rh_text_client = get_sub_field('client');
                         $rh_text_category = get_sub_field('category');
-                        $rh_text_quote = get_sub_field('quote'); ?>
+                        $rh_text_quote = get_sub_field('quote');
+                        $rh_text_link = get_sub_field('link');
+                        $rh_text_width = get_sub_field('width');
+                    ?>
 
                         <div class="rh-col quote" style="grid-column: <?php echo $rh_text_width; ?>" data-aos="fade-up">
                             <blockquote><?php echo $rh_text_quote; ?></blockquote>
-                            <h3 class="client"><?php echo $rh_text_client; ?></h3>
+                            <h3 class="client">
+                                <a href="<?php echo $rh_text_link; ?>" class="link"><?php echo $rh_text_client; ?></a>
+                            </h3>
                             <span class="category"><?php echo $rh_text_category; ?></span>
                         </div>
 
@@ -123,20 +133,20 @@
                     <?php while (have_rows('rh_image')) : the_row();
 
                         $rh_image = get_sub_field('image');
-                        $rh_image_width = get_sub_field('width');
                         $rh_image_offset = get_sub_field('offset');
                         $rh_image_client = get_sub_field('client');
                         $rh_image_category = get_sub_field('category');
                         $rh_image_description = get_sub_field('description');
                         $rh_image_link = get_sub_field('link');
+                        $rh_image_width = get_sub_field('width');
                     ?>
 
                         <figure class="rh-col" style="grid-column: <?php echo $rh_image_width; ?>;" data-aos="fade-up">
-                            <a href="<?php echo $rh_image_link; ?>">
-                                <?php echo wp_get_attachment_image($rh_image, 'full'); ?>
-                            </a>
+                            <?php echo wp_get_attachment_image($rh_image, 'full'); ?>
                             <div class="details" data-aos="fade-up">
-                                <h3 class="client"><?php echo $rh_image_client; ?></h3>
+                                <h3 class="client">
+                                    <a href="<?php echo $rh_image_link; ?>" class="link"><?php echo $rh_image_client; ?></a>
+                                </h3>
                                 <span class="category"><?php echo $rh_image_category; ?></span>
                                 <p class="description"><?php echo $rh_image_description; ?></p>
                             </div>
@@ -161,7 +171,9 @@
                                 <source src=" <?php echo $rh_video; ?>">
                             </video>
                             <div class="details" data-aos="fade-up">
-                                <h3 class="client"><?php echo $rh_video_client; ?></h3>
+                                <h3 class="client">
+                                    <a href="<?php echo $rh_video_link; ?>" class="link"><?php echo $rh_video_client; ?></a>
+                                </h3>
                                 <span class="category"><?php echo $rh_video_category; ?></span>
                                 <p class="description"><?php echo $rh_video_description; ?></p>
                             </div>

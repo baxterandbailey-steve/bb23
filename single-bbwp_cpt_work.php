@@ -59,10 +59,13 @@ $secondary_image = get_field('secondary_image');
 
         <div class="primary-content__info">
             <div class="lh-col">
-                <div class="link-back">
-                    <a href="#" class="link">Back</a>
-                </div>
-                <p class="statement"><?php echo $statement; ?></p>
+                <?php if (get_field('work_statement')) : ?>
+                    <div class="link-back">
+                        <a href="/our-work/" class="link">Back</a>
+                    </div>
+
+                    <p class="statement"><?php echo $statement; ?></p>
+                <?php endif; ?>
 
                 <div class="details">
                     <?php if (get_field('sector')) : ?>
