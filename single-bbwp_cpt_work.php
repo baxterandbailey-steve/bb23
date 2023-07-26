@@ -9,9 +9,26 @@
 get_header();
 get_template_part('_partials/headers/header', 'work');
 
-$terms = get_terms(array(
-    'taxonomy'   => 'work_taxonomy',
-    'hide_empty' => false,
+// $terms = get_terms(array(
+//     'taxonomy'   => 'services_taxonomy',
+//     'parent'        => 0,
+//     'hide_empty' => true,
+// ));
+
+
+$strategy = new WP_Term_Query(array(
+    'taxonomy' => 'services_taxonomy',
+    'parent' => '18', // strategy
+));
+
+$design = new WP_Term_Query(array(
+    'taxonomy' => 'services_taxonomy',
+    'parent' => '19', // design
+));
+
+$digital = new WP_Term_Query(array(
+    'taxonomy' => 'services_taxonomy',
+    'parent' => '20', // digital
 ));
 
 $title = get_field('case_study_title');
@@ -76,49 +93,31 @@ $secondary_image = get_field('secondary_image');
                     <?php endif; ?>
 
                     <div class="what-we-did">
-                        <?php if (have_rows('what_we_did')) :
-                            while (have_rows('what_we_did')) : the_row(); ?>
-                                <?php if (have_rows('strategy')) : ?>
-                                    <div class="service-type">
-                                        <h3 class="title">Strategy</h3>
-                                        <?php while (have_rows('strategy')) : the_row();
-                                            $strategy_service = get_sub_field('service_type')
-                                        ?>
-                                            <ul>
-                                                <li><?php echo $strategy_service; ?></li>
-                                            </ul>
-                                        <?php endwhile; ?>
-                                    </div>
-                                <?php endif; ?>
 
-                                <?php if (have_rows('design')) : ?>
-                                    <div class="service-type">
-                                        <h3 class="title">Design</h3>
-                                        <?php while (have_rows('design')) : the_row();
-                                            $design_service = get_sub_field('service_type')
-                                        ?>
-                                            <ul>
-                                                <li><?php echo $design_service; ?></li>
-                                            </ul>
-                                        <?php endwhile; ?>
-                                    </div>
-                                <?php endif; ?>
+                        <div class="service-type">
+                            <h3 class="title">Strategy</h3>
+                            <?php foreach ($strategy->terms as $term) {
+                                echo $term->name . '<br>';
+                            }
+                            ?>
+                        </div>
 
-                                <?php if (have_rows('digital')) : ?>
-                                    <div class="service-type">
-                                        <h3 class="title">Digital</h3>
-                                        <?php while (have_rows('digital')) : the_row();
-                                            $strategy_service = get_sub_field('service_type')
-                                        ?>
-                                            <ul>
-                                                <li><?php echo $strategy_service; ?></li>
-                                            </ul>
-                                        <?php endwhile; ?>
-                                    </div>
-                                <?php endif; ?>
+                        <div class="service-type">
+                            <h3 class="title">Design</h3>
+                            <?php foreach ($design->terms as $term) {
+                                echo $term->name . '<br>';
+                            }
+                            ?>
 
-                            <?php endwhile; ?>
-                        <?php endif; ?>
+                        </div>
+
+                        <div class="service-type">
+                            <h3 class="title">Digital</h3>
+                            <?php foreach ($digital->terms as $term) {
+                                echo $term->name . '<br>';
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>

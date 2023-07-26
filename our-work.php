@@ -12,28 +12,34 @@ $args = new WP_Query(array(
 	'order' => 'DSC'
 ));
 
-$terms = get_terms(array(
-	'taxonomy'   => 'work_taxonomy',
-	'hide_empty' => false,
-));
+// $terms = get_terms(array(
+// 	'taxonomy'   => 'work_taxonomy',
+// 	'hide_empty' => false,
+// ));
+
+// $terms = get_terms(array(
+// 	'taxonomy'   => 'services_taxonomy',
+// 	'hide_empty' => false,
+// ));
+
 ?>
 
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
 <main class="our-work">
 	<!-- page titling and taxonomy listing 
-		<div class="page-top">
-			<h2 class="page-title"><?php the_title(); ?></h2>
-			<ul class="list-taxonomies">
-				<?php
-				foreach ($terms as $term) {
-					$term_link = get_term_link($term);
-					echo '<li><a href="' . esc_url($term_link) . '" class="taxo-link">' . $term->name . '</a></li>';
-				}
-				?>
-			</ul>
-		</div>
-	-->
+	<div class="page-top">
+		<h2 class="page-title"><?php the_title(); ?></h2>
+		<ul class="list-taxonomies">
+			<?php
+			foreach ($terms as $term) {
+				$term_link = get_term_link($term);
+				echo '<li><a href="' . esc_url($term_link) . '" class="taxo-link">' . $term->name . '</a></li>';
+			}
+			?>
+		</ul>
+	</div> -->
+
 
 	<!-- featured work -->
 	<div class="our-work__featured contain">

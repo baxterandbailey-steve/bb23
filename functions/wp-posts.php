@@ -71,22 +71,54 @@ function bbwp_cpt_work() // work to be lowercase
 add_action('init', 'bbwp_cpt_work'); // work to be lowercase
 
 // Set-up work custom post type taxonomy
-function create_work_taxonomy() // work to be lowercase
+
+// function create_work_taxonomy() // work to be lowercase
+// {
+//     $labels = array(
+//         'name'  =>  'Work Taxonomy',
+//         'singular_name' => 'Casestudy_taxonomy',
+//         'all_items' => 'Work Taxonomy',
+//         'edit_item' => 'Work Taxonomy',
+//         'update_item' => 'Update Work Taxonomy',
+//         'add_new_item' => 'Add New Work Taxonomy Item',
+//         'new_item_name' => 'New Work Taxonomy Name',
+//         'menu_name' => 'Work Taxonomy',
+//         'view_item' => 'View Work Taxonomy'
+//     );
+
+//     register_taxonomy(
+//         'work_taxonomy',   // work to be lowercase
+//         'bbwp_cpt_work',     // work to be lowercase
+//         array(
+//             'labels' => $labels,
+//             'hierarchical' => true,
+//             'query_var' => true,
+//             'rewrite' => true,
+//             'taxonomies' => array('post_tag', 'category'),
+//         )
+//     );
+// }
+// add_action('init', 'create_work_taxonomy'); // work to be lowercase
+
+
+
+// Set-up work custom post type taxonomy
+function create_services_taxonomy() // work to be lowercase
 {
     $labels = array(
-        'name'  =>  'Work Taxonomy',
-        'singular_name' => 'Casestudy_taxonomy',
-        'all_items' => 'Work Taxonomy',
-        'edit_item' => 'Work Taxonomy',
-        'update_item' => 'Update Work Taxonomy',
-        'add_new_item' => 'Add New Work Taxonomy Item',
-        'new_item_name' => 'New Work Taxonomy Name',
-        'menu_name' => 'Work Taxonomy',
-        'view_item' => 'View Work Taxonomy'
+        'name'  =>  'Services',
+        'singular_name' => 'Service',
+        'all_items' => 'All Services',
+        'edit_item' => 'Edit',
+        'update_item' => 'Update',
+        'add_new_item' => 'Add New',
+        'new_item_name' => 'New Name',
+        'menu_name' => 'Services',
+        'view_item' => 'View'
     );
 
     register_taxonomy(
-        'work_taxonomy',   // work to be lowercase
+        'services_taxonomy',   // work to be lowercase
         'bbwp_cpt_work',     // work to be lowercase
         array(
             'labels' => $labels,
@@ -97,4 +129,34 @@ function create_work_taxonomy() // work to be lowercase
         )
     );
 }
-add_action('init', 'create_work_taxonomy'); // work to be lowercase
+add_action('init', 'create_services_taxonomy'); // work to be lowercase
+
+
+// Set-up work custom post type taxonomy
+function create_sectors_taxonomy() // work to be lowercase
+{
+    $labels = array(
+        'name'  =>  'Sectors',
+        'singular_name' => 'Sectors',
+        'all_items' => 'All Sectors',
+        'edit_item' => 'Edit',
+        'update_item' => 'Update',
+        'add_new_item' => 'Add New',
+        'new_item_name' => 'New Name',
+        'menu_name' => 'Sectors',
+        'view_item' => 'View'
+    );
+
+    register_taxonomy(
+        'sectors_taxonomy',   // work to be lowercase
+        'bbwp_cpt_work',     // work to be lowercase
+        array(
+            'labels' => $labels,
+            'hierarchical' => true,
+            'query_var' => true,
+            'rewrite' => true,
+            'taxonomies' => array('post_tag', 'category'),
+        )
+    );
+}
+add_action('init', 'create_sectors_taxonomy'); // work to be lowercase
