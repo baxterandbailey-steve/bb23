@@ -100,6 +100,7 @@ $secondary_image = get_field('secondary_image');
                                 echo $term->name . '<br>';
                             }
                             ?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
 
                         <div class="service-type">
@@ -108,6 +109,7 @@ $secondary_image = get_field('secondary_image');
                                 echo $term->name . '<br>';
                             }
                             ?>
+                            <?php wp_reset_postdata(); ?>
 
                         </div>
 
@@ -117,6 +119,7 @@ $secondary_image = get_field('secondary_image');
                                 echo $term->name . '<br>';
                             }
                             ?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
                     </div>
                 </div>

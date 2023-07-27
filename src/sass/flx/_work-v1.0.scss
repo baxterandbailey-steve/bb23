@@ -1,6 +1,13 @@
 /* grid work-v1.0 : this uses auto-flow: dense to layout loop generated content dynamically
                   : this also defines the bespoke grids for featured work
 ---------------------------------------------------------------------------------------------------------------------- */
+.our-work {
+    .filters-test {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 .grid-work {
     @media (min-width: 600px) {
         display: grid;
