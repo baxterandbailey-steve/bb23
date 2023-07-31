@@ -2,9 +2,51 @@
                   : this also defines the bespoke grids for featured work
 ---------------------------------------------------------------------------------------------------------------------- */
 .our-work {
-    .filters-test {
-        display: flex;
-        justify-content: flex-end;
+    .filters-container {
+        button {
+            display: block;
+        }
+    }
+
+    .filters {
+        margin-bottom: 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .services-filter,
+        .sectors-filter {
+            grid-column: 1;
+            transform: translateX(-32px);
+        }
+
+        @media (min-width: 880px) {
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: var(--gutter-large);
+
+            .services-filter,
+            .sectors-filter {
+                grid-column: span 2;
+            }
+
+            .sectors-filter {
+                grid-column: 9 / 12;
+                grid-row: 1;
+            }
+            .services-filter {
+                grid-column: 11 / -1;
+                grid-row: 1;
+            }
+        }
+
+        button {
+            grid-column: 1 / -1;
+            grid-row: 1;
+        }
+
+        h3 {
+            font-family: var(--copy-med);
+            font-weight: 500;
+        }
     }
 }
 
