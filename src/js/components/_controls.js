@@ -5,7 +5,7 @@ export function controls() {
     const nav = document.querySelector('.primary-nav');
 
     navicon.addEventListener('click', () => {
-        nav.lassList.toggle('show-nav');
+        nav.classList.toggle('show-nav');
         console.log('navicon clicked');
     });
 

@@ -81,54 +81,6 @@
       "oAP" : "\/_partials\/flx\/case-studies\/blocks.php",
       "oF" : 0
     },
-    "\/_partials\/flx\/global\/block\/fullwidth.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/global\/block\/fullwidth.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/global\/block\/lefthigh.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/global\/block\/lefthigh.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/global\/block\/threecols.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/global\/block\/threecols.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/global\/block\/wideright.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/global\/block\/wideright.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/global\/block\/wysiwyg.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/global\/block\/wysiwyg.php",
-      "oF" : 0
-    },
-    "\/_partials\/flx\/global\/global.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_partials\/flx\/global\/global.php",
-      "oF" : 0
-    },
     "\/_partials\/flx\/homepage\/block\/single-col.php" : {
       "cB" : 0,
       "ft" : 8192,
