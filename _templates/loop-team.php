@@ -16,7 +16,9 @@ $args = new WP_Query(array(
     ?>
             <div class="team-member">
                 <figure class="team-member-image" data-aos="fade-in">
-                    <?php the_post_thumbnail(); ?>
+                    <a href="#">
+                        <?php the_post_thumbnail(); ?>
+                    </a>
                 </figure>
                 <h3 class="name" data-aos="fade-in">
                     <?php the_title(); ?>
