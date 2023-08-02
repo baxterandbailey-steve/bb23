@@ -78,7 +78,7 @@ $secondary_image = get_field('secondary_image');
             <div class="lh-col">
                 <?php if (get_field('work_statement')) : ?>
                     <div class="link-back">
-                        <a href="/our-work/" class="link">Back</a>
+                        <a href="/work/" class="link">Back</a>
                     </div>
 
                     <p class="statement"><?php echo $statement; ?></p>
@@ -93,34 +93,50 @@ $secondary_image = get_field('secondary_image');
                     <?php endif; ?>
 
                     <div class="what-we-did">
+                        <?php if (have_rows('what_we_did')) :
+                            while (have_rows('what_we_did')) : the_row(); ?>
+                                <?php if (have_rows('strategy')) : ?>
+                                    <div class="service-type">
+                                        <h3 class="title">Strategy</h3>
+                                        <?php while (have_rows('strategy')) : the_row();
+                                            $strategy_service = get_sub_field('service_type')
+                                        ?>
+                                            <ul>
+                                                <li><?php echo $strategy_service; ?></li>
+                                            </ul>
+                                        <?php endwhile; ?>
+                                    </div>
+                                <?php endif; ?>
 
-                        <div class="service-type">
-                            <h3 class="title">Strategy</h3>
-                            <?php foreach ($strategy->terms as $term) {
-                                echo $term->name . '<br>';
-                            }
-                            ?>
-                            <?php wp_reset_postdata(); ?>
-                        </div>
+                                <?php if (have_rows('design')) : ?>
+                                    <div class="service-type">
+                                        <h3 class="title">Design</h3>
+                                        <?php while (have_rows('design')) : the_row();
+                                            $design_service = get_sub_field('service_type')
+                                        ?>
+                                            <ul>
+                                                <li><?php echo $design_service; ?></li>
+                                            </ul>
+                                        <?php endwhile; ?>
+                                    </div>
+                                <?php endif; ?>
 
-                        <div class="service-type">
-                            <h3 class="title">Design</h3>
-                            <?php foreach ($design->terms as $term) {
-                                echo $term->name . '<br>';
-                            }
-                            ?>
-                            <?php wp_reset_postdata(); ?>
+                                <?php if (have_rows('digital')) : ?>
+                                    <div class="service-type">
+                                        <h3 class="title">Digital</h3>
+                                        <?php while (have_rows('digital')) : the_row();
+                                            $strategy_service = get_sub_field('service_type')
+                                        ?>
+                                            <ul>
+                                                <li><?php echo $strategy_service; ?></li>
+                                            </ul>
+                                        <?php endwhile; ?>
+                                    </div>
+                                <?php endif; ?>
 
-                        </div>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
 
-                        <div class="service-type">
-                            <h3 class="title">Digital</h3>
-                            <?php foreach ($digital->terms as $term) {
-                                echo $term->name . '<br>';
-                            }
-                            ?>
-                            <?php wp_reset_postdata(); ?>
-                        </div>
                     </div>
                 </div>
             </div>

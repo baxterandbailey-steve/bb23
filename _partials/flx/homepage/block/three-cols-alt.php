@@ -11,9 +11,11 @@ $col_1_video_alt = get_sub_field('col_1_video');
 $col_1_stack = get_sub_field('col_1_stack');
 
 $col_2_image_alt = get_sub_field('col_2_image');
+$col_2_video_alt = get_sub_field('col_2_video');
 $col_2_stack = get_sub_field('col_2_stack');
 
 $col_3_image_alt = get_sub_field('col_3_image');
+$col_2_video_alt = get_sub_field('col_3_video');
 $col_3_client_alt = get_sub_field('col_3_client');
 $col_3_category_alt = get_sub_field('col_3_category');
 $col_3_description_alt = get_sub_field('col_3_description');
@@ -24,7 +26,7 @@ $col_3_stack = get_sub_field('col_3_stack');
 
 <div class="row three-cols-alt">
 
-    <?php if (get_sub_field('choice') == 'image') : ?>
+    <?php if (get_sub_field('col_1_choice') == 'image') : ?>
         <figure class="col-1-alt" data-aos="fade-up" style="z-index:<?php echo $col_1_stack; ?>;">
             <?php echo wp_get_attachment_image($col_1_image_alt, 'full'); ?>
         </figure>
@@ -32,21 +34,44 @@ $col_3_stack = get_sub_field('col_3_stack');
     <?php else : ?>
 
         <video preload playsinline autoplay muted loop class="col-1">
-            <source src=" <?php echo $col_1_video_alt; ?>">
+            <source src="<?php echo $col_1_video_alt; ?>">
         </video>
 
     <?php endif; ?>
 
-    <figure class="col-2-alt" data-aos="fade-up" style="z-index:<?php echo $col_2_stack; ?>;">
-        <?php echo wp_get_attachment_image($col_2_image_alt, 'full'); ?>
-    </figure>
+    <?php if (get_sub_field('col_2_choice') == 'image') : ?>
+        <figure class="col-2-alt" data-aos="fade-up" style="z-index:<?php echo $col_2_stack; ?>;">
+            <?php echo wp_get_attachment_image($col_2_image_alt, 'full'); ?>
+        </figure>
 
-    <figure class="col-3-alt" data-aos="fade-up" style="z-index:<?php echo $col_3_stack; ?>;">
-        <div class="details">
+    <?php else : ?>
+        <video preload playsinline autoplay muted loop class="col-2">
+            <source src=" <?php echo $col_2_video_alt; ?>">
+        </video>
+
+    <?php endif; ?>
+
+
+
+    <?php if (get_sub_field('col_3_choice') == 'image') : ?>
+
+        <figure class="col-3" data-aos="fade-up" style="z-index:<?php echo $col_3_stack; ?>;">
             <h3 class="client"><a href="<?php echo $col_3_link; ?>" class="link"><?php echo $col_3_client_alt; ?></a></h3>
-            <span class="category"><?php echo $col_3_category_alt; ?></span>
-            <p class="description"><?php echo $col_3_description_alt; ?></p>
-        </div>
-        <?php echo wp_get_attachment_image($col_3_image_alt, 'full'); ?>
-    </figure>
+            <div class="details">
+                <span class="category"><?php echo $col_3_category_alt; ?></span>
+                <p class="description"><?php echo $col_3_description_alt; ?></p>
+            </div>
+            <?php echo wp_get_attachment_image($col_3_image_alt, 'full'); ?>
+        </figure>
+
+    <?php else : ?>
+
+        <video preload playsinline autoplay muted loop class="col-3">
+            <source src="<?php echo $col_3_video_alt; ?>">
+        </video>
+
+    <?php endif; ?>
+
+    <?php echo wp_get_attachment_image($col_2_image_alt, 'full'); ?>
+    <?php echo wp_get_attachment_image($col_3_image_alt, 'full'); ?>
 </div>
