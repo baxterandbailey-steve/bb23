@@ -26,4 +26,16 @@ export function controls() {
     //closeModal.addEventListener('click', () => {
     //  modalOverlay.classList.remove('show-modal');
     //});
+
+    /* toggle filters
+------------------------------------------------------------------------------------------------------------------ */
+    const toggleFilter = document.querySelector('.toggle-filters');
+    const sectors = document.querySelector('.sectors-filter');
+    const services = document.querySelector('.services-filter');
+
+    toggleFilter.addEventListener('click', () => {
+        sectors.classList.toggle('show-filter');
+        services.classList.toggle('show-filter');
+        console.log('toggle-filters clicked..');
+    });
 }

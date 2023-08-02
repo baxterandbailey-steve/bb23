@@ -9,28 +9,6 @@
 get_header();
 get_template_part('_partials/headers/header', 'work');
 
-// $terms = get_terms(array(
-//     'taxonomy'   => 'services_taxonomy',
-//     'parent'        => 0,
-//     'hide_empty' => true,
-// ));
-
-
-$strategy = new WP_Term_Query(array(
-    'taxonomy' => 'services_taxonomy',
-    'parent' => '18', // strategy
-));
-
-$design = new WP_Term_Query(array(
-    'taxonomy' => 'services_taxonomy',
-    'parent' => '19', // design
-));
-
-$digital = new WP_Term_Query(array(
-    'taxonomy' => 'services_taxonomy',
-    'parent' => '20', // digital
-));
-
 $title = get_field('case_study_title');
 $excerpt = get_field('excerpt');
 $statement = get_field('work_statement');
@@ -58,16 +36,13 @@ $secondary_image = get_field('secondary_image');
                     $primary_image = get_sub_field('image');
                 ?>
                     <?php if (get_sub_field('primary_choice') == 'video') : ?>
-
                         <video preload playsinline autoplay muted loop class="primary-video">
                             <source src="<?php echo $primary_video ?>" type="video/mp4">
                         </video>
-
                     <?php else : ?>
                         <figure class="primary-hero-image">
                             <?php echo wp_get_attachment_image($primary_image, 'full'); ?>
                         </figure>
-
                     <?php endif; ?>
 
                 <?php endwhile; ?>
@@ -77,11 +52,10 @@ $secondary_image = get_field('secondary_image');
         <div class="primary-content__info">
             <div class="lh-col">
                 <?php if (get_field('work_statement')) : ?>
-                    <div class="link-back">
+                    <!-- <div class="link-back">
                         <a href="/work/" class="link">Back</a>
-                    </div>
-
-                    <p class="statement"><?php echo $statement; ?></p>
+                    </div> -->
+                    <div class="statement"><?php echo $statement; ?></div>
                 <?php endif; ?>
 
                 <div class="details">

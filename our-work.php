@@ -18,18 +18,18 @@ $args = new WP_Query(array(
 
 <main class="our-work">
 
-	<section class="filters-container contain">
-		<!-- <button>Filter</button> -->
-		<div class="filters">
-			<div class="sectors-filter">
-				<h3>Sector</h3>
-				<?php echo do_shortcode('[searchandfilter slug="sector"]'); ?>
-			</div>
-			<div class="services-filter">
-				<h3>Services</h3>
-				<?php echo do_shortcode('[searchandfilter slug="service"]'); ?>
-			</div>
+	<section class="filters contain">
+		<button class="toggle-filters">Filter</button>
+
+		<div class="sectors-filter">
+			<h3>Sector</h3>
+			<?php echo do_shortcode('[searchandfilter slug="sector"]'); ?>
 		</div>
+		<div class="services-filter">
+			<h3>Services</h3>
+			<?php echo do_shortcode('[searchandfilter slug="service"]'); ?>
+		</div>
+
 	</section>
 
 	<!-- featured work -->

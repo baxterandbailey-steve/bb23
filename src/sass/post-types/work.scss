@@ -115,6 +115,10 @@
             margin-bottom: var(--drop-large);
             font-family: var(--titling);
             font-size: var(--font-medium);
+
+            p {
+                margin-bottom: var(--drop-medium);
+            }
         }
 
         .details {
