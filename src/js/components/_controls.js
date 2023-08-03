@@ -13,6 +13,7 @@ export function controls() {
 ------------------------------------------------------------------------------------------------------------------ */
 
     const team = document.querySelectorAll('.team-member');
+    const closeModal = document.querySelector('.close-modal');
 
     team.forEach((teamMember) => {
         const overlay = teamMember.nextElementSibling;
@@ -21,11 +22,10 @@ export function controls() {
         });
     });
 
-    //const closeModal = document.querySelector('.close-modal');
-
-    //closeModal.addEventListener('click', () => {
-    //  modalOverlay.classList.remove('show-modal');
-    //});
+    closeModal.addEventListener('click', () => {
+        // overlay.classList.remove('show-modal');
+        console.log('yep-nope?');
+    });
 
     /* toggle filters
 ------------------------------------------------------------------------------------------------------------------ */
