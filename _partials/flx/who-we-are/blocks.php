@@ -21,6 +21,8 @@
             get_template_part('_partials/flx/who-we-are/block/image-grid-five-cols');
         elseif (get_row_layout() == 'text_image_full_width') :
             get_template_part('_partials/flx/who-we-are/block/text-image-full-width');
+        elseif (get_row_layout() == 'awards') :
+            get_template_part('_partials/flx/who-we-are/block/awards');
         endif; ?>
         
     <?php endwhile; ?>
