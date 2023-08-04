@@ -39,6 +39,7 @@
         button:before,
         button:after {
             position: absolute;
+            top: 50%;
             width: 14px;
             height: 1px;
             content: '';
