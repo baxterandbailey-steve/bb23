@@ -39,6 +39,9 @@ $col_3_stack = get_sub_field('col_3_stack');
 
     <?php endif; ?>
 
+
+
+
     <?php if (get_sub_field('col_2_choice') == 'image') : ?>
         <figure class="col-2-alt" data-aos="fade-up" style="z-index:<?php echo $col_2_stack; ?>;">
             <?php echo wp_get_attachment_image($col_2_image_alt, 'full'); ?>
@@ -55,7 +58,7 @@ $col_3_stack = get_sub_field('col_3_stack');
 
     <?php if (get_sub_field('col_3_choice') == 'image') : ?>
 
-        <figure class="col-3" data-aos="fade-up" style="z-index:<?php echo $col_3_stack; ?>;">
+        <figure class="col-3-alt" data-aos="fade-up" style="z-index:<?php echo $col_3_stack; ?>;">
             <h3 class="client"><a href="<?php echo $col_3_link; ?>" class="link"><?php echo $col_3_client_alt; ?></a></h3>
             <div class="details">
                 <span class="category"><?php echo $col_3_category_alt; ?></span>
@@ -72,6 +75,7 @@ $col_3_stack = get_sub_field('col_3_stack');
 
     <?php endif; ?>
 
-    <?php echo wp_get_attachment_image($col_2_image_alt, 'full'); ?>
-    <?php echo wp_get_attachment_image($col_3_image_alt, 'full'); ?>
+
+
+
 </div>

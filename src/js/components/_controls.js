@@ -6,14 +6,13 @@ export function controls() {
 
     navicon.addEventListener('click', () => {
         nav.classList.toggle('show-nav');
-        console.log('navicon clicked');
     });
 
     /* open and close team modal
 ------------------------------------------------------------------------------------------------------------------ */
 
     const team = document.querySelectorAll('.team-member');
-    const closeModal = document.querySelector('.close-modal');
+    const closeModal = document.querySelectorAll('.close-modal');
 
     team.forEach((teamMember) => {
         const overlay = teamMember.nextElementSibling;
@@ -22,38 +21,37 @@ export function controls() {
         });
     });
 
-    closeModal.addEventListener('click', () => {
-        // overlay.classList.remove('show-modal');
-        console.log('yep-nope?');
+    closeModal.forEach((close) => {
+        const overlay = close.parentElement.parentElement.parentElement;
+        close.addEventListener('click', () => {
+            overlay.classList.remove('show-modal');
+        });
     });
 
     /* open and close awards modal
 ------------------------------------------------------------------------------------------------------------------ */
 
-    const awardsBtn = document.querySelector('.awards-control');
-    const awardsOverlay = document.querySelector('.awards-overlay');
-    const closeAwards = document.querySelector('.awards-close');
-    // const closeModal = document.querySelector('.close-modal');
+    // const toggleAwards = document.querySelector('.awards-control');
+    // const awardsOverlay = document.querySelector('.awards-overlay');
+    // const closeAwards = document.querySelector('.awards-close');
 
-    awardsBtn.addEventListener('click', () => {
-        awardsOverlay.classList.add('show-awards');
-        console.log('yup?');
-    });
+    // toggleAwards.addEventListener('click', () => {
+    //     awardsOverlay.classList.add('show-awards');
+    // });
 
-    closeAwards.addEventListener('click', () => {
-        awardsOverlay.classList.remove('show-awards');
-        console.log('yup?');
-    });
+    // closeAwards.addEventListener('click', () => {
+    //     awardsOverlay.classList.remove('show-awards');
+    // });
 
     /* toggle filters
 ------------------------------------------------------------------------------------------------------------------ */
-    // const toggleFilter = document.querySelector('.toggle-filters');
+    // const toggleFilters = document.querySelector('.toggle-filters');
     // const sectors = document.querySelector('.sectors-filter');
     // const services = document.querySelector('.services-filter');
 
-    // toggleFilter.addEventListener('click', () => {
+    // toggleFilters.addEventListener('click', () => {
     //     sectors.classList.toggle('show-filter');
     //     services.classList.toggle('show-filter');
     //     console.log('toggle-filters clicked..');
-    // });
+    //});
 }
