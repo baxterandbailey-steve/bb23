@@ -10,7 +10,7 @@
 
 <div class="awards-container">
     <div class="awards-cta">
-        <button class="awards-toggle">View full list of awards</button>
+        <!-- <button class="awards-toggle">View full list of awards</button> -->
         <div class="awards-overlay">
 
             <div class="awards-inner container">
