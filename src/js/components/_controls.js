@@ -15,43 +15,43 @@ export function controls() {
     const closeModal = document.querySelectorAll('.close-modal');
 
     team.forEach((teamMember) => {
-        const overlay = teamMember.nextElementSibling;
+        const teamOverlay = teamMember.nextElementSibling;
         teamMember.addEventListener('click', () => {
-            overlay.classList.add('show-modal');
+            teamOverlay.classList.add('show-modal');
         });
     });
 
     closeModal.forEach((close) => {
-        const overlay = close.parentElement.parentElement.parentElement;
+        const teamOverlay = close.parentElement.parentElement.parentElement;
         close.addEventListener('click', () => {
-            overlay.classList.remove('show-modal');
+            teamOverlay.classList.remove('show-modal');
         });
     });
 
     /* open and close awards modal
 ------------------------------------------------------------------------------------------------------------------ */
 
-    const showAwards = document.querySelector('.awards-toggle');
-    const awardsOverlay = document.querySelector('.awards-overlay');
-    const closeAwards = document.querySelector('.awards-close');
-
-    showAwards.addEventListener('click', () => {
-        awardsOverlay.classList.add('show-awards');
-    });
-
-    closeAwards.addEventListener('click', () => {
-        awardsOverlay.classList.remove('show-awards');
-    });
-
     /* toggle filters
 ------------------------------------------------------------------------------------------------------------------ */
-    // const toggleFilters = document.querySelector('.toggle-filters');
-    // const sectors = document.querySelector('.sectors-filter');
-    // const services = document.querySelector('.services-filter');
+    const toggleFilters = document.querySelector('.toggle-filters');
+    const sectors = document.querySelector('.sectors-filter');
+    const services = document.querySelector('.services-filter');
 
-    // toggleFilters.addEventListener('click', () => {
-    //     sectors.classList.toggle('show-filter');
-    //     services.classList.toggle('show-filter');
-    //     console.log('toggle-filters clicked..');
-    //});
+    toggleFilters.addEventListener('click', () => {
+        sectors.classList.toggle('show-filter');
+        services.classList.toggle('show-filter');
+        console.log('toggle-filters clicked..');
+    });
+
+    // const showAwards = document.querySelector('.awards-toggle');
+    // const awardsOverlay = document.querySelector('.awards-overlay');
+    // const closeAwards = document.querySelector('.awards-close');
+
+    // showAwards.addEventListener('click', () => {
+    //     awardsOverlay.classList.add('show-awards');
+    // });
+
+    // closeAwards.addEventListener('click', () => {
+    //     awardsOverlay.classList.remove('show-awards');
+    // });
 }
