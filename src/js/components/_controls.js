@@ -31,17 +31,17 @@ export function controls() {
     /* open and close awards modal
 ------------------------------------------------------------------------------------------------------------------ */
 
-    // const toggleAwards = document.querySelector('.awards-control');
-    // const awardsOverlay = document.querySelector('.awards-overlay');
-    // const closeAwards = document.querySelector('.awards-close');
+    const showAwards = document.querySelector('.awards-toggle');
+    const awardsOverlay = document.querySelector('.awards-overlay');
+    const closeAwards = document.querySelector('.awards-close');
 
-    // toggleAwards.addEventListener('click', () => {
-    //     awardsOverlay.classList.add('show-awards');
-    // });
+    showAwards.addEventListener('click', () => {
+        awardsOverlay.classList.add('show-awards');
+    });
 
-    // closeAwards.addEventListener('click', () => {
-    //     awardsOverlay.classList.remove('show-awards');
-    // });
+    closeAwards.addEventListener('click', () => {
+        awardsOverlay.classList.remove('show-awards');
+    });
 
     /* toggle filters
 ------------------------------------------------------------------------------------------------------------------ */
