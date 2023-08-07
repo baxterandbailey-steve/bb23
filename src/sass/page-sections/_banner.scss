@@ -19,25 +19,9 @@
         max-width: 1296px;
         margin: 0 auto;
         font-family: var(--titling);
-        font-size: 1.75rem; // 28px
+        font-size: clamp(2rem, 6vw, 4.5rem);
         font-weight: 400;
         line-height: var(--lh-medium);
-
-        @media (min-width: 320px) {
-            --a: 28;
-            --b: 72;
-            --x: 320;
-            --y: 1120;
-            --sum1: calc((var(--b) - var(--a)) / (var(--y) - var(--x)));
-            --sum2: calc(var(--sum1) * var(--x));
-            --sum3: calc(var(--a) - var(--sum2)) / 16 * 1rem;
-
-            font-size: calc(var(--sum1) * 100vw + (var(--sum3)));
-        }
-
-        @media (min-width: 1120px) {
-            font-size: var(--font-large);
-        }
     }
 }
 
@@ -56,25 +40,12 @@
 
     h1.statement {
         font-family: var(--titling);
-        font-size: 1.25rem;
+        font-size: clamp(2rem, 4.5vw, 2.75rem);
         font-weight: 400;
         line-height: normal;
 
-        @media (min-width: 320px) {
-            --a: 24;
-            --b: 44;
-            --x: 320;
-            --y: 1120;
-            --sum1: calc((var(--b) - var(--a)) / (var(--y) - var(--x)));
-            --sum2: calc(var(--sum1) * var(--x));
-            --sum3: calc(var(--a) - var(--sum2)) / 16 * 1rem;
-
-            font-size: calc(var(--sum1) * 100vw + (var(--sum3)));
-        }
-
         @media (min-width: 1120px) {
             width: 32ch;
-            font-size: var(--font-medium);
         }
     }
 }
