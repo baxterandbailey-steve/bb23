@@ -6,7 +6,7 @@
         .section-title {
             width: 12ch;
             margin-bottom: 2rem;
-            font-size: var(--font-medium);
+            font-size: clamp(2rem, 7.5vw, 2.75rem);
             line-height: 1.08;
         }
     }
@@ -63,7 +63,7 @@
         // style elements -------------------------------------------------------
         .title {
             margin-bottom: 2rem;
-            font-size: var(--font-big);
+            font-size: clamp(2rem, 7.5vw, 4rem);
             line-height: 1.09375;
             color: var(--black);
         }
@@ -181,7 +181,7 @@
         .title {
             margin-bottom: 2rem;
             font-family: var(--titling);
-            font-size: var(--font-big);
+            font-size: clamp(2rem, 7.5vw, 4rem);
             line-height: 1.09375;
         }
 
@@ -248,7 +248,7 @@
         }
 
         .quote {
-            font-size: 2.75rem;
+            font-size: clamp(2rem, 4.5vw, 2.75rem);
             line-height: 1.24;
             color: var(--black);
             transform: translateY(-0.75rem);

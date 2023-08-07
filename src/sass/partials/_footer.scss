@@ -30,7 +30,7 @@ footer {
             margin-bottom: var(--drop-small);
             grid-column: 1 / -1;
             font-family: var(--titling);
-            font-size: var(--font-medium);
+            font-size: clamp(2rem, 4.5vw, 2.75rem);
         }
 
         .meta,

@@ -20,7 +20,7 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
 
     .section-title {
         margin-bottom: var(--drop-large);
-        font-size: var(--font-medium);
+        font-size: clamp(2rem, 4.5vw, 2.75rem);
         color: var(--white);
     }
 

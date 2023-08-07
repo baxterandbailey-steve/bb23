@@ -5,11 +5,13 @@
     width: 100%;
     padding-top: 4rem;
     padding-bottom: 5rem;
-    padding-left: var(--site-pad-large);
-    padding-right: var(--site-pad-large);
+    padding-left: var(--site-pad-small);
+    padding-right: var(--site-pad-small);
     background-color: var(--off-white);
 
     @media (min-width: 880px) {
+        padding-left: var(--site-pad-large);
+        padding-right: var(--site-pad-large);
         padding-top: 14.25rem; // 228px
         padding-bottom: 20.75rem; // 332px
     }
@@ -19,7 +21,7 @@
         max-width: 1296px;
         margin: 0 auto;
         font-family: var(--titling);
-        font-size: clamp(2rem, 6vw, 4.5rem);
+        font-size: clamp(2rem, 7.5vw, 4.5rem);
         font-weight: 400;
         line-height: var(--lh-medium);
     }

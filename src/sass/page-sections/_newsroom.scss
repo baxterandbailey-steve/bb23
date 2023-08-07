@@ -4,7 +4,7 @@
 
     h2.title {
         padding-bottom: var(--site-space-lg);
-        font-size: var(--font-medium);
+        font-size: clamp(2rem, 4.5vw, 2.75rem);
         color: var(--black);
     }
 
@@ -28,7 +28,7 @@
         .title {
             margin-bottom: 1.5rem;
             grid-column: 2 / 3;
-            font-size: var(--font-medium);
+            font-size: clamp(2rem, 4.5vw, 2.75rem);
             color: var(--black);
         }
 
