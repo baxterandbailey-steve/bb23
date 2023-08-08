@@ -21,9 +21,13 @@
         max-width: 1296px;
         margin: 0 auto;
         font-family: var(--titling);
-        font-size: clamp(2rem, 7.5vw, 4.5rem);
+        font-size: clamp(2.125rem, 7.5vw, 4.5rem);
         font-weight: 400;
-        line-height: var(--lh-medium);
+        line-height: 1.2;
+
+        @media (min-width: 880px) {
+            line-height: var(--lh-medium);
+        }
     }
 }
 
@@ -42,12 +46,13 @@
 
     h1.statement {
         font-family: var(--titling);
-        font-size: clamp(2rem, 4.5vw, 2.75rem);
+        font-size: clamp(2.125rem, 4.5vw, 2.75rem);
         font-weight: 400;
-        line-height: normal;
+        line-height: 1.2;
 
         @media (min-width: 1120px) {
             width: 32ch;
+            line-height: var(--lh-medium);
         }
     }
 }
