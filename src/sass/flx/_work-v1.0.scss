@@ -110,19 +110,35 @@
 
 /* curated grid */
 .our-work__featured {
+    article {
+        margin-bottom: var(--mb-drop-small);
+    }
+
+    h3 {
+        color: red;
+    }
+
     .image img {
         width: 100%;
     }
 
     .meta {
-        font-size: var(--font-base-plus);
+        font-size: var(--font-base);
         color: var(--mid-black);
+
+        @media (min-width: 880px) {
+            font-size: var(--font-base-plus);
+        }
     }
 
     .link {
-        font-family: 'cabinet-medium';
-        font-size: var(--font-base-plus);
+        font-family: var(--copy-med);
+        font-size: var(--font-base);
         color: var(--black);
+
+        @media (min-width: 880px) {
+            font-size: var(--font-base-plus);
+        }
     }
 
     .full-width {

@@ -18,7 +18,7 @@
             $image_left_link = get_sub_field('link');
         ?>
             <article>
-                <figure class="image" data-aos="fade-in">
+                <figure class="image">
                     <?php echo wp_get_attachment_image($image_left_image, 'full'); ?>
                 </figure>
                 <h3><a href="<?php echo $image_left_link; ?>" class="link"><?php echo $image_left_title; ?></a></h3>
@@ -36,7 +36,7 @@
             $image_centre_link = get_sub_field('link');
         ?>
             <article>
-                <figure class="image" data-aos="fade-in">
+                <figure class="image">
                     <?php echo wp_get_attachment_image($image_centre_image, 'full'); ?>
                 </figure>
                 <h3><a href="<?php echo $image_centre_link; ?>" class="link"><?php echo $image_centre_title; ?></a></h3>
@@ -54,7 +54,7 @@
             $image_right_link = get_sub_field('link');
         ?>
             <article data-aos="fade-in">
-                <figure class="image" data-aos="fade-in">
+                <figure class="image">
                     <?php echo wp_get_attachment_image($image_right_image, 'full'); ?>
                 </figure>
                 <h3><a href="<?php echo $image_right_link; ?>" class="link"><?php echo $image_right_title; ?></a></h3>

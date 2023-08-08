@@ -38,7 +38,7 @@
                             // test choice value, if image display image
                             if (get_sub_field('choice') == 'image') : ?>
 
-                                <article data-aos="fade-in">
+                                <article>
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_one_image, 'full'); ?>
                                     </figure>
@@ -77,7 +77,7 @@
                             // test choice value, if image display image
                             if (get_sub_field('choice') == 'image') : ?>
 
-                                <article data-aos="fade-in">
+                                <article>
                                     <figure>
                                         <?php echo wp_get_attachment_image($col_two_image, 'full'); ?>
                                     </figure>
@@ -137,7 +137,7 @@
                             // test choice value, if image display image
                             if (get_sub_field('choice') == 'image') : ?>
 
-                                <article data-aos="fade-in">
+                                <article>
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_one_image, 'full'); ?>
                                     </figure>
@@ -183,7 +183,7 @@
                             // test choice value, if image display image
                             if (get_sub_field('choice') == 'image') : ?>
 
-                                <article data-aos="fade-in">
+                                <article>
                                     <figure class="image">
                                         <?php echo wp_get_attachment_image($col_two_image, 'full'); ?>
                                     </figure>

@@ -18,7 +18,7 @@ $full_width_link = get_sub_field('link');
     <?php if (get_sub_field('choice') == 'image') : ?>
 
         <article>
-            <figure class="image" data-aos="fade-in">
+            <figure>
                 <?php echo wp_get_attachment_image($full_width_image, 'full'); ?>
             </figure>
             <h3><a href="<?php echo $full_width_link; ?>" class="link"><?php echo $full_width_title; ?></a></h3>

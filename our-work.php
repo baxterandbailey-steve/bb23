@@ -50,7 +50,7 @@ $args = new WP_Query(array(
 						} ?>
 
 						<article>
-							<figure data-aos="fade-in">
+							<figure>
 								<?php the_post_thumbnail(); ?>
 
 								<h3 class="title link"><a href="<?php the_permalink(); ?>" class="link"><?php the_title(); ?></a></h3>
