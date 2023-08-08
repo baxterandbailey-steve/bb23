@@ -19,16 +19,21 @@
         }
 
         .meta {
-            grid-column: 1 / 2;
+            margin-bottom: var(--mb-drop-small);
+            display: block;
             font-size: var(--font-base-plus);
             text-transform: uppercase;
             color: #4b4b4b;
+
+            @media (min-width: 880px) {
+                grid-column: 1 / 2;
+            }
         }
 
         .title {
             margin-bottom: 1.5rem;
             grid-column: 2 / 3;
-            font-size: clamp(2rem, 4.5vw, 2.75rem);
+            font-size: clamp(1.25rem, 2.5vw, 2.75rem);
             color: var(--black);
         }
 
