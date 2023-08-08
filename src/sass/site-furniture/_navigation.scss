@@ -1,21 +1,7 @@
 /* navigation
 ----------------------------------------------------------------------------- */
-.navigation {
-    // display: flex;
-    // flex-direction: column;
-
-    @media (min-width: 880px) {
-        // margin-right: 120px;
-        // flex-direction: row;
-        // align-items: center;
-    }
-}
 
 .primary-nav {
-    // padding-top: 10rem;
-    // margin-bottom: 6px;
-    // padding-right: 4rem;
-
     min-height: 100vh;
     display: none;
     background-color: var(--off-white);
@@ -37,12 +23,7 @@
     }
 
     li {
-        // margin-left: 3rem;
         text-align: right;
-
-        &:first-of-type {
-            margin-left: 0;
-        }
 
         a {
             font-family: var(--copy);
