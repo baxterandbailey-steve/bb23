@@ -65,8 +65,12 @@
 
         p {
             margin-bottom: 0.5rem;
-            font-size: var(--font-base-plus);
+            font-size: var(--font-base);
             color: #9a9a9a;
+
+            @media (min-width: 880px) {
+                font-size: var(--font-base-plus);
+            }
         }
 
         p:first-of-type {
@@ -85,20 +89,35 @@
     }
 
     form {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 2rem;
+
+        ::placeholder {
+            padding-left: 1rem;
+            display: flex;
+            align-items: center;
+            font-size: var(--font-small);
+            line-height: var(--lh-base);
+            color: var(--mid-black);
+        }
     }
 
     input {
         height: 52px;
         border: 1.5px solid var(--black);
+        text-align: center;
+        color: var(--black);
     }
 
-    .input-email {
-        width: 70%;
+    input[type='email'] {
+        width: 100%;
+        margin-bottom: var(--mb-drop-small);
     }
 
-    .input-subscribe {
-        width: 28%;
+    input[type='submit'] {
+        width: 100%;
+        text-transform: uppercase;
         background-color: transparent;
     }
 }

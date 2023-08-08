@@ -25,7 +25,7 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
     }
 
     > .row {
-        margin-bottom: 0;
+        margin-bottom: 3rem;
 
         @media (min-width: 480px) {
             margin-bottom: var(--drop-medium);
@@ -48,14 +48,17 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
         margin-bottom: 0px;
     }
 
-    // basics, ie styles to be inherited by all elements
     .thumb {
         // styles
     }
 
     img {
         width: 100%;
-        margin-bottom: 0.5rem;
+        margin-bottom: var(--mb-drop-small);
+
+        @media (min-width: 880px) {
+            margin-bottom: 0.5rem;
+        }
     }
 
     .quote {
@@ -91,11 +94,16 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
     }
 
     .client {
-        margin-right: 77px;
+        margin-bottom: 0.5rem;
         font-family: var(--copy-med);
         font-size: var(--font-base-plus);
-        line-height: var(--lh-medium);
+        line-height: 1.1;
         color: var(--white);
+
+        @media (min-width: 880px) {
+            margin-right: 72px;
+            line-height: var(--lh-medium);
+        }
     }
 
     .position,
@@ -103,18 +111,26 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
         margin-bottom: 1.5rem;
         display: block;
         font-family: var(--copy);
-        font-size: var(--font-base-plus);
+        font-size: var(--font-base);
         //text-transform: uppercase;
         line-height: var(--lh-small);
         color: var(--work-meta);
+
+        @media (min-width: 880px) {
+            font-size: var(--font-base-plus);
+        }
     }
 
     .description {
         margin-bottom: var(--drop-medium);
         font-family: var(--copy);
-        font-size: var(--font-base-plus);
+        font-size: var(--font-small);
         line-height: var(--lh-small);
         color: var(--work-meta);
+
+        @media (min-width: 880px) {
+            font-size: var(--font-base-plus);
+        }
     }
 
     .link {
@@ -150,7 +166,7 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
     /* three col layout ------------------------------------------------------------ */
     .three-cols {
         grid-template-rows: 1fr;
-        margin-bottom: 15.25rem;
+        // margin-bottom: 15.25rem;
 
         video {
             width: 100%;
@@ -169,8 +185,12 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
             }
 
             .description {
-                max-width: 70%;
+                max-width: 100%;
                 margin-bottom: var(--drop-small);
+
+                @media (min-width: 880px) {
+                    max-width: 70%;
+                }
 
                 @media (min-width: 960px) {
                     max-width: 60%;
@@ -211,7 +231,7 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
     /* three col layout ------------------------------------------------------------ */
     .three-cols-alt {
         grid-template-rows: 1fr;
-        margin-bottom: 15.25rem;
+        // margin-bottom: 15.25rem;
 
         video {
             width: 100%;
@@ -230,8 +250,12 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
             }
 
             .description {
-                max-width: 70%;
+                max-width: 100%;
                 margin-bottom: var(--drop-small);
+
+                @media (min-width: 880px) {
+                    max-width: 70%;
+                }
 
                 @media (min-width: 960px) {
                     max-width: 60%;
