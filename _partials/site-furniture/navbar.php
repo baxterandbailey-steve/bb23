@@ -6,5 +6,5 @@
 			'container' => '',
 		)); ?>
 	</nav>
-	<button class="navicon"></button>
+
 </div>
