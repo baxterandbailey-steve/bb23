@@ -31,6 +31,11 @@ footer {
             grid-column: 1 / -1;
             font-family: var(--titling);
             font-size: clamp(2rem, 4.5vw, 2.75rem);
+            line-height: 1.2;
+
+            @media (min-width: 880px) {
+                line-height: var(--lh-medium);
+            }
         }
 
         .meta,
@@ -39,6 +44,10 @@ footer {
             font-size: var(--font-root-plus);
             text-transform: uppercase;
             color: var(--work-meta);
+        }
+
+        p {
+            margin-bottom: var(--mb-drop-medium);
         }
 
         .link {
@@ -52,6 +61,7 @@ footer {
     }
 
     .lh-col {
+        margin-bottom: 32px;
         grid-column: 1 / 7;
 
         .text {
@@ -74,6 +84,7 @@ footer {
         }
 
         .contact {
+            margin-bottom: 48px;
             grid-column: 1 / 4;
 
             .link {
@@ -130,7 +141,13 @@ footer {
 
         .member-logos {
             .logos {
+                margin-top: var(--mb-drop-base);
                 display: flex;
+                justify-content: space-between;
+            }
+
+            img:last-of-type {
+                margin-right: 1.5rem;
             }
 
             @media (min-width: 960px) {
