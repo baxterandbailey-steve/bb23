@@ -28,7 +28,7 @@
                     $lh_col_title = get_sub_field('title'); ?>
 
                     <div class="lh-col">
-                        <h3 class="subtitle"><?php echo $lh_col_title; ?></h3>
+                        <h3 class="sub-title"><?php echo $lh_col_title; ?></h3>
                         <div class="lh-col__images">
                             <?php if (have_rows('images')) :
                                 while (have_rows('images')) : the_row();
@@ -53,7 +53,7 @@
                     $rh_col_title = get_sub_field('title'); ?>
 
                     <div class="rh-col">
-                        <h3 class="subtitle"><?php echo $rh_col_title; ?></h3>
+                        <h3 class="sub-title"><?php echo $rh_col_title; ?></h3>
 
                         <div class="rh-col__images">
                             <?php if (have_rows('images')) :

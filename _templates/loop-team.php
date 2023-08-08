@@ -15,15 +15,15 @@ $args = new WP_Query(array(
             $favourite_description = get_field('favourite_description');
     ?>
             <div class="team-member">
-                <figure class="team-member-image" data-aos="fade-in">
+                <figure class="team-member-image">
                     <a href="#">
                         <?php the_post_thumbnail(); ?>
                     </a>
                 </figure>
-                <h3 class="name" data-aos="fade-in">
+                <h3 class="name">
                     <?php the_title(); ?>
                 </h3>
-                <span class="role" data-aos="fade-in"><?php the_field('team_title'); ?></span>
+                <span class="role"><?php the_field('team_title'); ?></span>
             </div>
 
 
