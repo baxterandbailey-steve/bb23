@@ -10,7 +10,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    //align-items: center;
     background-color: var(--off-white);
     z-index: 100;
 
@@ -23,6 +22,7 @@ header {
         padding-left: 1.5rem;
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .bb-logo {
             width: 112px;
