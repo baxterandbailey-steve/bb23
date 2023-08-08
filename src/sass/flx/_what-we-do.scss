@@ -37,6 +37,10 @@
             display: grid;
         }
 
+        .image {
+            margin-bottom: var(--mb-drop-medium);
+        }
+
         // layout media queries --------------------------------------------------
         @media (min-width: 880px) {
             .container__grid {
@@ -70,9 +74,13 @@
 
         .description {
             margin-bottom: 68px;
-            font-size: var(--font-base-plus);
+            font-size: var(--font-base);
             line-height: var(--lh-medium);
             color: var(--mid-black);
+
+            @media (min-width: 880px) {
+                font-size: var(--font-base-plus);
+            }
         }
 
         .subtitle {
@@ -89,9 +97,13 @@
 
         li {
             font-family: var(--copy-med);
-            font-size: var(--font-base-plus);
+            font-size: var(--font-base);
             line-height: var(--lh-medium);
             color: var(--black);
+
+            @media (min-width: 880px) {
+                font-size: var(--font-base-plus);
+            }
         }
 
         .link {
@@ -106,8 +118,13 @@
     .processes {
         h2.title {
             width: 12ch;
-            font-size: var(--font-medium);
+            margin-bottom: var(--mb-drop-large);
+            font-size: clamp(2rem, 7.5vw, 4rem);
             line-height: 1.08;
+
+            @media (min-width: 880px) {
+                margin-bottom: 0;
+            }
         }
 
         padding: 5rem 0 10rem 0;
@@ -117,7 +134,11 @@
 
     .process {
         position: relative;
-        margin-bottom: 112px;
+        margin-bottom: var(--mb-drop-large);
+
+        @media (min-width: 880px) {
+            margin-bottom: 112px;
+        }
 
         display: grid;
         grid-template-columns: 1fr;
@@ -166,9 +187,23 @@
         }
 
         // style elements -------------------------------------------------------
+        .image {
+            width: 80%;
+            margin-bottom: var(--mb-drop-large);
+
+            @media (min-width: 880px) {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+
         .text {
             padding-top: 1.25rem;
-            border-top: 1.5px solid var(--white);
+            border-bottom: 1.5px solid var(--white);
+
+            @media (min-width: 880px) {
+                border-top: 1.5px solid var(--white);
+            }
         }
 
         .meta {
@@ -182,13 +217,20 @@
             margin-bottom: 2rem;
             font-family: var(--titling);
             font-size: clamp(2rem, 7.5vw, 4rem);
-            line-height: 1.09375;
+            line-height: 1.2;
         }
 
         .description {
-            padding-right: 9.375%;
+            padding-bottom: var(--mb-drop-large);
+            font-size: var(--font-base);
             line-height: var(--lh-medium);
             color: #c7c7c7;
+
+            @media (min-width: 880px) {
+                padding-right: 9.375%;
+                padding-bottom: 0;
+                font-size: var(--font-base-plus);
+            }
         }
     }
 
@@ -214,8 +256,12 @@
 
         // style elements -------------------------------------------------------
         .lh-col {
-            padding-top: 0.25rem;
+            padding-top: 1rem;
             border-top: 1.5px solid var(--mid-black);
+
+            @media (min-width: 880px) {
+                padding-top: 0.25rem;
+            }
 
             .author,
             .role,
@@ -243,12 +289,13 @@
             }
 
             .organisation {
+                margin-bottom: var(--mb-drop-large);
                 color: var(--mid-black);
             }
         }
 
         .quote {
-            font-size: clamp(2rem, 4.5vw, 2.75rem);
+            font-size: clamp(1.25rem, 2.5vw, 2.75rem);
             line-height: 1.24;
             color: var(--black);
             transform: translateY(-0.75rem);
@@ -273,8 +320,12 @@
 
             p {
                 margin-bottom: 0.5rem;
-                font-size: var(--font-base-plus);
+                font-size: var(--font-base);
                 color: #9a9a9a;
+
+                @media (min-width: 880px) {
+                    font-size: var(--font-base-plus);
+                }
             }
 
             p:first-of-type {
@@ -287,6 +338,8 @@
             }
 
             .link {
+                margin-bottom: var(--mb-drop-medium);
+                display: block;
                 text-transform: uppercase;
                 color: var(--black);
             }
