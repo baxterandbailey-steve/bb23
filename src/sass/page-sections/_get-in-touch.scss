@@ -21,6 +21,10 @@
         }
     }
 
+    .image {
+        margin-bottom: var(--mb-drop-medium);
+    }
+
     // layout: media queries --------------------------------------------------
     @media (min-width: 800px) {
         .container {
