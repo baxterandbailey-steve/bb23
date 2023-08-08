@@ -19,20 +19,16 @@ $single_col_link = get_sub_field('link');
 <div class="row single-col">
 
     <?php if (get_sub_field('choice') == 'image') : ?>
-
-        <figure style="grid-column:<?php echo $single_col_width ?>" data-aos="fade-up">
+        <figure style="grid-column:<?php echo $single_col_width ?>">
             <img src="<?php echo wp_get_attachment_image($single_col_image, 'full'); ?>">
         </figure>
-
     <?php else : ?>
-
         <video preload playsinline autoplay muted loop style="grid-column: <?php echo $single_col_width; ?>;">
             <source src=" <?php echo $single_col_video; ?>">
         </video>
-
     <?php endif; ?>
 
-    <div class="details" data-aos="fade-up">
+    <div class="details">
         <h3 class="client"><a href="<?php echo $single_col_link; ?>" class="link"><?php echo $single_col_client; ?></a></h3>
         <span class="category"><?php echo $single_col_category; ?></span>
         <p class="description"><?php echo $single_col_description; ?></p>
