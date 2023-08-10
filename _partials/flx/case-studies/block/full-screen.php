@@ -10,6 +10,7 @@ $full_screen_video = get_sub_field('video');
 $full_screen_image = get_sub_field('image');
 
 ?>
+
 <div class="full-screen-media">
     <?php if (get_sub_field('choice') == 'video') : ?>
 

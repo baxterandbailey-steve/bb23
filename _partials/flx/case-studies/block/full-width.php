@@ -13,6 +13,7 @@ $caption = get_sub_field('caption');
 ?>
 
 <div class="full-width-media">
+
     <?php if (get_sub_field('choice') == 'video') : ?>
 
         <div class="full-width-video">
@@ -23,11 +24,11 @@ $caption = get_sub_field('caption');
         </div>
 
     <?php else : ?>
+
         <figure class="full-width-image">
             <?php echo wp_get_attachment_image($image, 'full'); ?>
             <p class="caption"><?php echo $caption; ?></p>
         </figure>
-
     <?php endif; ?>
 
 </div>

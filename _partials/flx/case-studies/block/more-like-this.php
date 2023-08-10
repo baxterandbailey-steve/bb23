@@ -7,15 +7,15 @@
  */
 
 $featured_posts = get_sub_field('related_posts');
+
 ?>
 
-
 <div class="more-like-this">
-    <div class="contain">
 
+    <div class="contain">
         <div class="container-top">
             <h2 class="title">More like this</h2>
-            <a a href="/our-work/" class="link">All work</a>
+            <a href="/our-work/" class="link">All work</a>
         </div>
 
         <ul class="related">
@@ -34,4 +34,5 @@ $featured_posts = get_sub_field('related_posts');
 
         <?php wp_reset_postdata(); ?>
     </div>
+
 </div>
