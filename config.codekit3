@@ -297,6 +297,38 @@
       "oAP" : "\/_partials\/page-sections\/newsroom.php",
       "oF" : 0
     },
+    "\/_partials\/pages\/case-study\/page-top.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/pages\/case-study\/page-top.php",
+      "oF" : 0
+    },
+    "\/_partials\/pages\/case-study\/primary-content.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/pages\/case-study\/primary-content.php",
+      "oF" : 0
+    },
+    "\/_partials\/pages\/case-study\/related-posts.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/pages\/case-study\/related-posts.php",
+      "oF" : 0
+    },
+    "\/_partials\/pages\/case-study\/special-thanks.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/pages\/case-study\/special-thanks.php",
+      "oF" : 0
+    },
     "\/_partials\/site-furniture\/navbar.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1389,14 +1421,6 @@
       "oAP" : "\/style-min.css",
       "oF" : 0,
       "pg" : 0
-    },
-    "\/taxonomy-work_taxonomy.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/taxonomy-work_taxonomy.php",
-      "oF" : 0
     },
     "\/what-we-do.php" : {
       "cB" : 0,
