@@ -26,11 +26,10 @@
                     <video preload playsinline autoplay muted loop class="primary-image"">
                         <source src=" <?php echo $primary_video; ?>">
                     </video>
-
                 <?php endif; ?>
 
-        <?php endwhile;
-        endif; ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
 
 
         <?php if (have_rows('secondary_image')) :
@@ -52,9 +51,9 @@
 
                 <?php endif; ?>
 
-        <?php endwhile;
-        endif; ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
 
 
-    </div>
-</div>
+    </div><!-- close .container grid-offset-->
+</div><!-- close .image-offset-->

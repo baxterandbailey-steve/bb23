@@ -10,6 +10,8 @@
 
 <div class="image-grid four-cols">
     <div class="container">
+
+        <!-- intro text-->
         <div class="introduction">
             <?php if (have_rows('introduction')) :
                 while (have_rows('introduction')) : the_row();
@@ -21,6 +23,7 @@
             <?php endif; ?>
         </div>
 
+        <!-- image bank -->
         <div class="images">
             <?php if (have_rows('images')) :
                 while (have_rows('images')) : the_row();
@@ -30,6 +33,7 @@
                     </figure>
                 <?php endwhile; ?>
             <?php endif; ?>
-        </div>
-    </div>
-</div>
+        </div><!-- close .images -->
+
+    </div><!-- close .container -->
+</div><!-- close .image-grid -->

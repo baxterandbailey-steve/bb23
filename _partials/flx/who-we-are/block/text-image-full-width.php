@@ -16,13 +16,16 @@ $text_image_fw_layout = get_sub_field('layout');
 
 <div class="text-image-full-width">
     <div class="container <?php echo $text_image_fw_layout; ?>">
+
         <div class="rich-text">
             <h2 class="section-title"><?php echo $text_image_fw_title; ?></h2>
             <?php echo $text_image_fw_text; ?>
             <a href="<?php echo $text_image_fw_link; ?>" class="link"><?php echo $text_image_fw_link_label; ?></a>
         </div>
+
         <figure class="image">
             <?php echo wp_get_attachment_image($text_image_fw_image, 'full'); ?>
         </figure>
+
     </div>
 </div>

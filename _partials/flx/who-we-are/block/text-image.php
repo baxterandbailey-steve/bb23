@@ -15,7 +15,6 @@ $text_image_layout = get_sub_field('layout');
 ?>
 
 <div class="text-image">
-
     <div class="contain-inner <?php echo $text_image_layout; ?>">
 
         <div class="rich-text">
@@ -23,8 +22,10 @@ $text_image_layout = get_sub_field('layout');
             <?php echo $text_image_text; ?>
             <a href="<?php echo $text_image_link; ?>" class="link awards-control"><?php echo $text_image_link_label; ?></a>
         </div>
+
         <figure class="image">
             <?php echo wp_get_attachment_image($text_image_image, 'full'); ?>
         </figure>
+
     </div>
 </div>
