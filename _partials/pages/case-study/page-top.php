@@ -13,11 +13,15 @@ $excerpt = get_field('excerpt');
 ?>
 
 <section class="page-top contain">
+
     <?php if (get_field('service')) : ?>
         <span class="meta"><?php echo $service; ?></span>
     <?php endif; ?>
+
     <h2 class="title"><?php the_title(); ?></h2>
+
     <?php if (get_field('excerpt')) : ?>
         <p class="excerpt"><?php echo $excerpt; ?></p>
     <?php endif; ?>
+
 </section>
