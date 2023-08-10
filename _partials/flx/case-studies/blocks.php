@@ -19,6 +19,9 @@
             <?php elseif (get_row_layout() == 'text') : ?>
                 <?php get_template_part('_partials/flx/case-studies/block/text'); ?>
 
+            <?php elseif (get_row_layout() == 'special_thanks') : ?>
+                <?php get_template_part('_partials/flx/case-studies/block/special-thanks'); ?>
+
             <?php elseif (get_row_layout() == 'image_text') : ?>
                 <?php get_template_part('_partials/flx/case-studies/block/image-text'); ?>
 

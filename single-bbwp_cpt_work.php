@@ -52,9 +52,9 @@ $secondary_image = get_field('secondary_image');
         <div class="primary-content__info">
             <div class="lh-col">
                 <?php if (get_field('work_statement')) : ?>
-                    <!-- <div class="link-back">
+                    <div class="link-back">
                         <a href="/work/" class="link">Back</a>
-                    </div> -->
+                    </div>
                     <div class="statement"><?php echo $statement; ?></div>
                 <?php endif; ?>
 
@@ -126,6 +126,63 @@ $secondary_image = get_field('secondary_image');
     </div>
 
     <?php get_template_part('_partials/flx/case-studies/blocks') ?>
+
+    <!-- special thanks -->
+    <div class="special-thanks contain">
+        <?php if (have_rows('special_thanks')) :
+            while (have_rows('special_thanks')) : the_row();
+                $thanks_text = get_sub_field('text'); ?>
+
+                <div class="rich-text">
+                    <h2 class="title">Special Thanks</h2>
+
+                    <div class="hold-me">
+                        <p class="text"><?php echo $thanks_text; ?></p>
+                        <div class="collaborator">
+                            <h3>Collaborators</h3>
+                            <ul>
+                                <?php if (have_rows('collaborators')) :
+                                    while (have_rows('collaborators')) : the_row();
+                                        $name = get_sub_field('name');
+                                        $url = get_sub_field('url'); ?>
+
+                                        <li>
+                                            <span class="name"><a href="<?php echo $url; ?>"><?php echo $name; ?></a></span>
+                                        </li>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        <?php endif; ?>
+
+        <!-- more like this -->
+        <div class="more-like-this">
+            <div class="container-top">
+                <h2 class="title">More like this</h2>
+                <a a href="/our-work/" class="link">All work</a>
+            </div>
+
+            <ul class="related">
+                <?php
+                $featured_posts = get_field('related_posts'); ?>
+                <?php foreach ($featured_posts as $post) :
+                    setup_postdata($post); ?>
+                    <li>
+                        <article>
+                            <figure>
+                                <?php the_post_thumbnail(); ?>
+                            </figure>
+                            <h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        </article>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+
+            <?php wp_reset_postdata(); ?>
+        </div>
 
 </main>
 <?php get_footer(); ?>

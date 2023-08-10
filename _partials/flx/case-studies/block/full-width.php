@@ -8,6 +8,8 @@
 
 $video = get_sub_field('video');
 $image = get_sub_field('image');
+$caption = get_sub_field('caption');
+
 ?>
 
 <div class="full-width-media">
@@ -17,12 +19,15 @@ $image = get_sub_field('image');
             <video preload playsinline autoplay muted loop>
                 <source src="<?php echo $video; ?>">
             </video>
+            <p class="caption"><?php echo $caption; ?></p>
         </div>
 
     <?php else : ?>
         <figure class="full-width-image">
             <?php echo wp_get_attachment_image($image, 'full'); ?>
+            <p class="caption"><?php echo $caption; ?></p>
         </figure>
+
     <?php endif; ?>
 
 </div>

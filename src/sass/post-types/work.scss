@@ -381,16 +381,38 @@
         }
 
         .text {
-            grid-column: 9 / -1;
+            grid-column: 8 / -1;
         }
 
         p {
             margin-bottom: var(--drop-medium);
         }
 
-        p:first-of-type {
+        p:last-of-type {
+            margin-bottom: var(--drop-small);
+        }
+
+        .heading {
             font-family: var(--titling);
             font-size: var(--font-medium);
+        }
+
+        .meta {
+            margin-bottom: var(--drop-medium);
+            display: block;
+            font-size: var(--font-base-plus);
+            text-transform: uppercase;
+            color: var(--mid-black);
+        }
+
+        .link {
+            margin-bottom: var(--drop-medium);
+            display: block;
+            font-family: var(--copy-med);
+            font-size: var(--font-small);
+            font-weight: var(--weight-regular-plus);
+            text-transform: uppercase;
+            color: var(--black);
         }
     }
 
@@ -455,6 +477,12 @@
         }
     }
 
+    .caption {
+        margin-top: 1rem;
+        font-family: var(--copy);
+        font-size: var(--font-base);
+    }
+
     // fixes
     .full-screen-media {
         img {
@@ -465,6 +493,8 @@
     .full-width-image {
         margin-bottom: var(--drop-medium);
     }
+
+    // special thanks ----------------------------------------------------------
 
     // text ---------------------------------------------------------------------
     .more-like-this {
@@ -508,6 +538,43 @@
                 font-family: var(--copy-med);
                 font-size: var(--font-base-plus);
             }
+        }
+    }
+}
+
+.special-thanks {
+    .title {
+        margin-bottom: var(--drop-medium);
+        grid-column: 1 / 7;
+        grid-row: 1;
+        font-family: var(--titling);
+        font-size: 64px;
+    }
+
+    .rich-text {
+        @media (min-width: 800px) {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: 48px;
+        }
+    }
+
+    .hold-me {
+        grid-column: 8 / -1;
+
+        p {
+            margin-bottom: var(--drop-medium);
+            font-size: var(--font-base-plus);
+        }
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        span {
+            font-family: var(--copy-med);
+            font-size: var(--font-base-plus);
+            font-weight: 500;
         }
     }
 }
