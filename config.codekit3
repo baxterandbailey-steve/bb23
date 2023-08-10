@@ -153,6 +153,22 @@
       "oAP" : "\/_partials\/flx\/our-work\/block\/two-columns.php",
       "oF" : 0
     },
+    "\/_partials\/flx\/our-work\/block\/two-columns\/lh-col.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/our-work\/block\/two-columns\/lh-col.php",
+      "oF" : 0
+    },
+    "\/_partials\/flx\/our-work\/block\/two-columns\/rh-col.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_partials\/flx\/our-work\/block\/two-columns\/rh-col.php",
+      "oF" : 0
+    },
     "\/_partials\/flx\/our-work\/blocks.php" : {
       "cB" : 0,
       "ft" : 8192,
