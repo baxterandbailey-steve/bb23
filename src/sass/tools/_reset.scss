@@ -23,16 +23,13 @@ summary {
 
 body {
     padding-top: var(--site-space-lg);
-    font-family: var(--copy);
-    //font-size: var(--font-base);
-    color: var(--black);
     background: var(--off-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 main {
-    //position: relative;
+    // styles
 }
 
 img {
@@ -53,14 +50,13 @@ li {
 button,
 textarea,
 select {
-    //font: inherit;
+    font: inherit;
 }
 
 button {
     padding: 0;
     border: none;
     outline: none;
-    //align-items: center;
     text-decoration: none;
     cursor: pointer;
     background: transparent;

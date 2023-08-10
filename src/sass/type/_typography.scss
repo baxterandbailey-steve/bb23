@@ -1,5 +1,11 @@
 /* typography
 ----------------------------------------------------------------------------- */
+body {
+    font-family: var(--copy);
+    font-size: var(--font-base);
+    color: var(--black);
+}
+
 h1,
 h2,
 h3,
@@ -8,4 +14,32 @@ h5,
 h6 {
     font-family: var(--titling);
     font-weight: var(--weight-regular);
+}
+
+h1,
+.h1 {
+    font-size: clamp(2rem, 7.5vw, 2.75rem);
+}
+
+h2,
+.h2 {
+    font-size: clamp(2rem, 7.5vw, 2.75rem);
+}
+
+h3,
+.h3 {
+    font-size: var(--font-base-plus);
+}
+
+h4,
+.h4 {
+    font-size: var(--font-base-plus);
+}
+
+p {
+    font-size: var(--font-base);
+
+    @media (min-width: 880px) {
+        font-size: var(--font-plus);
+    }
 }
