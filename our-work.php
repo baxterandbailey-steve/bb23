@@ -2,6 +2,8 @@
 
 /**
  * Template Name: Work
+ * Notes: This page has three sections filters, curated [tempated] flexible content and archived content
+ * 
  *
  * @package BBWP
  */
@@ -25,45 +27,32 @@ $args = new WP_Query(array(
 			<h3>Sector</h3>
 			<?php echo do_shortcode('[searchandfilter slug="sector"]'); ?>
 		</div>
+
 		<div class="services-filter">
 			<h3>Services</h3>
 			<?php echo do_shortcode('[searchandfilter slug="service"]'); ?>
 		</div>
-
 	</section>
 
-	<!-- featured work -->
 	<div class="our-work__featured contain">
-
 		<?php get_template_part('_partials/flx/our-work/blocks') ?>
 
-		<!-- 'archive list' -->
-		<ul class="grid-work our-work__archive">
-			<?php if (have_posts()) :
-				while ($args->have_posts()) : $args->the_post(); ?>
-					<li class="<?php the_field('size'); ?>">
-
-						<?php
-						$new_work = get_field('new_work');
-						if ($new_work == true) {
-							echo '<span class="new-work">New Project</span>';
-						} ?>
-
+		<?php if (have_posts()) : ?>
+			<ul class="grid-work our-work__archive">
+				<?php while ($args->have_posts()) : $args->the_post(); ?>
+					<li>
 						<article>
 							<figure>
 								<?php the_post_thumbnail(); ?>
-
 								<h3 class="title link"><a href="<?php the_permalink(); ?>" class="link"><?php the_title(); ?></a></h3>
-								<span class="meta"><?php the_field('meta'); ?></span>
+								<span class="meta"><?php the_field('meta'); ?>Category</span>
 							</figure>
 						</article>
 					</li>
-
-			<?php endwhile;
-				wp_reset_postdata();
-			endif; ?>
-		</ul>
+				<?php endwhile;
+				wp_reset_postdata(); ?>
+			</ul>
+		<?php endif; ?>
 
 </main>
-
 <?php get_footer(); ?>
