@@ -7,6 +7,7 @@
  */
 
 $service_section_title = get_sub_field('section_title');
+
 ?>
 
 <section class="services contain">
@@ -19,27 +20,30 @@ $service_section_title = get_sub_field('section_title');
             $service_image = get_sub_field('image');
             $service_description = get_sub_field('description');
             $service_link_url = get_sub_field('link_url');
-            $service_link_label = get_sub_field('link_label');
-    ?>
+            $service_link_label = get_sub_field('link_label'); ?>
+
             <div class="service">
                 <span class="meta"><?php echo $service_type; ?></span>
-                <div class="container__grid">
 
+                <div class="container__grid">
                     <h3 class="title"><?php echo $service_title; ?></h3>
                     <figure class="image">
                         <?php echo wp_get_attachment_image($service_image, 'full'); ?>
                     </figure>
                     <div class="rich-text">
                         <p class="description"><?php echo $service_description; ?></p>
-                        <h4 class="subtitle">Subtitle</h4>
-                        <ul class="type-of-service">
-                            <?php if (have_rows('elements')) :
-                                while (have_rows('elements')) : the_row();
-                                    $element = get_sub_field('element'); ?>
-                                    <li><?php echo $element; ?></li>
-                                <?php endwhile; ?>
+                        <?php if (get_sub_field('element')) : ?>
+                            <h4 class="subtitle">Subtitle</h4>
+
+                            <?php if (have_rows('elements')) : ?>
+                                <ul class="type-of-service">
+                                    <? while (have_rows('elements')) : the_row();
+                                        $element = get_sub_field('element'); ?>
+                                        <li><?php echo $element; ?></li>
+                                    <?php endwhile; ?>
+                                </ul>
                             <?php endif; ?>
-                        </ul>
+                        <?php endif; ?>
                         <a href="<?php echo $service_link_url; ?>" class="link"><?php echo $service_link_label; ?></a>
                     </div>
                 </div>
