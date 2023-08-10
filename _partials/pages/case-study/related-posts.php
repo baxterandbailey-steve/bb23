@@ -17,8 +17,7 @@
         </div>
 
         <ul class="related">
-            <?php
-            $featured_posts = get_field('related_posts'); ?>
+            <?php $featured_posts = get_field('related_posts'); ?>
             <?php foreach ($featured_posts as $post) :
                 setup_postdata($post); ?>
                 <li>
