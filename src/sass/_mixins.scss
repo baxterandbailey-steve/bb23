@@ -1,9 +1,0 @@
-@use 'variables';
-
-/* mixins
------------------------------------------------------------------------------ */
-@mixin mq($query) {
-    @media (min-width: $query) {
-        @content;
-    }
-}

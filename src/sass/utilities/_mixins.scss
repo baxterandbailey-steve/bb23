@@ -1,0 +1,33 @@
+@use '../variables';
+
+/* mixins
+----------------------------------------------------------------------------- */
+@mixin mq($query) {
+    @media (min-width: $query) {
+        @content;
+    }
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: 960px) {
+        margin-bottom: 9rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: var(--gutter-large);
+    }
+}
+
+@mixin contain {
+    width: 100%;
+    max-width: var(--site-width);
+    padding-left: clamp(1.5rem, 0.3rem + 6vw, 4.5rem);
+    padding-right: clamp(1.5rem, 0.3rem + 6vw, 4.5rem);
+    margin: 0 auto;
+}
+
+@mixin horizontal-space {
+    padding-left: clamp(1.5rem, 0.3rem + 6vw, 4.5rem);
+    padding-right: clamp(1.5rem, 0.3rem + 6vw, 4.5rem);
+}
