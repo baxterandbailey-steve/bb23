@@ -15,7 +15,6 @@ get_template_part('_partials/headers/header', 'work');
     <?php get_template_part('_partials/pages/case-study/page-top'); ?>
     <?php get_template_part('_partials/pages/case-study/primary-content'); ?>
     <?php get_template_part('_partials/flx/case-studies/blocks'); ?>
-    <?php get_template_part('_partials/pages/case-study/special-thanks'); ?>
     <?php get_template_part('_partials/pages/case-study/related-posts'); ?>
 </main>
 

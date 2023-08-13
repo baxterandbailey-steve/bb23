@@ -10,7 +10,7 @@
 ?>
 
 <?php if (get_field('related_posts')) : ?>
-    <div class="more-like-this">
+    <div class="more-like-this contain">
         <div class="container-top">
             <h2 class="title">More like this</h2>
             <a a href="/our-work/" class="link">All work</a>
