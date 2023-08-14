@@ -32,18 +32,17 @@ $service_section_title = get_sub_field('section_title');
                     </figure>
                     <div class="rich-text">
                         <p class="description"><?php echo $service_description; ?></p>
-                        <?php if (get_sub_field('element')) : ?>
-                            <h4 class="subtitle">Subtitle</h4>
 
-                            <?php if (have_rows('elements')) : ?>
-                                <ul class="type-of-service">
-                                    <? while (have_rows('elements')) : the_row();
-                                        $element = get_sub_field('element'); ?>
-                                        <li><?php echo $element; ?></li>
-                                    <?php endwhile; ?>
-                                </ul>
-                            <?php endif; ?>
+                        <?php if (have_rows('elements')) : ?>
+                            <h4 class="subtitle">Subtitle</h4>
+                            <ul class="type-of-service">
+                                <? while (have_rows('elements')) : the_row();
+                                    $element = get_sub_field('element'); ?>
+                                    <li><?php echo $element; ?></li>
+                                <?php endwhile; ?>
+                            </ul>
                         <?php endif; ?>
+
                         <a href="<?php echo $service_link_url; ?>" class="link"><?php echo $service_link_label; ?></a>
                     </div>
                 </div>
