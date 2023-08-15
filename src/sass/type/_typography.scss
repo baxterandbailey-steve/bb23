@@ -18,24 +18,26 @@ h6 {
 
 h1,
 .h1 {
-    // clamp active between 320 - 120px
+    // clamp active between 320 - 1120px
     font-size: clamp(2rem, 1.7rem + 1.5vw, 2.75rem);
 }
 
 h2,
 .h2 {
-    // clamp active between 320 - 120px
+    // clamp active between 320 - 1120px
     font-size: clamp(2rem, 1.7rem + 1.5vw, 2.75rem);
 }
 
 h3,
 .h3 {
-    font-size: var(--font-base-plus);
+    // clamp active between 320 - 1120px
+    font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.25rem);
 }
 
 h4,
 .h4 {
-    font-size: var(--font-base-plus);
+    // clamp active between 320 - 1120px
+    font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.25rem);
 }
 
 p {
