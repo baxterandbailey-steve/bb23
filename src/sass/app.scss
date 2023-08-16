@@ -19,7 +19,7 @@
 @use 'layout/layout';
 
 //// pages
-@use 'pages/our-work';
+@use 'pages/work';
 @use 'pages/error-404';
 
 //// page-sections
@@ -31,10 +31,9 @@
 @use 'flx/who-we-are';
 @use 'flx/what-we-do';
 @use 'flx/home';
-@use 'flx/work-v1.0';
 
 //// post types
-@use 'post-types/work';
+@use 'post-types/case-study';
 @use 'post-types/team';
 
 //// tools

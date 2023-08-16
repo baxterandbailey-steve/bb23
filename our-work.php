@@ -19,7 +19,7 @@ $args = new WP_Query(array(
 
 <?php get_template_part('_partials/headers/header', 'default'); ?>
 
-<main class="our-work">
+<main class="work">
 
 	<section class="filters contain">
 		<button class="toggle-filters">Filter</button>
@@ -39,13 +39,13 @@ $args = new WP_Query(array(
 		<?php get_template_part('_partials/flx/our-work/blocks') ?>
 
 		<?php if (have_posts()) : ?>
-			<ul class="grid-work our-work__archive">
+			<ul class="our-work__archive">
 				<?php while ($args->have_posts()) : $args->the_post(); ?>
 					<li>
 						<article>
 							<figure>
 								<?php the_post_thumbnail(); ?>
-								<h3 class="title link"><a href="<?php the_permalink(); ?>" class="link"><?php the_title(); ?></a></h3>
+								<h3><a href="<?php the_permalink(); ?>" class="link"><?php the_title(); ?></a></h3>
 								<span class="meta"><?php the_field('meta'); ?>Category</span>
 							</figure>
 						</article>

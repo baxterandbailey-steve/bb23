@@ -1156,7 +1156,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/src\/sass\/pages\/_our-work.scss" : {
+    "\/src\/sass\/pages\/_work.scss" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -1165,7 +1165,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/css\/_our-work.min.css",
+      "oAP" : "\/dist\/css\/_work.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -1201,6 +1201,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/src\/sass\/post-types\/case-study.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/case-study.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/src\/sass\/post-types\/team.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1211,21 +1226,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/css\/team.min.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/src\/sass\/post-types\/work.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/work.min.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
