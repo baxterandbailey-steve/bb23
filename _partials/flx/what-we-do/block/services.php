@@ -23,7 +23,9 @@ $service_section_title = get_sub_field('section_title');
             $service_link_label = get_sub_field('link_label'); ?>
 
             <div class="service">
-                <span class="meta"><?php echo $service_type; ?></span>
+                <?php if (get_sub_field('type')) : ?>
+                    <span class="meta"><?php echo $service_type; ?></span>
+                <?php endif; ?>
 
                 <div class="container__grid">
                     <h3 class="title"><?php echo $service_title; ?></h3>
