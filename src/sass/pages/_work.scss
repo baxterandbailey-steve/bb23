@@ -74,35 +74,22 @@ our-work__archive
             }
         }
 
-        article {
-            margin-bottom: var(--mb-drop-small);
-        }
-
-        .image img {
+        img {
             width: 100%;
+            margin-bottom: 0.5rem;
         }
 
         .meta {
-            font-size: var(--font-base);
             color: var(--mid-black);
+        }
 
-            @media (min-width: 880px) {
-                font-size: var(--font-base-plus);
-            }
+        h3 {
+            font-family: var(--copy-med);
+            font-weight: var(--weight-regular-plus);
         }
 
         .link {
-            font-family: var(--copy-med);
-            font-size: var(--font-base);
             color: var(--black);
-
-            @media (min-width: 880px) {
-                font-size: var(--font-base-plus);
-            }
-        }
-
-        .full-width {
-            margin-bottom: 9rem;
         }
 
         .lh-col,
