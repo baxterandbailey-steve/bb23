@@ -59,37 +59,36 @@ $secondary_image = get_field('secondary_image');
                             <?php if (have_rows('strategy')) : ?>
                                 <div class="service-type">
                                     <h3 class="title">Strategy</h3>
-                                    <?php while (have_rows('strategy')) : the_row();
-                                        $strategy_service = get_sub_field('service_type'); ?>
-                                        <ul>
+                                    <ul>
+                                        <?php while (have_rows('strategy')) : the_row();
+                                            $strategy_service = get_sub_field('service_type'); ?>
                                             <li><?php echo $strategy_service; ?></li>
-                                        </ul>
-
-                                    <?php endwhile; ?>
+                                        <?php endwhile; ?>
+                                    </ul>
                                 </div>
                             <?php endif; ?>
 
                             <?php if (have_rows('design')) : ?>
                                 <div class="service-type">
                                     <h3 class="title">Design</h3>
-                                    <?php while (have_rows('design')) : the_row();
-                                        $design_service = get_sub_field('service_type');  ?>
-                                        <ul>
+                                    <ul>
+                                        <?php while (have_rows('design')) : the_row();
+                                            $design_service = get_sub_field('service_type');  ?>
                                             <li><?php echo $design_service; ?></li>
-                                        </ul>
-                                    <?php endwhile; ?>
+                                        <?php endwhile; ?>
+                                    </ul>
                                 </div>
                             <?php endif; ?>
 
                             <?php if (have_rows('digital')) : ?>
                                 <div class="service-type">
                                     <h3 class="title">Digital</h3>
-                                    <?php while (have_rows('digital')) : the_row();
-                                        $strategy_service = get_sub_field('service_type'); ?>
-                                        <ul>
+                                    <ul>
+                                        <?php while (have_rows('digital')) : the_row();
+                                            $strategy_service = get_sub_field('service_type'); ?>
                                             <li><?php echo $strategy_service; ?></li>
-                                        </ul>
-                                    <?php endwhile; ?>
+                                        <?php endwhile; ?>
+                                    </ul>
                                 </div>
                             <?php endif; ?>
 
