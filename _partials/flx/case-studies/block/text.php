@@ -23,7 +23,7 @@ $sector_info_text   = get_sub_field('text');
         </div>
     <?php endif; ?>
 
-    <?php if (have_rows('stats')) : ?>
+    <?php /* if (have_rows('stats')) : ?>
         <ul class="stats">
             <?php while (have_rows('stats')) : the_row();
                 $stat = get_sub_field('stat');
@@ -34,6 +34,6 @@ $sector_info_text   = get_sub_field('text');
                 </li>
             <?php endwhile; ?>
         </ul>
-    <?php endif; ?>
+    <?php endif; */ ?>
 
 </div>

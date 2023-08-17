@@ -9,9 +9,8 @@
 
     /* page-top
     ------------------------------------------------------------------------- */
-
     .page-top {
-        margin-bottom: var(--drop-medium);
+        margin-bottom: 40px;
         @include mixins.grid;
 
         .meta,
@@ -20,8 +19,8 @@
         }
 
         .meta {
-            grid-column: 1 / 3;
-            font-size: var(--font-base-plus);
+            margin-bottom: 12px;
+            grid-column: 1 / 7;
             text-transform: uppercase;
         }
 
@@ -32,10 +31,10 @@
         }
 
         .excerpt {
+            margin-top: 0.25rem;
             grid-column: 8 / -1;
             grid-row: 2;
-            font-size: var(--font-base-plus);
-            line-height: var(--lh-base);
+            align-self: center;
         }
     }
 
@@ -63,7 +62,7 @@
         }
 
         .rh-col {
-            grid-column: 8 / -1;
+            grid-column: 7 / -1;
         }
     }
 
@@ -93,12 +92,11 @@
         }
 
         .statement {
-            margin-bottom: var(--drop-large);
-            font-family: var(--titling);
-            font-size: var(--font-medium);
+            margin-bottom: 142px;
 
             p {
-                margin-bottom: var(--drop-medium);
+                font-family: var(--titling);
+                font-size: clamp(2rem, 1.7rem + 1.5vw, 2.75rem);
             }
         }
 
@@ -107,12 +105,12 @@
                 grid-column: 1 / 3;
             }
 
-            .what-we-did {
+            .what-we-did__services {
                 @media (min-width: 960px) {
                     display: grid;
                     grid-template-columns: repeat(6, 1fr);
                     grid-template-rows: auto;
-                    grid-column-gap: var(--gutter-larger);
+                    grid-column-gap: var(--gutter-large);
                     .service-type {
                         grid-column: span 2;
                     }
@@ -123,30 +121,45 @@
         .title,
         li,
         .type {
-            font-size: var(--font-base-plus);
+            font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.25rem);
             color: var(--mid-black);
         }
 
-        h3.title {
+        .title {
             margin-bottom: 0.25rem;
             font-family: var(--copy);
             text-transform: uppercase;
         }
 
-        .service-type {
-            .title {
-                font-family: var(--copy-med);
-                font-size: var(--font-base-plus);
-                text-transform: none;
-                color: var(--black);
-            }
+        .what-we-did .title {
+            margin-bottom: 1.125rem;
+        }
 
-            li {
-                font-weight: 500;
+        .type {
+            font-family: var(--copy-med);
+            font-weight: var(--weight-regular-plus);
+
+            &:after {
+                width: 64px;
+                height: 1.5px;
+                margin: 2.75rem 0 3rem 0;
+                background-color: var(--mid-black);
+                display: block;
+                content: '';
             }
         }
 
-        .sector,
+        .service-type {
+            .title {
+                margin-bottom: 2px;
+                font-family: var(--copy-med);
+                font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.25rem);
+                font-weight: 500;
+                text-transform: none;
+                color: var(--black);
+            }
+        }
+
         .awards,
         .strategy,
         .design,
@@ -158,6 +171,8 @@
     }
 
     .rh-col {
+        padding-top: 10px;
+
         .secondary-image {
             width: 100%;
         }
