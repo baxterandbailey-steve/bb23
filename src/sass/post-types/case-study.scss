@@ -41,7 +41,7 @@
     /* primary-content
     ------------------------------------------------------------------------- */
     .primary-content {
-        margin-bottom: var(--drop-big);
+        margin-bottom: var(--drop-large);
     }
 
     .primary-image,
@@ -181,7 +181,7 @@
     /* flexible content styles 
     ----------------------------------------------------------------------------------------- */
     .flexible-content__case-study {
-        padding-top: 6rem;
+        padding-top: 5.25rem;
         background-color: var(--off-white);
     }
 
@@ -351,7 +351,7 @@
     /*  testimonial -------------------------------------------------------------------------- */
     .testimonial {
         // note: testimonial uses container class to add grid
-        padding: 4.75rem 0; // 76px 0
+        padding: 5.5rem 0 4.75rem 0; // 76px 0
         margin-top: var(--site-space-lg);
         margin-bottom: var(--site-space-lg);
         background-color: var(--white);
@@ -361,7 +361,8 @@
         }
 
         .author-meta {
-            padding-top: var(--site-space-sm);
+            padding-top: 1.5em;
+            margin-top: 10px;
             border-top: 1.5px solid var(--mid-black);
             margin-bottom: var(--drop-small);
 
@@ -373,16 +374,17 @@
             .role,
             .organisation {
                 display: block;
-                font-size: var(--font-base-plus);
             }
 
             .author {
                 font-family: var(--copy-med);
             }
 
-            .role,
+            .role {
+                margin-bottom: 2px;
+                color: var(--black);
+            }
             .organisation {
-                font-family: var(--copy);
                 color: var(--mid-black);
             }
         }
