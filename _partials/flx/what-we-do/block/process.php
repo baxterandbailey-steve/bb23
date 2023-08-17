@@ -11,7 +11,7 @@ $process_section_title = get_sub_field('section_title');
 
 <section class="processes">
     <div class="inner contain">
-        <h2 class="title"><?php echo $process_section_title; ?></h2>
+        <h2 class="section-title"><?php echo $process_section_title; ?></h2>
 
         <?php if (have_rows('process')) :
             while (have_rows('process')) : the_row();
@@ -21,11 +21,11 @@ $process_section_title = get_sub_field('section_title');
                 $process_image = get_sub_field('image'); ?>
 
                 <div class="process">
-                    <?php if (get_sub_field('image')) : ?>
+                    <!-- <?php if (get_sub_field('image')) : ?>
                         <figure class="image">
                             <?php echo wp_get_attachment_image($process_image, 'full'); ?>
                         </figure>
-                    <?php endif; ?>
+                    <?php endif; ?> -->
 
                     <div class="text">
                         <span class="meta"><?php echo $process_type; ?></span>
