@@ -129,7 +129,7 @@
 
         .title {
             margin-bottom: 0.25rem;
-            font-family: var();
+            font-family: var(--var-copy);
             font-size: var(--font-base-plus);
             text-transform: uppercase;
             line-height: var(--lh-medium);
@@ -168,6 +168,8 @@
     /* text-image full-width
     ------------------------------------------------------------------------- */
     .text-image-full-width {
+        padding-top: 6rem;
+
         .container {
             display: grid;
             grid-template-columns: 1fr;
@@ -181,7 +183,8 @@
         .text-left {
             .rich-text {
                 @media (min-width: 960px) {
-                    grid-column: 1 / 7;
+                    grid-column: 1 / 8;
+                    max-width: 52ch;
                 }
             }
 
@@ -213,6 +216,7 @@
 
         .section-title {
             margin-bottom: var(--mb-drop-base);
+            font-family: var(--copy);
             font-size: var(--font-base-plus);
             text-transform: uppercase;
             line-height: var(--lh-medium);
@@ -233,7 +237,9 @@
         }
 
         .link {
-            font-family: 'cabinet-medium';
+            margin-top: 46px;
+            display: block;
+            font-family: var(--copy-med);
             font-size: var(--font-small);
             text-transform: uppercase;
             color: var(--black);
@@ -272,7 +278,7 @@
     /* image-grid four cols
     ------------------------------------------------------------------------- */
     .four-cols {
-        padding-top: 96px;
+        padding-top: 92px;
         background-color: var(--black);
 
         .introduction {
@@ -310,7 +316,7 @@
             justify-items: center;
 
             @media (min-width: 520px) {
-                padding: 3.75rem 0 4.625rem 0;
+                padding: 3.75rem 0 1.5rem 0;
                 grid-template-columns: repeat(12, 1fr);
                 column-gap: var(--gutter-large);
             }
@@ -346,7 +352,7 @@
     ------------------------------------------------------------------------- */
     .five-cols {
         padding-top: 6.875rem;
-        padding-bottom: 4.25rem;
+        //padding-botto: 4.25rem;
         background-color: var(--white);
 
         .introduction {
@@ -377,7 +383,8 @@
         }
 
         .sub-title {
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--copy);
             font-size: var(--font-base);
             text-transform: uppercase;
             color: var(--mid-black);
@@ -388,7 +395,7 @@
         }
 
         .images {
-            margin-bottom: 3rem;
+            //margin-bottom: 3rem;
             display: grid;
             grid-template-columns: 1fr;
 
@@ -400,7 +407,7 @@
 
         .lh-col__images,
         .rh-col__images {
-            margin-bottom: var(--mb-drop-large);
+            margin-bottom: 52px;
             display: grid;
             //   justify-items: center;
         }
