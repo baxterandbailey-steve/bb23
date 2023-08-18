@@ -26,7 +26,7 @@ $args = new WP_Query(array(
                 <span class="role"><?php the_field('team_title'); ?></span>
             </div>
 
-
+            <!--
             <div class="team-member__overlay">
 
                 <div class="container">
@@ -73,6 +73,7 @@ $args = new WP_Query(array(
                     </div>
                 </div>
             </div>
+        -->
 
 
     <?php endwhile;
