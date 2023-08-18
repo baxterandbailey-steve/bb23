@@ -13,7 +13,7 @@
     <div class="more-like-this contain">
         <div class="container-top">
             <h2 class="title">More like this</h2>
-            <a a href="/our-work/" class="link">All work</a>
+            <a a href="/work/" class="link">All work</a>
         </div>
 
         <ul class="related">
