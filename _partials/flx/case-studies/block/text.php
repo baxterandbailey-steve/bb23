@@ -20,20 +20,21 @@ $sector_info_text   = get_sub_field('text');
             <div class="text">
                 <?php echo $sector_info_text; ?>
             </div>
-        </div>
-    <?php endif; ?>
 
-    <?php /* if (have_rows('stats')) : ?>
-        <ul class="stats">
-            <?php while (have_rows('stats')) : the_row();
-                $stat = get_sub_field('stat');
-                $description = get_sub_field('description'); ?>
-                <li>
+        <?php endif; ?>
+
+        <?php if (have_rows('stats')) : ?>
+            <div class="stat-grid">
+                <?php while (have_rows('stats')) : the_row();
+                    $stat = get_sub_field('stat');
+                    $description = get_sub_field('description'); ?>
+
                     <span class="stat"><?php echo $stat; ?></span>
                     <p class="description"><?php echo $description; ?></p>
-                </li>
-            <?php endwhile; ?>
-        </ul>
-    <?php endif; */ ?>
+
+                <?php endwhile; ?>
+            </div>
+        <?php endif;  ?>
+        </div>
 
 </div>
