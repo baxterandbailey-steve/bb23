@@ -468,7 +468,7 @@
         background-color: var(--white);
 
         .container-top {
-            margin-bottom: 3rem;
+            margin-bottom: 2.875rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -502,6 +502,10 @@
             .title {
                 font-family: var(--copy-med);
                 font-size: var(--font-base-plus);
+            }
+
+            .meta {
+                color: var(--mid-black);
             }
         }
     }
