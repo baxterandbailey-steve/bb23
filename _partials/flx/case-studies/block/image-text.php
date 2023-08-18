@@ -34,13 +34,15 @@ $image_text_subhead = get_sub_field('subhead');
             <span class="meta"><?php echo $image_text_subhead; ?></span>
         <?php endif; ?>
 
-        <?php if (have_rows('link')) :
-            while (have_rows('link')) : the_row();
-                $link_url = get_sub_field('link');
-                $link_label = get_sub_field('link_label'); ?>
+        <?php if (get_sub_field('link')) : ?>
+            <?php if (have_rows('link')) :
+                while (have_rows('link')) : the_row();
+                    $link_url = get_sub_field('link');
+                    $link_label = get_sub_field('link_label'); ?>
 
-                <a href="<?php echo $link_url; ?>" class="link"><?php echo $link_label; ?></a>
-            <?php endwhile; ?>
+                    <a href="<?php echo $link_url; ?>" class="link"><?php echo $link_label; ?></a>
+                <?php endwhile; ?>
+            <?php endif; ?>
         <?php endif; ?>
     </div>
 

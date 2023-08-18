@@ -35,6 +35,7 @@
             grid-column: 8 / -1;
             grid-row: 2;
             align-self: center;
+            text-align: right;
         }
     }
 
@@ -272,6 +273,7 @@
     .text-block {
         max-width: 1296px;
         padding-top: 1.5rem;
+        padding-bottom: 7.5rem;
         border-top: 1.5px solid var(--mid-black);
         margin: 0 auto;
 
@@ -303,6 +305,20 @@
             strong {
                 font-family: var(--copy-med);
                 font-weight: 500;
+            }
+        }
+
+        .collaborators-block {
+            .title {
+                padding-top: 0.875rem;
+                margin-bottom: 0;
+                font-family: var(--copy);
+                text-transform: uppercase;
+                color: var(--mid-black);
+            }
+
+            li {
+                font-family: var(--copy-med);
             }
         }
     }

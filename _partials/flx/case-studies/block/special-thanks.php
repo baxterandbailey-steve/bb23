@@ -24,23 +24,25 @@ $sector_info_text   = get_sub_field('text');
             <?php if (get_sub_field('text')) : ?>
                 <?php echo $sector_info_text; ?>
             <?php endif; ?>
+
+
+
+            <?php if (have_rows('collaborators')) : ?>
+                <div class="collaborators-block">
+                    <h3 class="title">Collaborators</h3>
+                    <ul class="collaborators">
+                        <?php while (have_rows('collaborators')) : the_row();
+                            $name = get_sub_field('name');
+                            $url = get_sub_field('url'); ?>
+
+                            <li><a href="<?php echo $url; ?>" class="name"><?php echo $name; ?></a></li>
+
+                        <?php endwhile; ?>
+                    </ul>
+                </div>
+            <?php endif; ?>
+
         </div>
-
-
-        <?php if (have_rows('collaborators')) : ?>
-            <div class="collaborators-block">
-                <h3>Collaborators</h3>
-                <ul class="collaborators">
-                    <?php while (have_rows('collaborators')) : the_row();
-                        $name = get_sub_field('name');
-                        $url = get_sub_field('url'); ?>
-
-                        <li><a href="<?php echo $url; ?>" class="name"><?php echo $name; ?></a></li>
-
-                    <?php endwhile; ?>
-                </ul>
-            </div>
-        <?php endif; ?>
 
     </div>
 </div>
