@@ -29,9 +29,11 @@ $single_col_link = get_sub_field('link');
     <?php endif; ?>
 
     <div class="details">
-        <h3 class="client"><a href="<?php echo $single_col_link; ?>" class="link"><?php echo $single_col_client; ?></a></h3>
+        <h3 class="client"><?php echo $single_col_client; ?></h3>
         <span class="category"><?php echo $single_col_category; ?></span>
         <p class="description"><?php echo $single_col_description; ?></p>
     </div>
+
+    <a href="<?php echo $single_col_link; ?>" class="link"></a>
 
 </div>

@@ -44,5 +44,6 @@ p,
 span,
 li {
     // clamp active between 320 - 120px
+    font-family: var(--copy);
     font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.25rem);
 }

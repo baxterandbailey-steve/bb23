@@ -137,8 +137,26 @@ Note: A lot of styles eg grid-columns are output as inline styles via ACF and ch
         }
     }
 
-    .link {
-        color: var(--white);
+    // pseudo content trick to making entire card clikable
+    .single-col,
+    .lh-col,
+    .rh-col,
+    .three-cols,
+    .three-cols-alt {
+        position: relative;
+
+        .link {
+            color: var(--white);
+
+            &:after {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+            }
+        }
     }
 
     // specific row stylings

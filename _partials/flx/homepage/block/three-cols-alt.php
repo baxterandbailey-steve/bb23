@@ -50,7 +50,7 @@ $col_3_stack = get_sub_field('col_3_stack');
 
     <?php if (get_sub_field('col_3_choice') == 'image') : ?>
         <figure class="col-3-alt" style="z-index:<?php echo $col_3_stack; ?>;">
-            <h3 class="client"><a href="<?php echo $col_3_link; ?>" class="link"><?php echo $col_3_client_alt; ?></a></h3>
+            <h3 class="client"><?php echo $col_3_client_alt; ?></h3>
             <div class="details">
                 <span class="category"><?php echo $col_3_category_alt; ?></span>
                 <p class="description"><?php echo $col_3_description_alt; ?></p>
@@ -62,5 +62,7 @@ $col_3_stack = get_sub_field('col_3_stack');
             <source src="<?php echo $col_3_video_alt; ?>">
         </video>
     <?php endif; ?>
+
+    <a href="<?php echo $col_3_link; ?>" class="link"></a>
 
 </div>

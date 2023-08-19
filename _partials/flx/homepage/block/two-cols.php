@@ -25,10 +25,11 @@
                         <div class="lh-col quote" style="grid-column: <?php echo $lh_text_width; ?>">
                             <blockquote><?php echo $lh_text_quote; ?></blockquote>
                             <h3 class="client">
-                                <a href="<?php echo $lh_text_link; ?>" class="link"><?php echo $lh_text_client; ?></a>
+                                <?php echo $lh_text_client; ?>
                             </h3>
                             <span class="position"><?php echo $lh_text_position; ?></span>
                             <span class="category"><?php echo $lh_text_category; ?></span>
+                            <a href="<?php echo $lh_text_link; ?>" class="link"></a>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
