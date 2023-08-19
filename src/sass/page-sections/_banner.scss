@@ -14,7 +14,7 @@
     background-color: var(--off-white);
 
     h1.statement {
-        width: 25ch;
+        max-width: 25ch;
         max-width: 1296px;
         font-family: var(--titling);
         font-size: clamp(2.125rem, 0.786rem + 3.571vw, 4rem);
@@ -45,7 +45,7 @@
         line-height: 1.2;
 
         @media (min-width: 1120px) {
-            width: 32ch;
+            max-width: 32ch;
             line-height: var(--lh-medium);
         }
     }

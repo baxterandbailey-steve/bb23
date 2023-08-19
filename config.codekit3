@@ -385,30 +385,6 @@
       "oAP" : "\/404.php",
       "oF" : 0
     },
-    "\/archive.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/archive.php",
-      "oF" : 0
-    },
-    "\/category.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/category.php",
-      "oF" : 0
-    },
-    "\/contact.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/contact.php",
-      "oF" : 0
-    },
     "\/dist\/css\/app.min.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -886,28 +862,12 @@
       "oAP" : "\/our-work.php",
       "oF" : 0
     },
-    "\/page.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/page.php",
-      "oF" : 0
-    },
     "\/single-bbwp_cpt_work.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/single-bbwp_cpt_work.php",
-      "oF" : 0
-    },
-    "\/single.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/single.php",
       "oF" : 0
     },
     "\/src\/js\/app.js" : {
