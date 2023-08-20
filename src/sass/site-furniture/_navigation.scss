@@ -19,10 +19,10 @@
         flex-direction: column;
 
         @media (min-width: 880px) {
-            width: 390px;
+            width: 372px;
             min-height: auto;
-            margin-top: 0;
-            margin-right: 96px;
+            margin-top: 6px;
+            margin-right: 64px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -36,6 +36,7 @@
 
         @media (min-width: 880px) {
             margin-bottom: 0;
+            //margin-right: 48px;
         }
 
         a {
