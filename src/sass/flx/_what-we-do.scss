@@ -33,21 +33,12 @@
             color: var(--mid-black);
         }
 
-        .container__grid {
-            display: grid;
-        }
-
         .image {
             // margin-bottom: var(--mb-drop-medium);
         }
 
         // layout media queries --------------------------------------------------
         @media (min-width: 880px) {
-            .container__grid {
-                grid-template-columns: repeat(12, 1fr);
-                column-gap: 48px;
-            }
-
             .image {
                 grid-column: 1 / 8;
                 grid-row: 2 / 3;
@@ -138,16 +129,6 @@
 
         @media (min-width: 880px) {
             margin-bottom: var(--drop-large);
-        }
-
-        display: grid;
-        grid-template-columns: 1fr;
-
-        // layout media queries --------------------------------------------------
-        @media (min-width: 880px) {
-            grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: auto;
-            grid-gap: 48px;
 
             &:nth-of-type(odd) {
                 .text {
@@ -233,14 +214,9 @@
     .testimonial {
         padding-top: 6.75rem;
         padding-bottom: 5.5rem;
-        display: grid;
-        grid-template-columns: 1fr;
 
         // layout media queries --------------------------------------------------
         @media (min-width: 880px) {
-            grid-template-columns: repeat(12, 1fr);
-            column-gap: var(--gutter-large);
-
             .lh-col {
                 grid-column: 2 / 4;
             }
@@ -266,7 +242,6 @@
             }
 
             .author {
-                // margin-bottom: 0.25rem;
                 font-family: var(--copy-med);
             }
 
@@ -335,19 +310,11 @@
                 color: var(--black);
             }
         }
-
-        .image {
-            // width: 100%;
-        }
     }
 
     // layout media queries --------------------------------------------------
     @media (min-width: 880px) {
         .text-image {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            column-gap: 48px;
-
             .left {
                 .text {
                     grid-column: 1 / 7;
