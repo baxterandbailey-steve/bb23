@@ -15,7 +15,7 @@ $text_image_fw_layout = get_sub_field('layout');
 ?>
 
 <div class="text-image-full-width">
-    <div class="container <?php echo $text_image_fw_layout; ?>">
+    <div class="contain grid <?php echo $text_image_fw_layout; ?>">
 
         <div class="rich-text">
             <h2 class="section-title"><?php echo $text_image_fw_title; ?></h2>

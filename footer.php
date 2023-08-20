@@ -30,7 +30,7 @@
 	?>
 
 	<footer>
-		<div class="inner">
+		<div class="inner contain grid">
 			<h2 class="section-title">
 				<?php echo $heading_line_one; ?><br>
 				<?php echo $heading_line_two; ?>

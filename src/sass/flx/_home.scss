@@ -4,14 +4,8 @@ Styles for the bespoke grid elements on the homepage, styles for other component
 Note: A lot of styles eg grid-columns are output as inline styles via ACF and changed in in Field Groups
 --------------------------------------------------------------------------------------------------------- */
 .flexible-content__home {
-    width: 100%;
-    max-width: var(--site-width);
     padding-top: var(--site-space-lg);
     padding-bottom: 7.5rem; // 120px
-    padding-left: var(--site-pad-small);
-    padding-right: var(--site-pad-small);
-    margin-left: auto;
-    margin-right: auto;
 
     @media (min-width: 880px) {
         padding-left: var(--site-pad-large);

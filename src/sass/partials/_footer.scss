@@ -7,25 +7,6 @@ footer {
     color: var(--white);
 
     .inner {
-        width: 100%;
-        max-width: var(--site-width);
-        padding-left: var(--site-pad-small);
-        padding-right: var(--site-pad-small);
-        margin: 0 auto;
-
-        @media (min-width: 880px) {
-            padding-left: var(--site-pad-large);
-            padding-right: var(--site-pad-large);
-        }
-
-        display: grid;
-        grid-template-columns: 1fr;
-
-        @media (min-width: 960px) {
-            grid-template-columns: repeat(12, 1fr);
-            grid-column-gap: var(--gutter-large);
-        }
-
         .section-title {
             margin-bottom: var(--drop-small);
             grid-column: 1 / -1;

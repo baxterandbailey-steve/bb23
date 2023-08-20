@@ -19,6 +19,6 @@ $header_statement = get_field('statement');
     </nav>
 </header>
 
-<div class="banner-home">
+<div class="banner-home contain">
     <h1 class="statement"><?php echo $header_statement; ?></h1>
 </div>

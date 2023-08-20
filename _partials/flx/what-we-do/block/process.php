@@ -20,7 +20,7 @@ $process_section_title = get_sub_field('section_title');
                 $process_description = get_sub_field('description');
                 $process_image = get_sub_field('image'); ?>
 
-                <div class="process">
+                <div class="process grid">
                     <!-- <?php if (get_sub_field('image')) : ?>
                         <figure class="image">
                             <?php echo wp_get_attachment_image($process_image, 'full'); ?>

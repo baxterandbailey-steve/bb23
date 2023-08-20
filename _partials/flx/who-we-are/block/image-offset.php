@@ -7,8 +7,8 @@
  */
 ?>
 
-<div class="image-offset">
-    <div class="container grid-offset">
+<div class="image-offset contain">
+    <div class="grid-offset">
 
         <?php if (have_rows('primary_image')) :
             while (have_rows('primary_image')) : the_row();

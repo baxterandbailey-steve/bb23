@@ -27,7 +27,7 @@ $service_section_title = get_sub_field('section_title');
                     <span class="meta"><?php echo $service_type; ?></span>
                 <?php endif; ?>
 
-                <div class="container__grid">
+                <div class="grid">
                     <h3 class="title"><?php echo $service_title; ?></h3>
                     <figure class="image">
                         <?php echo wp_get_attachment_image($service_image, 'full'); ?>

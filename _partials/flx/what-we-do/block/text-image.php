@@ -13,7 +13,7 @@ $text_image_layout = get_sub_field('layout');
 
 ?>
 
-<div class="text-image contain <?php echo $text_image_layout; ?>">
+<div class="text-image contain <?php echo $text_image_layout; ?> grid">
 
     <div class="text">
         <?php if (get_sub_field('title')) : ?>

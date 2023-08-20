@@ -13,7 +13,7 @@ $testimonial_quote = get_sub_field('quote');
 
 ?>
 
-<div class="testimonial contain">
+<div class="testimonial contain grid">
 
     <div class="lh-col">
         <span class="author"><?php echo $testimonial_author; ?></span>

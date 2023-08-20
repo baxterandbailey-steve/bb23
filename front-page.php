@@ -10,7 +10,7 @@ get_header();
 get_template_part('_partials/headers/header', 'front-page'); ?>
 
 <main>
-    <section class="flexible-content__home">
+    <section class="flexible-content__home contain">
         <h2 class="section-title">Selected work</h2>
         <?php get_template_part('_partials/flx/homepage/blocks') ?>
     </section>
