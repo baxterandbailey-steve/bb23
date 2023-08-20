@@ -22,8 +22,11 @@
 }
 
 .banner-standard {
-    padding-top: clamp(4rem, -0.658rem + 14.333vw, 9.375rem);
-    padding-bottom: clamp(5rem, -3.558rem + 26.333vw, 14.875rem);
+    // set to work between 520 and 1120px
+    // padding-top: clamp(4rem, -0.658rem + 14.333vw, 9.375rem);
+    // padding-bottom: clamp(5rem, -3.558rem + 26.333vw, 14.875rem);
+    padding-top: clamp(4rem, 0.858rem + 9.667vw, 7.625rem);
+    padding-bottom: clamp(5rem, 0.883rem + 12.667vw, 9.75rem);
 
     .page-title {
         margin-bottom: var(--drop-small);
@@ -38,11 +41,9 @@
         font-family: var(--titling);
         font-size: clamp(2.125rem, 4.5vw, 2.75rem);
         font-weight: 400;
-        line-height: 1.2;
 
         @media (min-width: 1120px) {
             max-width: 32ch;
-            line-height: var(--lh-medium);
         }
     }
 }
