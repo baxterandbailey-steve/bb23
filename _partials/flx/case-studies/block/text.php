@@ -17,7 +17,7 @@ $sector_info_text   = get_sub_field('text');
             <div class="title-image">
                 <h2 class="title"><?php echo $sector_info_title; ?></h2>
             </div>
-            <div class="text">
+            <div class="text-container">
                 <?php echo $sector_info_text; ?>
             </div>
 
