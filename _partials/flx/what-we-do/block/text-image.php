@@ -14,26 +14,28 @@ $text_image_layout = get_sub_field('layout');
 ?>
 
 <div class="text-image contain <?php echo $text_image_layout; ?> grid">
+    <div class="contain-inner">
 
-    <div class="text">
-        <?php if (get_sub_field('title')) : ?>
-            <h2 class="title"><?php echo $text_image_title ?></h2>
+        <div class="text">
+            <?php if (get_sub_field('title')) : ?>
+                <h2 class="title"><?php echo $text_image_title ?></h2>
+            <?php endif; ?>
+
+            <?php echo $text_image_text ?>
+
+            <?php if (have_rows('link')) : ?>
+                <?php while (have_rows('link')) : the_row();
+                    $text_image_link_url = get_sub_field('link_url');
+                    $text_image_link_label = get_sub_field('link_label'); ?>
+
+                    <a href="<?php echo $text_image_link_url; ?>" class="link"><?php echo $text_image_link_label; ?></a>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
+
+        <?php if (get_sub_field('image')) : ?>
+            <img src="<?php echo $text_image_image ?>" class="image">
         <?php endif; ?>
 
-        <?php echo $text_image_text ?>
-
-        <?php if (have_rows('link')) : ?>
-            <?php while (have_rows('link')) : the_row();
-                $text_image_link_url = get_sub_field('link_url');
-                $text_image_link_label = get_sub_field('link_label'); ?>
-
-                <a href="<?php echo $text_image_link_url; ?>" class="link"><?php echo $text_image_link_label; ?></a>
-            <?php endwhile; ?>
-        <?php endif; ?>
     </div>
-
-    <?php if (get_sub_field('image')) : ?>
-        <img src="<?php echo $text_image_image ?>" class="image">
-    <?php endif; ?>
-
 </div>
