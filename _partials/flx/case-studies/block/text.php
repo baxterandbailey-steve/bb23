@@ -24,7 +24,7 @@ $sector_info_text   = get_sub_field('text');
         <?php endif; ?>
 
         <?php if (have_rows('stats')) : ?>
-            <div class="stat-grid">
+            <div class="stats-grid">
                 <?php while (have_rows('stats')) : the_row();
                     $stat = get_sub_field('stat');
                     $description = get_sub_field('description'); ?>

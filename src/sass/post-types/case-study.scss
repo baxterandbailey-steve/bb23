@@ -308,8 +308,8 @@
             }
         }
 
-        .stat-grid {
-            grid-column: 2 / -1;
+        .stats-grid {
+            grid-column: 8 / -1;
 
             display: grid;
             grid-template-columns: 1fr;
@@ -322,6 +322,8 @@
 
             @media (min-width: 960px) {
                 grid-template-columns: auto 1fr auto 1fr;
+                grid-column: 3 / -1;
+                transform: translateX(-12px);
             }
         }
 
@@ -330,7 +332,7 @@
             line-height: 1;
 
             @media (min-width: 768px) {
-                justify-self: end;
+                // justify-self: end;
             }
         }
 
