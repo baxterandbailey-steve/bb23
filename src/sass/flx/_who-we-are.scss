@@ -20,7 +20,17 @@
     }
 
     .team-member {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
+
+        &:nth-of-type(9) {
+            padding-top: 14rem;
+        }
+
+        &:nth-of-type(15) {
+            .role {
+                margin-bottom: 25rem;
+            }
+        }
 
         .team-member-image {
             width: 100%;
@@ -29,12 +39,11 @@
 
         .name {
             font-family: var(--copy-med);
-            font-size: var(--font-base-plus);
             font-weight: var(--weight-regular-plus);
         }
 
         .role {
-            font-size: var(--font-base);
+            display: block;
             color: var(--meta);
 
             @media (min-width: 880px) {
