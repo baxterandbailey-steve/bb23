@@ -25,8 +25,9 @@
                         <figure>
                             <?php the_post_thumbnail(); ?>
                         </figure>
-                        <h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <h3 class="title"><?php the_title(); ?></h3>
                         <span class="meta">Lorem ipsum</span>
+                        <a href="<?php the_permalink(); ?>" class="link"></a>
                     </article>
                 </li>
             <?php endforeach; ?>

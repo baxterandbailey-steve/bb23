@@ -43,7 +43,7 @@
             display: block;
             grid-column: 2 / 3;
             font-family: var(--copy-med);
-            font-size: clamp(0.875rem, 0.725rem + 0.75vw, 1.25rem); // clamp active between 320 and 1120px
+            font-size: var(--font-small);
             font-weight: var(--weight-regular-plus);
             text-transform: uppercase;
             color: var(--black);

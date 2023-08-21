@@ -45,8 +45,9 @@ $args = new WP_Query(array(
 						<article>
 							<figure>
 								<?php the_post_thumbnail(); ?>
-								<h3><a href="<?php the_permalink(); ?>" class="link"><?php the_title(); ?></a></h3>
+								<h3><?php the_title(); ?></h3>
 								<span class="meta"><?php the_field('meta'); ?>Category</span>
+								<a href="<?php the_permalink(); ?>" class="link"></a>
 							</figure>
 						</article>
 					</li>

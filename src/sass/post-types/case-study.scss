@@ -197,13 +197,18 @@
     .image-text,
     .two-cols-media,
     .full-width-video,
-    .full-screen-video,
-    .full-screen-media,
     .full-width-image {
         width: 100%;
         max-width: 1440px;
         @include mixins.horizontal-space;
         margin: 0 auto var(--drop-medium);
+    }
+
+    .full-screen-video,
+    .full-screen-media {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
     }
 
     .two-cols-media {
@@ -496,6 +501,10 @@
                 }
             }
 
+            article {
+                position: relative;
+            }
+
             img {
                 width: 100%;
                 margin-bottom: 1.5rem;
@@ -504,6 +513,19 @@
             .title {
                 font-family: var(--copy-med);
                 font-size: var(--font-base-plus);
+            }
+
+            .link {
+                color: var(--black);
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    content: '';
+                }
             }
 
             .meta {
