@@ -63,13 +63,15 @@
             grid-column-gap: var(--gutter-large);
 
             figure {
-                margin-bottom: 6.5rem;
+                margin-bottom: 74px;
                 grid-column: span 4;
             }
 
-            .description,
-            .project-info {
+            .description {
                 grid-column: span 5;
+            }
+            .project-info {
+                grid-column: span 4;
             }
         }
     }
@@ -77,7 +79,7 @@
     .team-member-name,
     .project-title {
         font-family: var(--copy-med);
-        font-size: var(--font-base-plus);
+        font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.25rem);
         font-weight: 500;
         line-height: var(--lh-base);
     }
@@ -95,17 +97,11 @@
     }
 
     .description {
-        margin-bottom: var(--mb-drop-large);
+        margin-bottom: 74px;
     }
 
     p {
         margin-bottom: 1.5rem;
-        font-size: var(--font-base);
-        color: var(--font-base-plus);
-
-        @media (min-width: 880px) {
-            font-size: var(--font-base-plus);
-        }
     }
 
     p:last-of-type {
