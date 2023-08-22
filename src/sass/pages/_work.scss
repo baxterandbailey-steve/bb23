@@ -5,7 +5,7 @@
 filters
 our-work__featured
 our-work__archive
----------------------------------------------------------------------------------------------------------------------- */
+---------------------------------------------------------------------------------------------------------- */
 .work {
     .filters {
         margin-bottom: 2.25rem;
@@ -18,7 +18,7 @@ our-work__archive
             margin-top: 2rem;
             grid-column: 1;
 
-            display: none;
+            display: block;
 
             &.show-filter {
                 display: block;
@@ -50,16 +50,67 @@ our-work__archive
             .sectors-filter {
                 grid-column: 9 / 12;
                 grid-row: 2;
+                //transform: translateX(-24px);
             }
             .services-filter {
                 grid-column: 11 / -1;
                 grid-row: 2;
+                //transform: translateX(-6px);
             }
         }
 
         h3 {
             font-family: var(--copy-med);
             font-weight: 500;
+        }
+
+        li,
+        label {
+        }
+
+        .sf-field-taxonomy-services_taxonomy {
+            margin-left: 1.5rem;
+        }
+
+        .sf-field-taxonomy-sectors_taxonomy,
+        .sf-field-taxonomy-services_taxonomy {
+            li {
+                position: relative;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+            input {
+                position: absolute;
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            label {
+                margin-left: 0px;
+                font-family: var(--copy-med);
+                font-size: var(--font-base);
+                line-height: 1;
+                color: var(--mid-black);
+            }
+
+            label:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -16px;
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border: 1.5px solid var(--black);
+                border-radius: 50%;
+            }
+
+            input:checked + label:before {
+                background-color: var(--black);
+            }
         }
     }
 
