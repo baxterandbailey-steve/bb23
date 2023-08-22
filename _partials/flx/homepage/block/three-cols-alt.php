@@ -8,17 +8,17 @@
 
 $col_1_image_alt = get_sub_field('col_1_image');
 $col_1_video_alt = get_sub_field('col_1_video');
-$col_1_video_alt_placeholder = get_sub_field('placeholder_image');
+$col_1_video_alt_placeholder = get_sub_field('col_1_placeholder_image');
 $col_1_stack = get_sub_field('col_1_stack');
 
 $col_2_image_alt = get_sub_field('col_2_image');
 $col_2_video_alt = get_sub_field('col_2_video');
-$col_1_video_alt_placeholder = get_sub_field('placeholder_image');
+$col_2_video_alt_placeholder = get_sub_field('col_2_placeholder_image');
 $col_2_stack = get_sub_field('col_2_stack');
 
 $col_3_image_alt = get_sub_field('col_3_image');
 $col_3_video_alt = get_sub_field('col_3_video');
-$col_3_video_alt_placeholder = get_sub_field('placeholder_image');
+$col_3_video_alt_placeholder = get_sub_field('col_3_placeholder_image');
 $col_3_client_alt = get_sub_field('col_3_client');
 $col_3_category_alt = get_sub_field('col_3_category');
 $col_3_description_alt = get_sub_field('col_3_description');

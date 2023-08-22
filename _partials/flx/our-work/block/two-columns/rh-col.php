@@ -38,7 +38,7 @@
 
                     <?php else : ?>
 
-                        <video preload playsinline autoplay muted loop poster="<?php echo $col_one_placeholder_image; ?>">
+                        <video preload playsinline autoplay muted loop poster="<?php echo $col_one_placeholder; ?>">
                             <source src="<?php echo $col_one_video; ?>">
                         </video>
 
@@ -72,7 +72,7 @@
 
                     <?php else : ?>
 
-                        <video preload playsinline autoplay muted poster="<?php echo $col_two_placeholder_image; ?>">>
+                        <video preload playsinline autoplay muted poster="<?php echo $col_two_placeholder; ?>">>
                             <source src="<?php echo $col_two_video; ?>">
                         </video>
 

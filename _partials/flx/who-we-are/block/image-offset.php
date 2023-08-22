@@ -13,7 +13,8 @@
         <?php if (have_rows('primary_image')) :
             while (have_rows('primary_image')) : the_row();
                 $primary_image = get_sub_field('image');
-                $primary_video = get_sub_field('video'); ?>
+                $primary_video = get_sub_field('video');
+                $primary_video_placeholder = get_sub_field('placeholder_image'); ?>
 
                 <?php if (get_sub_field('choice') == 'image') : ?>
 
@@ -23,7 +24,7 @@
 
                 <?php else : ?>
 
-                    <video preload playsinline autoplay muted loop class="primary-image"">
+                    <video preload playsinline autoplay muted loop poster="<?php echo $primary_video_placeholder; ?>" class="primary-image"">
                         <source src=" <?php echo $primary_video; ?>">
                     </video>
                 <?php endif; ?>
@@ -35,7 +36,8 @@
         <?php if (have_rows('secondary_image')) :
             while (have_rows('secondary_image')) : the_row();
                 $secondary_image = get_sub_field('image');
-                $secondary_video = get_sub_field('video'); ?>
+                $secondary_video = get_sub_field('video');
+                $seondary_video_placeholder = get_sub_field('placeholder_image'); ?>
 
                 <?php if (get_sub_field('choice') == 'image') : ?>
 
@@ -45,7 +47,7 @@
 
                 <?php else : ?>
 
-                    <video preload playsinline autoplay muted loop class="secondary-image"">
+                    <video preload playsinline autoplay muted loop poster="<?php echo $secondary_video_placeholder; ?>" class="secondary-image"">
                         <source src=" <?php echo $primary_video; ?>">
                     </video>
 

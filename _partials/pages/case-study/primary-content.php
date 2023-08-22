@@ -18,11 +18,11 @@ $secondary_image = get_field('secondary_image');
         <?php while (have_rows('primary_media')) : the_row();
             $primary_video = get_sub_field('video');
             $primary_image = get_sub_field('image');
-            $placeholder = get_sub_field('placeholder_image'); ?>
+            $primary_video_placeholder = get_sub_field('placeholder_image'); ?>
 
             <figure class="primary-content__hero">
                 <?php if (get_sub_field('primary_choice') == 'video') : ?>
-                    <video preload playsinline autoplay muted loop poster="<?php echo $placeholder; ?>" class="primary-video">
+                    <video preload playsinline autoplay muted loop poster="<?php echo $primary_video_placeholder; ?>" class="primary-video">
                         <source src="<?php echo $primary_video ?>" type="video/mp4">
                     </video>
                 <?php else : ?>

@@ -8,7 +8,7 @@
 
 $col_1_image = get_sub_field('col_1_image');
 $col_1_video = get_sub_field('col_1_video');
-$col_1_video_placeholder = get_sub_field('col_1_video');
+$col_1_video_placeholder = get_sub_field('col_1_placeholder_image');
 $col_1_client = get_sub_field('col_1_client');
 $col_1_category = get_sub_field('col_1_category');
 $col_1_description = get_sub_field('col_1_description');
@@ -17,12 +17,12 @@ $col_1_link = get_sub_field('link');
 
 $col_2_image = get_sub_field('col_2_image');
 $col_2_video = get_sub_field('col_2_video');
-$col_2_video_placeholder = get_sub_field('col_1_video');
+$col_2_video_placeholder = get_sub_field('col_2_placeholder_image');
 $col_2_stack = get_sub_field('col_2_stack');
 
 $col_3_image = get_sub_field('col_3_image');
 $col_3_video = get_sub_field('col_3_video');
-$col_3_video_placeholder = get_sub_field('col_1_video');
+$col_3_video_placeholder = get_sub_field('col_3_placeholder_image');
 $col_3_stack = get_sub_field('col_3_stack');
 
 ?>
