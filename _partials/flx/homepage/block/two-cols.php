@@ -68,10 +68,11 @@
                         $lh_video_client = get_sub_field('client');
                         $lh_video_category = get_sub_field('category');
                         $lh_video_description = get_sub_field('description');
-                        $lh_video_link = get_sub_field('link'); ?>
+                        $lh_video_link = get_sub_field('link');
+                        $lh_placholder_image = get_sub_field('placeholder_image'); ?>
 
                         <div class="lh-col video" style="grid-column: <?php echo $lh_video_width; ?>;">
-                            <video preload playsinline autoplay muted loop style="grid-column: <?php echo $lh_video_width; ?>;">
+                            <video preload playsinline autoplay muted loop poster="<?php echo $lh_placeholder_image; ?>" style="grid-column: <?php echo $lh_video_width; ?>;">
                                 <source src=" <?php echo $lh_video; ?>">
                             </video>
                             <div class="details">
@@ -146,10 +147,11 @@
                         $rh_video_client = get_sub_field('client');
                         $rh_video_category = get_sub_field('category');
                         $rh_video_description = get_sub_field('description');
-                        $rh_video_link = get_sub_field('link'); ?>
+                        $rh_video_link = get_sub_field('link');
+                        $rh_placholder_image = get_sub_field('placeholder_image'); ?>
 
                         <div class="rh-col video" style="grid-column: <?php echo $rh_video_width; ?>;">
-                            <video preload playsinline autoplay muted loopstyle="grid-column: <?php echo $rh_video_width; ?>;">
+                            <video preload playsinline autoplay muted loop poster="<?php echo $rh_placeholder_image; ?>" style="grid-column: <?php echo $rh_video_width; ?>;">
                                 <source src=" <?php echo $rh_video; ?>">
                             </video>
                             <div class="details">

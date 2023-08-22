@@ -14,6 +14,8 @@ $single_col_client = get_sub_field('client');
 $single_col_category = get_sub_field('category');
 $single_col_description = get_sub_field('description');
 $single_col_link = get_sub_field('link');
+$single_col_placeholder = get_sub_field('placeholder_image');
+
 ?>
 
 <div class="row single-col">
@@ -23,7 +25,7 @@ $single_col_link = get_sub_field('link');
             <img src="<?php echo wp_get_attachment_image($single_col_image, 'full'); ?>">
         </figure>
     <?php else : ?>
-        <video preload playsinline autoplay muted loop style="grid-column: <?php echo $single_col_width; ?>;">
+        <video preload playsinline autoplay muted loop poster="<?php echo $single_col_placeholder; ?>" style="grid-column: <?php echo $single_col_width; ?>;">
             <source src=" <?php echo $single_col_video; ?>">
         </video>
     <?php endif; ?>

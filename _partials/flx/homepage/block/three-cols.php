@@ -8,6 +8,7 @@
 
 $col_1_image = get_sub_field('col_1_image');
 $col_1_video = get_sub_field('col_1_video');
+$col_1_video_placeholder = get_sub_field('col_1_video');
 $col_1_client = get_sub_field('col_1_client');
 $col_1_category = get_sub_field('col_1_category');
 $col_1_description = get_sub_field('col_1_description');
@@ -16,10 +17,12 @@ $col_1_link = get_sub_field('link');
 
 $col_2_image = get_sub_field('col_2_image');
 $col_2_video = get_sub_field('col_2_video');
+$col_2_video_placeholder = get_sub_field('col_1_video');
 $col_2_stack = get_sub_field('col_2_stack');
 
 $col_3_image = get_sub_field('col_3_image');
 $col_3_video = get_sub_field('col_3_video');
+$col_3_video_placeholder = get_sub_field('col_1_video');
 $col_3_stack = get_sub_field('col_3_stack');
 
 ?>
@@ -36,7 +39,7 @@ $col_3_stack = get_sub_field('col_3_stack');
             <?php echo wp_get_attachment_image($col_1_image, 'full'); ?>
         </figure>
     <?php else : ?>
-        <video preload playsinline autoplay muted loop class="col-1">
+        <video preload playsinline autoplay muted loop poster="<?php echo $col_1_video_placeholder; ?>" class="col-1">
             <source src="<?php echo $col_1_video; ?>">
         </video>
     <?php endif; ?>
@@ -47,7 +50,7 @@ $col_3_stack = get_sub_field('col_3_stack');
         </figure>
 
     <?php else : ?>
-        <video preload playsinline autoplay muted loop class="col-2">
+        <video preload playsinline autoplay muted loop poster="<?php echo $col_2_video_placeholder; ?>" class="col-2">
             <source src="<?php echo $col_2_video; ?>">
         </video>
     <?php endif; ?>
@@ -57,7 +60,7 @@ $col_3_stack = get_sub_field('col_3_stack');
             <?php echo wp_get_attachment_image($col_3_image, 'full'); ?>
         </figure>
     <?php else : ?>
-        <video preload playsinline autoplay muted loop class="col-3">
+        <video preload playsinline autoplay muted loop poster="<?php echo $col_3_video_alt_placeholder; ?>" class="col-3">
             <source src="<?php echo $col_3_video; ?>">
         </video>
     <?php endif; ?>
