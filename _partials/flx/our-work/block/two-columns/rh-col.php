@@ -17,6 +17,7 @@
                 <?php while (have_rows('column_one')) : the_row();
                     $col_one_image = get_sub_field('image');
                     $col_one_video = get_sub_field('video');
+                    $col_one_placeholder = get_sub_field('placeholder_image');
                     $col_one_title = get_sub_field('title');
                     $col_one_meta = get_sub_field('meta');
                     $col_one_link = get_sub_field('link'); ?>
@@ -37,7 +38,7 @@
 
                     <?php else : ?>
 
-                        <video preload playsinline autoplay muted loop>
+                        <video preload playsinline autoplay muted loop poster="<?php echo $col_one_placeholder_image; ?>">
                             <source src="<?php echo $col_one_video; ?>">
                         </video>
 
@@ -50,6 +51,7 @@
                 <?php while (have_rows('col_two')) : the_row();
                     $col_two_image = get_sub_field('image');
                     $col_two_video = get_sub_field('video');
+                    $col_two_placeholder = get_sub_field('placeholder_image');
                     $col_two_title = get_sub_field('title');
                     $col_two_meta = get_sub_field('meta');
                     $col_two_link = get_sub_field('link'); ?>
@@ -70,7 +72,7 @@
 
                     <?php else : ?>
 
-                        <video preload playsinline autoplay muted loop>
+                        <video preload playsinline autoplay muted poster="<?php echo $col_two_placeholder_image; ?>">>
                             <source src="<?php echo $col_two_video; ?>">
                         </video>
 

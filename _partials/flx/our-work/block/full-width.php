@@ -8,6 +8,7 @@
 
 $full_width_image = get_sub_field('image');
 $full_width_video = get_sub_field('video');
+$full_width_placeholder = get_sub_field('placeholder_image');
 $full_width_title = get_sub_field('title');
 $full_width_meta = get_sub_field('meta');
 $full_width_link = get_sub_field('link');
@@ -36,7 +37,7 @@ $full_width_link = get_sub_field('link');
 
     <?php else : ?>
 
-        <video preload playsinline autoplay muted loop>
+        <video preload playsinline autoplay muted loop poster="<?php echo $full_width_placeholder; ?>">
             <source src="<?php echo $full_width_video; ?>">
         </video>
     <?php endif; ?>
